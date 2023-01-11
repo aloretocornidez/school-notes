@@ -4,18 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "7b9d3adcbb6610e6",
+        "id": "3ac46689cceefe52",
         "type": "tabs",
         "children": [
           {
-            "id": "058574cc7e55345a",
+            "id": "9eff54aff70ec98b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GER 150 - Becoming Multilingual.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "6ac52b695e6453bd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "SIE 265 - Engineering Managment.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SIE 265 - Engineering Managment.md",
+                "file": "GER 150 - Becoming Multilingual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SIE 265 - Engineering Managment.md",
+                "file": "GER 150 - Becoming Multilingual.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SIE 265 - Engineering Managment.md"
+                "file": "GER 150 - Becoming Multilingual.md"
               }
             }
           }
@@ -133,8 +145,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,9 +157,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "058574cc7e55345a",
+  "active": "9eff54aff70ec98b",
   "lastOpenFiles": [
-    "Untitled.md",
-    "SIE 265 - Engineering Managment.md"
+    "SIE 265 - Engineering Managment.md",
+    "GER 150 - Becoming Multilingual.md",
+    "2023-01-11.md"
   ]
 }

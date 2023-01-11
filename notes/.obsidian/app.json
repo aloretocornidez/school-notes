@@ -1,1 +1,6 @@
-{}
+{
+  "promptDelete": false,
+  "livePreview": false,
+  "strictLineBreaks": false,
+  "spellcheck": true
+}
