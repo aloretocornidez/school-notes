@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GER 150 - Becoming Multilingual.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "6ac52b695e6453bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SIE 265 - Engineering Managment.md",
+                "file": "Bilingual Life and Reality.md",
                 "mode": "source",
                 "source": true
               }
@@ -81,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "61e45d527f48e55e",
@@ -97,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GER 150 - Becoming Multilingual.md",
+                "file": "Bilingual Life and Reality.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GER 150 - Becoming Multilingual.md",
+                "file": "Bilingual Life and Reality.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GER 150 - Becoming Multilingual.md"
+                "file": "Bilingual Life and Reality.md"
               }
             }
           }
@@ -145,7 +134,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -160,7 +150,9 @@
   "active": "9eff54aff70ec98b",
   "lastOpenFiles": [
     "SIE 265 - Engineering Managment.md",
-    "GER 150 - Becoming Multilingual.md",
+    "Bilingual Life and Reality.md",
+    "GER 150 - Becoming Multilingual - Classes.md",
+    "Untitled.md",
     "2023-01-11.md"
   ]
 }
