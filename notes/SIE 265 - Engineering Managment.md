@@ -3,3 +3,12 @@
 - Email: shafae1@arizona.edu
 
 
+## What is Engineering Management?
+- Provide domain-specific realizable solutions in a realizable and profitable way.
+
+How do you do that?
+- You use skills and tools like:
+	- Understanding the time value of money.
+	- Valuation techniques.
+	- Development analysis of income, cash flow, and balance sheet statements.
+
