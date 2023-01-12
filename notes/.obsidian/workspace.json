@@ -8,6 +8,18 @@
         "type": "tabs",
         "children": [
           {
+            "id": "dc69425255daf30a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ECE 569 - High Performance Computing.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
             "id": "9eff54aff70ec98b",
             "type": "leaf",
             "state": {
@@ -146,13 +158,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9eff54aff70ec98b",
+  "active": "dc69425255daf30a",
   "lastOpenFiles": [
-    "GER 150 - Becoming Multilingual - Classes.md",
+    "Daily To Do List.md",
+    "2023-01-11.md",
     "ECE 569 - High Performance Computing.md",
-    "Untitled 1.md",
     "Bilingual Life and Reality.md",
     "SIE 265 - Engineering Managment.md",
-    "2023-01-11.md"
+    "GER 150 - Becoming Multilingual - Classes.md",
+    "Untitled.md"
   ]
 }
