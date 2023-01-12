@@ -1,6 +1,12 @@
 
 
+- 150 | Becoming Multilingual
+	- 
+
 - 265 | Engineering Management
+	- 
+
+- 532 | Image Analysis
 	- 
 
 - 569 | High Performance Computing
@@ -12,7 +18,6 @@
 
 - 498 | Senior Capstone
 	- Project Status Report 498
-
 
 
 - Completed

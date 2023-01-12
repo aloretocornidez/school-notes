@@ -4,7 +4,8 @@
 - Email: eckep@arizona.edu #email
 - Office Hours: Thursday 12:00 PM - 2:00 PM #office-hours
 
-[[Bilingual Life and Reality]]
+Textbook notes:
+[[Bilingual Life and Reality Textbook]]
 
 ## Why are People Bilingual
 Date: January 11th

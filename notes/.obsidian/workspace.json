@@ -8,30 +8,33 @@
         "type": "tabs",
         "children": [
           {
-            "id": "dc69425255daf30a",
+            "id": "85db65bcb211bbb6",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ECE 569 - High Performance Computing.md",
+                "file": "Daily To Do List.md",
                 "mode": "source",
                 "source": true
-              }
+              },
+              "pinned": true
             }
           },
           {
-            "id": "9eff54aff70ec98b",
+            "id": "b20d6af88ed82855",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ECE 569 - High Performance Computing.md",
+                "file": "ger-150/Bilingual Life and Reality Textbook.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,7 +84,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "61e45d527f48e55e",
@@ -97,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ECE 569 - High Performance Computing.md",
+                "file": "ger-150/Bilingual Life and Reality Textbook.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ECE 569 - High Performance Computing.md",
+                "file": "ger-150/Bilingual Life and Reality Textbook.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ECE 569 - High Performance Computing.md"
+                "file": "ger-150/Bilingual Life and Reality Textbook.md"
               }
             }
           }
@@ -158,14 +162,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dc69425255daf30a",
+  "active": "b20d6af88ed82855",
   "lastOpenFiles": [
     "Daily To Do List.md",
+    "ger-150/Bilingual Life and Reality Textbook.md",
+    "ger-150/GER 150 - Becoming Multilingual - Classes.md",
+    "ece-569/ECE 569 - High Performance Computing.md",
     "2023-01-11.md",
-    "ECE 569 - High Performance Computing.md",
-    "Bilingual Life and Reality.md",
-    "SIE 265 - Engineering Managment.md",
-    "GER 150 - Becoming Multilingual - Classes.md",
+    "sie-265/SIE 265 - Engineering Managment.md",
     "Untitled.md"
   ]
 }
