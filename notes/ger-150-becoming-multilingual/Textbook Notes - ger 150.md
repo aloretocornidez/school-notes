@@ -1,6 +1,6 @@
 #textbook
 
-This contains useful information that I gather from the readings in [[GER 150 - Becoming Multilingual - Classes]].
+This contains useful information that I gather from the readings in [[Lecture Notes - ger 150]].
 
 ## Chapter 1 | Bilingual Adults
 
