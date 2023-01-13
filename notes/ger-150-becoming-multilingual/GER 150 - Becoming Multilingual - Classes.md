@@ -68,3 +68,98 @@ Estimates of rates of bilingualism
 - Canada: 18%
 - USA: 13.7% - 17% (in 2000)
 - Often, small countries has more bilingualism.
+
+# The Functions of Languages, Language Mode, and Choice
+Date: January 13th
+
+## Klingon
+Is it a natural human language?
+
+Dr. Peter Ecke (Professor) says:
+- Not a (natural human) language in all its complexity.
+- Not acquired (& further developed) by children.
+- Language
+	- a complex system acquired, maintained and used by humans to communicate.
+	- passed onto next generations who develop it further.
+
+## Activity
+Dominant Language
+Letter: F
+Words: 19
+- Fair
+- Fridge
+- Famous
+- Fuck
+- Flirt
+- Flack
+- Flair
+- For
+- Fart
+- Feminine
+- Female
+- Fork
+- Fun
+- Funk
+- Feisty
+- Flamingo
+- Ford
+- Falcon
+- Funny
+**Animals**
+Words: 18
+- Fox
+- Elephant
+- Bunny
+- Rabbit
+- Dog
+- Cat
+- Turtle
+- Flamingo
+- Wolf
+- Dolphin
+- Otter
+- Bear
+- Hummingbird
+- Bee
+- Giraffe
+- Penguin
+- Mosquito
+- Fly
+- Bird
+
+
+### Now do this in your less dominant language
+Letter: F
+Words: 8
+- Falso
+- Fierro
+- Fabrica
+- Falto
+- Fabuloso
+- Fraccion
+- Fanta
+- Feminino
+- Fermin
+Category: Animals
+Words: 10
+- Perro
+- Gato
+- Tortuga
+- Perico
+- Oso
+- Cucaracha
+- Pajaro
+- Tigre
+- Leon
+- Caballo
+- Burrito
+
+English
+F: 19 Words
+Animals: 18
+
+Spanish
+F: 8
+Animals: 10
+
+### Language Mode and Language Switching
