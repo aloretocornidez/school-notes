@@ -22,11 +22,7 @@
             }
           },
           {
-<<<<<<< Updated upstream
             "id": "ba0b74556515a116",
-=======
-            "id": "1eecedf2810ab978",
->>>>>>> Stashed changes
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -51,8 +47,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ger-150/Bilingual Life and Reality Textbook.md",
-                "mode": "preview",
+                "file": "ger-150-becoming-multilingual/Bilingual Life and Reality Textbook.md",
+                "mode": "source",
                 "source": true
               }
             },
@@ -185,23 +181,15 @@
       "command-palette:Open command palette": false
     }
   },
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   "active": "ba0b74556515a116",
-=======
-  "active": "1eecedf2810ab978",
->>>>>>> Stashed changes
-=======
-  "active": "6f36bc0f642055b8",
->>>>>>> Stashed changes
   "lastOpenFiles": [
-    "ger-150-becoming-multilingual/GER 150 - Becoming Multilingual - Classes.md",
     "ger-150-becoming-multilingual/Bilingual Life and Reality Textbook.md",
-    "ece-532-digital-image-analysis/ECE 532 Digital Image Analysis.md",
+    "ger-150-becoming-multilingual/GER 150 - Becoming Multilingual - Classes.md",
     "Daily To Do List.md",
-    "ece-569-high-performance-computing/ECE 569 - High Performance Computing.md",
+    "ger-150/GER 150 - Becoming Multilingual - Classes.md",
+    "ece-569/ECE 569 - High Performance Computing.md",
     "2023-01-11.md",
-    "sie-265-engineering-management/SIE 265 - Engineering Managment.md",
+    "sie-265/SIE 265 - Engineering Managment.md",
     "Untitled.md"
   ]
 }
