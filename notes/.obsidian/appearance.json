@@ -1,4 +1,9 @@
 {
+<<<<<<< Updated upstream
   "accentColor": "#c8b8ff",
   "baseFontSize": 20
+=======
+  "accentColor": "",
+  "baseFontSize": 26
+>>>>>>> Stashed changes
 }
