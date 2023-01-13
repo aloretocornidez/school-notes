@@ -3,5 +3,7 @@
   "livePreview": false,
   "strictLineBreaks": false,
   "spellcheck": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "showFrontmatter": false,
+  "showLineNumber": true
 }

@@ -1,58 +1,19 @@
 {
   "main": {
-    "id": "3ab14d72ed67dd7f",
+    "id": "190d69260d04262e",
     "type": "split",
     "children": [
       {
-        "id": "3ac46689cceefe52",
+        "id": "ea3ca06f75921caf",
         "type": "tabs",
         "children": [
           {
-            "id": "85db65bcb211bbb6",
+            "id": "10d70ef395372137",
             "type": "leaf",
-            "pinned": true,
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Daily To Do List.md",
-                "mode": "source",
-                "source": true
-              },
-              "pinned": true
+              "type": "empty",
+              "state": {}
             }
-          },
-          {
-            "id": "ba0b74556515a116",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ger-150/Bilingual Life and Reality Textbook.md",
-                "mode": "source",
-                "source": true
-              }
-            },
-            "group": "32bda368644566e9"
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "fc39c4a200e4c521",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "89250f8249ec1596",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ger-150/Bilingual Life and Reality Textbook.md",
-                "mode": "preview",
-                "source": true
-              }
-            },
-            "group": "32bda368644566e9"
           }
         ]
       }
@@ -60,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ddd604fd5cc66867",
+    "id": "2355adce7072d328",
     "type": "split",
     "children": [
       {
-        "id": "0a08bdfeff146c41",
+        "id": "c9dcf02e3c77eb8b",
         "type": "tabs",
         "children": [
           {
-            "id": "6f36bc0f642055b8",
+            "id": "3b981c6797e15b31",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -78,7 +39,7 @@
             }
           },
           {
-            "id": "1748b7a60fdea92a",
+            "id": "12851f1c8675bc73",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -93,35 +54,33 @@
             }
           },
           {
-            "id": "da12a489e4586c12",
+            "id": "291ba270f14e9e46",
             "type": "leaf",
             "state": {
               "type": "starred",
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
   "right": {
-    "id": "61e45d527f48e55e",
+    "id": "62e2ca1ac55f7af0",
     "type": "split",
     "children": [
       {
-        "id": "d6c4783b1c82232f",
+        "id": "965e225bb0a13a87",
         "type": "tabs",
         "children": [
           {
-            "id": "aee1ad8e107871e2",
+            "id": "c879bdb31bfe7c9b",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ger-150/Bilingual Life and Reality Textbook.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,19 +92,18 @@
             }
           },
           {
-            "id": "6c2a5f48b95f6bac",
+            "id": "602446028ce49e12",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ger-150/Bilingual Life and Reality Textbook.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "0c59c548bfa99e42",
+            "id": "7643a35e9c575085",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -156,13 +114,11 @@
             }
           },
           {
-            "id": "2d6289862a7a7d60",
+            "id": "1cc5a453f6c9afbb",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "ger-150/Bilingual Life and Reality Textbook.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -182,14 +138,6 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ba0b74556515a116",
-  "lastOpenFiles": [
-    "Daily To Do List.md",
-    "ger-150/Bilingual Life and Reality Textbook.md",
-    "ger-150/GER 150 - Becoming Multilingual - Classes.md",
-    "ece-569/ECE 569 - High Performance Computing.md",
-    "2023-01-11.md",
-    "sie-265/SIE 265 - Engineering Managment.md",
-    "Untitled.md"
-  ]
+  "active": "3b981c6797e15b31",
+  "lastOpenFiles": []
 }
