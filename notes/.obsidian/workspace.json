@@ -104,8 +104,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -187,9 +186,13 @@
     }
   },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "active": "ba0b74556515a116",
 =======
   "active": "1eecedf2810ab978",
+>>>>>>> Stashed changes
+=======
+  "active": "6f36bc0f642055b8",
 >>>>>>> Stashed changes
   "lastOpenFiles": [
     "ger-150-becoming-multilingual/GER 150 - Becoming Multilingual - Classes.md",

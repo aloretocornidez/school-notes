@@ -72,4 +72,5 @@ Where two languages or two varieties of a language are employed by a group, each
 
 The complementarity principle is certainly one of the most pervasive aspects of individual bilingualism. Bilinguals who speak two  or more languages feel its constant presence in their everyday lives.  They may even comment openly on its different manifestations,  without finding the exact words to account for them.
 
-## Chapter 4 | 
+## Chapter 4 | Language Mode and Language Choice
+
