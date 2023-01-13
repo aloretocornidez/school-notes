@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bilingual Life and Reality.md",
+                "file": "ECE 569 - High Performance Computing.md",
                 "mode": "source",
                 "source": true
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "61e45d527f48e55e",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bilingual Life and Reality.md",
+                "file": "ECE 569 - High Performance Computing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bilingual Life and Reality.md",
+                "file": "ECE 569 - High Performance Computing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bilingual Life and Reality.md"
+                "file": "ECE 569 - High Performance Computing.md"
               }
             }
           }
@@ -149,10 +148,11 @@
   },
   "active": "9eff54aff70ec98b",
   "lastOpenFiles": [
-    "SIE 265 - Engineering Managment.md",
-    "Bilingual Life and Reality.md",
     "GER 150 - Becoming Multilingual - Classes.md",
-    "Untitled.md",
+    "ECE 569 - High Performance Computing.md",
+    "Untitled 1.md",
+    "Bilingual Life and Reality.md",
+    "SIE 265 - Engineering Managment.md",
     "2023-01-11.md"
   ]
 }
