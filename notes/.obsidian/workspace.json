@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ger-150-becoming-multilingual/Lecture Notes - ger 150.md",
+                "file": "Daily To Do List.md",
                 "mode": "source",
                 "source": true
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "61e45d527f48e55e",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ger-150-becoming-multilingual/Lecture Notes - ger 150.md",
+                "file": "Daily To Do List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ger-150-becoming-multilingual/Lecture Notes - ger 150.md",
+                "file": "Daily To Do List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ger-150-becoming-multilingual/Lecture Notes - ger 150.md"
+                "file": "Daily To Do List.md"
               }
             }
           }
@@ -149,13 +148,13 @@
   },
   "active": "752a32236cc32f7b",
   "lastOpenFiles": [
+    "ger-150-becoming-multilingual/Lecture Notes - ger 150.md",
     "sie-265-engineering-management/homework/homework-1.md",
-    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
     "sie-265-engineering-management/Lecture Notes - sie 265.md",
+    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
     "Daily To Do List.md",
     "ece-569-high-performance-computing/Lecture Notes - ece 569.md",
     "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
-    "ger-150-becoming-multilingual/Lecture Notes - ger 150.md",
     "ger-150/GER 150 - Becoming Multilingual - Classes.md",
     "ece-569/ECE 569 - High Performance Computing.md",
     "2023-01-11.md"
