@@ -17,7 +17,8 @@
 - Homework 1 is Posted
 
 ## 498 | Senior Capstone
-- Project Status Report 498
+- Tasks:
+	- Figure out the Wiring List
 
 
 ## Completed

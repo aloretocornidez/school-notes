@@ -172,5 +172,89 @@ For example: a person needing to maintain a hidden nationality in a war.
 ### Code-Switching in a Monolingual Mode
 One reason for code-switching in a monolingual mode is to bring in a proper noun from the other language.
 
+> I once heard an American professor say  on a French radio program during an interview, “Il n’est pas ruthless” (He’s not ruthless). The reporter, who wanted the interview to be understandable to the listeners, came in immediately with the French expression, “sans scrupules.” The professor said, “Oui . . .”  and then continued what he had been saying.
 
-![[Pasted image 20230116193015.png]]
+### Interferences
+Despite the fact that bilinguals sometimes want to keep out their other languages when they are speaking or writing monolingually, and although they may have filtered out all code-switches, the other languages can still enter in the form of interferences: deviations from the language being spoken (or written) stemming form the influence of the deactivated languages.
+
+Interferences, also called 'transfers', accompany bilinguals throughout their life, however hard they try to avoid them. 
+
+They are a bilingual's 'hidden companions,' often present even though one tries to filter them out.
+
+#### Kinds of interferences
+- **Static Inferences** | reflect permanent traces of one language on the other
+	- Such as a permanent accent
+	- The meaning of extensions of particular words
+	- Specific syntactic structures
+	- etc.
+- **Dynamic Interferences** | Ephemeral intrusions of the other language
+	- An accidental slip on the stress pattern of a word due to the stress rules of the other language
+	- The momentary use of a syntactic structure taken from the language, or languages not being spoken.
+
+Usually the types are difficult to differentiate -- Except in the case of an accent, which is most often a static interference.
+
+The discussion will emphasize dynamic interferences -- elements of the  other language that sliup into the language you are speaking or writing, most often without your being aware of them.
+
+Often, it is only when your interlocutor asks what you meant by word ```X``` or corrects your syntax or looks at you in a strange way that you realize, after the fact, that the other language has slipped in.
+
+You are often left with the feeling that you were *sure* that ```X``` was a word in that language, or that the structure was correct, when in fact that was not the case. 
+
+### Levels of Interferences
+1. Pronunciation (Phonology, Prosody) | Foreign Accent
+	- Traces of an accent can be 
+		- Permanent
+			- The accent you have when speaking language ```X```
+		- Ephemeral
+			- Wrong stress placement on a word
+			- The intonation of a phrase Based on your stronger language
+			- etc.
+
+2. Word Level
+	Possibly using false cognates, like 'embarazado' when telling someone you're embarrassed.
+
+3. Idiomatic Expressions and Proverbs
+	"I'm telling myself stories" in french is like saying "I'm kidding myself.
+
+4. Syntactic Level
+	Word order such as the order of adjectives and nouns in English and Spanish.
+
+### Interferences and Communication
+Interferences bilinguals produce when communicating in a single language can have different impacts on the comprehension of their monolingual listeners.
+
+- Interference pattern is possible in the base language ans has no negative impact on comprehension.
+	- Word order in particular English --> Russian sentences.
+	- Grammar is correct but additional words/word order are not necessary.
+- The meaning of the sentence is understandable by implication.
+	- German-English bilingual 'yesterday he came to be' based on the German, "gestern kam er."
+	- The sentence is not gramatically correct but the meaning can be understood.
+- Interference produces an unintended meaning and hence communication is affected.
+	- 'Je te manque' (FR) based on 'I miss you' (EN)
+	- The person is understood to be saying 'You miss me' instead of 'I miss you', they should have said 'Tu me manques' (FR)
+
+
+### Final point on the direction of Interferences
+If bilinguals are heavily dominant in a language, then the interference flow is straightforward: the stringer language influences the weaker language, either in a permanent manner, or in an ephemeral way.
+
+However, if the two languages have more or less equal importance (at least in everyday use), then interferences can go both ways.
+
+
+The bilingual is not the sum of two (or more) complete or incomplete monolinguals; rather, he or she has a unique and specific linguistic configuration. The coexistence and constant interaction of the languages in the bilingual 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
