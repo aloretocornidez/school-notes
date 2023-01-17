@@ -172,14 +172,5 @@ For example: a person needing to maintain a hidden nationality in a war.
 ### Code-Switching in a Monolingual Mode
 One reason for code-switching in a monolingual mode is to bring in a proper noun from the other language.
 
-![[Pasted image 20230116192502.png]]
 
-
-
-
-
-
-
-
-
-
+![[Pasted image 20230116193015.png]]

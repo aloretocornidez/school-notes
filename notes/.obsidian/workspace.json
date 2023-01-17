@@ -20,16 +20,16 @@
               },
               "pinned": true
             },
-            "group": "7d752085fa24b5b0"
+            "group": "11b848390916d8ed"
           }
         ]
       },
       {
-        "id": "7f92d70a1fe7075e",
+        "id": "095be77f81a1477c",
         "type": "tabs",
         "children": [
           {
-            "id": "efe8b8a6d83040ca",
+            "id": "233caf9e5ca589e3",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -41,7 +41,7 @@
               },
               "pinned": true
             },
-            "group": "7d752085fa24b5b0"
+            "group": "11b848390916d8ed"
           }
         ]
       }
@@ -172,15 +172,15 @@
   },
   "active": "752a32236cc32f7b",
   "lastOpenFiles": [
-    "Pasted image 20230116192502.png",
+    "ger-150-becoming-multilingual/Pasted image 20230116193015.png",
     "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
+    "ger-150-becoming-multilingual/images/Pasted image 20230116192502.png",
+    "ger-150-becoming-multilingual/attachments/Screenshot_20230116_184550.png",
+    "ger-150-becoming-multilingual/images/Pasted image 20230116192543.png",
+    "ger-150-becoming-multilingual/images/Pasted image 20230116192536.png",
+    "Pasted image 20230116192648.png",
     "ger-150-becoming-multilingual/Lecture Notes - ger 150.md",
     "Daily To Do List.md",
-    "sie-265-engineering-management/homework/homework-1.md",
-    "sie-265-engineering-management/Lecture Notes - sie 265.md",
-    "ece-569-high-performance-computing/Lecture Notes - ece 569.md",
-    "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
-    "ger-150/GER 150 - Becoming Multilingual - Classes.md",
-    "ece-569/ECE 569 - High Performance Computing.md"
+    "sie-265-engineering-management/homework/homework-1.md"
   ]
 }
