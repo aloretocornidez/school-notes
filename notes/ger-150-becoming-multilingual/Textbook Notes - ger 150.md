@@ -118,3 +118,68 @@ Reasons for choosing a base language can include:
 'and they are often right.'
 
 
+## Chapter 5 | Code-Switching and Borrowing
+Code-switching is the alternate use of two languages, that is, the speaker makes a shift to another language for a word, phrase, or sentence, then reverts back to the base language.
+
+
+*Myth: Bilinguals code-switch out of pure laziness.*
+
+Code-switching has been given pejorative names such as Franglais (English and French) and Tex-Mex or Spanglish (English and Spanish).
+
+Bilinguals code-switch for multiple reasons: 
+1. Some notions are better expressed in the other language.
+	- the word or expression in the other language adds a little something that is more precise than trying to find an equivalent element in the base language
+2. Fill a linguistic need for a word or an expression.
+	- Words like 'day care center', 'finger food', 'window shopping', and 'pot-luck dinners' need multiple words to convey in french.
+3. To report what someone has said in the other language.
+	- It would sound unnatural to translate it for a bilingual who understands the other language perfectly.
+4. Used as a communicative or social strategy
+	- To show speaker involvement
+	- Mark group identity
+	- Exclude someone
+	- Raise one's status
+
+> "Code-switching is a verbal skill requiring a large degree of  linguistic competence in more than one language, rather than a defect arising from insufficient knowledge of one or the other"
+\- Shana Poplack
+
+### Borrowing
+Unlike code-switching, borrowing is the integration of one language into another.
+
+![[Screenshot_20230116_184550.png]]
+
+### Reasons for borrowing
+The reasons for borrowing words from a language are very similar to the reasons given for code-switching.
+
+When spontaneous borrowings become established borrowings, they have not only gone through an integration process but have also survived the resistance of some of the speakers of the language concerned.
+
+The opposition to loans from other languages is not something new, and it has not always worked in the same direction.
+*French used to affect English, now it is the other way around with words like cool, top, etc.*
+
+## Chapter 6 | Speaking and Writing Monolingually
+When communicating with others, bilinguals are constantly asking themselves -- subconsciously most of the time -- which language they should use and whether they can bring in another language.
+
+The answer is apparently quite simple: they will have to use the language the others know, and, if possible, they will not let another language intervene.
+
+### Choosing a Language
+At first sight, choosing a language for communicating in a mono-lingual mode appears to be a simple operation. We 'shut off' out other language\[s] and speak just one.
+
+Bilinguals who manage to stay in a monolingual mode and, in addition, who speak that language fluently and have no accent in it, can often 'pass' as monolinguals.
+
+Sometimes more than communication is at stake, and keeping to the monolingual mode is all the more crucial.
+For example: a person needing to maintain a hidden nationality in a war.
+
+**Inhibition of a language vs deactivation**
+### Code-Switching in a Monolingual Mode
+One reason for code-switching in a monolingual mode is to bring in a proper noun from the other language.
+
+![[Pasted image 20230116192502.png]]
+
+
+
+
+
+
+
+
+
+
