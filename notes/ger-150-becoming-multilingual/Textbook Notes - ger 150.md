@@ -240,6 +240,82 @@ However, if the two languages have more or less equal importance (at least in ev
 
 The bilingual is not the sum of two (or more) complete or incomplete monolinguals; rather, he or she has a unique and specific linguistic configuration. The coexistence and constant interaction of the languages in the bilingual 
 
+## Chapter 7 | Having an Accent in a Language
+*Myth: Real bilinguals have no accent in their different languages.*
+
+Whether one has an accent is mainly dependent on when the language was acquired.
+Having an accent does not make someone less or more bilingual.
+There is no relationship between one's knowledge of a language and whether one has an accent in it.
+
+### An Accent: Why and How
+Reasons why one may have an accent.
+1. One has acquired a particular dialect of the language.
+	- An English speaker from India may simply have the accent linked to Indian English and it may have nothing to do with the age at which his English was acquired.
+2. The influence of one's first language on the second.
+	- An English-French bilingual may have an English accent in French because she acquired French later on in life.
+	- Some sounds in a language may not be found in another language, thus, phonetic replacements are made. 'Rosses' vs 'Roses' due to the lack of a 'z' sound in norwegian.
+3. The influence of one's second language on the first.
+	- The same can occur in reverse.
+4. A bilingual should can have an accent in all of his or her languages.
+
+There is dispute among scholars on how age determines whether or not a person will have an accent in a particular language. Before 6 years old is the sensitive period, some say that the window stays open until age 12, there are however, accounts of people who learn a language past that age ans are 'accent-less'
+
+All language is accented by definition, though not in the sense used here.
+
+
+### Disadvantages and Advantages of Having an Accent
+- An accent may make you stick out, when in fact, you want the opposite, to blend in.
+- As an adult, if one's accent is strong, and the society is not positively inclined toward the group you belong to, an accent can have a negative effect on the way you are perceived and treated.
+- Having an accent may also give the wrong impression -- that the speaker does not know the language, in spite of the speaker knowing that language well.
+- Intelligibility may suffer if the accent is too strong and conversations may be cut short.
+- Stress and emotion can make an accent reappear or increase in strength.
+- An accent clearly marks you as a member of your group. Some people do not want to be seen as belonging to the other language group and purposely use their accent as a signal of their original group membership.
+- Having an accent can be self-protective: it prevents members of the group you are interacting with from expecting you to know all the group's cultural and social rules. In short, it allows you to be different.
+
+To Summarize, having an accent does not not make you any less bilingual and rarely impedes communication. 
+
+
+
+## Chapter 8 | Languages across the Lifespan
+
+Examining how languages wax and wane during a lifetime, which may well include the learning of new languages and the forgetting of older ones, is very much part of understanding the bilingual person.
+
+### The Wax and Wane of Languages
+Individual language history can be quite complex.
+Important life events may change the relative importance of their languages
+- Starting School
+- Settling down with a spouse
+- Losing a close family member with whom a language was used exclusively
+
+New needs will change the bilingual person's language configurations (Complementarity principle)
+
+
+Global Dominance in a language can change. The bilingual's first language is not automatically the stronger language at a particular point in time.
+
+*Myth: Real bilinguals acquire their two or more languages in childhood.*
+
+One can become bilingual in childhood, but also in adolescence and in adulthood.
+
+### Language Forgetting
+Changes in life, such as immigration or the loss of a close family member may be the start of what is referred to as language loss or language attrition.
+
+When a person loses their previously dominant language, one may feel remorse or regret.
+	- 'I should have kept up my X'
+
+
+
+### Bilinugalism and the Elderly
+As the years move on, bilinguals sometimes ask themselves whaty the status oftheir language knowledge and use will be in old age, especially in their second language.
+
+
+> We’re sometimes filled with dread at the perspective of a  quasi-autistic communal old age. At first our acquired language will desert us bit by bit and our sentences will be studded with blanks: ‘Could you get me the . . . ? You know, the thing that’s hanging from the . . . in the . . . ??!’ . . . Eventually, with French totally erased from our memories, we shall sit in our rocking-chairs from dawn to dusk, nattering incomprehensibly in our respective  mother tongues
+> \- Nancy Huston
+
+
+- Being bilingual may well delay the development of dementia in old age.
+
+- Growing old as a bilingual does not seem to be very different from growing old as a monolingual, with its advantages and disadvantages; it may just be, though, that bilinguals have a few additional cognitive benefits in their favor.
+
 
 
 
