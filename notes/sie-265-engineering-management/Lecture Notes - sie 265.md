@@ -12,3 +12,6 @@ How do you do that?
 	- Valuation techniques.
 	- Development analysis of income, cash flow, and balance sheet statements.
 
+
+
+[[lecture-01-18-2023]]

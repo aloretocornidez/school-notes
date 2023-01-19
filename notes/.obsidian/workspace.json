@@ -13,31 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
+                "file": "sie-265-engineering-management/Lecture Notes - sie 265.md",
                 "mode": "source",
                 "source": true
               }
-            },
-            "group": "ebec73ed5d56b400"
-          }
-        ]
-      },
-      {
-        "id": "3fc62856ed15dde0",
-        "type": "tabs",
-        "children": [
+            }
+          },
           {
-            "id": "eca54c3e75fa50fb",
+            "id": "1a3d99db1236fd24",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
+                "file": "sie-265-engineering-management/lecture-01-18-2023.md",
+                "mode": "source",
+                "source": true
+              }
+            },
+            "group": "3da0af472097510a"
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "f388d73e36b157d6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "76d851cb2558991c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sie-265-engineering-management/lecture-01-18-2023.md",
                 "mode": "preview",
                 "source": true
               }
             },
-            "group": "ebec73ed5d56b400"
+            "group": "3da0af472097510a"
           }
         ]
       }
@@ -89,8 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 410.5026054382324
   },
   "right": {
     "id": "61e45d527f48e55e",
@@ -106,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
+                "file": "sie-265-engineering-management/lecture-01-18-2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
+                "file": "sie-265-engineering-management/lecture-01-18-2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md"
+                "file": "sie-265-engineering-management/lecture-01-18-2023.md"
               }
             }
           }
@@ -167,17 +179,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eca54c3e75fa50fb",
+  "active": "6f36bc0f642055b8",
   "lastOpenFiles": [
-    "ece-532-digital-image-analysis/2-D Digital Signal Processing - ece 532.md",
-    "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
-    "Daily To Do List.md",
-    "ece-569-high-performance-computing/Data Level Parallelism vs Task Level Parallelism - Module 5.md",
-    "ece-569-high-performance-computing/Notes - ece 569.md",
-    "ece-569-high-performance-computing/Lecture 1 - ece 569.md",
-    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
+    "sie-265-engineering-management/Lecture Notes - sie 265.md",
     "ece-569-high-performance-computing/GPU Programming Approach - Module 4.md",
+    "ece-569-high-performance-computing/Data Level Parallelism vs Task Level Parallelism - Module 5.md",
     "ece-569-high-performance-computing/Computing Trends - Module 2.md",
-    "Untitled.md"
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230117125433.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230117125053.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230117124922.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230117124347.png",
+    "ger-150-becoming-multilingual/Lecture Notes - ger 150.md",
+    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md"
   ]
 }

@@ -259,7 +259,120 @@ Potential employment opportunities
 Working on bilingual speech recognition/processing
 
 Next Time:
-	- Having an accent in a language and Languages accros the lifespan.
+	- Having an accent in a language and Languages across the lifespan.
+
+
+
+
+# Lecture 4 | Having an Accent
+
+
+Do you have an accent? Most people will say, 'Yes, in my L2'
+
+Many people recognize that accents may be present in L1s.
+- ex. Southern Girls in English
+
+We all have an accent, even in our first language.
+
+## Reasons for having an Accent?
+- Maturational constraints on language learning
+	- Up to the beginning of puberty
+- L1 influence on L2
+- L2 influence on L1
+- Individual differences
+	- Examples of highly proficient/highly motivated speakers with no or little L2 accents.
+
+
+
+## Consequences of Having an Accent
+- Certain accents may be stigmatized
+- Other accents may elevate the status of a person
+- Mark you as a member of the group you belong to
+
+Accents can change over a lifetime
+
+Accents are normal
+They are indicators of belonging or our language acquisition history
+There is nothing wrong with accents unless you work as a secret agent/spy
+
+
+
+# Lecture 8 | Languages Across the Lifespan
+
+How do I maintain (or regain) the languages I languages I learned?
+
+### Language forgetting
+- Language attrition?
+- Language Loss?
+- Language access/retrieval failure?
+- or incomplete acquisition?
+
+
+
+### Indicators of (beginning) language Attrition
+- Hesitant language production
+- Extended search for words
+- Frequent borrowing, interference
+- Pronunciation increasingly affected by the other languages
+- 'Odd' syntactic structures
+- Difficulty writing
+- Productive skills are affected more than receptive skills.
+
+
+
+### Consequences of language attrition
+- Being conscious about the 'lost' language
+- Feeling guilt or regret
+- Nobody is to blame
+
+
+
+### Factors Counteracting Forgetting
+- Retention through repetition/review
+- Language need
+- Usage frequency
+- Interaction
+- A certain threshold level of achieved proficieny (stability)
+	- Young children are especially vulnerable to language attrition
+	- Example: Adopted children
+	- Peer pressure to adapt/not being different
+
+
+### Vulnerability to Attrition
+- You children (during the first decade of life) are particularly vulnerable to L1 attrition
+- The younger children are when they are placed in an L2-dominant/only environment, the more rapidly and completely likely they are likely to lose L1 skills
+- However, there are many examples of successful L1 maintenance/use.
+
+
+### Tip-of-the-tongue state (TOT)
+- A temporary word retrieval failure in which the speaker is certain that s/he knows the target word, and often has access to partial target information and other words related to it
+- They can occur more frequently in bilingual speakers compared to monolingual speakers.
+- Due to lofer frequency of usage of each language
+- Indicators of L1 attrition in the lexical domain
+- We tracked TOTs experienced and recorded by Ecke over a period of ten years while living in the US and Mexico.
+
+
+
+### Mini Exercise
+1. Cotton (immediately
+2. Mercury (immediately)
+3. Symbiotic (immediately)
+4. Narcissism (Immediately)
+5. ~~Congress (Immediately)~~ Summit 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
