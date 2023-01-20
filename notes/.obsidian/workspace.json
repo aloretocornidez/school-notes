@@ -1,43 +1,43 @@
 {
   "main": {
-    "id": "3ab14d72ed67dd7f",
+    "id": "7f7105849fadf938",
     "type": "split",
     "children": [
       {
-        "id": "da9c5ceb6cf464cf",
+        "id": "2f63067507e333f4",
         "type": "tabs",
         "children": [
           {
-            "id": "bb2e0ffa60dad976",
+            "id": "20f23903201a64ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
+                "file": "sie-265-engineering-management/lecture-01-20-2023.md",
                 "mode": "source",
                 "source": true
               }
             },
-            "group": "92f9967b03c86cf8"
+            "group": "2454b968c1678512"
           }
         ]
       },
       {
-        "id": "e3d69983ebaa6b43",
+        "id": "96180f08e238c9f8",
         "type": "tabs",
         "children": [
           {
-            "id": "69bf8ab1a2ee97ca",
+            "id": "ff6544317ee93da4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
+                "file": "sie-265-engineering-management/lecture-01-20-2023.md",
                 "mode": "preview",
                 "source": true
               }
             },
-            "group": "92f9967b03c86cf8"
+            "group": "2454b968c1678512"
           }
         ]
       }
@@ -45,15 +45,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ddd604fd5cc66867",
+    "id": "22904d56ce3a8c4b",
     "type": "split",
     "children": [
       {
-        "id": "0a08bdfeff146c41",
+        "id": "f85deb1dd0e4a132",
         "type": "tabs",
         "children": [
           {
-            "id": "6f36bc0f642055b8",
+            "id": "150b41ad82f18443",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -63,7 +63,7 @@
             }
           },
           {
-            "id": "1748b7a60fdea92a",
+            "id": "e0ce95405003383b",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -78,7 +78,7 @@
             }
           },
           {
-            "id": "da12a489e4586c12",
+            "id": "39768047675d08cc",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -89,24 +89,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 410.5026054382324,
+    "width": 300,
     "collapsed": true
   },
   "right": {
-    "id": "61e45d527f48e55e",
+    "id": "63afff1e051254b7",
     "type": "split",
     "children": [
       {
-        "id": "d6c4783b1c82232f",
+        "id": "f7a5f5e06ace446c",
         "type": "tabs",
         "children": [
           {
-            "id": "aee1ad8e107871e2",
+            "id": "375b65158b0e3347",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
+                "file": "sie-265-engineering-management/lecture-01-20-2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,19 +118,19 @@
             }
           },
           {
-            "id": "6c2a5f48b95f6bac",
+            "id": "ee3173498f9bb3ff",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
+                "file": "sie-265-engineering-management/lecture-01-20-2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "0c59c548bfa99e42",
+            "id": "0b5caeef50a51e22",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -141,12 +141,12 @@
             }
           },
           {
-            "id": "2d6289862a7a7d60",
+            "id": "32c765aa8fe4a0ea",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md"
+                "file": "sie-265-engineering-management/lecture-01-20-2023.md"
               }
             }
           }
@@ -167,17 +167,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "69bf8ab1a2ee97ca",
+  "active": "ff6544317ee93da4",
   "lastOpenFiles": [
-    "ece-532-digital-image-analysis/2-D Digital Signal Processing - ece 532.md",
-    "ece-532-digital-image-analysis/2-D Systems - ece 532.md",
-    "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
-    "sie-265-engineering-management/lecture-01-18-2023.md",
-    "sie-265-engineering-management/Lecture Notes - sie 265.md",
-    "ece-569-high-performance-computing/GPU Programming Approach - Module 4.md",
-    "ece-569-high-performance-computing/Data Level Parallelism vs Task Level Parallelism - Module 5.md",
-    "ece-569-high-performance-computing/Computing Trends - Module 2.md",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230117125433.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230117125053.png"
+    "sie-265-engineering-management/Lecture Notes - sie 265.md"
   ]
 }

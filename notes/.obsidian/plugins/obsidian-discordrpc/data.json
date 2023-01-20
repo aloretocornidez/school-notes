@@ -4,7 +4,7 @@
   "showPopups": true,
   "customVaultName": "Final Semester Notes",
   "showFileExtension": true,
-  "useLoadedTime": true,
+  "useLoadedTime": false,
   "connectOnStart": true,
   "autoHideStatusBar": true
 }

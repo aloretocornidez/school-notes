@@ -15,3 +15,5 @@ How do you do that?
 
 
 [[lecture-01-18-2023]]
+
+[[lecture-01-20-2023]]
