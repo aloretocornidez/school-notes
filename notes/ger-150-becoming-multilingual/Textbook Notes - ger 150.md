@@ -2,7 +2,7 @@
 
 This contains useful information that I gather from the readings in [[Lecture Notes - ger 150]].
 
-## Chapter 1 | Bilingual Adults
+# Chapter 1 | Bilingual Adults
 
 **Summary**: This chapter looks at the factors that lead to bilingualism, and at how extensive bilingualism really is.
 
@@ -26,7 +26,7 @@ Languages in the World
 
 Larger Countries are usually more monolingual whereas, smaller countries usually contain more language diversity.
 
-## Chapter 2 | Describing Bilinguals
+# Chapter 2 | Describing Bilinguals
 
 **Summary**: How can we define what constitutes as a bilingual? This question is addressed in this chapter.
 
@@ -40,7 +40,7 @@ Criteria that Constitutes a Bilingual?
 - Leonard Bloomfield states that bilingualism was the native-like control of two languages.
 - Christophe Thiery states: A true bilingual is someone who is taken to be one of themselves by the members of two different linguistic communities at roughly the same social and cultural level.
 
-## Chapter 3 | The Functions of Languages
+# Chapter 3 | The Functions of Languages
 ### What Languages are Used For
 #ComplementarityPrinciple #definition
 Complementarity Principle: 
@@ -72,7 +72,7 @@ Where two languages or two varieties of a language are employed by a group, each
 
 The complementarity principle is certainly one of the most pervasive aspects of individual bilingualism. Bilinguals who speak two  or more languages feel its constant presence in their everyday lives.  They may even comment openly on its different manifestations,  without finding the exact words to account for them.
 
-## Chapter 4 | Language Mode and Language Choice
+# Chapter 4 | Language Mode and Language Choice
 
 Bilinguals must ask themselves two questions:
 1. Language Choice | Which language should they use?
@@ -118,7 +118,7 @@ Reasons for choosing a base language can include:
 'and they are often right.'
 
 
-## Chapter 5 | Code-Switching and Borrowing
+# Chapter 5 | Code-Switching and Borrowing
 Code-switching is the alternate use of two languages, that is, the speaker makes a shift to another language for a word, phrase, or sentence, then reverts back to the base language.
 
 
@@ -155,7 +155,7 @@ When spontaneous borrowings become established borrowings, they have not only go
 The opposition to loans from other languages is not something new, and it has not always worked in the same direction.
 *French used to affect English, now it is the other way around with words like cool, top, etc.*
 
-## Chapter 6 | Speaking and Writing Monolingually
+# Chapter 6 | Speaking and Writing Monolingually
 When communicating with others, bilinguals are constantly asking themselves -- subconsciously most of the time -- which language they should use and whether they can bring in another language.
 
 The answer is apparently quite simple: they will have to use the language the others know, and, if possible, they will not let another language intervene.
@@ -240,7 +240,7 @@ However, if the two languages have more or less equal importance (at least in ev
 
 The bilingual is not the sum of two (or more) complete or incomplete monolinguals; rather, he or she has a unique and specific linguistic configuration. The coexistence and constant interaction of the languages in the bilingual 
 
-## Chapter 7 | Having an Accent in a Language
+# Chapter 7 | Having an Accent in a Language
 *Myth: Real bilinguals have no accent in their different languages.*
 
 Whether one has an accent is mainly dependent on when the language was acquired.
@@ -276,7 +276,7 @@ To Summarize, having an accent does not not make you any less bilingual and rare
 
 
 
-## Chapter 8 | Languages across the Lifespan
+# Chapter 8 | Languages across the Lifespan
 
 Examining how languages wax and wane during a lifetime, which may well include the learning of new languages and the forgetting of older ones, is very much part of understanding the bilingual person.
 

@@ -4,40 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "2f63067507e333f4",
+        "id": "9595be8cb5958c82",
         "type": "tabs",
         "children": [
           {
-            "id": "20f23903201a64ec",
+            "id": "63c9811d32e03c8d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sie-265-engineering-management/lecture-01-20-2023.md",
+                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
                 "mode": "source",
                 "source": true
               }
-            },
-            "group": "2454b968c1678512"
-          }
-        ]
-      },
-      {
-        "id": "96180f08e238c9f8",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "ff6544317ee93da4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sie-265-engineering-management/lecture-01-20-2023.md",
-                "mode": "preview",
-                "source": true
-              }
-            },
-            "group": "2454b968c1678512"
+            }
           }
         ]
       }
@@ -89,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "63afff1e051254b7",
@@ -106,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sie-265-engineering-management/lecture-01-20-2023.md",
+                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sie-265-engineering-management/lecture-01-20-2023.md",
+                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sie-265-engineering-management/lecture-01-20-2023.md"
+                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md"
               }
             }
           }
@@ -167,8 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ff6544317ee93da4",
+  "active": "63c9811d32e03c8d",
   "lastOpenFiles": [
-    "sie-265-engineering-management/Lecture Notes - sie 265.md"
+    "ger-150-becoming-multilingual/Lecture Notes - ger 150.md",
+    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
+    "sie-265-engineering-management/Lecture Notes - sie 265.md",
+    "sie-265-engineering-management/lecture-01-20-2023.md"
   ]
 }

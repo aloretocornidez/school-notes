@@ -72,7 +72,7 @@ Estimates of rates of bilingualism
 # The Functions of Languages, Language Mode, and Choice
 Date: January 13th
 
-## Klingon
+### Klingon
 Is it a natural human language?
 
 Dr. Peter Ecke (Professor) says:
@@ -82,7 +82,7 @@ Dr. Peter Ecke (Professor) says:
 	- a complex system acquired, maintained and used by humans to communicate.
 	- passed onto next generations who develop it further.
 
-## Activity
+### Activity
 Dominant Language
 Letter: F
 Words: 19
@@ -162,7 +162,7 @@ Spanish
 F: 8
 Animals: 10
 
-### Language Mode and Language Switching
+#### Language Mode and Language Switching
 
 
 
@@ -190,7 +190,7 @@ Language Choice is based on:
 	- Commands, requests, apologies, curses etc.
 
 
-## Codeswitching
+### Codeswitching
 - Alternate use of 2 languages
 - Speaker makes complete shift to another language for a word, phrase, or sentence and then reverts back to the base language.
 - Myth: 'Bilinguals codeswitch out of pure laziness'
@@ -199,14 +199,14 @@ Language Choice is based on:
 
 Video | Switching languages, accents, and personalities (Matthew and Luca)
 
-### Inter-sentential code-switching
+**Inter-sentential code-switching**
 Switching after a sentence is completed.
 
-### Intra-sentential code-switching
+**Intra-sentential code-switching**
 Switching within a sentence.
 
 
-## Why do People Code-switch?
+### Why do People Code-switch?
 - Better expressed notions in another language
 	- More precise, more economical
 	- Quoting someone
@@ -216,7 +216,7 @@ Switching within a sentence.
 	- Group identity, inclusion/exclusion of others, emphasis, showing solidarity or gratitude, status.
 
 
-## Borrowing
+### Borrowing
 - Integration of one language structure into another
 - Borrowed words can become a loanword
 	- If integrated/acepted in the other language
@@ -227,7 +227,7 @@ Switching within a sentence.
 			- What does the German word Handy mean?
 				- Cellphone
 
-## Interference
+### Interference
 *When my Spanish interferes with my English or vice-versa*
 - Influence of the deactivated, non-intended language on the target language
 	- Phonological level (pronunciation, accent)
@@ -241,7 +241,7 @@ Switching within a sentence.
 
 
 
-### Which language influences the other?
+**Which language influences the other?**
 *Direction of cross-linguistic influence (CLI)*
 - Mostly from dominant language to weaker languages (L1 to L2)
 - Bidirectional transfer if both languages are equally strong
@@ -251,7 +251,7 @@ Switching within a sentence.
 	- Foreign language status
 	- Proficiency level.
 
-### Practical Implication of Multiple Language Use and Codeswitching
+**Practical Implication of Multiple Language Use and Codeswitching**
 Codeswitching | Siri vs Google Assistant
 
 
@@ -274,7 +274,7 @@ Many people recognize that accents may be present in L1s.
 
 We all have an accent, even in our first language.
 
-## Reasons for having an Accent?
+### Reasons for having an Accent?
 - Maturational constraints on language learning
 	- Up to the beginning of puberty
 - L1 influence on L2
@@ -284,7 +284,7 @@ We all have an accent, even in our first language.
 
 
 
-## Consequences of Having an Accent
+### Consequences of Having an Accent
 - Certain accents may be stigmatized
 - Other accents may elevate the status of a person
 - Mark you as a member of the group you belong to
