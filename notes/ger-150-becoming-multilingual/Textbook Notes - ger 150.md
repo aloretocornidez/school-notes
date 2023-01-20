@@ -318,6 +318,66 @@ As the years move on, bilinguals sometimes ask themselves whaty the status ofthe
 
 
 
+# Chapter 9 | Attitudes and Feelings about Bilingualism
+
+### How Bilinguals View the Advantages of Bilingualism
+
+- Bilingualism allows you to interact with many different people, it is also true that if you do not sufficiently know a language, communication can be difficult.
+- Knowing several languages helps you learn other languages.
+- Bilingualism also seems to encourage divergent thinking.
+>Bilinguals were superior in divergent thinking tasks that require the ability to simultaneously activate and process multiple unrelated concepts from distant categories... the one area in which they behaved identically to monolinguals was originality, that is, the ability to produce uncommon ideas or ideas that are totally new or unique.
+
+- Bilingualism may lead to more job opportunities and greater social mobility.
+- Allows one to help others
+- Creates a bond with other bilinguals. 
+
+### How Bilinguals View the Inconveniences of Bilingualism
+The disadvantages are less numerous than the advantages (according to many bilinguals)
+- Bilinguals who do not know their language well report that they get tired and frustrated of having to use it and they invariable make mistakes when doing so.
+- Bilinguals are concerned about the effects of their stronger language on a weaker one. 
+- Switching to the languages that are required in that environment can be cumbersome, such as speaking publicly in the weaker language)
+- Bilinguals are often asked to be interpreters or translators.
+- Some bilinguals who are also bicultural do not feel they belong to any cultural group. They feel estranged from their cultures, particularly at turning points in their lives.
+
+### Bilingualism as Seen by Monolinguals
+Attitudes of monolinguals on bilinguals can range form very positive to very negative.
+
+
+
+
+# Chapter 10 | Bilinguals Who Are Also Bicultural
+*Myth: Bilinguals are also bicultural*
+
+### Describing Bicultural people.
+1. They take part, to varying degrees, in the life of two or more cultures.
+2. The adapt, at least in part, their attitudes, behavior, values, and languages to their cultures.
+3. The combine and blend aspects of the cultures involved.
+	1. An example would be facial expressions and body language.
+
+
+![[Pasted image 20230120112949.png]]
+
+### Acting Biculturaly
+When a bilingual interacts with monolinguals, many times, only one culture is shown.
+
+When a bilingual is interacting with another bilingual and they have a shared culture, many times, a base culture is shown. 
+
+
+
+### The Bilingual's Identity
+Their dilemma is that monocultural members of their different cultures want to know if they are members of culture A or culture B, or of a new culture, when biculturals just want to be accepted -- consciously or unconsciously -- for who they are: members of two or more cultures.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
