@@ -4,42 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "c5d7c652b7fb4587",
+        "id": "d2c8f798426c3f55",
         "type": "tabs",
-        "dimension": 54.8689138576779,
         "children": [
           {
-            "id": "c5b926f8784c3981",
+            "id": "fa89e74df7fd2655",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sie-265-engineering-management/the-time-value-of-money.md",
+                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
                 "mode": "source",
                 "source": true
               }
-            },
-            "group": "d483205750a43b4e"
-          }
-        ]
-      },
-      {
-        "id": "ead4e6f1c1890c2d",
-        "type": "tabs",
-        "dimension": 45.1310861423221,
-        "children": [
-          {
-            "id": "b21cb0a239f68719",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sie-265-engineering-management/the-time-value-of-money.md",
-                "mode": "preview",
-                "source": true
-              }
-            },
-            "group": "d483205750a43b4e"
+            }
           }
         ]
       }
@@ -108,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sie-265-engineering-management/the-time-value-of-money.md",
+                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sie-265-engineering-management/the-time-value-of-money.md",
+                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sie-265-engineering-management/the-time-value-of-money.md"
+                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md"
               }
             }
           }
@@ -169,13 +147,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c5b926f8784c3981",
+  "active": "fa89e74df7fd2655",
   "lastOpenFiles": [
-    "sie-265-engineering-management/Lecture Notes - sie 265.md",
-    "sie-265-engineering-management/attachments/Pasted image 20230123090915.png",
-    "sie-265-engineering-management/the-time-value-of-money.md",
-    "sie-265-engineering-management/lecture-01-23-2023.md",
+    "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
     "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
-    "ger-150-becoming-multilingual/Lecture Notes - ger 150.md"
+    "ece-569-high-performance-computing/Notes - ece 569.md",
+    "ece-569-high-performance-computing/Lecture 1 - ece 569.md",
+    "ece-569-high-performance-computing/GPU Programming Approach - Module 4.md",
+    "ece-569-high-performance-computing/Data Level Parallelism vs Task Level Parallelism - Module 5.md",
+    "ece-569-high-performance-computing/Computing Trends - Module 2.md",
+    "sie-265-engineering-management/the-time-value-of-money.md",
+    "sie-265-engineering-management/Lecture Notes - sie 265.md",
+    "sie-265-engineering-management/attachments/Pasted image 20230123090915.png"
   ]
 }

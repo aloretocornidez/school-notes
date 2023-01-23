@@ -368,6 +368,35 @@ When a bilingual is interacting with another bilingual and they have a shared cu
 Their dilemma is that monocultural members of their different cultures want to know if they are members of culture A or culture B, or of a new culture, when biculturals just want to be accepted -- consciously or unconsciously -- for who they are: members of two or more cultures.
 
 
+# Chapter 11 | Personality, Thinking and Dreaming, and Emotions in Bilinguals
+
+### The Personality of Bilinguals
+
+*Myth: Bilinguals have double or split personalities.*
+
+**Thematic Apperception Test (TAT) Cards Experiment**
+- Cards that show ambiguous content.
+- Two Sessions, six-weeks apart, two languages.
+- Language Affected three variables:
+	- Verbal Aggression towards peers
+	- Withdrawal-autonomy
+	- Achievement
+
+> I don't really know if my personality changes when I change language. The main reason for this uncertainty is that I use the two languages in different situations and therefore would act differently even if it was in the same language.
+
+In other words, it is the environment and the interlocutors together that cause bi-cultural bilinguals to change attitudes, feelings and behaviors (along with language)-and not their language as such.
+
+### Thinking and Dreaming in Bilinguals
+
+- When bilinguals were surveyed, they answered that they think in both languages (70% said this)
+- They may have taken their 'inner speech' and 'internal monologues' into consideration when giving their answer.
+
+Do thoughts have a language? (mentalese) Some people say that thoughts are visual-spatial before they are translated to a language. There are many opponents to this (What if you are told to think of an object, obviously you must think about a banana after being told to think about a banana).
+
+
+### Emotions in Bilinguals
+*Myth: Bilinguals express their emotions in their first language, which is usually the language of their parents.*
+
 
 
 
