@@ -23,4 +23,7 @@ How do you do that?
 [[lecture-01-18-2023]]
 
 Chapter 4
-[[lecture-01-20-2023]]
+[[the-time-value-of-money]]
+
+Chapter 5
+[[lecture-01-23-2023]]

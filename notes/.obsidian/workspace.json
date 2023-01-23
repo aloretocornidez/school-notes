@@ -4,40 +4,42 @@
     "type": "split",
     "children": [
       {
-        "id": "9595be8cb5958c82",
+        "id": "c5d7c652b7fb4587",
         "type": "tabs",
+        "dimension": 54.8689138576779,
         "children": [
           {
-            "id": "63c9811d32e03c8d",
+            "id": "c5b926f8784c3981",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
+                "file": "sie-265-engineering-management/the-time-value-of-money.md",
                 "mode": "source",
                 "source": true
               }
             },
-            "group": "2f84fbc66e9a8128"
+            "group": "d483205750a43b4e"
           }
         ]
       },
       {
-        "id": "4c37111270d606f7",
+        "id": "ead4e6f1c1890c2d",
         "type": "tabs",
+        "dimension": 45.1310861423221,
         "children": [
           {
-            "id": "373170a27af56ca2",
+            "id": "b21cb0a239f68719",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
+                "file": "sie-265-engineering-management/the-time-value-of-money.md",
                 "mode": "preview",
                 "source": true
               }
             },
-            "group": "2f84fbc66e9a8128"
+            "group": "d483205750a43b4e"
           }
         ]
       }
@@ -106,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
+                "file": "sie-265-engineering-management/the-time-value-of-money.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
+                "file": "sie-265-engineering-management/the-time-value-of-money.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md"
+                "file": "sie-265-engineering-management/the-time-value-of-money.md"
               }
             }
           }
@@ -167,11 +169,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "63c9811d32e03c8d",
+  "active": "c5b926f8784c3981",
   "lastOpenFiles": [
-    "ger-150-becoming-multilingual/Lecture Notes - ger 150.md",
-    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
     "sie-265-engineering-management/Lecture Notes - sie 265.md",
-    "sie-265-engineering-management/lecture-01-20-2023.md"
+    "sie-265-engineering-management/attachments/Pasted image 20230123090915.png",
+    "sie-265-engineering-management/the-time-value-of-money.md",
+    "sie-265-engineering-management/lecture-01-23-2023.md",
+    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
+    "ger-150-becoming-multilingual/Lecture Notes - ger 150.md"
   ]
 }
