@@ -18,3 +18,5 @@ Before Class:
 [[GPU Programming Approach - Module 4]]
 [[Data Level Parallelism vs Task Level Parallelism - Module 5]]
 
+[[lecture-01-24-2023]]
+

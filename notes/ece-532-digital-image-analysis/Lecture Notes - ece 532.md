@@ -307,7 +307,7 @@ We can describe four basic types of frequency-selective filters:
 
 
 # Image Resolution
-### Spatial Resolution
+## Spatial Resolution
 - Image resolution refers to the amount of detail that can be resolved.
 - One way to measure spatial resolution in a printed image is by the maximum number of line pairs (e.g., a black adjacent to a white line) per mm that can be distinguished.
 - A resolution target may be used for measuring spatial resolution: 
@@ -320,10 +320,7 @@ We can describe four basic types of frequency-selective filters:
 
 ![[Pasted image 20230119132330.png]]
 
-
-
 Down-sampling reduces spatial resolution.
-
 ![[Pasted image 20230119132431.png]]
 
 
@@ -371,6 +368,146 @@ An image with 1 bpp is referred to as a bi-level image, bitmap, or binary image.
 - Another method is to store all the red values, followed by all the green values, followed by all the blue values: RRRRRRRR... GGGGGGGG... BBBBBBBB...
 
 ![[Pasted image 20230119134055.png]]
+
+### Color Mapped Image
+- An alternative color image format is to use a look-up table (color map) to store the color values.
+- For example, in a 3-bit color mapped image, there are 8 possible colors that can be represented.
+- Each element of the array of pixel values is a 3-bit integer index value that indicates which entry in the color map contains the RGB triplet for that pixel.
+
+%%24-bit RBG image 3-bit color-mapped image%%
+![[Pasted image 20230124124300.png]]
+
+%%This is the Color Map %%
+![[Pasted image 20230124124314.png]]
+
+### Color Coordinate Systems
+- sRGB is a standard RGB color space that was developed in 1996, it is used in many device today.
+- When using non-negative values of R, G, and B, the color gamut (the range of colors that can be represented) is limited.
+- Some color spaces represent color in terms of perceptual quantities:
+	- HSL (Hue, Saturation, Lightness)
+	- HSV (Hue, Saturation, Value)
+- Color spaces with an approximately uniform distance metric:
+	- CIELAB (lightness L* and chromatic components a* and b*)
+	- CIELUV (lightness L* and chromatic components u* and v*)
+- Updated color appearance model with improved properties:
+	- CIECAM02 (lightness J, colorfulness M, hue h)
+
+
+### Image File Formats
+**Tagged Image File Format (TIFF)**
+- No compression or a form of run-length encoding (RLE).
+- Pixel data is stored in a sequence of 'strips' to facilitate image editing.
+
+
+**Graphics Interchange Format (GIF)**
+- GIF suppors image sequences, which can be configured for playback as a video clip.
+- Uses Lempel-Ziv-Welch (LZW) compresssion, which was patented in 1985. This led to the development of PNG as an alternative file format.
+
+**Portable Network Graphics (PNG)**
+- Released in 1996, is now owned by the Wolrd Wide Web Consortium (W3C).
+- Cuntomizable through the use of ancillary chunks.
+- A predictor model c(called a 'filter') is used, which predicts the value of each pixel base don the values of previous neighboring pixels.
+- Supports:
+	- Palette-Color (1, 2, 3, or 8 bpp)
+	- Palette-color with transparency
+	- Grayscale (1, 2, 3, 4, 8, or 16 bpp)
+	- Grayscale with transparency
+	- RGB (24 bpp or 48 bpp)
+	- RGB with transparency
+	- RGB with alpha channel
+
+Sample Hex Dump  for a PNG
+```
+0000000 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52  >.PNG........IHDR<
+0000020 00 00 01 7e 00 00 01 be 08 02 00 00 00 1b 50 f8  >...~..........P.<
+0000040 1f 00 00 00 09 70 48 59 73 00 00 0e c4 00 00 0e  >.....pHYs.......<
+0000060 c4 01 95 2b 0e 1b 00 00 20 00 49 44 41 54 78 9c  >...+.... .IDATx.<
+0000100 ec dd 7d 5c 54 55 e2 3f f0 0f 08 73 47 61 66 90  >..}\TU.?...sGaf.<
+0000120 87 19 43 79 30 40 70 01 d1 00 35 48 13 ac 04 b2  >..Cy0@p...5H....<
+```
+
+
+
+# Programming for Image Processing
+
+### Negative Image
+A grayscale image with 8 bits per pixel (bpp) is represented by a 2D array of pixel values with values ranging from 0 to 255. For example, we may define gray level 0 to be black and gray level 255 to be white.
+
+
+If 𝑥(𝑟, 𝑐) is an input 8-bpp image, then the negative image is defined by
+$$𝑦(𝑟,𝑐) = 255 − x(r,c)$$
+This causes bright pixels to become dark, and vice versa.
+
+```matlab
+function y = negative(x) 
+
+[nrows,ncols] = size(x);  
+y = zeros(nrows,ncols,'uint8');  
+for r = 1:nrows  
+	for c = 1:ncols  
+		y(r,c) = uint8(255) – x(r,c);  
+	end  
+end
+return
+```
+
+**Faster MATLAB Implementation**
+
+```matlab
+function y = negative2(x)  
+%NEGATIVE2 Compute the negative of an 8-bit grayscale image  
+
+y = uint8(255)-x;  
+  
+return
+```
+This implementation takes advantage of the array calculations in Matlab.
+
+
+### Image Blur by Local Average Filtering
+The simplest way to blur an image is using a local average filter, which is a crude lowpass filter. For an N-by-N local average filter, the value of each output pixel is defined as the mean value of an N-by-N neighborhood of pixel values centered at the corresponding position in the input image. For a 3-by-3 local average filter, the output pixel value is defined by
+$$y(r,c) = mean\{ x(r-1, c-1), x(r-1, c),
+x(r-1, c+1), c(r+1, c-1), x(r+1, c), x(r+1, c+1)\}$$
+
+**Image Padding**
+A common solution is to extend the input image so that the neighboring pixel values needed during the filtering calculation do exist.
+
+__Zero Padding__
+The simplest method is zero padding, where we extend the image array with zeros. Let the input image have size $nrows$ by $ncols$. 
+
+
+%%Zero Padded Array%%
+![[Pasted image 20230124133312.png]]
+
+__Non Zero Padding also exists__
+
+![[Pasted image 20230124133301.png]]
+
+__Pixel Replication__
+
+![[Pasted image 20230124133341.png]]
+
+__Symmetric Padding__
+![[Pasted image 20230124133442.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
