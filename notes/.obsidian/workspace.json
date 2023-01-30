@@ -5,6 +5,7 @@
     "children": [
       {
         "id": "b2edd2e6a466921d",
+        "id": "b2edd2e6a466921d",
         "type": "tabs",
         "children": [
           {
@@ -189,12 +190,6 @@
 <<<<<<< HEAD
   "active": "f742d8c43b38053f",
   "lastOpenFiles": [
-    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
-    "sie-265-engineering-management/Lecture Notes - sie 265.md",
-    "sie-265-engineering-management/lecture-01-18-2023.md",
-    "sie-265-engineering-management/the-time-value-of-money.md",
-    "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
-    "ece-569-high-performance-computing/lecture-01-24-2023.md",
     "ece-569-high-performance-computing/Notes - ece 569.md",
     "ece-569-high-performance-computing/Lecture 1 - ece 569.md",
     "ece-569-high-performance-computing/GPU Programming Approach - Module 4.md",
