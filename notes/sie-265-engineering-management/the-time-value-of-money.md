@@ -24,7 +24,7 @@ For $1,000 loaned for three years at an interest rate of 10% compounded each per
 
 
 ### Computation of Simple Interest
-Total interest earned  or payed may be computed using the formula:
+Total interest earned or payed may be computed using the #formula:
 $$I = PNi$$
 where:
 
@@ -96,9 +96,10 @@ An investment of $10,000 can be made that will produce uniform annual revenue of
 
 ### Relating Present and Future Equivalent Values of Single Cash Flows
 
+**Compound Interest**
 
 - We can apply compound interest formulas to 'move' cash flows along the cash flow diagram
-- Using standard notation, we can find that a present among $P$, can grow into a future amount, $F$, in $N$ time periods at an interest rate $i$ according to the formula below
+- Using standard notation, we can find that a present among $P$, can grow into a future amount, $F$, in $N$ time periods at an interest rate $i$ according to the #formula below
 $$F = P(1+i)^N$$
 
 - Also, $(1+i)^N = (F/P, i, N)$ is known as the *single payment compound amount factor*. It is read as, *'F given P at i% interest per period for N interest periods.'*
@@ -173,31 +174,52 @@ F = 512000
 
 
 
+### Extra In-Class Example
+Date: January 27th, 2022
+
+**Problem Statement:** Your company has a $100,000 loan for a new security system it just bought. The annual payment is $8,800 and the interest rate is 8% per year for 30 years. Your company decides that it can afford to pay $10,000 per year.
+1. After how many payments (year) will the loan be paid off?
+2. How much will your company save in interest after paying the loan this way?
+
+**Part 1**
+$P = \$100,000$, $A = \$8,800$, $N_1 = 30\ years$, $i = 8\%$, $A_2 = \$10,000$
+
+$N_2 = NPER(rate, Amt, Pv) = NPER(8\%, -\$10,000, \$100,000) = 21 Years$
+
+The loan will take 10 years to pay off.
+
+**Part 2**
+- Accumulated interest from annual $8,800 payments for 30 years:
+
+$$I_1 = \$8,800 (30) - \$ 100,000 = \$ 166,400$$
+
+- Accumulated interest from annual $10,000 payments for 21 years:
+
+$$I_2 = \$10,000 (21) - \$ 100,000 = \$ 110,000$$
+
+Savings in Interest: 
+
+$$I_2 - I_1 = \$56,400$$
+
+You save $56,400 in interest by paying a little extra for loans.
 
 
 
+## Section 4.9 - 4.11
 
+### Deferred Annuity (Uniform Series)
+**Problem Statement**: Irene just purchased a new sports car and wants to also set aside cash for future maintenance expenses. The car has a bumper-to-bumper warranty for the first five years. Irene estimates that she will need approximately $2,000 per year in maintenance expenses for years 6-10, at which time she will sell the vehicle. **How much money should Irene deposit into an account today, at 8% per year, so that she will have sufficient funds in that account to cover her projected maintenance expenses?**
 
+- Deferred annuities are Uniform series that do not begin until some time in the future.
+- If the annuity is deferred $J$ periods, then the first payment (cash flow) begins at the end of period $J+1$.
+- Finding the present value of a Deferred Annuity is a two-step processes:
+1. Use $P/A, i\%, N-J)$ to find the value of the deferred annuity at the end of period $J$ (where there are N-J cash flows in the annuity).
+2. Use $(P/F, i\%, J)$ to find the value of the deferred annuity at time zero.
+$$P_0 = A(P/A, i\%, N-J)(P/F, i\%, J)$$
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### In-Class Assignment
+Example 1 Question 1.
+Leon and Heidi decided to invest $3,000 annually for only the first eight years of their marriage. The first payment was made at age 25. If the annual interest rate is 10%, how much accumulated interest and principal will they have at age 65?
 
 
 
