@@ -1,6 +1,6 @@
 # What is a Digital Image?
 A digital image is composed of pixels having discrete values that are provided by a 2D function indexed by a pair of discrete spatial coordinates; those values, when displayed, provide a visual representation of something.
-- A digital image is usually stored as an array of pixel  values
+- A digital image is usually stored as an array of pixel values
 - A pixel may be a vector of values (e.g., an RGB image).
 - A pixel value may include a non-visual quantity (e.g., a range image)
 - An animated 'image' is a sequence of digital images that depicts motion when displayed in rapid succession. Thus, we consider it to be a special case of video.
@@ -254,7 +254,7 @@ $$x*(h_1,h_2) = (x*h_1) + (x*h_2)$$
 
 # Fourier Transform
 
-### Discrete-Space  Fourier Transform
+### Discrete-Space Fourier Transform
 We can represent an arbitrary signal as a linear combination of complex exponential signals.
 Definition: The discrete-space 2D Fourier Transform is
 $$X(\omega_1, \omega_2) = \mathfrak{F}\{ x(n_1, n_2) \} = $$
@@ -416,7 +416,7 @@ An image with 1 bpp is referred to as a bi-level image, bitmap, or binary image.
 	- RGB with transparency
 	- RGB with alpha channel
 
-Sample Hex Dump  for a PNG
+Sample Hex Dump for a PNG
 ```
 0000000 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52  >.PNG........IHDR<
 0000020 00 00 01 7e 00 00 01 be 08 02 00 00 00 1b 50 f8  >...~..........P.<
@@ -428,7 +428,7 @@ Sample Hex Dump  for a PNG
 
 
 
-# Programming for Image Processing
+# Programming for Image Processing | Module 3
 
 ### Negative Image
 A grayscale image with 8 bits per pixel (bpp) is represented by a 2D array of pixel values with values ranging from 0 to 255. For example, we may define gray level 0 to be black and gray level 255 to be white.
@@ -489,6 +489,89 @@ __Pixel Replication__
 
 __Symmetric Padding__
 ![[Pasted image 20230124133442.png]]
+
+
+
+
+### Dynamic 2D Array Allocation in C
+
+Static array allocation
+- Allocated on the stack which can be limited on some systems.
+
+Variable Length Arrays
+- Apparently very stupid and slow according to Linux Torvalds.
+
+Pseudo-2D Array Using a Vector of Row Pointers
+
+![[Pasted image 20230126130901.png]]
+- By using `malloc()` to allocate memory for the pseudo-2D array, it will be allocated on the heap, so it can be used for a large array without risk of stack overflow.
+- This example uses `uint8` as the data type, but any data type may be used.
+- Here we allocate a 1D array for the row pointers and another 1D array for the data.
+- This function uses the `x[]` array as an auxiliary array that holds addresses to the data array, `r[]`
+```c
+uint8_t **x, *data;  
+/* allocate a vector of row pointers */  
+x = (uint8_t **)malloc(nrows*sizeof(void *));  
+/* allocate a chunk of memory to hold the array data */  
+data = (uint8_t *)malloc(nrows*ncols);  
+/* initialize row pointers to point to the start of each row */  
+for(r = 0; r < nrows; r++)  
+x[r] = data + r*ncols;  
+/* now we can easily access an array element */  
+x[5][7] = 1;
+```
+
+### Better Implementation of a Pseudo Array
+- It is more efficient to use a single `malloc` call to allocate a chunk of memory large enough to hold the row pointers and the data.
+![[Pasted image 20230126131818.png]]
+
+```
+x = (uint8_t **)
+malloc(nrows * sizeof(void*) + nrows*ncols);
+```
+
+- The row pointers will be stared at the beginning of the memory chunk and they will be initialized to the proper values.
+- we must be careful about using such arrays. Memory allocated by `malloc` is not automatically freed after exiting a function, so we must explicitly call `free( )` for each chunk that was allocated, passing the corresponding pointer as the argument.
+
+
+# Edge Detection | Module 4
+
+### What is a Physical Edge?
+- A digital image is usually a projection of a 3D scene onto a 3D sensor array. So, let's begin by considering what is a physical edge in a 3D scene.
+- How should we define a physical edge in the 3D world?
+- Consider some special cases
+	- Change in texture of material surfaces?
+	- Change in color of material surfaces?
+	- Boundary between black and white zebra stripes?
+	- Foreground object partially occluding a background object?
+	- The faces of a cube?
+	- A red ball in front of a blue sky?
+- Are edges the same as boundaries?
+- Here are some examples of physical edges:
+	- Points where there is a significant change in the local orientation of a physical surface (i.e., a significant change in the angle of the surface normal vector).
+	- Points where there is a significant change in the tactile properties of a physical surface (e.g., smooth/rough, tile/carpet, wood/stone)
+
+
+### What is an Edge in an Image?
+
+- It depends on the application.
+- Edge detection usually involves finding pixels in a 2D image where there is a significant change in intensity or another attribute (e.g., color or texture).
+- An intensity edge in a 2D image sometimes corresponds to a physical edge in the 3D scene, but not always.
+	- We may have edges in the image due to shadows that don't correspond to physical edges.
+	- Points where there is a change in color may not correspond to physical edges if we require a physical edge to be something one can fell.
+	- Diffuse, uniform lighting may result in a low-contrast image where there is no intensity edge at an object boundary.
+
+### 1D Continuous-Amplitude Step Edge
+
+![[Pasted image 20230126134151.png]]
+
+- To detect edges, we have several options:
+	- Significant changes in $f(x)$. But how significant?
+	- Local extrema of $f'(x)$
+	- Zero-crossings of $f''(x)$
+- When using this technique, it is important to watch out for noise.
+
+
 
 
 
