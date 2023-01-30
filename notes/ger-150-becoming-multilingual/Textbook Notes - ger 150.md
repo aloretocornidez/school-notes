@@ -400,6 +400,60 @@ Do thoughts have a language? (mentalese) Some people say that thoughts are visua
 
 
 
+# Chapter 12 | Bilingual Writers
+
+Many writers decide to stick to one language for writing, usually their first language.
+
+Writing is probably one of the most difficult literary skills that a person can acquire.
+
+1. One reason for writing in multiple languages is to be able to reach a wider audience.
+2. Authors are usually not satisfied with the job that external translators do when translating their works.
+3. A third reason is because of the complementarity principle. Some words to describe things may not be the best word to use in the context.
+
+
+# Chapter 13 | Special Bilinguals
+
+### Second-Language Teachers
+There are two kinds of second-language teachers
+1. Those who teach the country's language to foreigners
+2. Those who teach a language that is not the country's main language.
+
+Some do not use the language they teach outside the classroom very often.
+
+They have insights into the linguistics of the language that normal language users do not have. (How many speakers of English can explain, in a pedagogical way, the difference between the prepositions “for,” “since,” and “ago”?)
+
+Language teachers are in bilingual mode when teaching
+- They must have another language available whenever a student asks a question that contains code-switches
+- The teacher must not rely code-switching themselves.
+
+Teachers rarely believe they themselves are bilingual because they often have a strict view on what it means to be bilingual.
+
+They are usually true admirers of the second language they teach.
+
+
+### Translators and Interpreters
+
+Unlike regular bilinguals, translators and interpreters must have a complete set of translation equivalents in the other language.
+
+They must also know the two languages fluently (at all linguistic levels)
+
+The must also have a good knowledge of the cultures concerned.
+
+Translators often indicate:
+- Which languages they can translate from (source languages)
+- Which languages they can translate to (target languages)
+
+Translation is a special bilingual skill: You try to express in one language, in as faithful a way as possible, the meaning and the style of a text in another language.
+
+This means fully understanding the original text in the source language, and having the necessary transfer skills, as well as the linguistic and cultural skills in the target language
+
+There is little room for for a translator's own intuition or creativity. He or she must follow the original text as exactly as possible and render it in correct prose in the target language.
+
+
+### Secret Agents
+
+
+
 
 
 

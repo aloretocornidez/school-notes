@@ -8,36 +8,36 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fa89e74df7fd2655",
+            "id": "f742d8c43b38053f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
+                "file": "sie-265-engineering-management/homework/In-Class Assignments.md",
                 "mode": "source",
                 "source": true
               }
             },
-            "group": "aa9cb93457f57a1d"
+            "group": "e2466ef1a278d8e3"
           }
         ]
       },
       {
-        "id": "2951d1455376c0b4",
+        "id": "2350699c993ca585",
         "type": "tabs",
         "children": [
           {
-            "id": "ea646199c4d97943",
+            "id": "aae473a31c55c9e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
+                "file": "sie-265-engineering-management/homework/In-Class Assignments.md",
                 "mode": "preview",
                 "source": true
               }
             },
-            "group": "aa9cb93457f57a1d"
+            "group": "e2466ef1a278d8e3"
           }
         ]
       }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
+                "file": "sie-265-engineering-management/homework/In-Class Assignments.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
+                "file": "sie-265-engineering-management/homework/In-Class Assignments.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md"
+                "file": "sie-265-engineering-management/homework/In-Class Assignments.md"
               }
             }
           }
@@ -167,17 +167,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ea646199c4d97943",
+  "active": "f742d8c43b38053f",
   "lastOpenFiles": [
+    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
+    "sie-265-engineering-management/Lecture Notes - sie 265.md",
+    "sie-265-engineering-management/lecture-01-18-2023.md",
+    "sie-265-engineering-management/the-time-value-of-money.md",
+    "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
     "ece-569-high-performance-computing/lecture-01-24-2023.md",
     "ece-569-high-performance-computing/Notes - ece 569.md",
-    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
-    "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
     "ece-569-high-performance-computing/Lecture 1 - ece 569.md",
     "ece-569-high-performance-computing/GPU Programming Approach - Module 4.md",
-    "ece-569-high-performance-computing/Data Level Parallelism vs Task Level Parallelism - Module 5.md",
-    "ece-569-high-performance-computing/Computing Trends - Module 2.md",
-    "sie-265-engineering-management/the-time-value-of-money.md",
-    "sie-265-engineering-management/Lecture Notes - sie 265.md"
+    "ece-569-high-performance-computing/Data Level Parallelism vs Task Level Parallelism - Module 5.md"
   ]
 }
