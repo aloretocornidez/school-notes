@@ -1,4 +1,4 @@
-# January 27
+January 27
 
 ### Question 1
 

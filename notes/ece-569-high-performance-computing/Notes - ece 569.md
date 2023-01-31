@@ -267,17 +267,80 @@ In a GPU it is important to utilize memory bandwidth, so allowing thread zero to
 
 
 
+# Thread Organization
+
+### Addition of Square Matrices
+
+```
+// C = A + B
+// Workload: each thread produces one output matrix
+
+__global__ void kernel_1t1e(float *A, float *B, float *C, unsigned long WIDTH)
+```
+
+
+Suppose you want to add two matrices (we'll use square matrices for simplicity).
+
+Row is the y direction and x is the horizontal direction.
+
+```
+row = BLockIdx.y * BlockDim.y + threadIdx.y;
+col = BlockIdx.x * BlockDim.x + threadIdx.x;
+
+idx = row * width + col;
+
+C[idx] = A[idx] + B[idx];
+```
+
+This implementation does not include boundary checking, so we must include it:
+
+```
+if(row < width && column < width)
+```
+
+If this condition is satisfied, then get the position of the dot and compute the output.
 
 
 
+**1 Row per Thread**
+Now let's make an implementation where each thread produces 1 output row.
+Only use threads in the horizontal direction
+Thread 0 generates row 0, thread 1 generates row 1, etc.
 
 
+```
+row = DlockIdx.y * BlockDim.y + threadIdx.y
 
 
+if(row < WIDTH)
+{
+	// Now implement the row for the thread.
+	for(i = 0; i < WIDTH; i++)
+	{
+		C[row * width + i] = A[row * width + i] + B[row * width + i]
+	}
+
+}
+```
+
+We must also add a boundary condition to make sure that we stay within the bounds.
+
+This implementation uses less threads than the previous implementation.
 
 
+**One Column Per Thread**
 
 
+```
+col = BlockIdx.x * BlockDim.x + threadIdx.x
+
+for(i = 0; i < WIDTH; i++)
+{
+	C[i * WIDTH + col] = A[i * WIDTH + col] + B[i * WIDTH + col]
+}
+
+
+```
 
 
 

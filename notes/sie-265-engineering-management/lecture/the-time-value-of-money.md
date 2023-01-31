@@ -223,6 +223,63 @@ Leon and Heidi decided to invest $3,000 annually for only the first eight years 
 
 
 
+**Example 3**
+![[Pasted image 20230130090724.png]]
+![[Pasted image 20230130090736.png]]
+
+
+
+$$P_{0}= 3B\left(\frac{P}{F}, 3\%, 1\right)+ 2B \left(\frac{P}{F,}3\%, 2\right)+ 1.25B\left(\frac{P}{A,}3\%, 12\right)\left(\frac{P}{F}, 3\%, 2\right) = \$16.53B $$
+
+
+**Example 4**
+
+John has just graduated from State University. He owes $35,000 in college loans, but he does not have a job yet. The college loan company has agreed to give John a break on a deferred-payment plan that works as follows. John will not have to repay his loan for five years. During this “grace period” the loan obligation will compound at 4% per year. For the next five years, a monthly payment will be required, and the interest rate will be 0.5% per month. What will be John’s monthly payment over the 60-month repayment period?
+
+
+
+## Section 4.11 - 4.12
+
+### Uniform (Arithmetic) Gradient of Cash Flows
+
+- Some problems involve reciepts or expenses that are projected to increase or decrease by a uniform amount each period, thus constituting an arithmetic sequence of cash flows.
+- For example, maintenance costs of a car may increase the longer that you own the vehicle.
+- This situation can be modeled as a *uniform gradient* of cash flows
+
+### Example 4-21
+
+![[Pasted image 20230130092921.png]]
+
+The Annuity begins at \$5,000 and increases by \$1,000 every year.
+
+First step, break it down:
+
+The problem can be broken down into two problems, one with an annuity of a constant \$5,000. And another with a gradient of \$1,000
+
+$$P_{0T} = P_{0A}+ P_{0G}$$
+
+$$= A\left(\frac{P}{A}, 15\%, 4\right)+ G \left(\frac{P}{G}, 15\%, 4\right)$$
+
+$$= 5000(2.8850) + 1000(3.79)$$
+
+
+### Example 4-22
+
+![[Pasted image 20230130093300.png]]
+
+Now the problem starts with 8,000 and now the G is subtraction.
+
+$$P_{0T}= P_{0A}- P_{0G}$$
+
+$$= A\left(\frac{P}{A}, 15\%, 4\right)-G\left(\frac{P}{G}, 15\%, 4\right)$$
+
+$$= 8000(2.8850) - 1000(3.79)$$
+
+
+
+
+
+
 
 
 
