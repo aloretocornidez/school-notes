@@ -577,10 +577,37 @@ malloc(nrows * sizeof(void*) + nrows*ncols);
 
 
 
+### Algorithms for 1D Continuous-Space Edge Detection
 
+Let $f(x)$ represent the intensity values of a 1D continuous-space signal (e.g., one row of a 2D image).
+**Def**: Non-maximum supression (NMS) is the omission of points where $|f'(x)|$ is not a local maximum.
 
+**Algorithm 1**: Edge at $x$ if $|f'(x)|$ is a local maximum and $|f'(x)| \ge threshold$.
+- If we skip the thresholding step, then we get many false edges due to noise.
+- If we skip the NMS step, we get thick edges or stripts.
+- Special Case: local extremum is not a single point.
 
+**Algorithm 2**: Edge is at $x$ if $|f'(x)|\ge threshold$.
 
+### Phantom Edges
+Small perturbations due to noise can cause spurious zero-crossings.
+
+![[Pasted image 20230131124357.png]]
+
+### 2D Continuous-Space Edge Detection
+
+Let $f(x,y)$ represent the intensity values of a 2D continopus-space image.
+
+**Def**: The gradient of $f(x)$ is he vector:
+
+$$\vec{\nabla}f(x,y) = \frac{\partial f(x,y)}{\partial x}\vec {i_x} + \frac{\partial f(x,y)}{\partial y} \vec{i_y}$$
+
+Notes:
+
+![[Pasted image 20230131124706.png]]
+
+### Gradient Vector
+![[Pasted image 20230131124733.png]]
 
 
 
