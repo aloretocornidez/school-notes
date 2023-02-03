@@ -345,6 +345,7 @@ for(i = 0; i < WIDTH; i++)
 
 
 
+# Blurring an Image
 
 
 

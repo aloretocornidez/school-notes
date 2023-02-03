@@ -278,12 +278,58 @@ $$= 8000(2.8850) - 1000(3.79)$$
 
 
 
+## Section 4.14 - 4.15
+
+### Geometric Sequences of Cash Flows
+- Some economic equivalence problems involve projected cash-flow patterns that are changing at an average rate $\bar{f}$, each period.
+- A fixed amount of a commodity that inflates in price at a constant rate each year is a typical situation that can be modeled with a geometric sequences of cash flows (i.e., geometric gradient series).
+
+We can find the present value of a geometric series by using the appropriate formula below:
+If $\bar{f} \neq i$
+$$P = \frac{A_{1} [1-\left(\frac{P}{F}, i\%, N\right)\left(\frac{F}{P}, \bar{f}\%, N\right)}{i - \bar{f}}$$
+
+If $\bar{f} = i$
+$$P = A_{1}N \left(\frac{P}{F}, i\%, 1\right)$$
+
+Where $A_{1}$ is the initial cash flow in the series.
+
+
+### Effective Interest Rate
+- So far, we have always had the compounding period similar to the cash flow periods.
+	- For example, annual payments at an annual interest rate.
+- The current common practice is to quote interest rates at an annual basis followed by the compounding period.
+- Often, the time between successive compounding or the interest period, is less than one year. (e.g., daily, monthly, quarterly)
+- A nominal rate of 12%, compounded monthly means an interest of 1%, $\frac{12\%}{12}$ would accrue each month, and the actual annual rate would be effectively greater than 12%
+- The more frequent the compounding, the greater the effective interest rate.
+
+### Effective and Nominal Rates Relationship
+The relationship between effective interest, $i$, and nominal interest, $r$:
+
+$$i = (1 + \frac{r}{m})^{M}- 1$$
+
+where $M$ is the number of compounding periods per pay-period, for example:
+- If compounding is quarterly and the payments are annual, $M = 4$ and $r = APR$
+- If compounding is monthly and payments are quarterly, $M = 3$ and $r = \frac{APR}{4}$
+
+- Whenever $M = 1$ we have $i = r$
+- Whenever $M > 1$, we have $i > r$
+
+### Effect of Compounding Period
+The 'Effective Interest Rate, i' reflects the compounding effect of the interest earned on interest for one year.
+
+
+### Conclusion by Example
+If the interest rate is 12% compounded monthly and you are considering a 5-year financing/loan plan to be paid back in equal payments $A = P\left(\frac{A}{P}, i\%, N\right)$, then,
+- For monthly payments ore withdrawals (i.e., payment frequency = 12 and compounding frequency per pay-period = 12),
+$$r_{monthly} = i_{monthly} = \frac{r_{annual}}{M}= \frac{12\%}{12}= 1\%\ and\ N = 60\ months$$
+
+- For annual payments or withdrawals (i.e., payment frequency =1 and compounding frequency per pay-period = 12),
+$$r_{annual} = 12\% i_{annual}= \left(\frac{1+0.12}{12}\right)^{12}-1 = 12.68\%\ and\ N = 5\ years$$
 
 
 
-
-
-
+- For semiannual payments or withdrawals (i.e., payment frequency = 2 and compounding frequency per pay-period = 6)
+$$r_{semiannual} = \frac{12\%}{2}= 6\%, i_{semiannual} = \left(\frac{1+0.06}{6}\right)^{6}-1 = 6.15\%\ and\ N = 12\ six-month\ period$$
 
 
 

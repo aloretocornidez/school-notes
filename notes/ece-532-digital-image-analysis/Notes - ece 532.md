@@ -610,7 +610,24 @@ Notes:
 ![[Pasted image 20230131124733.png]]
 
 
+### Directional Derivative
+![[Pasted image 20230202124122.png]]
 
+### Isotropy
+![[Pasted image 20230202124135.png]]
+
+### Approximation of Gradient Magnitude
+![[Pasted image 20230202124151.png]]
+
+
+### 2D Gradient of Discrete-Space Image
+![[Pasted image 20230202124209.png]]
+
+
+
+
+### First-Difference Operator
+![[Pasted image 20230202124225.png]]
 
 
 

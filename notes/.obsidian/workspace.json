@@ -4,40 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "b9035ae15c9ad942",
+        "id": "c532c4c74b1cac78",
         "type": "tabs",
         "children": [
           {
-            "id": "afaffdfa98d7b6be",
+            "id": "2d02c92015fe1220",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
+                "file": "sie-265-engineering-management/lecture/the-time-value-of-money.md",
                 "mode": "source",
                 "source": true
               }
             },
-            "group": "6a8bbcef9792fd42"
+            "group": "8a326e12f9bba49b"
           }
         ]
       },
       {
-        "id": "505dc24e51d421ce",
+        "id": "080b28a7be804468",
         "type": "tabs",
         "children": [
           {
-            "id": "15d73eda8ba62582",
+            "id": "ad08f8f22598266a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
+                "file": "sie-265-engineering-management/lecture/the-time-value-of-money.md",
                 "mode": "preview",
                 "source": true
               }
             },
-            "group": "6a8bbcef9792fd42"
+            "group": "8a326e12f9bba49b"
           }
         ]
       }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
+                "file": "sie-265-engineering-management/lecture/the-time-value-of-money.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
+                "file": "sie-265-engineering-management/lecture/the-time-value-of-money.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md"
+                "file": "sie-265-engineering-management/lecture/the-time-value-of-money.md"
               }
             }
           }
@@ -167,17 +167,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "15d73eda8ba62582",
+  "active": "2d02c92015fe1220",
   "lastOpenFiles": [
+    "ece-532-digital-image-analysis/Notes - ece 532.md",
     "ece-569-high-performance-computing/Notes - ece 569.md",
-    "sie-265-engineering-management/in-class-assignments/January 30th.md",
     "sie-265-engineering-management/lecture/the-time-value-of-money.md",
+    "sie-265-engineering-management/in-class-assignments/January 30th.md",
+    "sie-265-engineering-management/in-class-assignments/January 27th.md",
+    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
     "sie-265-engineering-management/lecture/intro-to-engineering-economy.md",
     "sie-265-engineering-management/Lecture Notes - sie 265.md",
     "lecture-01-23-2023.md",
-    "sie-265-engineering-management/in-class-assignments/January 27.md",
-    "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
-    "ece-569-high-performance-computing/attachments/Pasted image 20230117110641.png",
-    "ece-569-high-performance-computing/Computing Trends - Module 2.md"
+    "ece-569-high-performance-computing/attachments/Pasted image 20230117110641.png"
   ]
 }
