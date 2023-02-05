@@ -455,14 +455,81 @@ There is little room for for a translator's own intuition or creativity. He or s
 
 
 
+# Chapter 14 | In and Out of Bilingualism
+
+### Becoming Bilingual
+- Children who acquire two languages are far rarer than children who acquire one language and then another.
+- If the environment requires it, children can usually pick up languages very quickly, they can also forget them very quickly.
+-
+
+### Reverting to Monolingualism
+- Children can forget languages over the course of their life, this can sometimes include the languages of their parents.
+- Normally, parents learn enough of the majority language to interact, to some extent at least, with their children who speak it exclusively.
+
+#### An Explanation
+The main factor leading to the development of a language is a *need* for that language. The need can be of vaious sorts:
+- To communicate with family members, caretakers, friends
+- To participate in the activiteis of a day care or a school
+- To interact with people in a community
+- The need can simply be to watch television, do sports, and so on.
+
+![[Pasted image 20230205133451.png]]
+
+In a word, the child has to feel that he or she really needs a particular language. If that is so, and other factors are favorable, then the child will develop the language. If the need disappears or isn't really there (perhaps the parents also speak the other language but pretend they don't), and other factors are unfavorable, then they child will no longer use the  language and there is a fair chance that it will be forgotten. 
+
+### Factors of 'Picking Up' A Language
+
+1. Children require a certain amount of input of the language in order to acquire it.
+2. The type of input that children receive is important.
+3. The role of the family
+4. Attitude people have toward the language and culture that need support, as well as toward bilingualism.
+
+*Myth: The language spoken in the home will have a negative effect on the acquisition of the school language, when the latter is different.*
 
 
 
 
 
+# Chapter 15 | Acquiring Two Languages
+
+*Myth: Bilingualism will delay language acquisition in children.*
+
+
+Language person bonds can exist in young children, where they may not like to address people in another language if the base language has already been established.
 
 
 
+*Myth: The earlier a language is acquired, the more fluent a child will be in it.*
+1. Children do not have fewer inhibitions and are not less embarrassed when they make mistakes; in fact, they may well be shy and self-conscious in front of their peers.
+2. You children are rather unsophisticated and immature learners in that they have not yet fully acquired certain cognitive skills -- such as the capacity to abstract, generalize, infer, and classify -- that could help them in second-language acquisition.
+3. The notion that there is a strict, critical period for language learning around the age of five years old has been replaced with the notion of a broader 'sensitive  period' that can extend beyond ten years old and is probably different for different language skills and is probably different for different language skills.
+
+### Wong Fillmore's Model to Learn New Languages
+
+3 Sets of processes
+1. Social Aspects
+- The learner must figure out what people are talking about and how they do it.
+- They also have ot make the speakers aware of their needs and get them to make accommodation and adjustments so that they can understand the speakers.
+- Both sides have to cooperate
+
+3 Social strategies used by language learners:
+- Join a group and act as if you understand what's going on even if you don't
+- Give the impression with a few well-chosen words that you can speak the language
+- Count on your friends for help
+
+
+2. Linguistic Aspects
+Learners have to obtain form native speakers information to allow them to discover how the language works and how people use it. 
+They get this information from the repetitive, and regular speech that is spoken to them in context by native speakers.
+The learners have to pay close attention to what is being said and assume a relationship between that and the events around them. 
+They make educated guesses about what people are saying and what they are likely to talk about in a given situation. 
+'Assume that what people are saying is directly relevant to the situation at hand or to what they or you are experiencing.'
+Learners bring to the task their knowledge of linguistic categories, types of structures (declarative, interrogative, and so on) and speech acts (direct and indirect),  and hence they can look for their equivalents in the new langues.
+
+3. Cognitive Elements
+Learners must discover the units and rules of the languea; they must then synthesize this knowladge into a grammar. 
+They apply cognitive skills to accomplish this, such as associative and analytical skills, memory, inferntial skills, and so on . 
+They also use learning strategies, 'Look for recurring parts in the formaulas you know', 'Make the most of what you've got, 'work on big things, save the details for later'
 
 
 

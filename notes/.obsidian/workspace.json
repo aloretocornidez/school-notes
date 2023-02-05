@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
+                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
                 "mode": "source",
                 "source": true
               }
@@ -32,7 +32,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
+                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
                 "mode": "preview",
                 "source": true
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
+                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
+                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ece-532-digital-image-analysis/Lecture Notes - ece 532.md"
+                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md"
               }
             }
           }
@@ -169,6 +169,7 @@
   },
   "active": "15d73eda8ba62582",
   "lastOpenFiles": [
+    "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
     "ece-569-high-performance-computing/Notes - ece 569.md",
     "sie-265-engineering-management/in-class-assignments/January 30th.md",
     "sie-265-engineering-management/lecture/the-time-value-of-money.md",
@@ -176,7 +177,6 @@
     "sie-265-engineering-management/Lecture Notes - sie 265.md",
     "lecture-01-23-2023.md",
     "sie-265-engineering-management/in-class-assignments/January 27.md",
-    "ece-532-digital-image-analysis/Lecture Notes - ece 532.md",
     "ece-569-high-performance-computing/attachments/Pasted image 20230117110641.png",
     "ece-569-high-performance-computing/Computing Trends - Module 2.md"
   ]
