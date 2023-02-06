@@ -334,3 +334,4 @@ $$r_{semiannual} = \frac{12\%}{2}= 6\%, i_{semiannual} = \left(\frac{1+0.06}{6}\
 
 
 
+
