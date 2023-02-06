@@ -8,7 +8,7 @@
 
 ### Return on Capital
 - Interest and profit pay the providers of __capital for forgoing its use__ during the time the capital is being used.
-- Onterest and profit are payments for __the risk the investor takes__ in letting another use his or her capital.
+- Interest and profit are payments for __the risk the investor takes__ in letting another use his or her capital.
 
 ### Focusing on Interest Effect
 - Simple Interest
