@@ -632,6 +632,223 @@ Notes:
 
 
 
+### Non-Maximum Suppression
+
+1. Nearest neighbor method
+2. Interpolation
+	1. Interpolate new gradient values in between pixels
+
+
+
+### Sobel Edge Detector
+![[Pasted image 20230207124611.png]]
+
+
+### Argyle Edge Detector
+![[Pasted image 20230207124556.png]]
+
+
+### Macleod Edge Detector
+![[Pasted image 20230207124710.png]]
+
+
+
+
+<!-- $$h_{1} = \begin{bmatrix}
+-3 & -3 & 5 \\
+-3 & 0 & 5 \\
+\end{bmatrix}$$
+
+
+$$h_{1} = \begin{bmatrix}
+-3 & -3 & 5 \\
+-3 & 0 & 5 \\
+\end{bmatrix}$$
+-->
+
+
+### Robinson Operator
+
+$$\begin{bmatrix}
+
+\end{bmatrix}
+$$
+
+
+
+### Larger Edge Operators
+$$
+ h_{1} = 
+\begin{bmatrix}
+-1 & -1 & 0 & 1 & 1 \\
+-1 & -1 & 0 & 1 & 1 \\
+-1 & -1 & 0 & 1 & 1 \\
+-1 & -1 & 0 & 1 & 1 \\
+-1 & -1 & 0 & 1 & 1 \\
+\end{bmatrix}
+$$
+You can extend the operators to larger dimensions as well, it is more computationally expensive, but it also provided more control.
+
+### Compass Operators
+Instead of using the gradient using two orthogonal derivaties, we can use a separate operator for each direction. Start with Prewitt, Sobel, etc., and then rotate to form operators tuned to each direction.
+
+
+Compass Operators based on the Sobel Operators:
+![[Pasted image 20230207130728.png]]
+
+
+### Laplacian
+The 2nd-derivative version of the gradient is the Laplacian.
+
+**Def**: The Laplacian of $f(x)$ is the scalar,
+$$\nabla^{2}f(x,y) = \vec \nabla \cdot \vec \nabla f(x,y) = \partial^{2}f\frac{x,y}{\partial x^{2}} + \partial^{2}f\frac{x,y}{\partial y^{2}}$$
+where, 
+$$\vec \nabla = \frac{\partial}{\partial x} \vec{i_{x}} + \frac{\partial}{\partial y} \vec{i_{y}}  $$
+
+**Algorithm**: an edge exists at (x,y) if $\nabla^{2} f(x,y) = 0$ and some form of threshold is statisfied.
+
+
+
+
+- Zero-crossing contours usually have single-pixel thickness, so thinning techniques such as NMS are not needed.  
+- Need some form of thresholding to suppress spurious and phantom edges.  
+- Laplacian-based edge detection generates mostly closed contours, but thresholding usually breaks the contours.  
+- The Laplacian is isotropic for the continuous-space case, but only approximately so for the discrete case.  
+- More sensitive to noise than the gradient operator.
+
+### Discrete Laplacian-Based Edge Detection
+
+Consider the backward first difference in the $n_{1}$-direction:
+
+$$F_{x}(n_{1}, n_{2}) = f(n_{1} + 1,n_{2}) - f(n_{1}, n_{2})$$
+
+Using this result, apply a backward first difference to get a 2nd derivative estimate:
+
+$$F_{xx}(n_{1}, n_{2}) = $$
+
+![[Pasted image 20230207131534.png]]
+
+Similarly, 
+![[Pasted image 20230207131553.png]]
+
+
+Thus, 
+
+![[Pasted image 20230207131612.png]]
+
+
+Other discrete Laplacian estimates, which use the diagonal neighbors, have been proposed:
+![[Pasted image 20230207131634.png]]
+
+
+
+
+### Zero-Crossing Detection
+
+- The zero crossing usually lies between pixels, so find neighboring pixels where the Laplacian has opposite sign.
+- If opposite sign, then define the zero crossing to be at the pixel with smaller Laplacian magnitude.
+
+### Zero-Crossing Detection Code
+
+Let $L(r,c) = \nabla^{2}f(r,c)$
+
+```matla
+
+zc = zeros(nrowc, ncols, ’logical’);  
+for r = 1:nrows  
+	for c = 1:ncols  
+		if L(r,c) == 0  
+			zc(r,c) = true;  
+		elseif L(r,c) > 0  
+			if L(r-1,c-1) < 0 && L(r,c) < –L(r-1,c-1) || L(r-1,c) < 0 && L(r,c) < – L(r-1,c) || ... [check all neighbors]  
+		zc(r,c) = true;  
+		else % L(r,c) < 0  
+			if L(r-1,c-1) > 0 && -L(r,c) < L(r-1,c-1) || L(r-1,c) > 0 && -L(r,c) < L(r-1,c) || ... [check all neighbors]  
+			zc(r,c) = true;  
+		end  
+	end  
+end
+```
+
+We also need to incorporate thresholding into the above loop or do it as post-processing.
+
+
+
+### Zero-Crossing Thresholding
+
+Threshold to suppress spurious or phantom edges.
+
+**Algorithm 1**: Local variance of $f(n_{1}, n_{2}) \ge$ threshold.
+
+**Algortihm 2**: Look at the gradient: $|\vec{\nabla}f(n_{1}n_{2})| \ge$ threshhold
+
+**Algorithm 3**: Look at the laplacian:
+![[Pasted image 20230207133004.png]]
+
+**Algorithm 4**:
+![[Pasted image 20230207133033.png]]
+
+
+**Algorithm 5**:
+![[Pasted image 20230207133045.png]]
+
+**Algorithm 6**:
+![[Pasted image 20230207133055.png]]
+
+Note: Algorithms 5 & 6 require more computation, but they perform better.
+
+
+
+### Laplacian of Gaussian (LoG) = Marr-Hildreth Operator
+Marr & Hildreth, Proc. Royal Society of London, v. B207, 1980.
+
+
+They proposed doing edge detection at various scales of resolution.
+Use Gaussian smoothing with various $\sigma$ values to control the amount of detail in the edge maps.
+
+For each $\sigma$, find the ZC pf tje Laplacian of the smoothed image. We get a set of edge maps.
+We can then plot the results in $x - y - \sigma$ "scale space" for possible further analysis.
+
+*Why the Gaussian Smoothing Kernel?*
+- A kernel must suppress high frequencies
+- Our kernel must be compact in the spatial and frequency domain
+- The Gaussian kernel is proven to optimize the spatial and frequency size.
+
+Note: The Gaussian has minimum width in both spatial and frequency domain. 
+Combine the Gaussian smoothing & the Laplacian into a single: 
+
+![[Pasted image 20230207133812.png]]
+
+The Laplacian of a Gaussian is a bandpass filter.
+
+
+![[Pasted image 20230207134434.png]]
+
+![[Pasted image 20230207134446.png]]
+
+
+![[Pasted image 20230207134500.png]]
+
+![[Pasted image 20230207134513.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
