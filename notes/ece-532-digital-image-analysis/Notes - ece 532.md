@@ -809,6 +809,10 @@ Use Gaussian smoothing with various $\sigma$ values to control the amount of det
 For each $\sigma$, find the ZC pf tje Laplacian of the smoothed image. We get a set of edge maps.
 We can then plot the results in $x - y - \sigma$ "scale space" for possible further analysis.
 
+We want the smoothing filter to have its energy concentrated near zero in the frequency domain for behavior as a low-pass filter. We also want it to have its energy concentrated near the origin in the spatial domain so that image analysis is not affected by pixel-intensity activity in other image regions. The Gaussian function is ideal for this purpose since it is the function that minimizes the 'uncertainty' quantity: 
+
+$$U = \left(\int_{-\infty}^{\infty} x^{2} |f(x)|^{2} dx\right)\left(\int_{-\infty}^{\infty} x^{2} |F(\omega)|^{2} d\omega \right)$$
+
 *Why the Gaussian Smoothing Kernel?*
 - A kernel must suppress high frequencies
 - Our kernel must be compact in the spatial and frequency domain
@@ -816,6 +820,10 @@ We can then plot the results in $x - y - \sigma$ "scale space" for possible furt
 
 Note: The Gaussian has minimum width in both spatial and frequency domain. 
 Combine the Gaussian smoothing & the Laplacian into a single: 
+
+The Gaussian smoothing and Laplacian can be merged into a single operator:
+
+
 
 ![[Pasted image 20230207133812.png]]
 
@@ -833,14 +841,67 @@ The Laplacian of a Gaussian is a bandpass filter.
 
 
 
+Prior studies of the human visual system (HVS) found that the ganglion cells in the retina have a center-surround behavior with approximately four spatial-frequency-selective 'channels'. This impulse response of each channel was modeled as a difference of Gaussian's
+
+**Benefits of the Laplacian of Gaussian**
+- If you have an image with round shaped objects in the scene, this method will create some 'nice' contours in the scene when compared to previous methods.
+- You can change $\sigma$ and allow for different kinds of analysis. Larger $\sigma$'s allow for higher level analysis.
+
+
+
+
+### Logan's Theorem
+
+- Can you re construct an image from the zero crossings in an edge map? Yes!
+- Zero Crossing contours provide a very rich representation of an image.
+
+- Logan's Theorem (1977): A one-octave 1D band-pass signal can be completely reconstructed (within a scale factor) from its Zero-Crossings
+- Curtis extended this to 2D with certain restrictions.
+
+### Laplace of Gaussian Localization Error
+
+Suppose we want to find the edge map for an impulse function:
+
+
+
+### Canny's DroG Edge Detector
+
+Canny showed that the derivative of a Gaussian (DroG) closely approximates an optimal 1D edge detector with the following optimality criteria:
+- Good detection accuracy
+- Good localization
+- Only one response to a single edge
+
+
+**Implementation**
+- Comput $f_{x}$ and $f_{y}$ using separable filtering with the DorG filter. He reported $\sigma$ values from 0.7 to 8
+- Calculate the gradient magnitude
+- Do Non Maximum Suppression (NMS)
+- Keep a weak edge pixel if it is connected to a strong one, A pixel is a strong edge if it is greater than the upper threshold. Eliminate an edge pixel if the gradient magnitude is less than the lower threshold.
+- Feature Synthesis: Start from the smallest scale, then synthesize the larger scale outputs that would occur if there were the only edges present. Then compare the large-scale output tot he synthesized output.
+- Canny wrote in his technical report, "A version of the detector which used the Gaussian convolution followed by directional non-maximum suppression has been implemented."
 
 
 
 
 
 
+### Hysteresis Thresholding
+
+- Breaking up the edge contours where there were large amounts of curvature exist
+
+Hysteresis is a very important step because it stops spurious edges from appearing in the image. 
+
+There is an upper and lower threshold:
+Upper Threshold: A higher threshold to deem whether a pixel is a strong edge.
+Lower: How likely you are to throw away an edge, a larger lower threshold causes more discontinuities in the edge map.
 
 
+### Feature Synthesis
+- Mark all edges from the $\text{smallest}-\sigma$ operator.
+- Using the responses to the $\text{smallest}-\sigma$ operators, synthesize the response to the next larger $\sigma$ that would have been produced if these were the only edges in the image.
+- Synthesize by taking the response to the small operator in a particular direction, and convolved with a Gaussian normal to the edge direction for this operator. Use the Gaussian $\sigma$ of the next-larger operator.
+- Compare the actual response to the synthesizes response. Mark additional edges only if the larger operator has significant greater response than the predicted by the synthesized response.
+- Repeat for each $\sigma$
 
 
 

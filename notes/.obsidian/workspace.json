@@ -4,12 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8c2928f69ad03874",
+        "id": "2a77bfe5dc117e76",
         "type": "tabs",
-        "dimension": 49.03598971722365,
         "children": [
           {
-            "id": "135bc49779ebfee3",
+            "id": "9d76a750e269202c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,17 +18,16 @@
                 "source": true
               }
             },
-            "group": "21913a2de501b2af"
+            "group": "0837037f68c85953"
           }
         ]
       },
       {
-        "id": "0cc3e4cb096905b0",
+        "id": "e9503742c9885a50",
         "type": "tabs",
-        "dimension": 50.96401028277635,
         "children": [
           {
-            "id": "a56cab838a4e91b0",
+            "id": "effa06d0104c0a59",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -39,7 +37,7 @@
                 "source": true
               }
             },
-            "group": "21913a2de501b2af"
+            "group": "0837037f68c85953"
           }
         ]
       }
@@ -169,15 +167,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "135bc49779ebfee3",
+  "active": "effa06d0104c0a59",
   "lastOpenFiles": [
-    "ece-569-high-performance-computing/quiz/quiz-3-recap.md",
-    "ece-569-high-performance-computing/notes/february-7-2023.md",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230207134500.png",
+    "ece-532-digital-image-analysis/Notes - ece 532.md",
+    "ece-569-high-performance-computing/notes/february-9-2023.md",
     "ece-569-high-performance-computing/Notes - ece 569.md",
+    "ece-569-high-performance-computing/notes/february-7-2023.md",
     "sie-265-engineering-management/lecture/evaluating-a-single-project-chapter-5.md",
+    "ece-569-high-performance-computing/quiz/quiz-3-recap.md",
     "sie-265-engineering-management/in-class-assignments/February 6th.md",
     "sie-265-engineering-management/in-class-assignments/January 30th.md",
-    "sie-265-engineering-management/lecture/the-time-value-of-money-chapter-4.md",
-    "sie-265-engineering-management/lecture/intro-to-engineering-economy-chapter-1.md"
+    "sie-265-engineering-management/lecture/the-time-value-of-money-chapter-4.md"
   ]
 }
