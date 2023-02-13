@@ -105,13 +105,113 @@ A new bridge across the Cumberland River is being planned near a busy highway in
 
 
 
+# Section 5.5 | Evaluating a Single Project
+
+### Annual Worth
+
+- An equal periodic series of dollar amounts that is *equivalent* to the cash inflows and outflows, at an interest rate that is generally the MARR.
+
+AW Decision Rule: $\text{If AW}(i = MARR) \ge 0$, the project is economically justified.
+
+- The AW of a project is equivalent to its PW and FW.
+
+$$AW = PW\left(\frac{A}{P,}i\%, N\right)$$
+
+$$AW = FW\left(\frac{A}{F}, i\%, N\right)$$
+
+The AW of a project is periodic equivalent revenue or savings minus expenses, lesss its annual capital recovery (CR) amount.
+
+$$AW(i\%) = R - E - CR(i\%)$$
+
+When revenues are absent, AW(i%) is seen as the **Equivalent Uniform Annual Cost EUAC(i%)**
+
+A low valued EUAC is preferred to a high valued EUAC
+
+### Capital Recovery #capitalRecovery
+Capital recovery reflects the annual equivalent invested capital cost of the asset.
+
+The capital recovery (CR) reflects the following items:
+- Loss in values of the asset
+- Interest on the invested capital (at the MARR)
+- The capital recovery (CR) distributes the initial cost (I) and the salvage (Market) value (s) across the life of the asset. 
+
+$$CR(i\%) = I\left(\frac{A}{P,}i\%, N\right) - S\left(\frac{A}{F}, i\%, N\right)$$
+
+- If the investment will be spread over several periods, then the $I$ is the PW of all investment amounts.
+
+
+### Assumptions when using PW, FW, AW Methods: #assumptions
+
+There are assumptions that we make when using PW, FW, AW, methods
+1. We assume we know the future with certainty (we don't live in a certain world)
+2. We assume we can borrow and lend money at the same interest rate (i.e. capital markets are perfect).
+- More sophisticated models exits, but they usually do not reverse decisions made with the PW, FW, and AW methods
+- A positive valued PW (and AW, and FW) means that accepting a project will increase its worth, or value, of the firm.
 
 
 
+# Section 5.6
+
+### Internal Rate of Return
+- The Internal Rate of Return (IRR) method is the most widely used rate of return method for performing engineering economic analysis.
+- The IRR is the interest rate that equates the equivalent worth (computed using PW, FW, or AW)  of an alternative's cash **inflows** to the equivalent worth of cash **outflows**.
+- The IRR can be seen as the **break even interest rate**
+- It is also called the **investor's method**, the **discounted cash flow** method, and the **profitability index**
+- If the IRR is greater than the MARR, then the project is acceptable.
+- For a single alternative from the lender's viewpoint, the IRR is not positive unless:
+	- Both receipts and expenses are present in the cash-flow pattern
+	- The sum of receipts exceeds the sum of all cash outflows
+- Using a PW formulation, we see that the IRR is the i'% at which:
+$$\sum\limits_{k=0}^{N}R_{k}\left(\frac{P}{F}, i'\%, k\right) = \sum\limits_{k=0}^{N}E_{k}\left(\frac{P}{F}, i'\%, k\right)$$
+where:
+- $R_k$ = net revenues or savings for the $k^{th}$ year.
+- $E_k$ = net expenditures, including costs for the $k^{th}$ year.
+- $N$ = project life
 
 
+### Interpretation of IRR
+- For an alternative with a single investment cost at the present time followed by a series of positive cash inflows over 𝑁, a graph of 𝑃𝑊 versus the interest rate typically has the general convex shown.
+- The point at which $PW$ = 0 defines $i'\%$, which is the project’s $IRR$$. The value of $i'\%$ can also be determined as the interest rate at which $FW$ = 0 or $AW$ = 0
+- The difference between a project's IRR and the required return (i.e., MARR) is viewed by management as a measure of investment safety. A large difference signals a wider margin of safety (or less relative risk).
+
+A higher internal rate of return is better, but we don't compare IRRs between project.
+
+### Challenges in Applying the IRR Method
+- It is computationally difficult without proper tools.
+- In rare instances, multiple rates of return can b found. In this case, try another equivalence method
+![[Pasted image 20230213092726.png]]
+- The IRR method must be carefully applied and interpreted when comparing two more mutually exclusive alternatives (e.g., do not directly compare internal rates of return). More on that in Chapter 6.
+
+**Example 5-13**
+A piece of new equipment has been proposed by engineers to increase the productivity of a certain manual welding operation. The investment cost is $25,000, and the equipment will have a market (salvage) value of $5,000 at the end of its expected life of five years. Increased productivity attributable to the equipment will amount to $8,000 per year after extra operating costs have been subtracted from the value of the additional production. Use a spreadsheet to evaluate the IRR of the proposed equipment. Is the investment a good one? Recall that the MARR is 20% per year.
 
 
+Solution by Excel: 
+IRR = RATE(nper, pmt, pv, fv)
+IRR = RATE(5, 8000, -2500, 5000)
+IRR = 0.2158 
+IRR = 21.58%
+
+**OR**
+
+IRR = IRR(-25000, 8000, 8000, 8000, 8000, (8000+5000))
+
+The internal rate of return (21.58%) is grater than the MARR (20%) Thus, we can conclude that the new equipment is economically feasible.
+
+But what if the net annual savings estimate is revised to be \$7,500 instead of $8,000?
+The IRR is then 19.xx%, which is less than the MARR. This is called sensitivity analysis.
+
+
+### Installment Financing
+
+
+- A rather common application of the IRR method is in so-called installment fincancing types of problems.
+- These problems are associated with financing arrangements for purchasing merchandise 'on time'
+- The **total interest**, or finance, charge is often paid by the borrower based on the **amount owed at the beginning** of the loan instad of the unpaid loan balance.
+	- Clearly, a finance charge based solely on the entire amount of money borrowed involves payment of interest on money not actually borrowed for the full term.  
+	- This practice leads to an actual interest rate that often greatly exceeds the stated interest rate.
+
+- To determine the true interest rate being charged in such cases, the IRR method is frequently employed.
 
 
 
