@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ece-569-high-performance-computing/notes/february-14-2023.md",
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
                 "mode": "source",
                 "source": true
               }
@@ -32,7 +32,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ece-569-high-performance-computing/notes/february-14-2023.md",
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
                 "mode": "preview",
                 "source": true
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ece-569-high-performance-computing/notes/february-14-2023.md",
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ece-569-high-performance-computing/notes/february-14-2023.md",
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ece-569-high-performance-computing/notes/february-14-2023.md"
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md"
               }
             }
           }
@@ -167,8 +167,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c53418bb189edf1e",
+  "active": "67e83dfdf57b07e7",
   "lastOpenFiles": [
+    "ece-569-high-performance-computing/notes/february-14-2023.md",
     "ece-569-high-performance-computing/notes/february-9-2023.md",
     "ece-569-high-performance-computing/notes/february-7-2023.md",
     "sie-265-engineering-management/lecture/evaluating-a-single-project-chapter-5.md",
@@ -177,7 +178,6 @@
     "ece-569-high-performance-computing/Notes - ece 569.md",
     "ece-569-high-performance-computing/quiz/quiz-3-recap.md",
     "sie-265-engineering-management/in-class-assignments/February 6th.md",
-    "sie-265-engineering-management/in-class-assignments/January 30th.md",
-    "sie-265-engineering-management/lecture/the-time-value-of-money-chapter-4.md"
+    "sie-265-engineering-management/in-class-assignments/January 30th.md"
   ]
 }

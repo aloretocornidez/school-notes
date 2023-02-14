@@ -873,7 +873,7 @@ Canny showed that the derivative of a Gaussian (DroG) closely approximates an op
 
 
 **Implementation**
-- Comput $f_{x}$ and $f_{y}$ using separable filtering with the DorG filter. He reported $\sigma$ values from 0.7 to 8
+- Compute $f_{x}$ and $f_{y}$ using separable filtering with the DrOG filter. He reported $\sigma$ values from 0.7 to 8
 - Calculate the gradient magnitude
 - Do Non Maximum Suppression (NMS)
 - Keep a weak edge pixel if it is connected to a strong one, A pixel is a strong edge if it is greater than the upper threshold. Eliminate an edge pixel if the gradient magnitude is less than the lower threshold.
@@ -905,6 +905,132 @@ Lower: How likely you are to throw away an edge, a larger lower threshold causes
 
 
 
+
+
+# Module 5 | Hough Transform
+
+After doing edge detection, we may want to process the edge map to find straight lines, circles, ellipses, or other shapes.
+
+![[Pasted image 20230214125434.png]]
+
+### Hough Transform Overview
+- A powerful, generalization method for finding lines, circles, or other shapes in an edge map.
+- Robust - the detection can work even if the edge map has broken contours.
+- But the curve or shape must be analytically specifiable.
+- Map all edge pixels to a 'Hough Space' and then do peak detection in Hough space.
+
+![[Pasted image 20230214125738.png]]
+
+### Finding Straight Lines
+- We need an analytical specification of the curve or shape we want to detect.
+- As a first attempt, let's represent a straight line passing through $(x_{i}, y_{i})$ as follows:
+
+$$y_{i} = mx_{i} + b$$
+
+- For each edge pixel $(x_{i}, y_{i})$, identify all the lines passing through it.
+- Choose the line (m,b) that passes through the most edge points.
+
+![[Pasted image 20230214130023.png]]
+
+
+- We will have an auxiliary array called a 'Hough' array that will keep count of how many points each line goes through.
+- After you find the amounts of points for each possible equation, you look at the bins in the 'Hough Array' and see which equation has the most points.
+
+*Note:* The $y = mx + b$ cannot represent a vertical line, so we use a polar parameterization instead:
+$$\rho = x cos(\theta) + y sin(\theta)$$
+
+![[Pasted image 20230214130501.png]]
+
+### Steps for Detecting Straight Lines
+1. Allocate a Hough array, $H(\rho , \theta )$. Quantize $\rho$ and $\theta$ over a desired rance so that the array has finite size.
+2. For each edge pixel, $(x_{i}, y_{i})$, fine all lines going through that pixel and increment the corresponding elements in the Hough Array.
+3. Apply thresholding and NMS to the Hough array to determine the lines that pass through the most edge pixels
+
+**Algorithm**
+
+![[Pasted image 20230214130759.png]]
+
+
+![[Pasted image 20230214130823.png]]
+
+### Ways to select the Origin
+
+**Origin at the Corner of the Edge Map**
+- Non-negative $\rho$
+$$- \frac{\pi}{2} < \theta < \pi $$
+$$0 \le \rho \le N \sqrt{2}$$
+
+$\Longrightarrow$ # of bins in the Hough array $\propto \left(\frac{3\pi}{2}(N\sqrt{2})\right) \dot{=} 2.12 \pi N$
+
+![[Pasted image 20230214131527.png]]
+
+- Signed $\rho$. Fewer loops but larger Hough array.
+$$0 \le \theta < \pi$$
+$$\left(\text{or } \frac{-\pi}{2}\le \theta < \frac{\pi}{2} \right)$$
+$$-N \le \rho \le N\sqrt{2}$$
+
+$\Longrightarrow$ # bins in the Hough array $\propto (\pi) (N) (1 + \sqrt{2} \dot{=} 2.41 \pi N)$
+
+![[Pasted image 20230214132034.png]]
+
+**Origin at the Center of the Edge Map**
+- Non-negative $\rho$
+$$-\pi \le \theta < \pi$$
+$$0 \le \rho \frac{N}{2}\sqrt{2}$$
+
+$$\Longrightarrow \text{ \# of bins in the Hough array} \propto (2\pi ) \left(\frac{N}{2}\sqrt{2}\right) \dot{=} 1.41\pi N$$
+
+
+
+- Signed $\rho$.
+$$0 \le \theta < \pi$$
+$$\left(\text{ or} \frac{-\pi}{2} \le \theta < \frac{\pi}{2}\right)$$
+$$\frac{-N}{2}\sqrt{2} \le \rho \le \frac{N}{2}\sqrt{2}$$
+
+$$\Longrightarrow \text{ \# of bins in the hough array } \propto (\pi) (N\sqrt{2} \dot{=} 1.41 \pi N)$$
+
+*Note: when quantizing $\theta$, try to ensure that horizontal and vertical lines map exactly to a bin center since those are common angles.*
+
+### Non-Maximum Suppression
+
+Test whether the Hough array value is greater than or equal to the neighboring values. At the borders of the Hough array, be carefule to check the correct neighbors. Note that $\theta = \pi$, $\rho = \rho_{0}$ corresponds to $\theta = 0$, $\rho = -\rho_{0}$.
+
+![[Pasted image 20230214132816.png]]
+
+### Using Edge Strength
+
+- The edge detector may provide edge strength information (e.g., gradient magnitude).
+- To obtain sharper peaks in the Hough array, let's increment the Hough array bins by $|\vec\nabla f|$ instead of 1.
+
+
+### Using Edge Orientation
+- The edge detector may also provide edge orientation (i.e., gradient direction).
+- To obtain sharper peaks in the Hough array, let's increment *only* the Hough array bins located near the edge orientation provided by the edge detector.
+
+
+### Hough Transform Output
+
+Here's the typical workflow:
+
+![[Pasted image 20230214134022.png]]
+
+It would be helpful to find the endpoints of each line segmen tand fill small gaps.
+Then we can display the line segments instead.
+
+
+
+
+### Endpoint Calculation
+For each detected line $(\rho, \theta)$, determine $x_{min}, x_{max}, y_{min}, y_{max}$ for edge points along that line.
+If the line is moastly vertical, then we just need to find $y_{min}$ and $y_{max}$.
+
+![[Pasted image 20230214134500.png]]
+
+I.e., calculate the Hough array plus two additional arrays:
+
+![[Pasted image 20230214134519.png]]
+
+If the line is mostly horizonal, then we just need to find $x_{min}$ and $x_{max}$.
 
 
 
