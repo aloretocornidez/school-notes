@@ -4,40 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2a77bfe5dc117e76",
+        "id": "1d4fa36cf4700604",
         "type": "tabs",
         "children": [
           {
-            "id": "9d76a750e269202c",
+            "id": "e0eb3a9d05597190",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sie-265-engineering-management/lecture/evaluating-a-single-project-chapter-5.md",
-                "mode": "source",
-                "source": true
-              }
-            },
-            "group": "0837037f68c85953"
-          }
-        ]
-      },
-      {
-        "id": "e9503742c9885a50",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "effa06d0104c0a59",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sie-265-engineering-management/lecture/evaluating-a-single-project-chapter-5.md",
-                "mode": "preview",
-                "source": true
-              }
-            },
-            "group": "0837037f68c85953"
+              "type": "empty",
+              "state": {}
+            }
           }
         ]
       }
@@ -89,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "11245dc6c991ac19",
@@ -106,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sie-265-engineering-management/lecture/evaluating-a-single-project-chapter-5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sie-265-engineering-management/lecture/evaluating-a-single-project-chapter-5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "sie-265-engineering-management/lecture/evaluating-a-single-project-chapter-5.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -167,14 +138,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d76a750e269202c",
+  "active": "56f791c6f128999d",
   "lastOpenFiles": [
+    "sie-265-engineering-management/lecture/evaluating-a-single-project-chapter-5.md",
     "ece-532-digital-image-analysis/Notes - ece 532.md",
     "ece-532-digital-image-analysis/attachments/Pasted image 20230207134500.png",
     "ece-569-high-performance-computing/notes/february-9-2023.md",
     "ece-569-high-performance-computing/Notes - ece 569.md",
     "ece-569-high-performance-computing/notes/february-7-2023.md",
-    "sie-265-engineering-management/lecture/evaluating-a-single-project-chapter-5.md",
     "ece-569-high-performance-computing/quiz/quiz-3-recap.md",
     "sie-265-engineering-management/in-class-assignments/February 6th.md",
     "sie-265-engineering-management/in-class-assignments/January 30th.md",
