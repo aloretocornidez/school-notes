@@ -535,6 +535,82 @@ They also use learning strategies, 'Look for recurring parts in the formaulas yo
 
 
 
+# TODO: READ CHAPTERS 16 - 17
+
+# Chapter 18 | Effects of Bilingualism on Children
+
+*Myth: Bilingualism has a negative effect on the development of children.*
+
+### Problems with past studies
+
+> If it were possible for a child or boy to live in two languages at once equally well, so much the worse. His intellectual and spiritual growth would not thereby be doubled but halved. Unity of mind and of character would have great difficulty in asserting itself in such circumstances.
+
+\- Simon S. Laurie, 1890
+
+
+> The brain effort required to master two languages instead of one certainly diminishes the child’s power of learning other things which might and ought to be learnt.
+
+\- Otto Jesperson, ~1920
+
+Many factors contribute to the results of previous studes, first, the bilinguals did much worse than their monolingual counterparts. The samples chosen were not sufficiently compartmentalized into categories such as age, sex, and socioeconomic status. Not to mention, the bilinguals in question may not have had sufficient command of the language they were tested in.
+
+Later studies that showed the opposite, that is, that bilinguals had high IQ, more divergent thought, etc., may have cherry picked the bilinguals that were tested as the researchers had a strict criterion for selection of the individuals. 
+
+### Where do we stand today?
+
+Nowadays, results are not so black and white, if there are differences, they are mostly subtle.
+
+
+> The picture emerging from these studies is a complex portrait of interactions between bilingualism and skill acquisition in which there are sometimes benefits for bilingual children, sometimes deficits, and sometimes no consequence at all.
+
+
+### Bilingual Children and Language Disorders
+
+- The percentage of children with language disorders is the same for both monolingual and bilingual students.
+
+
+> Bilingualism does not cause any type of language disorder and retracting to just one language does not improve a language disorder
+
+\- Döpke
+
+
+
+# Chapter 19 | Education and Bilingualism
+
+
+Bilingual education can be controversial, possibly causing war in some countries.
+
+There are two approaches two bilingual education:
+1. When the education aims for bilingualism
+2. When the education does not aim for bilingualism
+
+### When the Aim Is Not Bilingualism
+
+Many schools teach a language formally, think of when schools in the United States teach Spanish as another subject. It is not used in other classes as the language that students learn other subjects.
+
+### When the Aim Is Bilingualism
+Many programs begin in schooling in the minority language and slowly introduce the home language as the students age. This allows them to pick up a language organically and they do not have any noticeable side effects in main language comprehension skills. 
+
+
+
+# Non-Textbook Entries
+
+## How many languages are there in the world?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
