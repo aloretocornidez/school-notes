@@ -950,6 +950,9 @@ $$\rho = x cos(\theta) + y sin(\theta)$$
 
 ![[Pasted image 20230214130759.png]]
 
+Here, $\rho$ and $\theta$ are the array indexes. The actual value is determined based on the starting value and the quantization step size:
+$$\rho_{value}= \rho_{0}+ \rho (\Delta\rho)$$
+$$\theta_{value}= \theta_{0}+ \theta (\Delta\theta)$$
 
 ![[Pasted image 20230214130823.png]]
 
@@ -1031,6 +1034,151 @@ I.e., calculate the Hough array plus two additional arrays:
 ![[Pasted image 20230214134519.png]]
 
 If the line is mostly horizonal, then we just need to find $x_{min}$ and $x_{max}$.
+
+### Circle Detection
+
+All the circles passing through an edge point $(x_{i}, y_{i})$ can be represented as follows:
+$$(x_{i}- a)^{2}+(y_{i}- b)^{2}= r^{2} \text{ } \forall a, b, r$$
+
+**Algorithm**
+```pseudo
+For each edge pixel(xi, yi)
+	For each a
+		For each b
+			r^2 = (xi - a)^2 + (yi - b)
+			Increment H(a, b, r)
+		Next b
+	Next a
+Next edge pixel
+```
+
+![[Pasted image 20230216124752.png]]
+
+![[Pasted image 20230216124804.png]]
+
+
+### Merlin-Farber Algorithm
+
+First, choose an arbitrary reference point, $(x_{0}, y_{0})$.
+
+*R-table*
+
+For each pixel $x_{j}, y_{j}$ along the shape boundary, list the $\vec{R}$ vector pointing form $x_{j}, y_{j}$  to edge pixel $x_{0}, y_{0}$. This forms the 'R-Table': 
+
+$\begin{bmatrix}
+R_{x_1} = X_0 - X_1 \\ 
+R_{x_2} = X_0 - X_2 \\ 
+\dots
+\end{bmatrix}$
+
+**Steps**
+1. For each edge pixel $x_{j}, y_{j}$, and for each $(R_{x_{k}}, R_{y_{j}})$ in the R-table, increment the bin in the Hough array at $(x_{0}, y_{0}) = (x_{i}+R_{x_{j}}, y_{i}+R_{y_{j}})$.
+2. Perform thresholding and NMS on the Hough array to find the coordinate of the strongest detected shapes. The detected coordinates corresponds to the reference points of the detected shapes.
+
+**Algorithm**
+```pseudo
+For each edge pixel (xi, yi)
+	For each R vector
+		x0 = 
+	Next R Vector
+Next Edge Pixel
+```
+
+### Ballard's Algorithm
+
+- Assume we know the edge orientation or gradient direction from the edge detector.
+- When constructing the R-table, list the gradient direction $\phi(x_{j,}y_{j})$, along with $R_{x_{j}}$ and $R_{y_{j}}$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Module 6 | Segmentation by Histogram Thresholding
+
+
+
+### Introduction
+- Instead of using edge detection to detect opject boundaries, we may perform image segmentation to group similar pixels to form regions.
+- Image segmentation is the dual of image detection.
+- The output can be represented as an array where each pixel is assigned to a region label. Alternatively, the output can be represented as a list of regions, where each region consists of a list of pixel locations.
+- The region labels may be binary, such as 'foreground' and "background." Or there may be more than two types of region labels.
+
+![[Pasted image 20230216131437.png]]
+
+
+
+![[Pasted image 20230216131447.png]]
+
+
+### Image Partition
+Goal: Partition the image into homogeneous regions.
+
+**Def**: Let $A$ be the set containing all pixels in an image (e.g., the pixel coordinates), and let $A_k$ be the set of pixels in region $k$. Then $\cases{A_{k;}k = 1, \dots, N}$ is called the *partition* of A if:
+
+![[Pasted image 20230216131713.png]]
+
+### Image Segmentation
+
+**Def** Let H be some homogeneity measure (e.g., similar intensity, color, or texture). Then a segmentation of image A is a partition satisfying:
+
+1. $H[A_{k]}= \text{True} \forall k$
+2. $A_{i} \text{ adj } A_{j} \Rightarrow H [A_{i}\cup A_{j}] = \text{False for all } i \ne j$
+3. $A_{k} \text{ is connected (optional)}$ 
+
+Desirable properties of an image segmentation:
+- Regions don't have too many small holes
+- Region boundaries are smooth
+- Region boundaries are consistent with physical edges in the scene.
+
+
+### Histogram Thresholding
+
+- Consider the histogram of an image feature, such as pixel gray level.
+- We can perform image segmentation by histogram thresholding.
+
+![[Pasted image 20230216132239.png]]
+
+Challenges:
+- The number of clusters in the histogram may not be clear.
+- Optimal threshold locations may be unclear.
+- Pixels with similar intensity may not be connected  in the spatial domain, leading to disconnected regions.
+
+### Iterative Threshold Selection Algorithm
+- Assume two regions: foreground(fg) and background (bg)
+- Assume fg is near the center of the image and is surrounded by bg.
+
+Step 1. Initialize the bg region to be just the four corners of the image. (or another region that is expected to the the bg). Let the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

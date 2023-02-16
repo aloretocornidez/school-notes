@@ -4,20 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "1d4fa36cf4700604",
+        "id": "def5266ff65a96f4",
         "type": "tabs",
         "children": [
           {
-            "id": "67e83dfdf57b07e7",
+            "id": "c62d7d1560288a90",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
                 "mode": "source",
                 "source": true
               }
-            }
+            },
+            "group": "b662a31f2db73502"
+          }
+        ]
+      },
+      {
+        "id": "2cd9c4470ddebae7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a5cb127f55790941",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
+                "mode": "preview",
+                "source": true
+              }
+            },
+            "group": "b662a31f2db73502"
           }
         ]
       }
@@ -86,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ger-150-becoming-multilingual/Textbook Notes - ger 150.md"
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md"
               }
             }
           }
@@ -147,8 +167,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "67e83dfdf57b07e7",
+  "active": "c62d7d1560288a90",
   "lastOpenFiles": [
+    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
     "ece-532-digital-image-analysis/Notes - ece 532.md",
     "ece-569-high-performance-computing/notes/february-14-2023.md",
     "ece-569-high-performance-computing/notes/february-9-2023.md",
@@ -157,7 +178,6 @@
     "ece-532-digital-image-analysis/attachments/Pasted image 20230207134500.png",
     "ece-569-high-performance-computing/Notes - ece 569.md",
     "ece-569-high-performance-computing/quiz/quiz-3-recap.md",
-    "sie-265-engineering-management/in-class-assignments/February 6th.md",
-    "sie-265-engineering-management/in-class-assignments/January 30th.md"
+    "sie-265-engineering-management/in-class-assignments/February 6th.md"
   ]
 }

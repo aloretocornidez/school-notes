@@ -595,13 +595,104 @@ Many programs begin in schooling in the minority language and slowly introduce t
 
 # Non-Textbook Entries
 
-## How many languages are there in the world?
+## How many languages are there in the world? - M. Paul Lewis
+
+What is the difference between a language and a dialect? How do you differentiate between the two?
+
+There are mild divisions between people of different socioeconomic statuses as well. 
+
+How many languages exist also depends on *when* you count the,. They change, grow, and sometimes have offspring and die.
+
+About a quarter of the world's languages have less than 1,000 speakers.
+
+On the other end, there is a smaller group of very dominant large languages that many linguists predict will drive smaller languages to extinction.
+
+In addition to counting the languages in the world, it is also interesting to look at how languages are distributed around the world. 
+
+## Is there a language crisis in the United States? - Julie Tetel Anderson
+
+> "The answer to the question in the title is an unequivocal *yes*"
+
+The United States does not have enough people who speak 'Critical Langauges', that is, languages that are important to United States National Security.
+
+High School level teaching of foreign languages is good but could be better.
+
+Until there is a wide understanding that knowing a foreign language is as important as knowing math, science, and history, progress will not be made.
+
+
+## Are American Dialects Dying? - Walt Wolfram 
+
+> Is shared popular culture wiping out dialects in the United States? 
+> Can new dialects appear in today's world? 
+> Do you speak a dialect?
+
+We almost always notice dialects in other speakers, but we rarely notice the dialects that we speak, "we don't speak a dialect, we speak normal English"
+
+Everyone uses different words to describe the same thing.
+
+Sub, grinder, hoagie, hero
+
+Bank machine, automated teller, cash machine, atm
+
+Pop, soda, tonic, co-cola
+
+## What Makes Some Languages Harder to Learn Than Others? - Barry Hilton
+
+> Are some languages harder to learn than others?
+> Is Chinese the most difficult language in the world?
+> What makes Chinese so tough to learn?
+
+Linguists will say that every language is complex in some ways and simple in others, they average out to the same amount of complexity.
+
+Rephrasing the question, "Which major language is hardest for native English speakers to learn?" Then a good case can be made for Chinese being a difficult language to learn.
+
+
+Languages like Spanish, Russian, or Hindi have plenty of english cognates.
+
+Chinese does not have many English cognates.
+
+Another factor that makes Chinese difficult for native English speakers is a phonetic intonation that is not optional.
+
+The Chinese writing system also contributes to the difficulty in learning Chinese for native English speakers.
+
+
+A character with three squiggles can mean different things depending on how the squiggles are written. 
+
+> It's not hard to imagine that illiteracy is a major problem in China.
+
+It is harder to look up characters in Chinese dictionaries, it is not as simple as mouthing the ABCs while you flip through your dicitonary.
 
 
 
 
+## How Many Languages Can a Person Learn? - Richard Hudson
+
+> What is the most languages anybody has ever mastered?
+> Do you have to be abnormal to learn so many?
+
+A typical American or Brit knows exactly one language.
 
 
+What is the human capacity for language learning? The answer is that no one knows.
+
+*Normal Capacity vs Extreme Capacity*
+The amount that an average  person can learn and the maximum a person can learn.
+
+Are languages similar enough that it's not so hard to learn five or six of them? 
+In a word, *No*
+
+Some people do not need to learn additional languages because their social circles do not require it. 
+
+
+Hyper-polyglots can speak about 20-30 languages with some being always available, some requiring a 'brush-up' and others requiring the help of a dictionary.
+
+Interesting fact: Nearly all of the Polyglots surveyed were men.
+
+
+
+## Why Are Some People Better At Learning Languages Than Others
+
+People aren't totally on control of when they learn new languages.
 
 
 
