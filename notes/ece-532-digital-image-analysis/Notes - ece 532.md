@@ -1,4 +1,4 @@
-# What is a Digital Image?
+cd# What is a Digital Image?
 A digital image is composed of pixels having discrete values that are provided by a 2D function indexed by a pair of discrete spatial coordinates; those values, when displayed, provide a visual representation of something.
 - A digital image is usually stored as an array of pixel values
 - A pixel may be a vector of values (e.g., an RGB image).

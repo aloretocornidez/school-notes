@@ -697,6 +697,58 @@ People aren't totally on control of when they learn new languages.
 
 
 
+## Can Monolingualism be Cured? - Katherine Sprang
+
+> Is it possible to learn a new language as an adult? Isn't it a lot harder than it is for children? Are there any tricks to learning?
+
+Kids can master language as a part of their every day life, adults don't have that advantage.
+
+Adults do have another advantage however: They already know one language and can use it to learn the new language much faster by relating it to what they already know.
+
+
+## How have our ideas about language learning changed through the years? - June K. Phillips
+
+> What is the history of foreign language teaching> Have there been a lot of different methods? How different are they? Are today's methods best?
+
+Before world war two, most people learned languages to be able to read them, however, after world war two, the need to be able to speak the languages arose, this meant that many teaching efforts invested into languages focused on speaking.
+
+This resulted in many students knowing 'five finger drills' as would be referenced in the piano playing world, but some people wanted to 'do' something with the language, to continue the piano analogy, 'making music' with the language.
+
+
+You can use a language to communicate what you need even if you do not have *every* grammar rule memorized: 'Me want beer' and 'What do you have on draft' are both perfectly capable of getting you a beer at a bar/pub.
+
+
+## Can Computers Teach Languages Faster and Better? - Trude Heift
+
+> Can you really learn a language effectively from a machine? What technology exists to help people learn languages?
+
+We are far from computer technologies having reached a level of sophistication where chatbots, for instance, are capable of simulating conversations as authentic and efficacious as interaction with a human tutor.
+
+Teachers bring passion, set focus, challenge, encourage, and build confidence -- all of which contribute to motivating a learner to learn. 
+
+While technologies, even if free of charge, attract a student to learn a language initially and offer much value to their learning experience by also providing a level of accessibility and attention that can hardly be obtained from a human teacher, learning a language requires a purpose, dedication, and practice. 
+
+## How Good is Machine Translation? - Kevin Knight
+
+> Can machines translate human language accurately? What makes accurate translation difficult? How does translation technology work? Are some languages harder to translate than others?
+
+
+Translating small words can be difficult because a word can be used in many ways, for example: 
+- in the room
+- in December
+- in the army
+- in trouble
+- in theory
+
+Translation is easier to do when working with phrases, bu there are many phrases that can be made with one language.
+
+
+## Why Study Languages Abroad? - Sheri Spaine Long
+
+> Can you learn a languages without going abroad? Isn't it easier to pick up a languages by living in a country where it's spoken than by sitting in a classroom in your own country.
+
+
+Are you a learner that is not phased by lack of understanding of words in a phrase or do you require more structure and previous knowledge of a word before you begin to use it?
 
 
 

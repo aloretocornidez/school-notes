@@ -8,36 +8,36 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c62d7d1560288a90",
+            "id": "2a373249d5b44516",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
+                "file": "ece-569-high-performance-computing/Notes - ece 569.md",
                 "mode": "source",
                 "source": true
               }
             },
-            "group": "b662a31f2db73502"
+            "group": "1cedfd43508422a2"
           }
         ]
       },
       {
-        "id": "2cd9c4470ddebae7",
+        "id": "49e86cdd632dce73",
         "type": "tabs",
         "children": [
           {
-            "id": "a5cb127f55790941",
+            "id": "87c423b54f256318",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
-                "mode": "preview",
+                "file": "ece-569-high-performance-computing/Notes - ece 569.md",
+                "mode": "source",
                 "source": true
               }
             },
-            "group": "b662a31f2db73502"
+            "group": "1cedfd43508422a2"
           }
         ]
       }
@@ -89,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "11245dc6c991ac19",
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
+                "file": "ece-569-high-performance-computing/Notes - ece 569.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
+                "file": "ece-569-high-performance-computing/Notes - ece 569.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ece-532-digital-image-analysis/Notes - ece 532.md"
+                "file": "ece-569-high-performance-computing/Notes - ece 569.md"
               }
             }
           }
@@ -167,17 +166,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c62d7d1560288a90",
+  "active": "2a373249d5b44516",
   "lastOpenFiles": [
-    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
-    "ece-532-digital-image-analysis/Notes - ece 532.md",
+    "Pasted image 20230117110641.png.md",
+    "ece-569-high-performance-computing/notes/Matrix Multiplication.md",
+    "ece-569-high-performance-computing/Notes - ece 569.md",
+    "ece-569-high-performance-computing/Proposal.md",
     "ece-569-high-performance-computing/notes/february-14-2023.md",
     "ece-569-high-performance-computing/notes/february-9-2023.md",
     "ece-569-high-performance-computing/notes/february-7-2023.md",
-    "sie-265-engineering-management/lecture/evaluating-a-single-project-chapter-5.md",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230207134500.png",
-    "ece-569-high-performance-computing/Notes - ece 569.md",
-    "ece-569-high-performance-computing/quiz/quiz-3-recap.md",
-    "sie-265-engineering-management/in-class-assignments/February 6th.md"
+    "ece-569-high-performance-computing/notes/atomic-operations.md",
+    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
+    "sie-265-engineering-management/lecture/comparison-and-selection-among-alternatives-chapter-6.md"
   ]
 }

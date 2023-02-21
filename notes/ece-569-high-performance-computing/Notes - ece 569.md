@@ -2,7 +2,7 @@
 Name: Ali Akoglu
 Email: akoglu@arizona.edu
 
-
+[[Matrix Multiplication]]
 
 # Introduction
 January 12, 2022
@@ -160,7 +160,6 @@ Developer Resources for GPU computing
 	- **Quality**: Libraries offer high-quality implementations of functions encountered in a broad range of applications
 
 ### Vector addition in the Thrust library
-![[Pasted image 20230117110641.png]]
 
 - As you can see, the low-level details of program execution are hidden from the end-user
 	- For example, the programmer does not have to know how many threads are being used
@@ -341,6 +340,8 @@ for(i = 0; i < WIDTH; i++)
 
 
 ```
+
+
 
 
 
