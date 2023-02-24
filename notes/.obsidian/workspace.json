@@ -4,40 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "def5266ff65a96f4",
+        "id": "1b68860ae9cde5a4",
         "type": "tabs",
         "children": [
           {
-            "id": "2a373249d5b44516",
+            "id": "264a1ffb127e971f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ece-569-high-performance-computing/Notes - ece 569.md",
+                "file": "sie-265-engineering-management/lecture/chapter-4-the-time-value-of-money.md",
                 "mode": "source",
                 "source": true
               }
-            },
-            "group": "1cedfd43508422a2"
-          }
-        ]
-      },
-      {
-        "id": "49e86cdd632dce73",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "87c423b54f256318",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ece-569-high-performance-computing/Notes - ece 569.md",
-                "mode": "source",
-                "source": true
-              }
-            },
-            "group": "1cedfd43508422a2"
+            }
           }
         ]
       }
@@ -89,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 479.5004348754883
   },
   "right": {
     "id": "11245dc6c991ac19",
@@ -105,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ece-569-high-performance-computing/Notes - ece 569.md",
+                "file": "sie-265-engineering-management/lecture/chapter-4-the-time-value-of-money.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ece-569-high-performance-computing/Notes - ece 569.md",
+                "file": "sie-265-engineering-management/lecture/chapter-4-the-time-value-of-money.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ece-569-high-performance-computing/Notes - ece 569.md"
+                "file": "sie-265-engineering-management/lecture/chapter-4-the-time-value-of-money.md"
               }
             }
           }
@@ -166,17 +146,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2a373249d5b44516",
+  "active": "264a1ffb127e971f",
   "lastOpenFiles": [
-    "Pasted image 20230117110641.png.md",
+    "sie-265-engineering-management/lecture/chapter-1-intro-to-engineering-economy.md",
+    "sie-265-engineering-management/lecture/chapter-5-evaluating-a-single-project.md",
+    "sie-265-engineering-management/lecture/chapter-6-comparison-and-selection-among-alternatives.md",
+    "sie-265-engineering-management/lecture/chapter-4-the-time-value-of-money.md",
+    "sie-265-engineering-management/lecture/comparison-and-.md",
+    "ece-532-digital-image-analysis/Notes - ece 532.md",
     "ece-569-high-performance-computing/notes/Matrix Multiplication.md",
     "ece-569-high-performance-computing/Notes - ece 569.md",
+    "Pasted image 20230117110641.png.md",
     "ece-569-high-performance-computing/Proposal.md",
     "ece-569-high-performance-computing/notes/february-14-2023.md",
     "ece-569-high-performance-computing/notes/february-9-2023.md",
     "ece-569-high-performance-computing/notes/february-7-2023.md",
     "ece-569-high-performance-computing/notes/atomic-operations.md",
-    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
-    "sie-265-engineering-management/lecture/comparison-and-selection-among-alternatives-chapter-6.md"
+    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md"
   ]
 }

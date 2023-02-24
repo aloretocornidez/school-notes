@@ -1,4 +1,4 @@
-cd# What is a Digital Image?
+gi# What is a Digital Image?
 A digital image is composed of pixels having discrete values that are provided by a 2D function indexed by a pair of discrete spatial coordinates; those values, when displayed, provide a visual representation of something.
 - A digital image is usually stored as an array of pixel values
 - A pixel may be a vector of values (e.g., an RGB image).
@@ -1132,7 +1132,7 @@ Goal: Partition the image into homogeneous regions.
 
 **Def** Let H be some homogeneity measure (e.g., similar intensity, color, or texture). Then a segmentation of image A is a partition satisfying:
 
-1. $H[A_{k]}= \text{True} \forall k$
+1. $H[A_{k}]= \text{True } \forall k$
 2. $A_{i} \text{ adj } A_{j} \Rightarrow H [A_{i}\cup A_{j}] = \text{False for all } i \ne j$
 3. $A_{k} \text{ is connected (optional)}$ 
 
@@ -1161,35 +1161,111 @@ Challenges:
 Step 1. Initialize the bg region to be just the four corners of the image. (or another region that is expected to the the bg). Let the 
 
 
+### Early Approaches to Histogram Thresholding
+
+**Chow**: Adaptive Histogram Thresholding
+- Divide the image into disjoint blocks
+- Compute a local histogram for each block
+- Determine a threshold for each block histogram
+- Associate the thresholds with the block centers
+- Interpolate the thresholds to get thresholds for pixels not at a block center
+
+**Watanabe**: Sum of Gradients
+- Choose the threshold that maximizes the sum of gradient magnitudes at all pixels whose gray level equals the threshold.
+- If you pick the correct threshold, the pixel that would correspond to a boundary would have a pretty high gradient at transition points.
+- What if you pick a threshold that's too small? There will be a lot of small gradient crosses
+
+
+**Weska**: Large Laplacian Magnitude
+
+Perform histogram calculations for all pixels, calculate 
+
+thresholding at only for pixels with large Laplacian magnitudes.
 
 
 
 
+**Weska & Rosenfeld**: Busyness
+
+Busyness = number of pixels that are border pixels
+
+When you pick the correct threshold, you will have the least amount of boundaries.
+
+
+**Kohler**: Max Contrast
+
+Selext the threshold that maximizes the average contrast, defined as:
+$$AveContrast = \frac{C(T)}{\#E(t)}$$
+
+Define total contrast as:
+$$C(T) = \sum\limits min{\{|I(i,j) - T|, |I(k, l) - T|\} }$$
+
+Define edges as: (slidess)
+$$E(t) = \{ [ ] \}$$
+
+
+**Ridler's**: Iterative Threshold Selection Algorithm
+- Assume two regions: forground (fg) and background (bg).
+- Assume fg is neat the center of the image and is surrounded by bg.
+
+1. Initialize the bg region to be small patches at the four couners of the image (or other region that is expeted to be bg). Let the fg region be the remainder of the image.
+2. For each iterations, calcualte the mean gray level of the fg and bg
+3. Calculate the next threshold value
+4. If the previous threshold value is the same as the next background, then stop, otherwise, repeat step two with the new bg and fg regions.
+
+
+**Trussell's**: Improvement to Ridler's Method
+
+Just read the paper (it's half a page): https://ieeexplore.ieee.org/document/4310204
 
 
 
+**Otsu's Method**:
+
+- Assume a grayscale image such that h(i) is the number of occurences of gray level i in the image.
+- Let N be the number of pixels in the image.
+- Normalize the histogram to obtain an observed 'probability distibution'
+- Assume the histogram can be classified as bimodal and find the optimal threshold to partition the histogram into two classes (e.g., fg, bg)
+
+![[Pasted image 20230221133329.png]]
+
+- Select the theshold that minimizes the variance:
+
+$$\sigma_{w}^{2}= q_{1}\sigma_{1}^{2}+ q_{2}\sigma_{2}^{2}$$
+
+The within-class variance plus the between-class variance equals the overall variance:
+
+$$\sigma_{w}^{2} + \sigma_{B}^{2}= \sigma^{2}$$
+
+Thus, an equivalent method is to select the threshold that minimizes the between-class variance:
+
+$$\sigma_{B}^{2}= q_{1}(t) q_{2}(t) [\mu_{1}(t) - \mu_{2}(t)]^2$$
+
+There are followup papers that have computationally efficient versions of this technique.
 
 
+**Otsu's Multilevel Thresholding**
+
+- For example, consider finding two thresholds to distinguish three classes.
+- The between-class variance becomes a funciton of two variables.
+
+![[Pasted image 20230221134014.png]]
+
+- Select threshold $t_{1}$ and $t_{2}$ to maximize $\sigma_{b}^{2}(t_{1}, t_{2})$, where $t_{1} < t_{2}$
+- The selected thresholds typically become less credible as the number of classes increases.
 
 
+**Kittler & Illingworth's Method**
+
+Kittler & Illingworth's method is optimal in the sense that it minimizes the Kullback-Leibler divergence between the image histogram and a sum-of-truncated-Gaussians probability model
+
+Their method was ranged #1 in Glasbey's 1992 survey and Sezgin's 2004 survey.
 
 
+- Assume a grayscale image image. Let h(\*) be the image such 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Kullback-Liebler Divergence
 
 
 
