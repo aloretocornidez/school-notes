@@ -34,3 +34,41 @@ Chapter 6 is about conducting comparisons between invvestments.
 	- Service periods
 
 
+
+
+
+## Section 6.5 - 6.6
+
+### Comparing MEAs with Unequal Lives
+**Repeatability Assumption**
+- THe study period is either indefinitely long or equal to a common multiple of the MEAs useful lives.
+- This assumes that the economic consequences expected during the MEA's life spans will recur in succeeding life scpans (replacements).
+
+**Coterminated Assumption (widely used)**
+- If repeatability cannot be used, an appropriate finite and identical study period must be selected for all MEAs.
+- Cash flow adjustments may be needed to satisfy alternative performance needs over the study period.
+
+**General Underlying Principle**
+*Compare all MEAs being considered over the same study (analysis) period.*
+
+
+**Useful Live < Study Period**
+a. Cost Alternatives
+- Contracting or leasing for the remaining years may be appropriate.
+- Repeat part of the useful life and use an estimated market value to truncate the project a the end of the study period.
+
+
+b. Investment Alternatives
+- Net project value at the end of the useful life is reinvested in other opportunities at the MARR at the end of the study period. *Calculate the FW at the end of the study period*
+- Replace with another asset at the end of the current asset's useful life, with possibly different cash flows
+
+
+
+**Useful Life > Study Period**
+
+
+
+
+
+
+

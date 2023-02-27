@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sie-265-engineering-management/lecture/chapter-4-the-time-value-of-money.md",
+                "file": "sie-265-engineering-management/lecture/chapter-6-comparison-and-selection-among-alternatives.md",
                 "mode": "source",
                 "source": true
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 479.5004348754883
+    "width": 479.5004348754883,
+    "collapsed": true
   },
   "right": {
     "id": "11245dc6c991ac19",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sie-265-engineering-management/lecture/chapter-4-the-time-value-of-money.md",
+                "file": "sie-265-engineering-management/lecture/chapter-6-comparison-and-selection-among-alternatives.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sie-265-engineering-management/lecture/chapter-4-the-time-value-of-money.md",
+                "file": "sie-265-engineering-management/lecture/chapter-6-comparison-and-selection-among-alternatives.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sie-265-engineering-management/lecture/chapter-4-the-time-value-of-money.md"
+                "file": "sie-265-engineering-management/lecture/chapter-6-comparison-and-selection-among-alternatives.md"
               }
             }
           }
@@ -138,6 +139,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "oz-clear-unused-images:Clear Unused Images": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -148,10 +150,10 @@
   },
   "active": "264a1ffb127e971f",
   "lastOpenFiles": [
+    "sie-265-engineering-management/lecture/chapter-4-the-time-value-of-money.md",
     "sie-265-engineering-management/lecture/chapter-1-intro-to-engineering-economy.md",
     "sie-265-engineering-management/lecture/chapter-5-evaluating-a-single-project.md",
     "sie-265-engineering-management/lecture/chapter-6-comparison-and-selection-among-alternatives.md",
-    "sie-265-engineering-management/lecture/chapter-4-the-time-value-of-money.md",
     "sie-265-engineering-management/lecture/comparison-and-.md",
     "ece-532-digital-image-analysis/Notes - ece 532.md",
     "ece-569-high-performance-computing/notes/Matrix Multiplication.md",
