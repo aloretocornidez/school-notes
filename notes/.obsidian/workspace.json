@@ -1,63 +1,43 @@
 {
   "main": {
-    "id": "ff10299e86f3fd2c",
+    "id": "b2dd6d499c7c9b8d",
     "type": "split",
     "children": [
       {
-<<<<<<< Updated upstream
-        "id": "1b68860ae9cde5a4",
+        "id": "34d2f4ddb3f28dc2",
         "type": "tabs",
         "children": [
           {
-            "id": "264a1ffb127e971f",
-=======
-        "id": "2cd9c4470ddebae7",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a5cb127f55790941",
->>>>>>> Stashed changes
+            "id": "412d339dfb462705",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-<<<<<<< Updated upstream
-                "file": "sie-265-engineering-management/lecture/chapter-6-comparison-and-selection-among-alternatives.md",
-=======
-<<<<<<< Updated upstream
-                "file": "sie-265-engineering-management/lecture/chapter-4-the-time-value-of-money.md",
->>>>>>> Stashed changes
-                "mode": "source",
-                "source": true
-              }
-            }
-=======
-                "file": "sie-265-engineering-management/lecture/evaluating-a-single-project-chapter-5.md",
+                "file": "sie-265-engineering-management/lecture/chapter-7-depreciation-and-income-taxes.md",
                 "mode": "source",
                 "source": true
               }
             },
-            "group": "5e1b9040faa6542e"
+            "group": "deb635cc9bc66f39"
           }
         ]
       },
       {
-        "id": "37b1007e86ada254",
+        "id": "a7cc188af4789259",
         "type": "tabs",
         "children": [
           {
-            "id": "6d41883892fa184a",
+            "id": "c41d7e50b1736702",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sie-265-engineering-management/lecture/evaluating-a-single-project-chapter-5.md",
+                "file": "sie-265-engineering-management/lecture/chapter-7-depreciation-and-income-taxes.md",
                 "mode": "preview",
                 "source": true
               }
             },
-            "group": "5e1b9040faa6542e"
->>>>>>> Stashed changes
+            "group": "deb635cc9bc66f39"
           }
         ]
       }
@@ -65,15 +45,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "669ecce261539373",
+    "id": "ad0342876d285a23",
     "type": "split",
     "children": [
       {
-        "id": "dfc82589d410ad70",
+        "id": "c9708c22fb0dd1e4",
         "type": "tabs",
         "children": [
           {
-            "id": "56f791c6f128999d",
+            "id": "f4370c4d6aa44f95",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -83,12 +63,12 @@
             }
           },
           {
-            "id": "c254021abf7498dd",
+            "id": "79d7f5deed7c3798",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "bond",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,44 +78,35 @@
             }
           },
           {
-            "id": "592ca51124811fa3",
+            "id": "2be9c6e06b2581f9",
             "type": "leaf",
             "state": {
               "type": "starred",
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 479.5004348754883,
+    "width": 300,
     "collapsed": true
   },
   "right": {
-    "id": "11245dc6c991ac19",
+    "id": "1c27f80bbae219eb",
     "type": "split",
     "children": [
       {
-        "id": "ed2b39bbfdd0dc68",
+        "id": "4b06e60e9dd76539",
         "type": "tabs",
         "children": [
           {
-            "id": "9050bc3b579cecfa",
+            "id": "f4043c071d1eb4c6",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< Updated upstream
-                "file": "sie-265-engineering-management/lecture/chapter-6-comparison-and-selection-among-alternatives.md",
-=======
-<<<<<<< Updated upstream
-                "file": "sie-265-engineering-management/lecture/chapter-4-the-time-value-of-money.md",
-=======
-                "file": "sie-265-engineering-management/lecture/evaluating-a-single-project-chapter-5.md",
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+                "file": "sie-265-engineering-management/lecture/chapter-7-depreciation-and-income-taxes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,27 +118,19 @@
             }
           },
           {
-            "id": "bcf4a8019b972013",
+            "id": "1b2646a61097782d",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< Updated upstream
-                "file": "sie-265-engineering-management/lecture/chapter-6-comparison-and-selection-among-alternatives.md",
-=======
-<<<<<<< Updated upstream
-                "file": "sie-265-engineering-management/lecture/chapter-4-the-time-value-of-money.md",
-=======
-                "file": "sie-265-engineering-management/lecture/evaluating-a-single-project-chapter-5.md",
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+                "file": "sie-265-engineering-management/lecture/chapter-7-depreciation-and-income-taxes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "e8009df123418759",
+            "id": "6e7246e7cc6bb513",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -178,20 +141,12 @@
             }
           },
           {
-            "id": "2a2be44ffd87667e",
+            "id": "977f26606d140de4",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-<<<<<<< Updated upstream
-                "file": "sie-265-engineering-management/lecture/chapter-6-comparison-and-selection-among-alternatives.md"
-=======
-<<<<<<< Updated upstream
-                "file": "sie-265-engineering-management/lecture/chapter-4-the-time-value-of-money.md"
-=======
-                "file": "sie-265-engineering-management/lecture/evaluating-a-single-project-chapter-5.md"
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+                "file": "sie-265-engineering-management/lecture/chapter-7-depreciation-and-income-taxes.md"
               }
             }
           }
@@ -213,37 +168,11 @@
       "command-palette:Open command palette": false
     }
   },
-<<<<<<< Updated upstream
-  "active": "264a1ffb127e971f",
+  "active": "412d339dfb462705",
   "lastOpenFiles": [
-    "sie-265-engineering-management/lecture/chapter-4-the-time-value-of-money.md",
-    "sie-265-engineering-management/lecture/chapter-1-intro-to-engineering-economy.md",
-    "sie-265-engineering-management/lecture/chapter-5-evaluating-a-single-project.md",
-    "sie-265-engineering-management/lecture/chapter-6-comparison-and-selection-among-alternatives.md",
-    "sie-265-engineering-management/lecture/comparison-and-.md",
-    "ece-532-digital-image-analysis/Notes - ece 532.md",
-    "ece-569-high-performance-computing/notes/Matrix Multiplication.md",
-    "ece-569-high-performance-computing/Notes - ece 569.md",
-    "Pasted image 20230117110641.png.md",
-    "ece-569-high-performance-computing/Proposal.md",
-    "ece-569-high-performance-computing/notes/february-14-2023.md",
-    "ece-569-high-performance-computing/notes/february-9-2023.md",
-    "ece-569-high-performance-computing/notes/february-7-2023.md",
-    "ece-569-high-performance-computing/notes/atomic-operations.md",
-    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md"
-=======
-  "active": "6d41883892fa184a",
-  "lastOpenFiles": [
-    "ece-532-digital-image-analysis/Notes - ece 532.md",
-    "Pasted image 20230117110641.png.md",
-    "ece-569-high-performance-computing/Notes - ece 569.md",
-    "sie-265-engineering-management/lecture/evaluating-a-single-project-chapter-5.md",
-    "ger-150-becoming-multilingual/Textbook Notes - ger 150.md",
-    "ece-569-high-performance-computing/notes/february-14-2023.md",
-    "ece-569-high-performance-computing/notes/february-9-2023.md",
-    "ece-569-high-performance-computing/notes/february-7-2023.md",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230207134500.png",
-    "ece-569-high-performance-computing/quiz/quiz-3-recap.md"
->>>>>>> Stashed changes
+    "sie-265-engineering-management/lecture/attachments/Pasted image 20230313091903.png",
+    "sie-265-engineering-management/lecture/attachments/Pasted image 20230313091731.png",
+    "sie-265-engineering-management/lecture/attachments/Pasted image 20230313091500.png",
+    "sie-265-engineering-management/lecture/chapter-7-depreciation-and-income-taxes.md"
   ]
 }
