@@ -66,6 +66,41 @@ b. Investment Alternatives
 
 **Useful Life > Study Period**
 
+- Truncate the alternative at the end of the study period, using an estimated market value.
+
+
+
+
+### Equivalent Worth Methods
+- Under the repeatability assumption, the cash flows for an alternative's initial life cycle will be repeated (i.e., they are identical) in all subsequent replacement cycles.
+- With repeatability, we will simply compute the AW of each alternative over its own useful life and recommend the one having the most economical value.
+- Capitalized Worth (CW) 
+
+### Example 6-7
+The following data have been estimated for two mutually exclusive investment alternatives, A and B, associated with a small engineering project for which revenues as well as expenses are involved. They have useful lives of four and six years, respectively. If MARR = 10% per year, show which alternative is more desirable by using equivalent-worth methods (computed by hand and by spreadsheet). Use the repeatability assumption.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
