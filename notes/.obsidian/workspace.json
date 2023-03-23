@@ -13,31 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sie-265-engineering-management/lecture/chapter-7-depreciation-and-income-taxes.md",
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
                 "mode": "source",
                 "source": true
               }
             },
-            "group": "deb635cc9bc66f39"
+            "group": "67304e9684d30791"
           }
         ]
       },
       {
-        "id": "a7cc188af4789259",
+        "id": "2688ed3c6e3e8af5",
         "type": "tabs",
         "children": [
           {
-            "id": "c41d7e50b1736702",
+            "id": "14ac247fbce1415f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sie-265-engineering-management/lecture/chapter-7-depreciation-and-income-taxes.md",
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
                 "mode": "preview",
                 "source": true
               }
             },
-            "group": "deb635cc9bc66f39"
+            "group": "67304e9684d30791"
           }
         ]
       }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sie-265-engineering-management/lecture/chapter-7-depreciation-and-income-taxes.md",
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sie-265-engineering-management/lecture/chapter-7-depreciation-and-income-taxes.md",
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sie-265-engineering-management/lecture/chapter-7-depreciation-and-income-taxes.md"
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md"
               }
             }
           }
@@ -168,11 +168,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "412d339dfb462705",
+  "active": "14ac247fbce1415f",
   "lastOpenFiles": [
-    "sie-265-engineering-management/lecture/attachments/Pasted image 20230313091903.png",
-    "sie-265-engineering-management/lecture/attachments/Pasted image 20230313091731.png",
-    "sie-265-engineering-management/lecture/attachments/Pasted image 20230313091500.png",
-    "sie-265-engineering-management/lecture/chapter-7-depreciation-and-income-taxes.md"
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230323130630.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230323130604.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230323125603.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230323125217.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230323125112.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230323125110.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230323125108.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230323125037.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230323125028.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230323124918.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230323124820.png",
+    "sie-265-engineering-management/lecture/chapter-7-depreciation-and-income-taxes.md",
+    "ece-532-digital-image-analysis/Notes - ece 532.md"
   ]
 }

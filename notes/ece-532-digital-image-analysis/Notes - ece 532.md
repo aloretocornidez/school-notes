@@ -1,4 +1,4 @@
-gi# What is a Digital Image?
+# What is a Digital Image?
 A digital image is composed of pixels having discrete values that are provided by a 2D function indexed by a pair of discrete spatial coordinates; those values, when displayed, provide a visual representation of something.
 - A digital image is usually stored as an array of pixel values
 - A pixel may be a vector of values (e.g., an RGB image).
@@ -1270,6 +1270,211 @@ Kullback-Liebler Divergence
 
 
 
+
+
+
+
+
+
+# Module 8 |  Morphological Image Analysis
+
+### Binary Morphology
+* Assume a bi-level image.
+* Represent an image as a set $A$ of foreground points in a d-dimensional Euclidean space: $A \subset \mathbb{R}$
+
+
+
+### Erosion
+
+![[Pasted image 20230314124814.png]]
+
+### Border and Interior and Whole
+
+**Definition:** A border pixel or boundary pixel of binary object A is a pixel of A such that at least one of its neighbors is not in A. The border or boundary of binary object A is the set of its border pixels. If 4-connectivity (8-connectivity) is used for this definition, then the border will be an 8-connected (4-connected) region.
+
+![[Pasted image 20230314125315.png]]
+
+
+### Convex Hull
+
+![[Pasted image 20230316124020.png]]
+
+### Discrete Disk
+Let a 'disk' be a discrete approximation to a circular disk, where the bounding box is a square with an odd dimension
+
+### Medial Axis Transform
+
+![[Pasted image 20230316124402.png]]
+
+Pretty much finds the largest possible disk that fits within a certain position.
+
+
+### Top Surface of a Set
+
+$$T[A] (x) = max \{ y | (x,y) \in A\}$$
+
+
+
+
+
+
+
+
+
+
+
+
+# Module 9 | Stereoscopic Image Analysis
+
+### Pinhole Camera Model
+
+This model approximates the mathematical relationship between the 3d coordinates of a point in the scene and the pixel coordinates of its projection onto the image plane of the camera.
+
+![[Pasted image 20230323124626.png]]
+
+Light rays from the illumination source will be reflected off the object, will pass through the pinhole aperture of the camera, and then hit the sensor elements on the image plane within the camera.
+
+
+### World Coordinates
+
+Let the focal lenght $f$ be the distance between the image plance and the pinhole aperture of the camera. Define world coordinates $(x, y, z)$ as follows:
+
+![[Pasted image 20230323124820.png]]
+
+### Viewpoint Model
+
+Equivalently, we can consider the image plane to be located at $z=-f$ instead of $z=f$, due to the similarity of triangles.
+
+![[Pasted image 20230323124918.png]]
+
+Object point $(x, y, z)$ maps to image point $(x', y')$
+
+![[Pasted image 20230323125037.png]]
+
+In the $x-z$ plane, we see a pair of similar triangles.
+
+![[Pasted image 20230323125112.png]]
+
+By analyzing similar triangles, we find the relationship between object's $(x, y)$ coordinates and image plane $(x', y')$ coordinates.
+
+![[Pasted image 20230323125217.png]]
+
+This mapping is known as *perspective projection.*
+
+Here, world coordinates and the image plane coordinates have the same units (i.e., meters instead of pixels).
+
+### Binocular Imaging Geometry
+
+Assume the left and right image planes are centered at $(x,y,z) = (0,0,-f)$ and $(x,y,z) = (b,0,-f)$, respectively, where $b$ is the *baseline distance* between the camera centers.
+
+Assume the optical axes of the cameras are parallel.
+
+Object point $P(x, y, z)$ maps to left and right image coordinates $(x_{L},y_{L})$ and $(x_{R},y_{R})$ respectively.
+
+Observe that $X_{L} > x_{R}$ if the object distance is finite.
+
+![[Pasted image 20230323125603.png]]
+
+Recall the perspective projection equations:
+
+$$x' = \frac{fx}{-z}$$
+and 
+$$y' = \frac{fy}{-z}$$
+
+Applying the perspective projection equations to each camera, we have:
+
+$$x_{L}= \frac{fx}{-z}$$
+
+$$x_{R} = \frac{f(x-b)}{-z}$$
+
+$$y_{L}= \frac{fy}{-z}$$
+
+### Disparity and 3D Reconstruction
+
+Define disparity as 
+
+$$d = x_{L}- x_{R}$$
+
+There will be greater disparity for points in the scene that are closer to the cameras. This is known as the *parallax effect*. Points at an infinite distance will have zero disparity.
+
+We can exploit the parallax effect to reconstruct the distance to a point in the scene.
+
+
+### Disparity and 3D Reconstruction
+
+After we measure the disparity between the left and right image points for a point in the scene, we can reconstruct the 3D world coordinates of that points:
+
+$$d = x_{L}- x_{R} = \left(\frac{fx}{-z}\right) - \left(f\frac{x-b}{-z}\right) = \frac{bf}{-z} \Rightarrow -z = \frac{bf}{d}$$
+
+$$x_{L}= \frac{fx}{-z}\Rightarrow x = \frac{-zx_{L}}{f}\Rightarrow x=\frac{bx_{L}}{d}$$
+
+$$y_{L}= \frac{fy}{-z} \Rightarrow y=\frac{-zy_{L}}{f} \Rightarrow y = \frac{by_{L}}{d}$$
+
+
+### Stereo Image Pair
+
+![[Pasted image 20230323130604.png]]
+
+This can be used to generate a ***Disparity Map***
+
+![[Pasted image 20230323130630.png]]
+
+
+### Units
+- When calculating the disparity and applying the reconstruction equations, we must use consistent coordiantes for all quantities -- i.e. meters.
+- Integer pixel coordinates must be converted to meters by multiplying by the physical pixel dimension (i.e., the size of the CCD or CMOS element for a single pixel).
+
+### Correspondence Matching Problem
+
+The main challenge is to determine which point in the right image corresponds to a given point in the left image. This is known as the *Correspondence Matching Problem*.
+
+
+### Epipolar Constraint
+
+Since $y_{L}= y_{R}$, we can restrict the search to the same row in the other image if the imaging geometry is ideal. In practice, however, there will be some jitter in the camera orientation, so nearby rows should also be searched.
+
+For stereo imaging geometries, the reconstruction equations and the epipolar constraint are a bit more complicated.
+
+
+### Baseline
+
+If the baseline distance $b$ is too small, then
+- The two images will look similar -e.i., lots of image overlap, meaning Correspondence matching will be easier.
+- Pixel quantization error is significant, leading to more error in the calculation of disparity and distance.
+
+If the baseline distance $b$ is too small, then
+- The field of view for the left image may be quite different from that of the right image -i.e., not much image overlap, meaning that correspondence matching will be much more difficult.
+- Pixel quantization error is less  significant, leading to a more accurate calculation of disparity and distance.
+
+
+### Example of Disparity and Distance Calculation
+
+Assume the following values:
+focal length $f = 50\ mm$
+baseline $b = 0.8\ m$
+pixel size $\delta = 0.5\ mm$
+
+Suppose we've identified pixels in the left and right images that correspond to the same object point in the scene, and their image coordinates are
+
+$$(x_{L}, y_{L}) = (110, 200) \delta$$
+$$(x_{R}, y_{R}) = (100, 200) \delta$$
+
+We can reconstruct the distance to the object point in terms of the disparity:
+
+$$d = (110 - 100) (0.5\ mm) = 5\ mm)$$
+
+$$-z = \frac{bf}{d} = \frac{(0.8\ m)(50\ mm)}{5\ mm} = 8\ m$$
+
+
+Let's assume that the image location of the projected object point pixel has been rounded to the nearest integer pixel coordinate -i.e., the nearest integer multiple of $\delta$. Thus, the worst-case quantization error in each pixel coordinate is $\pm 0.5$ pixel, ie., $\pm 0.5\delta$.
+
+When we subtract pixel coodinates, the potential error will double, so the worst case quantization error in the calculated disparity is $\pm 1$ pixel, i.e. $\pm \delta$.
+
+We can thus calculate bounds for the calculated distance:
+
+$$(-z)_{min} = \frac{bf}{d_{max}} = \frac{(0.8\ m)(50\ mm)}{(10+1)(0.5\ mm)} = 7.27\ m$$
+
+$$(-z)_{max} = \frac{bf}{d_{min}} = \frac{(0.8\ m)(50\ mm)}{(10-1)(0.5\ mm)} = 8.89\ m$$
 
 
 
