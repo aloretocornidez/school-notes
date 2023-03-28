@@ -6,6 +6,7 @@
       {
         "id": "34d2f4ddb3f28dc2",
         "type": "tabs",
+        "dimension": 52.79069767441861,
         "children": [
           {
             "id": "412d339dfb462705",
@@ -25,6 +26,7 @@
       {
         "id": "2688ed3c6e3e8af5",
         "type": "tabs",
+        "dimension": 47.20930232558139,
         "children": [
           {
             "id": "14ac247fbce1415f",
@@ -168,19 +170,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "14ac247fbce1415f",
+  "active": "412d339dfb462705",
   "lastOpenFiles": [
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230328131806.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230328131303.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230328131301.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230328131054.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230328131027.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230328130910.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230328130719.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230328130136.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230328130111.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230328130102.png",
     "ece-532-digital-image-analysis/attachments/Pasted image 20230323130630.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230323130604.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230323125603.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230323125217.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230323125112.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230323125110.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230323125108.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230323125037.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230323125028.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230323124918.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230323124820.png",
     "sie-265-engineering-management/lecture/chapter-7-depreciation-and-income-taxes.md",
     "ece-532-digital-image-analysis/Notes - ece 532.md"
   ]

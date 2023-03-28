@@ -1478,6 +1478,122 @@ $$(-z)_{max} = \frac{bf}{d_{min}} = \frac{(0.8\ m)(50\ mm)}{(10-1)(0.5\ mm)} = 8
 
 
 
+### Grimson's Stereo Algorithm
+
+- Stereo reconstruction requires matching corresponding pixels between left and right images.
+- Grimson matches edge pixels between left and right images instead of gray levels.
+- Image size: 288 x 244 pixels
+- Generate Edge maps using Gaussian with several $\sigma$ values.
+- Dissertation: $w = 9, 18, 36, 72$ pixels
+- PAMI paper: $w = 9, 17, 33; w= 5, 9, 13, 17$
+- LoG truncation radius $\approx 1.8w$
+- Ignore horizontal edge segments
+- Record the edge orientation in increments of 30 degrees
+- For each pixel in the left image, search for a match near the corresponding location of the right image.
+- Divide the search region of the right image into three "pools"
+
+![[Pasted image 20230328130102.png]]
+
+![[Pasted image 20230328130111.png]]
+
+- Two edges match if they have the same contrast sign and th orientation is within 30 degrees.
+
+![[Pasted image 20230328130136.png]]
+
+- If exactly one candidate is found within a pool, then it is sent to the "matcher"
+- If two or more are found in the same pool, then no disparity is assigned to that pixel.
+- If only one match is found in only one pool, then it is selected as the matching edge pixel.
+- If two or three pools have candidate matches, then they are stored for later disambiguation.
+
+### Disambiguation
+After processing the left edge map, resolve any ambiguities. Choose the candidate match that is most consistent with the neighbooring disparities.
+
+### Coarse to Fine
+Repeat for the next-finer scale of edge maps.
+I.e., start with the largest $\sigma$ and proceed to smaller $\sigma$ values.
+Center the search window based on the disparities previously computed near that location.
+
+### Figural Continuity
+Grimson discussed a way to improve the stereo matcher results. If a contour with $j$ gaps has length $\ge l_j$, then keep the disparity results along that contour. Here, $l_j$ is a threshold based on Rice's Theorem.
+
+### Post-Processing of Sparse Disparity Map
+- Grimson's stereo matching algorithm results in a sparse disparity map.
+- Reconstruct the $(x, y, z)$ coordinates corresponding to each disparity value.
+- Interpolate a smooth 3D surface through the sparse set of $(x,y,z)$ points.
+- Uniformly resample the interpolated surface to obtain a dense depth map.
+
+![[Pasted image 20230328130719.png]]
 
 
+### Example
+- Aircraft navigation in stealth mode without GPS or radar.
+- Using a single camera, take a sequence of photos of the terrain below.
+- Consecutive images act as a stereo pair.
+- Use stereo reconstruction to estimate an elevation map.
+- Match the estimated depth map to a reference digital elevation map to determine the location.
 
+![[Pasted image 20230328130910.png]]
+
+### Compute an Estimated Elevation Map and Cliff Map
+- Use Grimson's algorithm to derive an estimated elevation map.
+- Then apply LoG edge detection to extract a 'cliff map'
+- Identify "critical points" as the point of high curvature along cliff contours.
+
+![[Pasted image 20230328131027.png]]
+
+Compute a Cliff Map from the Reference Elevation Map
+
+![[Pasted image 20230328131054.png]]
+
+### Find the Estimated Cliff Map within the Reference Cliff Map
+- Each critical point in the estimated cliff map is compared to each critical point in the reference cliff map.
+- Each hypothesized match results in a hypothesized transofmration (rotation and translation)
+- An alignment check determines how well the transformed estimated cliff map aligns with the reference cliff map.
+- The best fit is selected as the final match.
+
+Detected Location within the Reference Cliff Map 
+
+![[Pasted image 20230328131303.png]]
+
+### Stereo Algorithms for Dense Disparity Map Calculation
+**Block Matching Method**
+**Semi-Global Matching Method**
+
+### Camera Calibration
+- Camera calibration to determine intrinsic parameters and extrinsic parameters.
+- Intrinsic parameters:
+	- Optical center (pixel coordinates)
+	- Focal length
+	- Pixel size $\delta_{x}\times \delta_{y}$
+	- Skew (if x- & y-axes not perpendicular)
+	- Lens distortion parameters
+- Extrinsic parameters between the two cameras:
+	- Translation vector
+	- Rotation Angles
+	- Scaling factor
+
+### Random Dot Stereograms
+- Julesz used random dot stereograms to demonstrate that the HVS can perceive stereoscopic depth separately from cognition of image content. Stereoscopic depth can be computed in the absence of any cues available to either eye alone.
+
+![[Pasted image 20230328131806.png]]
+
+- Instead of random dots, grayscale or color textures may be used.
+- A stereogram can also be achieved using a single image (autostereograms).
+
+
+### Extensions
+- Stereoreconstruction from three views (or more)
+- Stereo reconstruction using single view with multiple depths of focus.
+
+
+### MATLAB for Stereo Image Analysis
+
+```matlab
+stereoCameraCalibrator % interactive app used to calculate stereoParams  
+% Rectify stereo images onto a common image plane so corresponding points have same row coordinates:  
+[J1,J2,reprojectionMatrix] = rectifyStereoImages(I1, I2, stereoParams)  
+disparityMap = disparitySGM(J1, J2) % compute disparity map using semi-global matching method  
+disparityMap = disparityBM(J1, J2) % compute disparity map using block matching method  
+xyzPoints = reconstructScene(disparityMap,reprojectionMatrix) % reconstruct (x,y,z) values from disparity map  
+pcshow(xyzPoints) % plot 3D point cloud
+```
