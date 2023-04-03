@@ -6,40 +6,38 @@
       {
         "id": "34d2f4ddb3f28dc2",
         "type": "tabs",
-        "dimension": 52.79069767441861,
         "children": [
           {
-            "id": "412d339dfb462705",
+            "id": "536d105243fb729a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
+                "file": "sie-265-engineering-management/lecture/chapter-9-replacement-analysis.md",
                 "mode": "source",
                 "source": true
               }
             },
-            "group": "67304e9684d30791"
+            "group": "76beee123e532c6a"
           }
         ]
       },
       {
-        "id": "2688ed3c6e3e8af5",
+        "id": "ef63ee15a875599d",
         "type": "tabs",
-        "dimension": 47.20930232558139,
         "children": [
           {
-            "id": "14ac247fbce1415f",
+            "id": "77a117e2b2cdbe2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
+                "file": "sie-265-engineering-management/lecture/chapter-9-replacement-analysis.md",
                 "mode": "preview",
                 "source": true
               }
             },
-            "group": "67304e9684d30791"
+            "group": "76beee123e532c6a"
           }
         ]
       }
@@ -108,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
+                "file": "sie-265-engineering-management/lecture/chapter-9-replacement-analysis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
+                "file": "sie-265-engineering-management/lecture/chapter-9-replacement-analysis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ece-532-digital-image-analysis/Notes - ece 532.md"
+                "file": "sie-265-engineering-management/lecture/chapter-9-replacement-analysis.md"
               }
             }
           }
@@ -170,8 +168,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "412d339dfb462705",
+  "active": "536d105243fb729a",
   "lastOpenFiles": [
+    "sie-265-engineering-management/lecture/chapter-8-price-changes-and-exchange-rate.md",
+    "sie-265-engineering-management/lecture/chapter-9-replacement-analysis.md",
+    "sie-265-engineering-management/lecture/chapter-7-depreciation-and-income-taxes.md",
+    "ece-532-digital-image-analysis/Notes - ece 532.md",
     "ece-532-digital-image-analysis/attachments/Pasted image 20230328131806.png",
     "ece-532-digital-image-analysis/attachments/Pasted image 20230328131303.png",
     "ece-532-digital-image-analysis/attachments/Pasted image 20230328131301.png",
@@ -181,9 +183,6 @@
     "ece-532-digital-image-analysis/attachments/Pasted image 20230328130719.png",
     "ece-532-digital-image-analysis/attachments/Pasted image 20230328130136.png",
     "ece-532-digital-image-analysis/attachments/Pasted image 20230328130111.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230328130102.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230323130630.png",
-    "sie-265-engineering-management/lecture/chapter-7-depreciation-and-income-taxes.md",
-    "ece-532-digital-image-analysis/Notes - ece 532.md"
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230328130102.png"
   ]
 }
