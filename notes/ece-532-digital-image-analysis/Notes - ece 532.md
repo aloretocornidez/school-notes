@@ -1611,38 +1611,28 @@ pcshow(xyzPoints) % plot 3D point cloud
 
 
 
-<!--
-
 $$\pi \Pi \omega \Omega$$
 
 $$\begin{bmatrix}a&e&b&d& \\ d&e&r&t \\ as\end{bmatrix}$$
 
-$\int_{0^\$
+- wfhsdljkfawe
+- wjfklds
 
-![[Pasted image 20230419160221.png]]
+# Heading 1
+## Heading 2
+## Heading 2 a
+### asdfkl
+afjldsfjklds
+fjdsklfdasjf
+jklfdsf
 
-
-
-asdfahfkafe guis f
-
-
-asdgfds
-
-few
-fewsf
-
-f
-
-dg
-dwe
-afewf
-se
+## Heading 3dsklafs
 
 
--->
+# Heading
 
-asdfhuipew
-wehfw
-fh
-wf
-wh
+asdfjhkfas
+fhsjkfasd
+fs
+
+
