@@ -4,40 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "9a38faf26a54ce6c",
+        "id": "c824429e0e35b2a5",
         "type": "tabs",
         "children": [
           {
-            "id": "ce66b659fe294dec",
+            "id": "f55a2eab9397e723",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ece-532-digital-image-analysis/homework/homework-6.md",
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
                 "mode": "source",
                 "source": true
               }
             },
-            "group": "4901469dac5a3f9d"
+            "group": "656d6cc9c4a45771"
           }
         ]
       },
       {
-        "id": "3abdc5c6f147929b",
+        "id": "8a1ebaf3a65855dc",
         "type": "tabs",
         "children": [
           {
-            "id": "eea83fbbbd00362f",
+            "id": "fa10f3d113e3fd04",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ece-532-digital-image-analysis/homework/homework-6.md",
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
                 "mode": "preview",
                 "source": true
               }
             },
-            "group": "4901469dac5a3f9d"
+            "group": "656d6cc9c4a45771"
           }
         ]
       }
@@ -89,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a7d71c0245f073d0",
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ece-532-digital-image-analysis/homework/homework-6.md",
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ece-532-digital-image-analysis/homework/homework-6.md",
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ece-532-digital-image-analysis/homework/homework-6.md"
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md"
               }
             }
           }
@@ -168,6 +167,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eea83fbbbd00362f",
-  "lastOpenFiles": []
+  "active": "f55a2eab9397e723",
+  "lastOpenFiles": [
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230419160221.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230117131618.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230117130354.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230117125859.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230117125433.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230117125053.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230117124922.png",
+    "ece-532-digital-image-analysis/Notes - ece 532.md",
+    "ece-532-digital-image-analysis/homework/homework-6.md"
+  ]
 }

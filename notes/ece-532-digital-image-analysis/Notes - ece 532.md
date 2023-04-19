@@ -1597,3 +1597,52 @@ disparityMap = disparityBM(J1, J2) % compute disparity map using block matching 
 xyzPoints = reconstructScene(disparityMap,reprojectionMatrix) % reconstruct (x,y,z) values from disparity map  
 pcshow(xyzPoints) % plot 3D point cloud
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+$$\pi \Pi \omega \Omega$$
+
+$$\begin{bmatrix}a&e&b&d& \\ d&e&r&t \\ as\end{bmatrix}$$
+
+$\int_{0^\$
+
+![[Pasted image 20230419160221.png]]
+
+
+
+asdfahfkafe guis f
+
+
+asdgfds
+
+few
+fewsf
+
+f
+
+dg
+dwe
+afewf
+se
+
+
+-->
+
+asdfhuipew
+wehfw
+fh
+wf
+wh
