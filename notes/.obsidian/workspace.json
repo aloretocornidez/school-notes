@@ -4,20 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "34d2f4ddb3f28dc2",
+        "id": "57a977d93d0759aa",
         "type": "tabs",
         "children": [
           {
-            "id": "536d105243fb729a",
+            "id": "74c4505c53af09b4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sie-265-engineering-management/lecture/post-book-lectures.md",
+                "file": "ece-532-digital-image-analysis/homework/homework-6.md",
                 "mode": "source",
                 "source": true
               }
-            }
+            },
+            "group": "64023f1bcd936781"
+          }
+        ]
+      },
+      {
+        "id": "ffc1cb539f71d99b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d777602a375953f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ece-532-digital-image-analysis/homework/homework-6.md",
+                "mode": "preview",
+                "source": true
+              }
+            },
+            "group": "64023f1bcd936781"
           }
         ]
       }
@@ -86,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sie-265-engineering-management/lecture/post-book-lectures.md",
+                "file": "ece-532-digital-image-analysis/homework/homework-6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sie-265-engineering-management/lecture/post-book-lectures.md",
+                "file": "ece-532-digital-image-analysis/homework/homework-6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sie-265-engineering-management/lecture/post-book-lectures.md"
+                "file": "ece-532-digital-image-analysis/homework/homework-6.md"
               }
             }
           }
@@ -148,8 +168,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "536d105243fb729a",
+  "active": "74c4505c53af09b4",
   "lastOpenFiles": [
+    "ece-532-digital-image-analysis/homework/attachments/Pasted image 20230417162557.png",
+    "ece-532-digital-image-analysis/homework/attachments",
+    "ece-532-digital-image-analysis/homework/homework-6.md",
+    "ece-532-digital-image-analysis/homework",
+    "sie-265-engineering-management/lecture/post-book-lectures.md",
     "sie-265-engineering-management/lecture/chapter-9-replacement-analysis.md",
     "sie-265-engineering-management/lecture/chapter-8-price-changes-and-exchange-rate.md",
     "sie-265-engineering-management/lecture/chapter-7-depreciation-and-income-taxes.md",
