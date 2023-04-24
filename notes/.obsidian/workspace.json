@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c824429e0e35b2a5",
+        "id": "30e17f5cfc8fdbd0",
         "type": "tabs",
         "children": [
           {
-            "id": "f55a2eab9397e723",
+            "id": "395727c35a4301de",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,16 +18,16 @@
                 "source": true
               }
             },
-            "group": "656d6cc9c4a45771"
+            "group": "e80d3483d0a9d983"
           }
         ]
       },
       {
-        "id": "8a1ebaf3a65855dc",
+        "id": "adc079faf1ed88c8",
         "type": "tabs",
         "children": [
           {
-            "id": "fa10f3d113e3fd04",
+            "id": "46ea52b8b72c6036",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -37,7 +37,7 @@
                 "source": true
               }
             },
-            "group": "656d6cc9c4a45771"
+            "group": "e80d3483d0a9d983"
           }
         ]
       }
@@ -89,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a7d71c0245f073d0",
@@ -167,8 +168,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f55a2eab9397e723",
+  "active": "46ea52b8b72c6036",
   "lastOpenFiles": [
+    "ece-532-digital-image-analysis/Notes - ece 532.md",
     "ece-532-digital-image-analysis/attachments/Pasted image 20230419160221.png",
     "ece-532-digital-image-analysis/attachments/Pasted image 20230117131618.png",
     "ece-532-digital-image-analysis/attachments/Pasted image 20230117130354.png",
@@ -176,7 +178,6 @@
     "ece-532-digital-image-analysis/attachments/Pasted image 20230117125433.png",
     "ece-532-digital-image-analysis/attachments/Pasted image 20230117125053.png",
     "ece-532-digital-image-analysis/attachments/Pasted image 20230117124922.png",
-    "ece-532-digital-image-analysis/Notes - ece 532.md",
     "ece-532-digital-image-analysis/homework/homework-6.md"
   ]
 }

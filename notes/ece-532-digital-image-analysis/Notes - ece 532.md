@@ -1611,28 +1611,4 @@ pcshow(xyzPoints) % plot 3D point cloud
 
 
 
-$$\pi \Pi \omega \Omega$$
-
-$$\begin{bmatrix}a&e&b&d& \\ d&e&r&t \\ as\end{bmatrix}$$
-
-- wfhsdljkfawe
-- wjfklds
-
-# Heading 1
-## Heading 2
-## Heading 2 a
-### asdfkl
-afjldsfjklds
-fjdsklfdasjf
-jklfdsf
-
-## Heading 3dsklafs
-
-
-# Heading
-
-asdfjhkfas
-fhsjkfasd
-fs
-
 
