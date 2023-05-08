@@ -1612,3 +1612,252 @@ pcshow(xyzPoints) % plot 3D point cloud
 
 
 
+
+# Module 10 | More Image Segmentation
+
+### Multi Thresholding
+When the image is not bimodal, you can use multiple gray-level thresholding.
+
+
+### Color Thresholding
+Sometimes, segmentation by color thresholding may not work very well. 
+
+![[Pasted image 20230425123846.png]]
+
+
+You can shift the colorspace to extract a specific color.
+
+```matlab
+hsv = rgb2hsv(I);
+```
+
+
+![[Pasted image 20230425123948.png]]
+
+![[Pasted image 20230425124000.png]]
+
+```
+Hmask = H<0.1 | H>0.7; Vmask = V>0.6
+```
+
+![[Pasted image 20230425124008.png]]
+
+
+```
+mask = Hmask & Vmask
+```
+![[Pasted image 20230425124015.png]]
+
+You can use combinations of different masks in order to get better segmenation.
+
+
+```
+mask = imclose(mask, strel('disk',3));  
+cc = bwconncomp(mask); L = labelmatrix(cc); stats = regionprops(cc, 'Area’, 'Circularity');  
+idx = find([stats.Area] > 2100 | [stats.Area] > 1700 & [stats.Circularity] > 0.5);  
+mask = ismember(L, idx);
+```
+
+![[Pasted image 20230425124037.png]]
+
+![[Pasted image 20230425124200.png]]
+
+
+### k -Means Clustering
+
+![[Pasted image 20230425124318.png]]
+
+![[Pasted image 20230425124337.png]]
+
+![[Pasted image 20230425124345.png]]
+
+### k-Means++ Clustering
+
+![[Pasted image 20230425124402.png]]
+
+![[Pasted image 20230425124429.png]]
+
+### Variations of k-Means Clustering
+
+
+**k-Median Clustering**
+The k-median clustering method is a variation of k-means clustering where the cluster median is used instead of the cluster mean.
+
+**Fuzzy C-Means Clustering**
+Another variation is the fuzzy C-means clustering method, where the objective function is modified to include membership values and a fuzzifier that determines the level of cluster fuzziness. Each vector has a “fuzzy” degree of belonging to each cluster.
+
+![[Pasted image 20230425124600.png]]
+
+
+
+### Mean Shift Algorithm
+
+![[Pasted image 20230425124617.png]]
+
+
+### Normalized Cuts Segmentation Algorithm
+
+![[Pasted image 20230425124637.png]]
+
+### Superpixel Segmentation 
+
+![[Pasted image 20230425124658.png]]
+
+
+### Watershed Transformation
+
+![[Pasted image 20230425124706.png]]
+
+
+![[Pasted image 20230425124723.png]]
+
+
+![[Pasted image 20230425124735.png]]
+
+
+### SLIC Superpixel Transformation
+
+![[Pasted image 20230425124823.png]]
+
+![[Pasted image 20230425124834.png]]
+
+![[Pasted image 20230425124848.png]]
+
+![[Pasted image 20230425124857.png]]
+
+![[Pasted image 20230425124907.png]]
+
+
+![[Pasted image 20230425124918.png]]
+
+
+
+### Evaluation of Superpixel Algorithms
+
+
+```Citation
+
+D. Stutz, A. Hermans, and B. Leibe, “Superpixels: An evaluation of the state-of-the-art,” Computer Vision and Image  
+Understanding, vol. 166, Jan. 2018, pp. 1-27, http://doi.org/10.1016/j.cviu.2017.03.007
+```
+
+
+- 28 Superpixels algorithms tested on 5 datasets
+- Average miss rate (AMR) - measures error in boundary adherence
+- Average under-segmentation error (AUE) - Measures superpixel leakage into other areas.
+- The recommend six of the algorithms for use in practce: ETPS, SEEDS, ERS, CRS, ERGC, and SLICK.
+- These six algorithms have the best quantitative performacne and allow control over the number of generated superpixels.
+- But SEEDS and ERS do not provide a compactness parameter, so there's less ability to control the trade-off between boundary adherence and compactness of superpixels.
+- ERS and CRS have runtimes greater than 100ms, which makes them less attractive for real-time applications.
+
+### Snakes
+
+- **Deformable Model** - a representation that models the variability of a certain class of objects; can model in shape, texture, illuminations, etc.
+- Active contour model (snake) - an energy minimizeing, deformable spline influenced by a constraint and image forces that pull it toward object contours and internal forces that resist deformation.
+- Snakes require an initial contours, and then they iteratively deform to achieve the desired shape.
+- Snakes can be used to track dynamic objects, but they're sensitive to the initialization, sensitive to parameters, and fail to detect concavities.
+
+
+### Snakes - Terzopoulos
+
+- Terzopoulos received multiple awards and honors for his pioneering work on deformable models, including his original paper on snakes.
+- He was co-recipient of an Academy Award for Technical Achievement (2006) from the Academy of Motion Picture Arts and Sciences for his “pioneering work in physically-based computer-generated techniques used to simulate realistic cloth in motion pictures.
+
+
+### Snakes - Traditional Formulation
+
+- A simple elastic snake is defined as the contour $v(s) = (x(s), y(s))$ where $s \in [0, 1]$ is the normalized arc length traversed along the contour and $(x,y)$ are the spatial coordinates along the contour.
+- The snake can then be represented as a spline determined by a set of $n$ points for $v_{i}$ for $i=0,\ldots, n-1$.
+
+![[Pasted image 20230425130745.png]]
+
+
+
+### Snakes - Energy
+
+![[Pasted image 20230425130800.png]]
+
+### Snakes - Internal Energy
+
+![[Pasted image 20230425130820.png]]
+
+### Snakes - Image Energy
+
+![[Pasted image 20230425130828.png]]
+![[Pasted image 20230425130847.png]]
+![[Pasted image 20230425130857.png]]
+![[Pasted image 20230425130904.png]]
+
+
+### Snakes - Energy Minimization
+
+![[Pasted image 20230425130920.png]]
+
+![[Pasted image 20230425130926.png]]
+
+### Snakes - Extensions
+
+![[Pasted image 20230425130939.png]]
+
+![[Pasted image 20230425130947.png]]
+
+![[Pasted image 20230425130953.png]]
+
+### GVF Snakes - Energy Minimization
+
+GVF: Gradient Vector Flow
+
+![[Pasted image 20230425131012.png]]
+
+
+### GVF Snakes - Euler Equations
+
+![[Pasted image 20230425131020.png]]
+
+### GVF Snakes - Solution for GVF Field
+
+![[Pasted image 20230425131114.png]]
+
+
+### GVF Snakes
+
+![[Pasted image 20230425131238.png]]
+
+### GVF Snakes - Performance
+- The capture range is significantly improved
+- The new energy functional provides a force that attracts the snake toward concaviteis.
+- Xu & Prince showed the following examples.
+
+![[Pasted image 20230425131335.png]]
+
+![[Pasted image 20230425131343.png]]
+
+![[Pasted image 20230425131349.png]]
+
+![[Pasted image 20230425131355.png]]
+
+![[Pasted image 20230425131404.png]]
+
+
+Grayscale Example
+![[Pasted image 20230425131424.png]]
+
+
+### GVF Snakes - Multidimensional
+
+![[Pasted image 20230425131454.png]]
+
+![[Pasted image 20230425131503.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,40 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "30e17f5cfc8fdbd0",
+        "id": "1dedd10e61564643",
         "type": "tabs",
         "children": [
           {
-            "id": "395727c35a4301de",
+            "id": "050a0b6363d8ef98",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
-                "mode": "source",
-                "source": true
-              }
-            },
-            "group": "e80d3483d0a9d983"
-          }
-        ]
-      },
-      {
-        "id": "adc079faf1ed88c8",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "46ea52b8b72c6036",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
-                "mode": "preview",
-                "source": true
-              }
-            },
-            "group": "e80d3483d0a9d983"
+              "type": "empty",
+              "state": {}
+            }
           }
         ]
       }
@@ -106,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "ece-532-digital-image-analysis/Notes - ece 532.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -168,16 +140,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "46ea52b8b72c6036",
+  "active": "050a0b6363d8ef98",
   "lastOpenFiles": [
     "ece-532-digital-image-analysis/Notes - ece 532.md",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230419160221.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230117131618.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230117130354.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230117125859.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230117125433.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230117125053.png",
-    "ece-532-digital-image-analysis/attachments/Pasted image 20230117124922.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230425131503.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230425131454.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230425131424.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230425131404.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230425131355.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230425131349.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230425131343.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230425131335.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230425131333.png",
+    "ece-532-digital-image-analysis/attachments/Pasted image 20230425131238.png",
     "ece-532-digital-image-analysis/homework/homework-6.md"
   ]
 }
