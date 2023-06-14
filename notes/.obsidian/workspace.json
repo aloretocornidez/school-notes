@@ -1,0 +1,196 @@
+{
+  "main": {
+    "id": "6b416e0081685479",
+    "type": "split",
+    "children": [
+      {
+        "id": "1dedd10e61564643",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "050a0b6363d8ef98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
+                "mode": "source",
+                "source": true
+              }
+            },
+            "group": "3ad9149f4bbe9159"
+          }
+        ]
+      },
+      {
+        "id": "18d80fd537c93200",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eaa6b3764c9c0efc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
+                "mode": "preview",
+                "source": true
+              }
+            },
+            "group": "3ad9149f4bbe9159"
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9a8f7f0d3e2740c1",
+    "type": "split",
+    "children": [
+      {
+        "id": "b3364ce1ee5c021a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "38d98239eb4dc4b7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0be93a48785c1cf0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "86e2d9f8654a8d96",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "accc13f7d02c337b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a7d71c0245f073d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "9a68c93c92d97b72",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "56d35e253fdfc58e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "48fd0cd0eccf19a2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3d22e43e4bfd87f2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "42ffdbf738aeb03b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ece-532-digital-image-analysis/Notes - ece 532.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "oz-clear-unused-images:Clear Unused Images": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "050a0b6363d8ef98",
+  "lastOpenFiles": [
+    "ece-532-digital-image-analysis/final-exam/final-exam-532.md",
+    "ece-532-digital-image-analysis/final-exam/attachments/Pasted image 20230510151132.png",
+    "ece-532-digital-image-analysis/final-exam/attachments/Pasted image 20230510150228.png",
+    "ece-532-digital-image-analysis/final-exam/attachments/Pasted image 20230510150223.png",
+    "ece-532-digital-image-analysis/final-exam/attachments/Pasted image 20230510150218.png",
+    "ece-532-digital-image-analysis/final-exam/attachments/Pasted image 20230510150204.png",
+    "ece-532-digital-image-analysis/final-exam/attachments/Pasted image 20230510150159.png",
+    "ece-532-digital-image-analysis/final-exam/attachments/Pasted image 20230510150148.png",
+    "ece-532-digital-image-analysis/final-exam/attachments/Pasted image 20230510145438.png",
+    "ece-532-digital-image-analysis/final-exam/attachments/Pasted image 20230510144445.png",
+    "ece-532-digital-image-analysis/final-exam/attachments/Pasted image 20230510144429.png",
+    "ece-532-digital-image-analysis/final-exam/attachments",
+    "ece-532-digital-image-analysis/final-exam",
+    "ece-532-digital-image-analysis/Notes - ece 532.md",
+    "ece-532-digital-image-analysis/homework/homework-6.md"
+  ]
+}
