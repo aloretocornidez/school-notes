@@ -7,7 +7,7 @@
 A cloud based environment that enables cybersecurity training through virtual labs.
 
 ### How to access CLaaS
-- Link: [CLaaS Website](https://as-aslcypert.org/)
+- Link: [CLaaS Website](https://claas-askcypert.org/)
 
 
 
