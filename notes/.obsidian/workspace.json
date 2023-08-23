@@ -11,9 +11,33 @@
             "id": "7a42959e4f212127",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
+              "type": "markdown",
+              "state": {
+                "file": "fall-2024/509-cyber-security/notes.md",
+                "mode": "source",
+                "source": true
+              }
+            },
+            "group": "5f910f455ae3066e"
+          }
+        ]
+      },
+      {
+        "id": "7ab66540f799f74e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2882f655b8a4a434",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fall-2024/509-cyber-security/notes.md",
+                "mode": "preview",
+                "source": true
+              }
+            },
+            "group": "5f910f455ae3066e"
           }
         ]
       }
@@ -73,7 +97,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a7d71c0245f073d0",
@@ -89,6 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "fall-2024/509-cyber-security/notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "fall-2024/509-cyber-security/notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +153,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "fall-2024/509-cyber-security/notes.md"
+              }
             }
           }
         ]
@@ -146,8 +175,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "38d98239eb4dc4b7",
+  "active": "2882f655b8a4a434",
   "lastOpenFiles": [
+    "fall-2024/522-parallel-and-distributed-computing/readings.md",
+    "fall-2024/522-parallel-and-distributed-computing/notes.md",
+    "fall-2024/501-linear-systems-theory/501-linear-systems-theory.md",
     "spring-2023",
     "ece-541-control-theory",
     "ece-509-cyber-security",
