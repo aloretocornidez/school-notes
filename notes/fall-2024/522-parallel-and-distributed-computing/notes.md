@@ -137,7 +137,7 @@ Each node has six neighbors
 If dimensions are $N \times N \times N$, the worst case number of hops is $\frac{3N}{2}$ (or $\frac{5N}{2}$ for $N^{5}$)
 
 **Dragonfly Network**
-The number of hops is independent of the number of nodes.
+The number of hops is independent of the number of nodes
 
 
 
