@@ -259,6 +259,207 @@ $$C \in \mathbb{R}, D \in \mathbb{R}$$
 
 
 
+## Learning Goals | August 25th, 2023
+- Activity Quiz
+- Challenge Problem
+- Introduce Linear State Space Representation
+- Find a S.S> for a Mass-Spring-Damper (MSD) System (Pairs: Problem Solver, Lister)
+- All-Integrator Block Diagram of MSD
+- Sketch a block diagram in s-Domain
+- Discuss the Bode Plot for the MSD System --> need G\[s\]
+
+
+
+
+### Activity Quiz
+
+Since Wednesday,
+1. Went Swimming? --> Viscous Damping $B$
+2. Filled Water Bottle? --> 1 L 1000G = 1 kg
+3. Disassemble a Pen? Spring Constant, $k$
+
+
+
+
+### Challenge Problem
+
+Find the state equations for 
+
+$$2z''(t) + \left(\frac{1}{4}\right)z'(t) + 6z(t) = 20u(t)$$
+
+**Attempt**
+$$x_{1}(t) = z'(t)$$
+$$x_{2}(t) = z(t)$$
+End Attempt
+
+
+
+Solution: Since the system is a second order equation, you need to look for 2 state equations.
+
+$$z''(t) = x_{1}'(t) \Rightarrow x_{1}(t) = z'(t)$$
+$$x_{2}'(t) = z'(t) \Rightarrow x_{2}(t) = z(t)$$
+
+
+Re-ordering the differential equation lets us plug in our $x_{1}(t)$ into the system equation.
+$$z''(t) = x_{1}'(t) = \frac{-1}{8}z'(t) - 3z(t) + 10u(t)$$
+
+
+We then find $x_{1}'(t)$ in terms of $u(t)$ and $x(t)$
+$$x_{1}'(t) = -\frac{1}{8}x_{1}(t) - 3x_{2}(t) + 10u(t)$$
+
+Then we can plug in $x_{2}(t)$ to the equation we just found for $x_{1}(t)$ to get the second equation.
+$$x_{2}'(t) = z'(t) = x_1(t)$$
+
+$$x_{2}'(t) = x_{1}(t)$$
+
+
+
+
+### Linear State Space Representation
+(Useful for `MATLAB` simulation and analysis)
+
+Dynamic Equations
+$$\dot{x}(t) = Ax(t) + Bu(t)$$
+
+Output Equations
+$$y(t) = Cx(t) + Du(t)$$
+
+Where,
+$$x \in \mathbb{R}^{n}, u \in \mathbb{R}^{m}, y \in \mathbb{R}^{r}$$
+
+
+
+Unpacking the State Space representation when $n = 2, m = 1, r = 1$.
+
+$$
+\begin{bmatrix} 
+\dot{x}_{1}(t)  \\ 
+\dot{x}_{2}(t)
+\end{bmatrix}
+
+=
+
+\begin{bmatrix}
+a_{11} && a_{12}  \\ 
+a_{21} && a_{22}
+\end{bmatrix}
+\begin{bmatrix}
+x_{1}(t)  \\ 
+x_{2}(t)
+\end{bmatrix}
++ 
+\begin{bmatrix}
+b_{11} \\ 
+b_{21}
+\end{bmatrix}
+u(t)
+$$
+
+
+
+$$
+y(t) = 
+\begin{bmatrix}
+c_{11} && c_{12}
+\end{bmatrix}
+\begin{bmatrix}
+x_{1}(t)  \\ 
+x_{2}(t)
+\end{bmatrix}
+
++
+\begin{bmatrix}
+d_{11}
+\end{bmatrix}
+u(t)
+$$
+
+
+Now with the system set up:
+$$\dot{x}_{1}(t)= a_{11}x_{1}(t) + a_{12}x_{2}(t) + b_{11}u(t)$$
+
+$$\dot{x}_{2}(t) = a_{21}x_{1}(t)$$
+#todo 
+
+
+
+### Application
+
+Previous Modification
+![[Pasted image 20230825143410.png]]
+
+Modification that it was supposed to be, we'll stick with the first one `Previous Modification`:
+![[Pasted image 20230825143439.png]]
+
+
+$$Mz''(t) + Bz'(t) + kz(t) = \Gamma u(t)$$
+
+Now, let $$x_{1}(t) = z(t)$$ and $$x_{2}(t) = z'(t)$$
+
+**Find A & B**
+
+
+$$A = 
+\begin{pmatrix}0 && 1 \\ 
+\frac{-k}{m} && \frac{-b}{m}
+\end{pmatrix}
+
+
+$$
+
+Output Matrix
+
+Let $y(t) = z(t)$.
+
+$$y(t) =
+\begin{bmatrix}
+1 && 0 
+\end{bmatrix}
+
+\begin{bmatrix}
+x_{1}(t)  \\ 
+x_{2}(t)
+\end{bmatrix}
+
++
+
+\begin{bmatrix}
+0
+\end{bmatrix}
+u(t)$$
+
+
+### Size of the State Space Matrices 
+Suppose you are given a system that has:
+- 20 state variable components
+- 3 inputs
+- 2 outputs
+
+Find **A, B, C, D**
+
+A is 20 x 20
+B is 20 x 3
+C is 2 x 20
+D is 2 x 3
+
+### All Integrator Block Diagram
+Diagram:
+
+![[Pasted image 20230825144617.png]]
+
+Note: The output of an integrator is a state variable component.
+
+Application: MSD System
+
+![[Pasted image 20230825145011.png]]
+
+
+
+
+
+
+
+
 
 
 
