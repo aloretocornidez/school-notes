@@ -1,12 +1,6 @@
 # ECE 541 | Automatic Control
 
 # Unit 0 | Pre-Requisite Lecture
-## Announcements | August 28th, 2023
-- Passport Assignment Due Monday 08/28/2023
-- Prerequisite Quiz Due Wednesday 09/06/2023
-- Homework 1 Due Monday 09/11/2023
-	- Submit work on D2L assignments
-	- Submit answers on D2L quizes.
 
 # Class Units
 In a quick 'image' this is the structure of the class.
@@ -68,7 +62,7 @@ Impact of a Controller on Transient and Stead-State Behavior.
 
 
 
-# Unit 1
+# Lecture 1.1 | Modeling Basics
 ### Announcements | August 23rd, 2023
 - Homework 1 | Due 09/11/2023
 
