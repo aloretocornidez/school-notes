@@ -1,15 +1,13 @@
 # ECE 541 | Automatic Control
 
-# Unit 0 | Pre-Requisite Lecture
-
-# Class Units
+# Lecture 1.0 | Prerequisite Lecture
+## Class Units
 In a quick 'image' this is the structure of the class.
 1. Modelling
 2. Analysis
 3. Controller Design
 
 ## Methods of Modelling
-
 ### Physics
 - Mechanical
 	- $F = ma$
@@ -56,16 +54,8 @@ Impact of a Controller on Transient and Stead-State Behavior.
 
 
 
-### Series LRC Circuit
-
-
-
-
-
 # Lecture 1.1 | Modeling Basics
-### Announcements | August 23rd, 2023
-- Homework 1 | Due 09/11/2023
-
+#date August 23rd, 2023
 ### Learning Goals
 - Develop "a" state space representation for the mass spring damper system
 
@@ -86,7 +76,7 @@ Impact of a Controller on Transient and Stead-State Behavior.
 5.  Substitute (2) & (4) into (3)
 
 #### Example
-**Mass Spring Damper System**
+**Mass Spring Damper SyLearningstem**
 
 ![[Pasted image 20230823141026.png]]
 
@@ -126,13 +116,14 @@ If you neglect the initial conditions, you can laplace transform the equation to
 
 $$U(s) = Ms^{2}X(s) + BsX(s) + kX(s)$$
 
+
 You can factor out $X(s)$
 
 $$U(s) = X(s)(Ms^{2} + Bs + k)$$
 
 You can move variables to get the transfer function $G(s)$
 
-$$G(s) = X\frac{s}{U(s)} = \frac{1}{Ms^{2} + Bs + k}$$
+$$G(s) = \frac{X(s)}{U(s)} = \frac{1}{Ms^{2} + Bs + k}$$
 
 **State Space Representation**
 
@@ -140,9 +131,10 @@ $$G(s) = X\frac{s}{U(s)} = \frac{1}{Ms^{2} + Bs + k}$$
 
 $z$ | Displacement
 $z'$ | Velocity
-*Note:* $\gamma_u$ is now the 
+$\Gamma$ | is the scaling variable *aka* gain constant 
+*Note:* $\Gamma_u$ is now the force that drives the mass.
 
-$$\gamma u(t) = Mz''(t) + Bz'(t)+ kz(t)$$
+$$\Gamma u(t) = Mz''(t) + Bz'(t)+ kz(t)$$
 
 This is a second order differential equation.
 
@@ -150,32 +142,47 @@ If you have the system equation you can determine future system states.
 
 ![[Pasted image 20230823143121.png]]
 
-*Solve for the highest power derivative in the differential equation (in this case, solve for $z''(t)$*)
+*Solve for the highest power derivative in the differential equation (in this case, solve for $z''(t)$, subtract and divide by **M**)*
 
 $$z''(t) = - \frac{B}{M} z'(t) - \frac{K}{M} z(t) + \frac{\Gamma}{M} u(t)$$
 
-We are seeking to obtain **two** **coupled** first order differential equations.
+We are seeking to obtain **two coupled** first order differential equations.
 
-Let $x_{1}(t) = z(t)$ and $x_{2}(t) = z'(t)$.
+We can make two equations by using the setting the first one to the lowest derivative and then the next function equal to the derivative of the first equation. This can be extended to the amount of derivatives that are present in the system. 
+$$x_{1}(t) = z(t)$$
+$$x_{2}(t) = z'(t)$$.
 
-Now we need an equation for both of the state variables in terms of the state variables ($x_{1}(t)$, $x_{2}(t)$) and the input ($u(t)$)
+Now we need an equation for both of the state variables in terms of the state variables and the input. (In terms of $x_{1}(t)$, $x_{2}(t), u(t)$)
 
-Finding $x_{1}(t)$:
+Finding $x_{1}'(t)$:
 
-$$x_{1}(t) = \frac{d}{dt}(z(t)) = z'(t) = x_{2}(t)$$
+$$x_{1}'(t) = \frac{d}{dt}(z(t))$$
+$$x_{1}'(t) = z'(t)$$
+$$x_{1}'(t) = x_{2}(t)$$
 
 
-Finding $x_{2}(t)$:
+Finding $x_{2}'(t)$:
 
-$$x_{2}(t) = \frac{d}{dt}(z'(t)) = z''(t) =  - \frac{B}{M} z'(t) - \frac{K}{M} z(t) + \frac{\Gamma}{M} u(t)$$
+$$x_{2}'(t) = \frac{d}{dt}(z'(t))$$
+$$x_{2}'(t) = - \frac{B}{M} z'(t) - \frac{K}{M} z(t) + \frac{\Gamma}{M} u(t)$$
 
-Replace $z$ with $x$
+Now we have two equations:
+$$x_{1}'(t) = x_{2}(t)$$
+$$x_{2}'(t) = - \frac{B}{M} z'(t) - \frac{K}{M} z(t) + \frac{\Gamma}{M} u(t)$$
 
-$$ x_{2}(t) = - \frac{B}{M} x_{2}'(t) - \frac{K}{M} x_{1}(t) + \frac{\Gamma}{M} u(t)$$
+Replace all $z$ terms with $x$ terms.
 
+$$ x_{2}'(t) = - \frac{B}{M} x_{2}'(t) - \frac{K}{M} x_{1}(t) + \frac{\Gamma}{M} u(t)$$
+
+Now we get the final two equations:
+$$x_{1}'(t) = x_{2}(t)$$
+$$ x_{2}'(t) = - \frac{B}{M} x_{2}'(t) - \frac{K}{M} x_{1}(t) + \frac{\Gamma}{M} u(t)$$
+
+
+And now we can create the state space representation of the system:
 $$
 \begin{bmatrix}
-x_{1}'(t) \\ x_{2}'(t)'
+x_{1}'(t) \\ x_{2}'(t)
 \end{bmatrix}
 =
 %Begin A
@@ -186,7 +193,7 @@ x_{1}'(t) \\ x_{2}'(t)'
 %End A
 
 \begin{bmatrix}
-x_{1}(t) \\ x_{2}(t)'
+x_{1}(t) \\ x_{2}(t)
 \end{bmatrix} 
 +
 
@@ -203,7 +210,7 @@ Let's assume than output for this system is the position of the mass.
 
 **Output Equation**
 
-$$y(t) = X(t) = x_{1}(t)$$
+$$y(t) = z(t) = x_{1}(t)$$
 
 $$\therefore y(t) = 
 
@@ -215,9 +222,7 @@ x_{1}(t) \\
 x_{2}(t)
 \end{bmatrix}
 
-
 +
-
 % Direct Feedthrough
 \begin{bmatrix} 
 0
@@ -228,6 +233,7 @@ $$
 
 
 **General Form of State Space Representation:**
+#equation
 
 $$x'(t) = Ax(t) + Bu(t)$$
 $$y(t) = Cx(t) + Du(t)$$
@@ -251,22 +257,19 @@ $$C \in \mathbb{R}, D \in \mathbb{R}$$
 
 
 
-
-
-## Learning Goals | August 25th, 2023
+# Lecture 1.2 | State Space Representation
+#date August 25th, 2023
+## Learning Goals 
 - Activity Quiz
 - Challenge Problem
 - Introduce Linear State Space Representation
 - Find a S.S> for a Mass-Spring-Damper (MSD) System (Pairs: Problem Solver, Lister)
 - All-Integrator Block Diagram of MSD
 - Sketch a block diagram in s-Domain
-- Discuss the Bode Plot for the MSD System --> need G\[s\]
-
-
+- Discuss the Bode Plot for the MSD System --> need $G[s]$
 
 
 ### Activity Quiz
-
 Since Wednesday,
 1. Went Swimming? --> Viscous Damping $B$
 2. Filled Water Bottle? --> 1 L 1000G = 1 kg
@@ -284,7 +287,7 @@ $$2z''(t) + \left(\frac{1}{4}\right)z'(t) + 6z(t) = 20u(t)$$
 **Attempt**
 $$x_{1}(t) = z'(t)$$
 $$x_{2}(t) = z(t)$$
-End Attempt
+*End Attempt*
 
 
 
