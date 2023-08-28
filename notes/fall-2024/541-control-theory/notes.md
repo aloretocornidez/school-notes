@@ -537,3 +537,89 @@ Application: MSD System
 
 
 
+
+
+
+
+
+# Lecture 1.3 | Generating Transfer Functions
+
+#todo Fill out the notes from the first 20 minutes of class.
+
+
+
+
+
+
+
+
+
+
+
+### All-Integrator Block Diagram
+![[Pasted image 20230828142356.png]]
+
+
+Create a frequency domain block
+![[Pasted image 20230828142449.png]]
+
+
+
+$$W(s) = \frac{\Gamma}{M} U(s) - \frac{K}{M}X(s) - \frac{B_{1}}{M} X_{2}(s)$$
+
+$$X_{2}(s) = \frac{1}{s} W(s)$$
+
+$$X(s) = \frac{1}{s}X_{2}(s) = \frac{1}{s}\left(\frac{1}{s}W(s)\right) = \frac{1}{s^{2}}W(s)$$
+
+$$\Rightarrow W(s) = s^{2} X(s) $$
+
+$$X_{2}(s) = sX(s)$$
+
+$$\therefore s^{2}X(s) = \frac{\Gamma}{M}U(s) - \frac{K}{M}X(s) - \frac{B_{1}}{M}sX(s)$$
+
+Now combine all terms:
+
+$$\left(s^{2}+ \frac{B_{1}}{M}s + \frac{K}{M}\right)X(s) = \frac{\Gamma}{M} U(s)$$
+
+$$G(s) = X\frac{s}{U(s)} = \frac{\frac{\Gamma}{M}}{s^{2}+ \frac{B_{2}}{M}s + \frac{K}{M}}$$
+
+
+### Transfer Function from the State Space Representation
+
+Given the state space representation:
+![[Pasted image 20230828143242.png]]
+
+You can generate the differential equation like this:
+![[Pasted image 20230828143252.png]]
+
+
+Now you can laplace transform the differential equation.
+
+$$\mathbb{L}\{\bar{x}'(t)\} = \mathbb{L}\{A\bar{x}(t) + B u(t)\}$$
+
+
+$$\mathbb{L}\{\bar{x}'(t)\} = \mathbb{L}\{A\bar{x}'(t)\} + \mathbb{L}\{B u(t)\}$$
+
+$$s X(s) - \bar{x}(o^{-}) = A \mathbb{L}\{\bar{x}(t)\} +  B\mathbb{L}\{u(t)\}$$
+
+Where $I$ is the identity matrix $n \times n$. 
+
+$$(sI - A) \bar{X}(s) = \bar{x}(0^{-}) + B U(s)$$
+
+
+Now we can re-write the Laplace transform of the state vector 
+$$\Rightarrow \bar{X}(s) = (sI - A)^{-1}\bar{x}(0^{-}) + (sI - A)^{-1}B\bar{U}(s)$$
+
+
+
+Output Equation: 
+$$\mathbb{L} \{y(t)\} = \mathbb{{L}} \{C\bar{x}(t) + D \bar{u}(t)\}$$
+
+
+
+#### General Form of the Transfer Function from State Space Representation
+
+$$Y(s) = [C(sI - A)^{-1}B = D]U(s)$$
+
+
+
