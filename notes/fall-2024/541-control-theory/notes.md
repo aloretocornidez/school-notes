@@ -280,7 +280,7 @@ Since Wednesday,
 
 ### Challenge Problem
 
-Find the state equations for 
+Find the state equations for:
 
 $$2z''(t) + \left(\frac{1}{4}\right)z'(t) + 6z(t) = 20u(t)$$
 
@@ -309,7 +309,28 @@ $$x_{2}'(t) = z'(t) = x_1(t)$$
 
 $$x_{2}'(t) = x_{1}(t)$$
 
+#explanation
+> **How did we obtain the above state variables?**
 
+> We know we need 2 state variables since we are starting with a second-order differential equation. One of those state variables can be defined by realizing that the first derivative of that state variable component needs to equal the highest derivative in the differential equation.
+
+
+$$\therefore \text{Let } x_{1}'(t) = z''(t)$$
+$$\Rightarrow x_{1}(t) = z'(t)$$
+
+Now we need a second state variable's first derivative to equal $z'(t)$. 
+$$\therefore \text{Let } x_{2}'(t) = z'(t)$$
+$$\Rightarrow x_{2}(t) = z(t)$$
+
+Now, we can write down the 2 first-order differential equations.
+First:
+$$z''(t) = - \frac{1}{8}z'(t) - 3 z(t) + 10 u(t)$$
+$$x_{1}'(t) = - \frac{1}{8}x_{1}(t) - 3 x_{2}(t) +10 u(t)$$
+
+Second:
+*We need an $x_{2}'(t)$ equation written in terms of $x_{1}(t), x_{2}(t), u(t)$.*
+$$x_{2}'(t) = z'(t) = x_{1}(t)$$
+$$\therefore x_{2}'(t) = x_{1}(t)$$
 
 
 ### Linear State Space Representation
@@ -352,6 +373,8 @@ b_{21}
 u(t)
 $$
 
+System Matrix | $A \in \mathbb{R}^{n \times n}$
+Input Matrix | $B \in \mathbb{R}^{n \times m}$
 
 
 $$
@@ -371,23 +394,22 @@ d_{11}
 u(t)
 $$
 
+Output Matrix | $C \in \mathbb{R}^{n \times n}$
+Direct Feedthrough Matrix | $D \in \mathbb{R}^{r \times m}$
+
 
 Now with the system set up:
-$$\dot{x}_{1}(t)= a_{11}x_{1}(t) + a_{12}x_{2}(t) + b_{11}u(t)$$
+$$x'{1}(t)= a_{11}x_{1}(t) + a_{12}x_{2}(t) + b_{11}u(t)$$
 
-$$\dot{x}_{2}(t) = a_{21}x_{1}(t)$$
-#todo 
+$$x'_{2}(t) = a_{21}x_{1}(t) + a_{22}x_{2}(t) + b_{21}u(t)$$
 
+$$y(t) = c_{11}x_{1}(t) + c_{12}x_{2}(t) + d_{11}u(t)$$
 
 
 ### Application
+Find a state space representation for the Mass-Spring-Damper System.
 
-Previous Modification
 ![[Pasted image 20230825143410.png]]
-
-Modification that it was supposed to be, we'll stick with the first one `Previous Modification`:
-![[Pasted image 20230825143439.png]]
-
 
 $$Mz''(t) + Bz'(t) + kz(t) = \Gamma u(t)$$
 
