@@ -56,11 +56,28 @@ Find an expression for the transfer function between $V(s)$ and $I_{2}(s)$. You 
 
 ![[Pasted image 20230828110941.png]]
 
+KVL $I_{1}(s)$:
+$$V(s) = I_{1}(s) (R_{1}+ sL) + (I_{1}(s) - I_{2}(s))\left(R_{2} + \frac{1}{sC_{1}}\right)$$
+
+$$V(s) = I_{1}(s) \left(R_{1}+ sL + R_{2} + \frac{1}{sC_{1}}\right) - I_{2}(s)\left(R_{2} + \frac{1}{sC_{1}}\right)$$
+
+KVL $I_{2}$:
+
+$$0 = I_{2}(s)\left(R_{3}+ \frac{1}{sC_{2}}\right)+ (I_{2}(s) - I_{1}(s)) \left(R_{2}+ \frac{1}{sC_{1}}\right)$$
+
+$$I_{2}(s)\left(R_{3}+ \frac{1}{sC_{2}} + R_{2}+ \frac{1}{sC_{1}}\right)= I_{1}(s) \left(R_{2}+ \frac{1}{sC_{1}}\right)$$
+
+$$I_{1}(s) = I_{2}(s) \frac{\left(R_{3}+ \frac{1}{sC_{2}} + R_{2}+ \frac{1}{sC_{1}}\right)}{\left(R_{2}+ \frac{1}{sC_{1}}\right)} $$
 
 
+Plug in equations to get in terms of $V(s)$ and $I_{2}(s)$
+
+$$V(s) = I_{2}(s) \frac{\left(R_{3}+ \frac{1}{sC_{2}} + R_{2}+ \frac{1}{sC_{1}}\right)}{\left(R_{2}+ \frac{1}{sC_{1}}\right)} \left(R_{1}+ sL + R_{2} + \frac{1}{sC_{1}}\right) - I_{2}(s)\left(R_{2} + \frac{1}{sC_{1}}\right)$$
 
 
+Simplify:
 
+$$V(s) = $$
 
 
 
