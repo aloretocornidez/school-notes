@@ -156,8 +156,7 @@ Intermediate code generation occurs after lexical analysis, syntax analysis, and
 After ICG is completed, final code generation occurs.
 
 
-### Why Intermediate Code?
-
+**Why Intermediate Code?**
 - It simplifies code generation
 	- Closer to the target language, it simplifies code generation.
 - Machine-independent
@@ -174,14 +173,7 @@ After ICG is completed, final code generation occurs.
 - Hybrid IRs: Combines elements of graphical and linear IRs
 	- Control glow graphs with 3-address code.
 
-
-
-
-
-
-
-
-### Graphical IRs | Syntax Trees
+## Syntax Trees
 
 ![[Pasted image 20230824133352.png]]
 
@@ -210,6 +202,197 @@ After ICG is completed, final code generation occurs.
 
 
 
+### Information is Syntax Trees
+
+Information is added to syntax tree nodes as compilation progresses:
+
+- Parsing
+	- Node type
+	- Children
+- Type Checking
+	- Value Type
+- Code Generation
+	- Location where an expression's value is stored
+	- Intermediate code generated for the tree rooted at the node
+
+
+
+**Exercise**
+
+Given the syntax tree:
+
+![[Pasted image 20230829124412.png]]
+
+What source code expression could have this come from?
+
+`a + (2 * b)`
+
+or
+
+`a + 2 * b)`
+
+
+## Linear IRs
+
+Source Language programs often use features not available in the target language code.
+
+EG:
+`x = (a + b)/(c-b)*2`
+
+asm doesn't support multiple operations in an instruction, so we need to save intermediate results as they are computed.
+
+`while(x>0){x--;y++;}`
+
+asm doesn't support complex grouping of statements and arbitrarty control flow so we need a way to decompose complex control flow into something simpler.
+
+
+A linear IR consists of a sequence of instrucitons that execute in that order.
+
+Instructions contain multiple operation, which (if present) execute in parallel
+
+They often form a starting point for hybrid representations (e.g., control flow graphs.)
+
+
+### Linear IRs 1 | Three-Address Code
+
+Instructions of the form `x = y op z`, where x, y, z, are virables, constants, or "temporaries".
+
+At most, one operator is allowed on the right hand side
+- No "built up expressions"
+- Instead, expressions are computed using temporaries (compiler-generated variables).
+
+The specific set of operators represented, and their level of abstraction, can vary widley.
+
+
+**Example:**
+
+Source:
+```
+if ( x + y*z > x*y + z)  
+a = 0;
+```
+
+Three Address Code:
+```
+t1 = y*z  
+t2 = x+t1 // x + y*z  
+t3 = x*y  
+t4 = t3+z // x*y + z  
+if (t2 <= t4) goto L  
+a = 0
+L:
+```
+
+
+#### Example Intermediate Instruction Set
+
+
+![[Pasted image 20230829125247.png]]
+
+**Example**
+
+Source Code
+```
+int fact(int n) {  
+	int p = 1;  
+	while (n > 0) {  
+		p *= n;  
+		n –= 1;  
+	}  
+	return p;  
+}
+```
+
+Three Address Code:
+```
+	enter fact  
+	p = 1  
+L0: if n <= 0 goto L1  
+	tmp0 = p * n  
+	p = tmp0  
+	tmp1 = n – 1  
+	n = tmp1  
+	goto L0  
+L1: leave  
+	return p
+```
+
+
+
+
+#### Three Address Code | Representation
+
+Each instruction is represented as a structure called a *quadruple* (or "quad")
+- Contains info about the operation, up to 3 operands.
+- For operands: use a bit to indicate whether constant or ST pointer.
+
+e.g.
+
+![[Pasted image 20230829130245.png]]
+
+--- 
+
+![[Pasted image 20230829130411.png]]
+
+---
+
+![[Pasted image 20230829130430.png]]
+
+
+### Linear IRs 2 | Stack Machine Code
+
+#postpone
+
+
+# Code Generation
+
+**Overview**
+
+![[Pasted image 20230829132109.png]]
+
+Processing a function definition:
+
+**Intermediate Code Generation**
+- Generate 3-addr code by recursively traversing syntax tree
+- Each AST node has a  list of 3-addr instructions attached to it
+- List of instructions at the root of the tree is the code for the entire function.
+
+Much of the work of code generation is done here.
+
+
+**Storage Allocation**
+- Traverse the local symbol table
+- Allocate a stack frame slot for each local and temporary
+- The info determines how much space to allocate
+
+
+Traverse the function's local symbol table
+Allocate storage locations to each ST entry based on its type
+- Allocated as slots in the function's stack frame
+- Respect any alignment restrictions imposed by target machine architecture
+
+Formal parameter locations are fixed by argument position.
+
+
+![[Pasted image 20230829134020.png]]
+
+
+
+**Final Code Generation**
+- Traverse the list of 3-addr instructions at the root of the function's AST
+- Expand each 3-addr instruction into asm code
+- Write out the code generated
+
+![[Pasted image 20230829133957.png]]
+
+
+
+
+## Intermediate Code Allocation
+
+## Storage Allocation
+
+## Final Code Generation
 
 
 
@@ -249,3 +432,15 @@ After ICG is completed, final code generation occurs.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+## Hybrid IRs
