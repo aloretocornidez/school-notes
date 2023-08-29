@@ -194,3 +194,179 @@ The number of hops is independent of the number of nodes
 
 
 
+
+
+
+## Lecture 2 | August 29th
+
+#todo Missed notes
+
+
+### What's a process?
+Informally: A program execution
+
+A process encapsulates a physical processor
+Everything needed to run a program:
+	- code
+	- registers
+	- stack
+	- data
+	- files
+
+*Note: A process is sequential*
+There is no parallelism in a processes
+
+**Examples of Processes**
+Shell: creates a process to execute commands `ls foo`,, `ls foo & cat bar & wc`
+
+OS: creates a process to manage printer
+- process executes code such as 
+- - wait for data to come into system buffer
+- Move data to #todo 
+
+
+**Creating a Process**
+
+Must somehow specify code, data, files, stack, registsers
+
+Example: UNIX
+- Use the `fork()` system call to create a process
+- Makes an exact duplicate of the current process
+- Typically `exec()` is run on the child
+
+*We will not be doing this `(systems programming)`*
+
+
+**Example of Three Processes**
+
+The OS switches betweeen the three processes `("multiprogramming")`.
+
+Review: Run-Time Stack
+
+```c
+A(int x)
+{
+	int y = x;
+	if(z == 0 ) return;
+	else return A(y - 1) + 1
+	
+}
+
+B()
+{
+	int z; 
+	A(1);
+}
+```
+
+
+**Decomposing a Process**
+Process: everything needed to run a program
+Consists of:
+- Thread(s)
+- Address space
+
+**What is a Thread?**
+
+
+**What is an Address Space?**
+Consists of:
+- Code
+- Data
+- Open Files
+
+Address space can have > 1 thread
+- Threads share code, data files
+- Threads have separate stacks and registers
+
+
+**One Thread, one address space**
+
+**Many threads, one address space.**
+
+### Thread States
+
+There are three states for a thread
+
+1. Ready
+	- Eligible to run, but another thread is running
+2. Running
+	- Using CPU
+3. Blocked
+	- Waiting for something to happen
+
+**Thread State Graph**
+
+![[Pasted image 20230829084501.png]]
+
+
+### Scheduler
+
+The scheduler decides which thread to run.
+
+It chooses what thread via an algorithm.
+
+From our point of view, the scheduler is something we cannot control.
+	- We have no idea which thread will run, and **our programs must not depend on execution order of two ready threads**.
+
+
+
+### Context Switching
+This is the action of switching between two threads.
+
+Switching between 2 threads
+- change PC to current instruction of new thread
+	- might need to restart old thread in the future
+- must save exact state of first thread
+What must be saved?
+- registers (including PC and SP)
+- what about stack itself?
+
+
+
+
+#### Procedure Call Breakdown (time goes down)
+
+![[Pasted image 20230829085453.png]]
+
+---
+
+![[Pasted image 20230829085510.png]]
+
+
+---
+
+#### Context Switching Breakdown (time goes down)
+
+![[Pasted image 20230829085644.png]]
+
+---
+
+![[Pasted image 20230829085652.png]]
+
+---
+
+![[Pasted image 20230829085712.png]]
+
+
+
+### Multiple Treads, One Machine (Single Core)
+
+![[Pasted image 20230829090125.png]]
+
+Note that there are two threads.
+Recall, the code, data, and files, are shared in the address space.
+
+- First we start thread 1 and put it in the machines *actual* PC, SP, R1, and R2
+
+- Then to switch to thread 2, we save the machine's memory in a location.
+
+- Thread 2 is then executed by placing the PC, SP, R1, and R2 in the machine memory. 
+
+
+
+
+
+
+
+
