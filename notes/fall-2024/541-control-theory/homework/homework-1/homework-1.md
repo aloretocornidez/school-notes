@@ -113,7 +113,7 @@ First, define $A$ to be the output of the center summing junction.:
 
 Now start making characteristic (unique) definitions for each output.
 
-$$Y(s) = G_{2}G_{3}A(s)$$
+$$\Rightarrow Y(s) = G_{2}G_{3}A(s)$$
 
 $$A(s) = D(s) - G_{2}H_{2} A(s) + G_{1}E(s) $$
 
@@ -122,6 +122,9 @@ $$\Rightarrow A(s) = \frac{D(s)+G_{1}E(s)}{1 + G_{2}H_{2}}$$
 $$E(s) = U(s) - G_{1}H_{1}E(s) - H_{3}Y(s)$$
 
 $$\Rightarrow E(s) = \frac{U(s) - H_{3}Y(s)}{1 + G_{1}H_{1}}$$
+
+
+
 
 
 Plug in for each transfer function:
@@ -141,6 +144,7 @@ $$T_{1}(s) = \frac{U(s) - G_{1}H_{1}\left(\frac{U(s) - H_{3}G_{2}G_{3}A(s)}{1 + 
 
 More:
 $$T_{1}(s) = \frac{U(s) - G_{1}H_{1}\left(\frac{U(s) - H_{3}G_{2}G_{3}\left(\frac{D(s)+G_{1}E(s)}{1 + G_{2}H_{2}}\right)}{1 + G_{1}H_{1}}\right) - H_{3}G_{2}G_{3}\left(\frac{D(s)+G_{1}E(s)}{1 + G_{2}H_{2}}\right)}{U(s)}$$
+-->
 
 
 ## Question 4
@@ -263,3 +267,4 @@ Poles: $P_{1} = 0$
 
 
 
+$T_{1}(s) = \frac{E(s)}{U(s)}$.

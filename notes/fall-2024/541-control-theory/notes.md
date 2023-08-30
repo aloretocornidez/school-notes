@@ -623,3 +623,108 @@ $$Y(s) = [C(sI - A)^{-1}B = D]U(s)$$
 
 
 
+# Lecture 1.4 | Three Mass System
+
+Learning #goals:
+- Develop equations of motion for a 3 mass system
+- Create "a" State Space Representation for the 3 mass system
+
+![[Pasted image 20230830141056.png]]
+
+**Assign position variables.**
+
+
+How many position variables are needed?
+
+*(Which points can move independent of the others, if all of the other points are held fixed?)*
+
+**4 Position variables**
+
+
+**How many free body diagrams?**
+We also need 4.
+
+**Free Body Diagram  Mass #1**
+![[Pasted image 20230830141706.png]]
+
+
+Determine the forces that are present when $M_{1}$ moved to the positive direction. Identify and label the forces. Define the forces in terms of coefficients $(K_{i},B_{i}, M_{i})$, positions, velocities, and accelerations.
+
+$$f_{k_{1}} = K_{1}Z(t)$$
+$$f_{B_{1}} = B_{1}Z'(t)$$
+$$f_{M_{i1}} = M_{1}Z''(t)$$
+$$f_{k_{2}} = K_{2}(Z_{1}(t)- Z_{4}(t))$$
+$$f_{k_{3}} = K_{3}(Z_{1}(t)- Z_{3}(t))$$
+
+Now we need the sum of all forces:
+
+![[Pasted image 20230830142715.png]]
+
+$$M_{1} z_{1}''(t) + B_{1} z_{1}'(t) + K_{1}z_{1}(t) + K_{2}(z_{1}(t) - z_{4}(t)) + K_{3}(z_{1}(t) - z_{3}(t)) = U(t)$$
+
+**Freebody Diagram Mass #2**
+
+![[Pasted image 20230830143527.png]]
+
+
+$$f_{i_{M_{2}}} = M_{2}z_{2}''(t)$$
+
+$$f_{B{2}} = B_{2}(z_{2}'(t) - z_{4}'(t))$$
+
+
+Now sum the forces:
+
+$$M_{2}Z_{2}''(t) + B_{2}(z_{2}'(t) - z_{4}'(t)) = 0$$
+
+
+
+
+**Freebody Diagram Mass #3**
+
+![[Pasted image 20230830143921.png]]
+
+Now, sum the forces:
+
+$$\sum\limits f = f_{i}+ f_{B} + f_{K} + u_{3} = 0$$
+
+$$M_{3}z_{3}''(t) + B_{3}z_{3}'(t) + K(z_{3}(t) -z_{1}(t)) + u_{3}(t) = 0$$
+
+
+
+**Freebody Diagram Mass #4**
+
+![[Pasted image 20230830144943.png]]
+
+
+Sum the forces:
+$$ f_{B_{2}} + f_{K_{2}} = 0$$
+
+
+$$B_{2}(z_{4}' - z_{2}'(t)) + K_{2}(z_{4}(t) - z_{1}(t)) = 0$$
+
+
+
+**System Order**
+
+Add of the highest power derivative of each variable?
+
+This is a 7th order system.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
