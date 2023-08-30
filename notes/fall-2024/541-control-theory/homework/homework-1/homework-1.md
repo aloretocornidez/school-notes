@@ -240,3 +240,26 @@ $$\Rightarrow Z_{2} = - 10$$
 ### Question 5.B | Answer
 Zeroes: $Z_{1}= -100, Z_{2} = -10$
 Poles: $P_{1} = 0$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
