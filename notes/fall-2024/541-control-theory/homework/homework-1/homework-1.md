@@ -2,7 +2,7 @@
 Name: Alan Manuel Loreto Cornídez
 
 - [x] Question 1
-- [ ] Question 2
+- [x] Question 2
 - [ ] Question 3
 - [ ] Question 4
 - [x] Question 5
@@ -47,7 +47,7 @@ Plugging in terms:
 $$\Rightarrow M_{2}x_{2}''(t) + K (x_{2}(t) - x_{1}(t)) = 0$$
 
 
-### Q 1 | Answer
+### Question 1 | Answer
 $$\Rightarrow f(t) = M_{1} x_{1}''(t) + B x_{1}'(t) + K (x_{1}(t) - x_{2}(t))$$
 $$\Rightarrow M_{2}x_{2}''(t) + K (x_{2}(t) - x_{1}(t)) = 0$$
 
@@ -72,14 +72,29 @@ $$I_{1}(s) = I_{2}(s) \frac{\left(R_{3}+ \frac{1}{sC_{2}} + R_{2}+ \frac{1}{sC_{
 
 Plug in equations to get in terms of $V(s)$ and $I_{2}(s)$
 
-$$V(s) = I_{2}(s) \frac{\left(R_{3}+ \frac{1}{sC_{2}} + R_{2}+ \frac{1}{sC_{1}}\right)}{\left(R_{2}+ \frac{1}{sC_{1}}\right)} \left(R_{1}+ sL + R_{2} + \frac{1}{sC_{1}}\right) - I_{2}(s)\left(R_{2} + \frac{1}{sC_{1}}\right)$$
+$$V(s) = I_{2}(s) \frac{\left(R_{3}+ \frac{1}{sC_{2}} + R_{2}+ \frac{1}{sC_{1}}\right) \left(R_{1}+ sL + R_{2} + \frac{1}{sC_{1}}\right)}{\left(R_{2}+ \frac{1}{sC_{1}}\right)}   - I_{2}(s)\left(R_{2} + \frac{1}{sC_{1}}\right)$$
 
 
 Simplify:
 
-$$V(s) = $$
+$$V(s) = I_{2}(s) \frac{\left(R_{3}+ \frac{1}{sC_{2}} + R_{2}+ \frac{1}{sC_{1}}\right) \left(R_{1}+ sL + R_{2} + \frac{1}{sC_{1}}\right)}{\left(R_{2}+ \frac{1}{sC_{1}}\right)} -  \frac{\left(R_{2} + \frac{1}{sC_{1}}\right)^{2}}{\left(R_{2} + \frac{1}{sC_{1}}\right)}$$
 
+$$V(s) = I_{2}(s) \frac{
+\left(R_{3}+ \frac{1}{sC_{2}} + R_{2}+ \frac{1}{sC_{1}}\right) \left(R_{1}+ sL + R_{2} + \frac{1}{sC_{1}}\right) - \left(R_{2} + \frac{1}{sC_{1}}\right)^{2}
+}{
+\left(R_{2}+ \frac{1}{sC_{1}}\right)
+}$$
 
+Assuming $V(s)$ is the denominator of the transfer function:
+
+### Question 2 | Answer
+
+$$G(s) = \frac{I_{2}(s)}{V(s)} = 
+\frac{
+\left(R_{2}+ \frac{1}{sC_{1}}\right)
+}{
+\left(R_{3}+ \frac{1}{sC_{2}} + R_{2}+ \frac{1}{sC_{1}}\right) \left(R_{1}+ sL + R_{2} + \frac{1}{sC_{1}}\right) - \left(R_{2} + \frac{1}{sC_{1}}\right)^{2}
+}$$
 
 ## Question 3
 Using the given block diagram, determine the requested transfer functions:
@@ -91,9 +106,41 @@ Using the given block diagram, determine the requested transfer functions:
 ![[Pasted image 20230828110716.png]]
 
 
+First, define $A$ to be the output of the center summing junction.:
+
+![[Pasted image 20230829152328.png]]
 
 
+Now start making characteristic (unique) definitions for each output.
 
+$$Y(s) = G_{2}G_{3}A(s)$$
+
+$$A(s) = D(s) - G_{2}H_{2} A(s) + G_{1}E(s) $$
+
+$$\Rightarrow A(s) = \frac{D(s)+G_{1}E(s)}{1 + G_{2}H_{2}}$$
+
+$$E(s) = U(s) - G_{1}H_{1}E(s) - H_{3}Y(s)$$
+
+$$\Rightarrow E(s) = \frac{U(s) - H_{3}Y(s)}{1 + G_{1}H_{1}}$$
+
+
+Plug in for each transfer function:
+
+$T_{1}(s) = \frac{E(s)}{U(s)}$:
+
+$$T_{1}(s) = \frac{U(s) - G_{1}H_{1}E(s) - H_{3}Y(s)}{U(s)}$$
+
+Plug in $Y(s)$ and $E(s)$:
+
+$$T_{1}(s) = \frac{U(s) - G_{1}H_{1}\left(\frac{U(s) - H_{3}Y(s)}{1 + G_{1}H_{1}}\right) - H_{3}G_{2}G_{3}A(s)}{U(s)}$$
+
+Keep Plugging In:
+
+
+$$T_{1}(s) = \frac{U(s) - G_{1}H_{1}\left(\frac{U(s) - H_{3}G_{2}G_{3}A(s)}{1 + G_{1}H_{1}}\right) - H_{3}G_{2}G_{3}A(s)}{U(s)}$$
+
+More:
+$$T_{1}(s) = \frac{U(s) - G_{1}H_{1}\left(\frac{U(s) - H_{3}G_{2}G_{3}\left(\frac{D(s)+G_{1}E(s)}{1 + G_{2}H_{2}}\right)}{1 + G_{1}H_{1}}\right) - H_{3}G_{2}G_{3}\left(\frac{D(s)+G_{1}E(s)}{1 + G_{2}H_{2}}\right)}{U(s)}$$
 
 
 ## Question 4
@@ -158,7 +205,7 @@ $$T(s) = -\frac{
 }$$
 
 Simplifying renders the answer:
-### Q 5.A | Answer
+### Question 5.A | Answer
 $$\Rightarrow T(s) = - \frac{
 (sC_{2}R_{2} + 1) ( s C_{1} R_{1} + 1)
 }{
@@ -190,6 +237,6 @@ $$s = - \frac{1}{C_{1} R_{1}} = - \frac{1}{(0.1) (1)} = -10$$
 $$\Rightarrow Z_{2} = - 10$$
 
 
-### Q 5.B | Answer
+### Question 5.B | Answer
 Zeroes: $Z_{1}= -100, Z_{2} = -10$
 Poles: $P_{1} = 0$
