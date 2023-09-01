@@ -344,7 +344,7 @@ e.g.
 #postpone
 
 
-# Code Generation
+# Code Generation | Lecture Slides 04
 
 **Overview**
 
@@ -388,7 +388,10 @@ Formal parameter locations are fixed by argument position.
 
 
 
-## Intermediate Code Allocation
+## Intermediate Code Generation
+
+
+
 
 ## Storage Allocation
 

@@ -714,6 +714,189 @@ This is a 7th order system.
 
 
 
+# Lecture 1.5 | Transfer Function from Block Diagram
+
+### Learning Goals
+- Derive the transfer function expression of a classical block diagram
+- Review Approach to generate the equations of motion (mechanical system)
+- Recap the 3-mass system derivation
+- Discuss placing dynamic equations into "a" state space representation.
+
+
+
+### Block Diagram Algebra
+
+![[Pasted image 20230901140802.png]]
+
+- Input Signal: $R(s)$
+- Output Signal: $Y(s)$
+- "Error" Signal: $E(s)$
+
+### Closed-loop Transfer Functions:
+
+Find $$T(s) = \frac{Y(s)}{R(s)}$$.
+
+The output of the summing junction must equal the inputs of the summing junction:
+$$E(s) = R(s) - H(s)Y(s)$$
+
+Output signal:
+$$Y(s) = G(s)E(s) = G(s) (R(s) - H(s) Y(s)) $$
+
+$$Y(s) = G(s) R(s) - G(s) H(s) Y(s)$$
+
+$$Y(s) (1 + G(s)H(s)) = G(s)R(s)$$
+
+Assuming SISO (Single-Input, Single Output)
+
+$$T(s) = \frac{Y(s)}{R(s)} = \frac{G(s)}{1 + G(s)H(s)}$$
+
+Additional Block Diagram Configurations
+
+![[Pasted image 20230901142045.png]]
+
+Now:
+
+$$T_{1}(s) = \frac{Y(s)}{R(s)} = \frac{G(s)}{1 + G(s) H(s)} = \frac{D(s)G_{p}(s)}{1+D(s)G_{p}(s)}$$
+
+
+**Deriving Dynamic Equations  (Review of Mechanical Systems)**
+
+- Sketch System
+- Identify Variables
+- Sketch freebody diagrams w/ forces identified
+- Define forces (physical relationships), e.g., $f_{k_{3}} = K_{3}(z_{1}-z_{3})$
+- Write equilibrium equations and substitute force relations.
+
+
+### Creating A State Space Representation
+
+![[Pasted image 20230901142923.png]]
+
+$$x'(t) = Ax(t) + Bu(s)$$
+$$y(t) = Cx(t) + Du(t)$$
+
+$$x(t) \in \mathbb{R}^{7 \times 1}, u(t) \in \mathbb{R}^{2 \times 1}$$
+
+---
+Define state variables.
+
+![[Pasted image 20230901143401.png]]
+
+$$u(t) = 
+\begin{bmatrix}
+u_{1}(t) \\ 
+u_{2}(t)
+\end{bmatrix}
+=
+\begin{bmatrix}
+v_{1}(t) \\ 
+v_{2}(t)
+\end{bmatrix}$$
+
+Output:
+*Mass positions*
+$$y(t) = 
+\begin{bmatrix}
+y_{1}(t) \\ 
+y_{2}(t) \\ 
+y_{3}(t)
+\end{bmatrix}
+=
+\begin{bmatrix}
+z_{1}(t) \\ 
+z_{2}(t) \\ 
+z_{3}(t)
+\end{bmatrix}
+=
+\begin{bmatrix}
+x_{1}(t) \\ 
+x_{3}(t) \\ 
+x_{5}(t) 
+\end{bmatrix}
+$$
+
+$$y(t) \in \mathbb{R}^{3 \times 1}$$
+
+
+$$x'(t) = 
+
+% x'(t) | 7 x 1
+\begin{bmatrix}
+
+\end{bmatrix}
+=
+
+% A | 7 x 7
+\begin{bmatrix}
+
+\end{bmatrix}
+
+% x(t) | 7 x 1
+\begin{bmatrix}
+
+\end{bmatrix}
++
+% C | 3 x 1
+\begin{bmatrix}
+
+\end{bmatrix}
+u(t)
+$$
+
+
+$$
+y(t) = 
+
+% C | 3 x 7
+\begin{bmatrix}
+\end{bmatrix}
+
+% X
+\begin{bmatrix}
+\end{bmatrix}
+
++
+
+% D | 3 x 2
+\begin{bmatrix}
+\end{bmatrix}
+
+% u(t)
+
+$$
+
+
+
+What is the 2nd row of the dynamic equation?
+
+$$x_{2}'(t) = z_{1}''(t) = ?$$
+
+From Free body diagram # 1:
+
+$$z_{1}''(t) = - \frac{B_{1}}{M_{1}} z_{1}'(t) - \frac{K_{1}}{M_{1}z_{1}(t)}- \frac{K_{2}}{M_{1}}z_{1}(t) + \frac{K_{2}}{M_{1}z_{4}(t)}- \frac{K_{3}}{M_{1}}z_{1}(t) + \frac{K_{3}}{M_{1}}z_{3} + \frac{1}{M_{1}}v(t)$$
+
+Plug in other components:
+$$z_{1}''(t) = - \frac{B_{1}}{M_{1}} x_{2}(t) - \frac{K_{1}}{M_{1}}x_{1}(t)- \frac{K_{2}}{M_{1}}x_{1}(t) + \frac{K_{2}}{M_{1}}x_{2}(t)- \frac{K_{3}}{M_{1}}x_{1}(t) + \frac{K_{3}}{M_{1}}x_{5}(t) + \frac{1}{M_{1}}u_{1}(t)$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
