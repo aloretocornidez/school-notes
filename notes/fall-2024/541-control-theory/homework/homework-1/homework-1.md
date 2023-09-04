@@ -238,6 +238,15 @@ Find the differential equations relating the applied force, $f(t)$, to the dynam
 
 
 
+
+
+
+
+
+
+
+
+
 ## Question 5
 Using the Op-Amp circuit of a lead-lag filter,
 
