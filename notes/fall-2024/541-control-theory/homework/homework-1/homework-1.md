@@ -3,7 +3,7 @@ Name: Alan Manuel Loreto Cornídez
 
 - [x] Question 1
 - [x] Question 2
-- [ ] Question 3
+- [x] Question 3
 - [ ] Question 4
 - [x] Question 5
 
@@ -113,38 +113,106 @@ First, define $A$ to be the output of the center summing junction.:
 
 Now start making characteristic (unique) definitions for each output.
 
+
+<!-- Y(s) -->
 $$\Rightarrow Y(s) = G_{2}G_{3}A(s)$$
 
-$$A(s) = D(s) - G_{2}H_{2} A(s) + G_{1}E(s) $$
+$$A(s) = D(s) + G_{1}E(s) - G_{2}H_{2} A(s)$$
 
+<!-- A(s) -->
 $$\Rightarrow A(s) = \frac{D(s)+G_{1}E(s)}{1 + G_{2}H_{2}}$$
 
 $$E(s) = U(s) - G_{1}H_{1}E(s) - H_{3}Y(s)$$
 
+
+<!-- E(s)-->
 $$\Rightarrow E(s) = \frac{U(s) - H_{3}Y(s)}{1 + G_{1}H_{1}}$$
 
 
+Start with $A(s)$: and plug in $E(s)$. (Keep factor at beginning for less arithmetic).
 
+$$A(s) (1+G_{2} H_{2}) = D(s) + G_{1} \frac{1}{1+ G_{1}H_{1}} (U(s) - H_{3}G_{3}G_{2}A(s))$$
 
+Factor $A(S)$ terms and move them to the left.
 
-Plug in for each transfer function:
+$$A(s) \left(1 + G_{2}H_{2} + \frac{H_{3}G_{123}}{1+ G_{1}H_{1}}\right) = D(s) + \frac{G_{1}}{1+ G_{1}H_{1}} U(s) $$
 
-$T_{1}(s) = \frac{E(s)}{U(s)}$:
+Now get the common denominator on the left side.
 
-$$T_{1}(s) = \frac{U(s) - G_{1}H_{1}E(s) - H_{3}Y(s)}{U(s)}$$
+$$\frac{(1+G_{2}H_{2})(1+H_{1}G_{1}) + G_{123}H_{3}}{1+G_1H_{1}} A(s) = D(s) + \frac{G_{1}}{1 + H_{1}G_{1}} U(s)$$
 
-Plug in $Y(s)$ and $E(s)$:
+Move all terms to right side.
 
-$$T_{1}(s) = \frac{U(s) - G_{1}H_{1}\left(\frac{U(s) - H_{3}Y(s)}{1 + G_{1}H_{1}}\right) - H_{3}G_{2}G_{3}A(s)}{U(s)}$$
+$$A(s) = \frac{1 + G_{1}H_{1}}{(1+G_{1}H_{1})(1+G_{2}H_{2}) + G_{123}H_{3}} D(s) + \frac{G_{1}}{(1+G_{2}H_{2})(1+G_{1}H_{1}) + G_{123}H_{3}} U(s)$$
 
-Keep Plugging In:
+Now plug $A(s)$ into $Y(s)$.
 
+$$Y(s) = G_{2}G_{3}A(s)$$
 
-$$T_{1}(s) = \frac{U(s) - G_{1}H_{1}\left(\frac{U(s) - H_{3}G_{2}G_{3}A(s)}{1 + G_{1}H_{1}}\right) - H_{3}G_{2}G_{3}A(s)}{U(s)}$$
+$$Y(s) = \frac{(G_{2}G_{3})(1 + G_{1}H_{1})}{(1+G_{1}H_{1})(1+G_{2}H_{2}) + G_{123}H_{3}} D(s) + \frac{G_{123}}{(1+G_{2}H_{2})(1+G_{1}H_{1}) + G_{123}H_{3}} U(s)$$
 
-More:
-$$T_{1}(s) = \frac{U(s) - G_{1}H_{1}\left(\frac{U(s) - H_{3}G_{2}G_{3}\left(\frac{D(s)+G_{1}E(s)}{1 + G_{2}H_{2}}\right)}{1 + G_{1}H_{1}}\right) - H_{3}G_{2}G_{3}\left(\frac{D(s)+G_{1}E(s)}{1 + G_{2}H_{2}}\right)}{U(s)}$$
--->
+Now, we can plug get $T_{2}(s)= \frac{Y(s)}{U(s)}$ and $T_{3}(s) = \frac{Y(s)}{D(s)}$ by setting the non-used transfer functions to zero (And moving the proper terms).
+
+---
+
+$T_{2}(s) = \frac{Y(s)}{U(s)} = \frac{G_{123}}{(1+G_{2}H_{2})(1+G_{1}H_{1}) + G_{123}H_{3}}$
+
+$T_{3}(s) = \frac{Y(s)}{D(s)} =  \frac{(G_{2}G_{3})(1 + G_{1}H_{1})}{(1+G_{1}H_{1})(1+G_{2}H_{2}) + G_{123}H_{3}}$
+
+---
+
+Solving for $T_{1}(s) = \frac{E(s)}{U(s)}$.
+
+Recall $E(s)$: 
+
+$$E(s) = \frac{U(s) - H_{3}G_{2}G_{3}A(s)}{1 + G_{1}H_{1}}$$
+
+Plug in $A(s)$.
+
+$$E(s) = \frac{1}{1+ G_{1}H_{1}}
+\left( U(s) - G_{23}H_{3} \left(\frac{1 + G_{1} H_{1}}{(1+G_{1}H_{1})(1+G_{2}H_{2})+G_{123}H_{3}}D(s)+\frac{G_{1}}{(1+G_{1}H_{1})1+G_{2}H_{2})+G_{123}H_{3}} U(S)
+\right)\right)$$
+
+Now, set the $D(s)$ factor to zero and then simplify.
+
+$$E(s) = \frac{1}{a + G_{1}H_{1}}\left(U(s) - G_{23}H_{3} \frac{G_{1}}{(1+G_{1}H_{1})(1+G_{2}H_{2})+G_{123}H_{3}} U(s) \right)$$
+
+Factor out $U(s)$.
+
+$$E(s) = \frac{1}{1 + G_{1}H_{1}}\left(1 - G_{23}H_{3} \frac{G_{1}}{(1+G_{1}H_{1})(1+G_{2}H_{2})+G_{123}H_{3}}\right) U(s)$$
+
+Get a common denominator.
+$$
+E(s) = \frac{1}{1 + G_{1}H_{1}}
+\left(
+\frac{(1+G_{1}H_{1}) (1+H_{2}G_{2}) + G_{123}H_{3}}{(1+G_{1}H_{1}) (1+H_{2}G_{2}) + G_{123}H_{3}}
+- \frac{G_{123}H_{3}}{(1+G_{1}H_{1})(1+G_{2}H_{2})+G_{123}H_{3}}\right) U(s)
+$$
+
+Simplify.
+$$
+E(s) = \frac{1}{1 + G_{1}H_{1}}
+\left(
+\frac{(1+G_{1}H_{1}) (1+H_{2}G_{2})}{(1+G_{1}H_{1}) (1+H_{2}G_{2}) + G_{123}H_{3}}
+\right) U(s)
+$$
+
+$$
+E(s) =\frac{(1+H_{2}G_{2})}{(1+G_{1}H_{1})(1+H_{2}G_{2}) + G_{123}H_{3}}U(s)
+$$
+
+And then get $T_{1}(s) = \frac{E(s)}{U(s)}$.
+
+$$T_{1}(s) = \frac{E(s)}{U(s)} = \frac{(1+H_{2}G_{2})}{(1+G_{1}H_{1})(1+H_{2}G_{2}) + G_{123}H_{3}}$$
+
+### Question 3 | Answers
+
+$$T_{1}(s) = \frac{E(s)}{U(s)} = \frac{(1+H_{2}G_{2})}{(1+G_{1}H_{1})(1+H_{2}G_{2}) + G_{123}H_{3}}$$
+
+$$T_{2}(s) = \frac{Y(s)}{U(s)} = \frac{G_{123}}{(1+G_{2}H_{2})(1+G_{1}H_{1}) + G_{123}H_{3}}$$
+
+$$T_{3}(s) = \frac{Y(s)}{D(s)} = \frac{(G_{2}G_{3})(1 + G_{1}H_{1})}{(1+G_{1}H_{1})(1+G_{2}H_{2}) + G_{123}H_{3}}$$
+
 
 
 ## Question 4
