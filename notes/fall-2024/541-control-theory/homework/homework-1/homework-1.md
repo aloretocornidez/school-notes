@@ -1,11 +1,6 @@
 # Homework 1 | ECE 541
 Name: Alan Manuel Loreto Cornídez
 
-- [x] Question 1
-- [x] Question 2
-- [x] Question 3
-- [ ] Question 4
-- [x] Question 5
 
 ## Question 1
 Find the differential equations relating the applied force, $f(t)$, to the dynamics of the masses. Write your equations in terms of $x_{1}(t)$, $x_{2}(t)$, and their derivatives.
@@ -221,13 +216,28 @@ Find the differential equations relating the applied force, $f(t)$, to the dynam
 ![[Pasted image 20230828110534.png]]
 
 
+Freebody Diagram for $M_{1}$:
+![[Pasted image 20230905105605.png]]
+
+$$f_{k_{1}} + f_{k_{2}} + f_{B} + f_{M_{1}} = 0$$
+
+$$M_{1}x_{1}''(t) + K_{1}x_{1}(t) + B(x_{1}'(t) - x_{2}'(t)) + K_{2}(x_{1}(t) - x_{2}(t)) = 0 $$
+
+Freebody Diagram for $M_{2}$:
+
+![[Pasted image 20230905110219.png]]
+
+$$f_{k_{2}} + f_{B} + f_{k_{3}} + f_{M_{2}} + f$$
+
+$$M_{2}x_{2}''(t) + B (x_{2}'(t) - x_{1}'(t)) + K_{3}x_{2}(t) + K_{2}(x_{2}(t) - x_{1}(t)) + f(t) = 0$$
+
+
+### Question 4 | Answer
+$$M_{1}x_{1}''(t) + K_{1}x_{1}(t) + B(x_{1}'(t) - x_{2}'(t)) + K_{2}(x_{1}(t) - x_{2}(t)) = 0 $$
 
 
 
-
-
-
-
+$$M_{2}x_{2}''(t) + B (x_{2}'(t) - x_{1}'(t)) + K_{3}x_{2}(t) + K_{2}(x_{2}(t) - x_{1}(t)) + f(t) = 0$$
 
 
 

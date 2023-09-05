@@ -370,3 +370,84 @@ Recall, the code, data, and files, are shared in the address space.
 
 
 
+# Missed Lecture on September
+
+
+# September 5 | 
+
+
+## Steps to Parallelization
+
+#todo Fill out the rest from the slides.
+ 
+### 3 | Distribute the Data
+
+DIstribute computatino and data
+- Assign which processor does which computation.
+- If memory is distributed, decide which processor stares which data (why is this?)
+- Goals: minimize communication and balance the computational workload.
+	- often conflicting
+
+### 4 | Synchronize and/or Communicate 
+
+**On a shared memory machine:**
+Memory synchronization comes in two forms: mutual exclusion and Sequence control
+
+*Mutual Exclusion*:
+*Sequence control*: 'something better happen before something else'
+
+**On a distributed-memory machine**: you communicate using message passing, typically communication involved implicit synchronization.
+
+
+
+
+
+
+```c
+process worker [i = 0 to p-1] {
+	double A[n][n], B[n][n], C[n][n] // wasting space!
+	startrow = i * n / p; endrow = (i+1) * n / p – 1
+	if (i == 0) { // The first threadshall send the data to all other cores.
+		for j = 1 to p-1 {
+			sr= j * n / p; er = (j+1) * n / p – 1 // Calculate other cores' 
+			send A[sr:er][0:n-1], B[0:n-1][0:n-1] to process j // 
+}
+else
+receive A[startrow:endrow][0:n-1], B[0:n-1][0:n-1] from 0
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

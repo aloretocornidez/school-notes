@@ -388,41 +388,36 @@ Formal parameter locations are fixed by argument position.
 
 
 
-## Intermediate Code Generation
+
+# Lecture 5
+September 5th, 2023
+
+### Procedure Calls and Returns
+**Calling sequences** handle all of the work that needs to be done in order to make a  function happen.
+
+**Return sequences** do all of the work after a function is completed.
+- loads the return value where the caller can find it.
+
+### Caller Conventions
+A **calling convention** specifies how values are communicated between procedures.
+
+We can have multiple conventions in MS windows.
+
+### Caller-saved vs. Callee-saved registers
+Caller-saved: registers who's values may be overwritten by a function call.
+Callee-saved: registers who's values will survive accross a function call.
 
 
+### Code Executed for a function call
+---
+![[Pasted image 20230905124347.png]]
 
+![[Pasted image 20230905124454.png]]
 
-## Storage Allocation
+**Code Generated for Function Definitions**
+![[Pasted image 20230905125047.png]]
 
-## Final Code Generation
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![[Pasted image 20230905125104.png]]
 
 
 
@@ -446,4 +441,80 @@ Formal parameter locations are fixed by argument position.
 
 
 
-## Hybrid IRs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
