@@ -815,26 +815,26 @@ A client A wants to set up a TCP connection to a server B
 - NIDS in ICS (Network)
 	- Most common type of IDS used in LCS
 	- ICS networks use a variety of different networking devices and protocols, making difficult the deployment of a single NIDS
-- Signature-based
+- **Signature-based**
 	- `Quickdraw` was developed by Peterson et al. in 2014.
 		- Snot-based IDS that uses a set of rules developed specifically for the ICS protocols Modbus/TCP and DNP3.
 		- `Quickdraw` can detect a variety of attacks on ICSs, including configuration attacks, coil and register read/write attacks, and Modbus attacks.
 	- Morris et al. developed a Snort-based IDS in 2016 to detect illegal data in teh Modbus protocol in a serial-based ICS. THey provided details on 50 intrusion detection rules that cna be sued to detect malicious activity in ICSs.
-- Anomaly-Based
-	- Statistical-based
+- **Anomaly-Based**
+	- **Statistical-based**
 		- Utulizes statustical algorithms such as parametric and nonparametric methods, time series analysis, and Markov chains.
 		- Examins events or network traffic agains statistical models to confirm intrusion presence.
 		- Anomaly detection assigns an anomaly score to events by comparing observed and trained statistical models.
-	- Machine-learning based
+	- **Machine-learning based**
 		- Involves creating mathematical models for event creation
 		- Machine learning techniques cna be supervised (with labeled training data) or unsupervied (data not labeled)
 		- Examples of machine lerning algorithms include Artificial Neural Networks, Bayesian Networks, Support Vector Machines, Fuzzy Logic, Deep Learning, Clustering
-	- Specification Based
+	- **Specification Based**
 		- Also known as knowledge-based IDS
 		- Can be more complex to implement
 		- Constructs models based on expert-defined specs that define legitimate system behaviours
 		- Reduces false positives by using forma methods like state diagrams and finite automata
-- Protocol Analysis-based
+**- Protocol Analysis-based**
 	- Utilizes protocol analysis technology to monitor industrial control network traffic
 	- Detects changes in protocol format or data packet status
 	- Identifies abnormal behaviors within ICS
@@ -846,7 +846,7 @@ A client A wants to set up a TCP connection to a server B
 	- Protocol analysis-based IDS combined with traffic analysis for more effective intrusion detection
 	- Communication patters defined in ICS protocols and specific business logic are used to extract detection rules.
 	- Yusheng et al. introduced the SD-IDS algorithm for real-time deep instpection of Modbus TCP traffic. SD-IDS.
-- Traffic Mining-based
+- **Traffic Mining-based**
 	- Protocol analysis-based IDS often struggle with detecting unknown attacks and parsing data packets efficiently
 	- Tries to address these limitations
 	- ICS environments exhibit fixed operation objects, static network topology, and limited applications.
@@ -856,7 +856,43 @@ A client A wants to set up a TCP connection to a server B
 	- Stavroulakis and Stamp's approach extract five tuples (source ip, destination ip, transport protocol, source port, destination port). Also considers traffic duration and average time intervals between adjacent packets.
 	- Hou et al propose a method based on probabilistic principal component analysis to detect abnormal traffic on PCA
 	- Artificial neural networks analyzes large volumes of data to identify unknown intrusions. Establish nonlinear mapping relationships between traffic features and security system states (normal/abnormal).
-- 
+	- Vollmer and Manic extract various network traffic feautures to contruct vectors for a neural network to train it. They also proposed a sliding-window based feature vector extraction technique.
+		- Achieves high accuracy.
+**- Control process analysis-based**
+	- Control processs analysis based IDS capitalizes on the semantic information and unque characteristics of ICS
+	- **Process Data Analysis based**
+		- Monitoring critical process data to assess the security status of a physical process
+		- Unexpected changes in process can indicate intrusion.
+	- Krotofil et al. proposed a real-time attack algorithm designed for field devices
+		- Uses run analysis to extract noise characteristics from the origianl value sequence of a process variable
+		- Utilizes a triangle approcimation technique to determine the dynamic nature of the value sequence
+	- Hadz iosmanovic designed an IDS method based on semantic analysis of process variables
+	- Carcano et al. developed a formal modeling language to describe control system states.
+		- Defines critical states, danger levels, and distance measurement between system states
+		- Calculates proximity between the current state and critical states during detection
+	- Analyzing Control Commands
+		- Control command play a crucial role in ICS, and adversaries may maipulate them to achiecve attack objectives
+		- Analyzing control command helps identify intrusion behaviours in ICS
+	- Carcano et al. proposed a novel IDS technology for power grids. Introduces a new language to descrive control commands in power grids. Proved semantic descriptions for detection features.
+	- Single packet signature based stategy
+		- Detects illegal packets sent by PLCs or RTUs
+		- Utilizes semantic analysis on control commands
+	- **State-based strategy**
+		- Detects intrusions by monitoring the states of ICS
+		- Invalid control commands often lead to critical system states
+	- Lin Et al. proposed a semantic analysis technique for control commands in distributed ICS. Forecasts consequences of control commands based on network and physical facilities knowledge. Reveals attackers' intentions by analyzing control commands' outcomes.
+	- **Physical model based IDS**
+		- accurately describe the evolution of an industrial control system
+		- predict expected system outputs, which are compared with observed outputs for intrusion detection
+	- **Sequence based detection**
+	- **Change based detection**
+- Process-Oriented
+	- Focus on monitoring the processes in the ICS rather than the network traffic.
+	- Intrusion detection methods
+		- Model process variable excursions beyond their appropriate ranges using machine learning techniques.
+		- Another method requires plant
+	- Semantic Security Monitoring (SSM) uses analysis of control-bus traffic messages to construct a 3rd copy of the #todo 
+	- 
 
 
 
