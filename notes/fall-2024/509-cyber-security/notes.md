@@ -835,10 +835,10 @@ A client A wants to set up a TCP connection to a server B
 		- Constructs models based on expert-defined specs that define legitimate system behaviours
 		- Reduces false positives by using forma methods like state diagrams and finite automata
 - Protocol Analysis-based
-	- Utilizes protocol analysis technology to monotor industrial congtrol network traffic
+	- Utilizes protocol analysis technology to monitor industrial control network traffic
 	- Detects changes in protocol format or data packet status
 	- Identifies abnormal behaviors within ICS
-	- Common protocols are Modbus, ENIP, DNP3 are increasingly susceptivle to cyber attacks
+	- Common protocols are Modbus, ENIP, DNP3 are increasingly susceptible to cyber attacks
 	- Cheung et al. proposed an IDS mechanism in 2007. The model was derived form protocol specifications. This generated many false alarms.
 	- Bro, a network-based IDS developed by the university of berkely, collects network packets and parses protocols
 	- Lin et al. improved Bro by designing a packet parser supporting industrial protocols like DNP3
@@ -854,6 +854,9 @@ A client A wants to set up a TCP connection to a server B
 	- Collects data from different regions within an ICS
 	- Utilizes data mining or data analysis techniques on collected data.
 	- Stavroulakis and Stamp's approach extract five tuples (source ip, destination ip, transport protocol, source port, destination port). Also considers traffic duration and average time intervals between adjacent packets.
+	- Hou et al propose a method based on probabilistic principal component analysis to detect abnormal traffic on PCA
+	- Artificial neural networks analyzes large volumes of data to identify unknown intrusions. Establish nonlinear mapping relationships between traffic features and security system states (normal/abnormal).
+- 
 
 
 
