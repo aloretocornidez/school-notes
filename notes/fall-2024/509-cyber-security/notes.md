@@ -845,7 +845,16 @@ A client A wants to set up a TCP connection to a server B
 	- Hong et al. analyzed smart grid substation systems based on IEC 61850 standards. Detected anomalies or malicious behaviors in multicast messages specified by IEC 61850.
 	- Protocol analysis-based IDS combined with traffic analysis for more effective intrusion detection
 	- Communication patters defined in ICS protocols and specific business logic are used to extract detection rules.
-	- 
+	- Yusheng et al. introduced the SD-IDS algorithm for real-time deep instpection of Modbus TCP traffic. SD-IDS.
+- Traffic Mining-based
+	- Protocol analysis-based IDS often struggle with detecting unknown attacks and parsing data packets efficiently
+	- Tries to address these limitations
+	- ICS environments exhibit fixed operation objects, static network topology, and limited applications.
+	- Normal ICS traffic remains relatively stable.
+	- Collects data from different regions within an ICS
+	- Utilizes data mining or data analysis techniques on collected data.
+	- Stavroulakis and Stamp's approach extract five tuples (source ip, destination ip, transport protocol, source port, destination port). Also considers traffic duration and average time intervals between adjacent packets.
+
 
 
 
