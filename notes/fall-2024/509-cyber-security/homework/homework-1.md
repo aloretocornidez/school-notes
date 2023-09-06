@@ -67,7 +67,7 @@ Follow all the steps in threat modeling (except step 4: validate), identify 5 po
 | Each of the pieces of smart hardware could have commands sent to them that causes them to perform self-destructive actions. |                  |                 |                        |                |                   |              |
 | Malicious actor may cause the house to ignore the homeowner's commands or remove the owner from trusted devices.            |                  |                 |                        |                |                   |              |
 
-**Impacted Entry Point Assesment**
+**Impacted Entry Point Assessment**
 
 | Threat Description                                                                                                          | Embedded HW/SW | Communication Channels | Admin Tools | Remote Application Interface | Deployment Infrastructure | Mitigation Strategies |
 | --------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------- | ----------- | ---------------------------- | ------------------------- | --------------------- |
