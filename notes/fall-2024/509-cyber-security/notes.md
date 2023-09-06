@@ -113,6 +113,7 @@ Multiple formal methods to do this:
 
 
 **STRIDE**
+[[stride-model]]
 Stride stands for things that can go wrong in security.
 
 - Spoofing: Pretending to be someone or something you're not
