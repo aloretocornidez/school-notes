@@ -881,6 +881,196 @@ $$z_{1}''(t) = - \frac{B_{1}}{M_{1}} x_{2}(t) - \frac{K_{1}}{M_{1}}x_{1}(t)- \fr
 
 
 
+# Lecture 1.6 | Block Diagram Algebra
+
+#learninggoals 
+- Transfer Function from Block Diagram
+- Representation Connections:
+	- State Space
+	- Block Diagram
+	- Transfer Function
+	- Differential Equations
+- Develop D.C. Motor Governing Equations
+
+![[Pasted image 20230906140632.png]]
+
+
+
+
+### Transfer Function from Block Diagram
+Find $T(s) = \frac{Y(S)}{R(s)}$
+
+
+$$Y(s) = G_{2}(S) E_{2}(s)$$
+
+First you want to start generating the output signals from the summing junctions.
+
+How can one start?
+
+Write equations in terms of $R(s)$ and $Y(s)$.
+
+
+
+$$E_{2}(s) = R(s) + G_{1}E_{1}(s)$$
+
+$$E_{1}(s) = R(s) - H_{2}Y(s) - H_{1}G_{1}E_{1}(s)$$
+
+
+$$E_{1} + H_{1}G_{1}E_{1}(s) = R- H_{2}Y(s)$$
+
+
+$$E_{1}(1  + H_{1}G_{1}) = R- H_{2}Y(s)$$
+
+
+$$E_{1} = \frac{1}{1 + G_{1}H_{1}}R(s) - \frac{H_{2}}{1 + G_{1}H_{1}}Y(s)$$
+
+
+$$E_{2}(s) = R(s) + \frac{G_{1}}{1 + G_{1}H_{1}}R(s) - \frac{G_{1}H_{2}}{1 + G_{1}H_{1}} Y(s)$$
+
+
+$$Y(s) = G_{2}R(s) + \frac{G_{1}G_{2}}{1+G_{1}H_{1}}R(s) - \frac{G_{1}G_{2}H_{2}}{1 + G_{1}H_{1}} Y(s)$$
+
+$$(1 + G_{1}H_{1}) Y(s) = (1 + G_{1}H_{1})G_{2}R(s) + G_{1}G_{2}R(s) - G_{1}G_{2}H_{2}Y(s)$$
+
+$$(1+G_{1}H_{1}+ G_{1}G_{2}H_{2}) Y(s) = (G_{2}+ G_{1}G_{2}H_{1}+ G_{1}G_{2})R(s)$$
+
+$$T(s) = \frac{Y(s)}{R(s)} = \frac{G_{2}+ G_{1}G_{2}H_{1}+ G_{1}G_{2}}{1+G_{1}H_{1}+ G_{1}G_{2}H_{2}}$$
+
+
+
+
+
+### Connections between different methods
+
+How to convert between different domains.
+
+**State Space**
+
+$$
+x'(t) = 
+\begin{bmatrix}
+-1 && 2 \\ 
+0 && -3
+\end{bmatrix}
+x(t) + 
+\begin{bmatrix}
+0 \\ 
+1
+\end{bmatrix}
+$$
+
+$$y(t) = \begin{bmatrix}4 && 5\end{bmatrix} x(t)$$
+
+The #formula to convert between state space and transfer functions.
+$$G(s) = C(sI--A)^{-1}B$$
+
+
+---
+
+**Block Diagram**
+
+(All-Integrator Block Diagram)
+
+
+*In the time domain:*
+![[Pasted image 20230906142711.png]]
+
+
+*In the frequency domain:*
+![[Pasted image 20230906144610.png]]
+
+
+
+### Mason's Gain
+
+$$G(s) = C(sI--A)^{-1}B + D$$
+
+We need to find paths and loops to find $G(s)$.
+
+Paths & Loops
+
+**Paths**
+$$P_{1}(s) = \frac{8}{s^{2}}$$
+
+$$P_{2}(S) = \frac{5}{s} $$
+
+
+**Loops**
+
+$$l_{1}(s) = \frac{-3}{s}$$
+
+$$l_{2}(s)= \frac{-1}{s}$$
+
+
+**Determinant Expression**
+
+
+Find the sum of the loops
+$$\sum\limits loops  = l_{1}+ l_{2}$$
+
+Form pairwise produces of non-touching loops.
+$$\sum\limits \text{Product of non-touching pairs of loops)} = l_{1}l_{2}$$
+
+The sum of non-touching triples.
+$$\sum\limits \text{Non touching triples}$$
+
+The sum of non-touching quads.
+$$\sum\limits \text{Non touching quads}$$
+
+The sum of non-touching 5's.
+$$\sum\limits \text{Non touching 5's}$$
+
+and then you keep going.....
+
+You need to alternate signs, +1, -, +, -
+
+Now, our final Delta $\Delta$ is:
+$$\Delta = 1 - (l_{1}+l_{2}) + (l_{1}l_{2})$$
+
+$$\Delta = 1 - \left(\frac{-3}{s}\right)- \left(\frac{-1}{s}\right) + \left(\frac{-3}{s}\right) \left(\frac{-1}{s}\right)  $$
+
+This expression goes in the denominator.
+
+
+
+### Co-Factors
+
+$\Delta_{i}$ is defined as what remains connected in the determinant expression after removing the $i^{th}$ path. Removing the $i^{th}$ path can disconnect or break loops.
+
+Removing the blue path:
+$$\Delta_{1} = 1 - (l_{1}+l_{2}) + l_{1}l_{2} = 1$$
+
+Removing the yellow path:
+$$\Delta_{2} = 1 - (l_{1}+l_{2}) + l_{1}l_{2} = 1 - \frac{-1}{s} = 1 + \frac{1}{s}$$
+
+
+Now we get: 
+
+$$T(s) = \frac{Y(s)}{U(s)} = \frac{P_{1}\Delta_{1} + P_{2}\Delta_{2}}{\Delta}$$
+
+
+$$\frac{\frac{8}{s^{2}}+ \frac{5s+5}{s^{2}}}{1 + \frac{4}{s}+ \frac{3}{s^{2}}}$$
+
+$$T(s) = \frac{5s+13}{s^{2}+4s+3}$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
