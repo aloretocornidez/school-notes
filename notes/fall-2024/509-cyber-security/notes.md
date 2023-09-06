@@ -481,6 +481,455 @@ Threats and DREAD score
 
 
 
+# Lecture 3 | Networks
+## Lecture A
+**Learning Goals** #learninggoals 
+**Computer Networks and Protocols Security**
+- Computer Networks
+	- Wireless
+	- Wired
+- Communications Protocols
+	- IP Based
+	- Non IP Based
+
+**Operating Systems Security**
+- Basic Control Hijacking
+- Rootkits and Isolation
+
+Application Security and Resilience
+- User and Web Applications
+- Encryption
+- Forensic Analysis
+- Mobile Platforms
+- Web Protocols
+- Insider Threats
+
+
+
+
+ 
+**Relevant Network Layers**
+| Applications | FTP | 
+| Transport | TCP |  
+| Network | IP | 
+| Data Link and Physical Layer | Ethernet Driver | 
+
+
+**Common Terminology**
+
+NIST | National institute of standard and technology
+CAN | Common vulnerabilities 
+CVE | Common vulnerabilities and exposures are used to report vulnerabilities.
+
+CVSS | Common vulnerabilities scoring system
+IETF | Internet engineering task force
+RFC | Request for comments
+STD | Internet standard
+IANA | Internet assigned numbers authority
+
+### Attacks
+
+**Address Resolution Protocol (ARP)**
+It's a vulnerability used to discover mapping of neighboring Ethernet MAC to IP addresses.
+
+This is a [man in the middle ](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) attack.
+
+**ARP cache poisoning**
+Anyone can send an ARP reply.
+
+It is a classic man in the middle attack
+It's better than simple sniffing because packets will get to you regardless of sniffing.
+
+**Solutions?**
+- Encrypt all traffic
+- Monitoring programs like `arpwatch` to detect mapping changes.
+	- Might be valid due to DHCP.
+
+
+
+### Transport Layer
+
+UPD
+- Best effort delivery
+- IP Layer
+
+| Source Port | Destination Port |
+| ----------- | ---------------- |
+| UDP Length  | UDP Checksum     |
+
+
+TCP Header
+- MAC
+
+
+| Source Port            | Destination Port |     |     |     |     |     |             |     |
+| ---------------------- | ---------------- | --- | --- | --- | --- | --- | ----------- | --- |
+| Srquence Number        |                  |     |     |     |     |     |             |     |
+| Acknowledgement number |                  |     |     |     |     |     |             |     |
+| HDR Len                | URG              | ACK | PSH | RST | SYN | FIN | Window size |     |
+| Checksum               | Urgent Pointer   |     |     |     |     |     |             |     |
+| Options (0 or more workds)                       |                  |     |     |     |     |     |             |     |
+
+
+
+
+
+Denial of Service attacks (DoS)
+
+
+
+### UDP - Datagram Transport - Iser Datagram Protocol (UDP)
+
+
+#### Ports
+
+- Ports dynamically "bind" IP packets to a process
+- Port range 0 - 65535
+
+#### Transport Flow
+Transport flow is a sequence of packets sent between a source/destination pair and following the same route through the network.
+\<src_ip, dst_ip, src_port, dst_port\>
+
+Total combinations $2^{32} \times 2^{32} \times 2^{16} \times 2^{16} = 2^{96}$
+
+What's the problem with this big number?
+
+With a computer operating at $2^{12}$ instructions per second, and assime the year has $2^{25}$ seconds, it will take $2^{62}$ number of years to finish. Assuming each combination can be done in one instruction (unrealistic assumption).
+
+
+#### UDP Issues
+
+- All lower layer issues, with similar attacks
+	- IP Spoffing
+	- IP and link layer broadcast (amplification)
+	- IP fragmentation
+	- ARP spoofing
+	- Link layer
+- New possibilities
+	- Network services and applications can be contacted and attacked with UDP packets that exploit the lower level issues
+	- Traffic amplifying applications
+
+
+#### UDP Amplifier Attack
+- Fraggle
+	- Broadcast UDP packet sent to the `echo` (port 7) service.
+	- All computers reply (amplification)
+	- Source IP was spoofed, victim is overwhelmed
+
+
+#### UDP Ping-Pong
+- Chargen service (Port 19) replces with a UDP packet to any incoming packet
+	- It sends arbitrary characters to the sender until the host closes the connection
+- Spoof a packet from host A's chargen service to host B's chargen service.
+
+one starts pinging the other for a response that then requests the sender for a response that then requests the sender for a response that then.....
+
+
+
+Any service or application that issues a UDP reply, no matter what the input is, is vulnerable.
+- Do you know of another UDP service that answers no matter what?
+	Amplification
+	1. Spoof IP
+	2. Invoke SDP
+
+Anomaly Behavior Analysis (ABA)
+
+
+
+
+**Application Layers**
+A server that provides a game
+
+appplications replies with large packets to small requests.
+
+
+#### Exploits Through UDP
+
+- Resource Exhaustion
+- Sniffing and Spoofing
+- Exploitation of other flaws.
+
+
+#Summary
+UDP does not in itself introduce new volnerabilities, but it makes the exploitation of UP layer vulnerabilities easy.
+
+- Makes applications more difficult to design to prevent amplification and ping-pong effects.
+
+
+
+### TCP | Reliable Streams
+
+
+#### Initial Vulnerabilities of TCP
+
+
+
+
+
+A client A wants to set up a TCP connection to a server B
+
+- A sends a SYN with its sequence number x
+- B replies with its own SYN and sequence number Y and an ACK of A's sequence number X+1
+- A sends data with its sequence number X+1 and ACK's B's sequence number Y+1
+
+
+**TCP SYN Scans**
+- If someone sends you a SYN packet for a port that is closed:
+	- You are supposed to respond with a packet with RST and ACK flags ("i got your packet but I don't want to talk to you")
+- Sending SYN packets to find out which ports are open on which machines is known as port scanning
+- Bypass firewalls that only allow "established" connections
+	- They block incoming packets with the "SYN" flag
+
+
+**TCP FIN Scans**
+- RFC says: do not respond... #todo 
+
+
+
+**Defending Scans**
+- Issue: Spoofed IP addresses
+	- Option 1: Don't reply (hard to do because you need to deliver a service, and you don't want to suffer a Denial of Service)
+	- Option 2: "Active" defense
+		- In a SYN scan, if you send a SYN/ACK for every packet. You can force the attacker to complete the connection to gain infromation. This makes it more difficult to spoof the source IP and slows down scanner.
+
+
+
+
+**SYN Flood**
+- A resource DoS attack focused on the  TCP three-way handshake.
+- Denial of service when an attacker sends many SYN packets to create multiple connections without ever sending an ACK to complete the connection, aka SYN flood.
+
+**TCP Reliability**
+
+
+
+**Hijacking A TCP Session**
+- All that is required to mess up someone else's TCP session is guessing or knowing the sequence numbers for their connections.
+	- Only need to fall within the needed rance, exact guess not needed
+- Attackers needs
+	- Ability to force TCP/IP packets.
+	- Initial sequence number
+	- Knowledge that a TCP connection has started (but not the ability to see it)
+	- When the TCP connection started
+	- Ability to redirect responses to you OR continue the conversation without responses to you while achieving your goal.
+- Thought to be too hard, but exists in the wild.
+
+
+## Lecture B | Intrusion Detection Systems for Industrial Control Systems
+
+
+**Intrusion Detection Systems**
+- And IDS is a system that monitors network or system activity for malicious activity
+- Can be used to detect unauthorized access, misuse of privileges, or attampts to compromise ystem security.
+- Its primary purpose
+
+**Types of IDS**
+- Host IDS
+	- Monitors activities on specific devices
+	- It will collect and analyze data from the system's OS, applications, and files
+	- Can detect a variety of threats.
+- Network IDS
+	- Focus on monitoring network traffic for suspicious activity
+	- Collects and analyzes data from network packets
+	- Can detect threats that are not visible on individual hosts, such as unauthorized access and malware attackts
+
+
+**Detection Methods**
+- Signature Based
+	- Uses known signatures of malicious activity to detect attacks
+	- Relies on a database of known attack patterns or signatures
+	- Compares incoming traffic against a database
+	- Effective in detecting known attacks
+	- Ineffective agains new or unknown attacks
+	- Requires regular updates for the database
+	- Usually does not cause a large burden on server processing power
+- Anomaly-based
+	- Monitors network or system activity for deviations from normal behavior
+	- It creates a baseline of normal activity and then compares the subsequent activity against that baseline
+	- Effecting in detecting new or unknown attacks
+	- can generate a lot of false positives
+	- Can be difficult to configure and tune.
+	- In current research, these systems are the most widely used.
+
+**How IDS works**
+1. Data collection of system activity or network traffic
+2. Data analysis
+   - Compares collected data with a database of known attack patters or against a baseline of normal behaviour
+3. Alert generation
+	- Includes information about the nature of the incident, source, destination, IP addresses, time of detection, etc.
+	- Can be prioritiezed based on severity
+4. Notification and Response
+	- Security personnel recieve and review the alerts
+	- Implementation of manual or automated security measures
+5. Logging and reporting
+	- Maintain logs of detected evens and responses for later analysis and reporting
+6. Continuous monitoring
+
+
+| IDS                                                                          | IPS                                                                  |
+| ---------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| Passive system that monitors activity and alerts admins to suspisciou events | Active system that monitors activity and take action to stop attacks |
+| Used for trheat deteciton, incident investigation, and compliance monitoring | Aims to prevent security before they can cause harm                  |
+| Helps identify security incidents                                            |                                                                      |
+| 
+
+
+
+
+### IDS for Industrial Control Systems
+
+**ICS Architecture** (From previous lecture)
+[[509-cyber-security/notes#ICS Architectures| ICS Architectures]]
+
+
+**Security Requirements of ICS**
+- Real-Time
+	- ICS are time-critical and operate in real-time
+	- The operation time of each physical device is strictly limited
+- Availability
+	- Processes may be continuous and hence need to be highly available
+- Risk management
+	- Human safety and fault tolerance are the primary concerns.
+- Physical Effects
+	- Interactions with physical processes and consequences in the ics domain
+- Communications
+- Limited Computing Resources
+- Fixed business logic
+	- ICS should follow specific business logic, to achieve specific production goals
+- Legacy Systems
+	- There exists a significant portion of legacy sub-systems in ICS, making it difficult to upgrade the ICS
+- Hard updating and restarting of industrial equipment
+- Poor security of industrial protocols
+
+
+**Why ICS-IDS are necessary**
+- Emerging technologies bring new development opportunities for traditional ICS
+- The shift from isolated environments to open environment exposes ICS to a broad scope of malicious cyberattacks
+- Disruption of ICS could have a considerable negative impact on public safety or cause significant economic losses
+
+
+**Type of ICS-IDS**
+- HIDS in ICS (Host)
+	- Can be used on computer workstations found within the industrial network
+	- They do not run on PLCs or field devices
+- NIDS in ICS (Network)
+	- Most common type of IDS used in LCS
+	- ICS networks use a variety of different networking devices and protocols, making difficult the deployment of a single NIDS
+- Signature-based
+	- `Quickdraw` was developed by Peterson et al. in 2014.
+		- Snot-based IDS that uses a set of rules developed specifically for the ICS protocols Modbus/TCP and DNP3.
+		- `Quickdraw` can detect a variety of attacks on ICSs, including configuration attacks, coil and register read/write attacks, and Modbus attacks.
+	- Morris et al. developed a Snort-based IDS in 2016 to detect illegal data in teh Modbus protocol in a serial-based ICS. THey provided details on 50 intrusion detection rules that cna be sued to detect malicious activity in ICSs.
+- Anomaly-Based
+	- Statistical-based
+		- Utulizes statustical algorithms such as parametric and nonparametric methods, time series analysis, and Markov chains.
+		- Examins events or network traffic agains statistical models to confirm intrusion presence.
+		- Anomaly detection assigns an anomaly score to events by comparing observed and trained statistical models.
+	- Machine-learning based
+		- Involves creating mathematical models for event creation
+		- Machine learning techniques cna be supervised (with labeled training data) or unsupervied (data not labeled)
+		- Examples of machine lerning algorithms include Artificial Neural Networks, Bayesian Networks, Support Vector Machines, Fuzzy Logic, Deep Learning, Clustering
+	- Specification Based
+		- Also known as knowledge-based IDS
+		- Can be more complex to implement
+		- Constructs models based on expert-defined specs that define legitimate system behaviours
+		- Reduces false positives by using forma methods like state diagrams and finite automata
+- Protocol Analysis-based
+	- Utilizes protocol analysis technology to monotor industrial congtrol network traffic
+	- Detects changes in protocol format or data packet status
+	- Identifies abnormal behaviors within ICS
+	- Common protocols are Modbus, ENIP, DNP3 are increasingly susceptivle to cyber attacks
+	- Cheung et al. proposed an IDS mechanism in 2007. The model was derived form protocol specifications. This generated many false alarms.
+	- Bro, a network-based IDS developed by the university of berkely, collects network packets and parses protocols
+	- Lin et al. improved Bro by designing a packet parser supporting industrial protocols like DNP3
+	- Hong et al. analyzed smart grid substation systems based on IEC 61850 standards. Detected anomalies or malicious behaviors in multicast messages specified by IEC 61850.
+	- Protocol analysis-based IDS combined with traffic analysis for more effective intrusion detection
+	- Communication patters defined in ICS protocols and specific business logic are used to extract detection rules.
+	- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -625,7 +625,7 @@ $$Y(s) = [C(sI - A)^{-1}B = D]U(s)$$
 
 # Lecture 1.4 | Three Mass System
 
-Learning #goals:
+#learninggoals:
 - Develop equations of motion for a 3 mass system
 - Create "a" State Space Representation for the 3 mass system
 
