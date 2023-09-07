@@ -73,7 +73,7 @@ Given the code `x = y +z` #todo
 
 > Symbol tables keep information of the names (variables/identifiers/function names) that are being used. This makes sure that names are treated correctly in the program.
 
-Purpose: To hold information about identifiers that get computed at one point and used later.
+Purpose | To hold information about identifiers that get computed at one point and used later.
 
 Operations:
 	- Create, delete a symbol table;
@@ -117,7 +117,7 @@ When looking up a name in a symbol table, we need to find the 'appropriate' decl
 	- The scope rules of the language determine what is 'appropriate'
 	- Often, we want the *most deeply nested* declaration for a name.
 
-*Implementation*: for each new scope: push a new symbol on entry; pop on exit (stack).
+*Implementation*| for each new scope: push a new symbol on entry; pop on exit (stack).
 	- Implement symbol stack as a linked list of symbol tables;
 	- Lookup: 
 
@@ -166,9 +166,9 @@ After ICG is completed, final code generation occurs.
 
 
 **Different Kinds of IRs**
-- Graphical IRs: The program structure is represented as a graph (or tree) structure
+- Graphical IRs | The program structure is represented as a graph (or tree) structure
 	- Ex. parse trees, syntax trees, DAGs
-- Linear IRs: The program is represented as a list of instructions for some virtual machine
+- Linear IRs | The program is represented as a list of instructions for some virtual machine
 	- Ex. Three-address code.
 - Hybrid IRs: Combines elements of graphical and linear IRs
 	- Control glow graphs with 3-address code.
@@ -324,7 +324,7 @@ L1: leave
 
 Each instruction is represented as a structure called a *quadruple* (or "quad")
 - Contains info about the operation, up to 3 operands.
-- For operands: use a bit to indicate whether constant or ST pointer.
+- For operands | use a bit to indicate whether constant or ST pointer.
 
 e.g.
 
@@ -386,12 +386,6 @@ Formal parameter locations are fixed by argument position.
 ![[Pasted image 20230829133957.png]]
 
 
-
-
-
-# Lecture 5
-September 5th, 2023
-
 ### Procedure Calls and Returns
 **Calling sequences** handle all of the work that needs to be done in order to make a  function happen.
 
@@ -404,8 +398,8 @@ A **calling convention** specifies how values are communicated between procedure
 We can have multiple conventions in MS windows.
 
 ### Caller-saved vs. Callee-saved registers
-Caller-saved: registers who's values may be overwritten by a function call.
-Callee-saved: registers who's values will survive accross a function call.
+Caller-saved | registers who's values may be overwritten by a function call.
+Callee-saved | registers who's values will survive accross a function call.
 
 
 ### Code Executed for a function call
@@ -421,6 +415,9 @@ Callee-saved: registers who's values will survive accross a function call.
 
 
 
+### Left-hand-side and right-hand-side statements
+**l-values and r-values**
+#todo 
 
 
 
@@ -428,52 +425,109 @@ Callee-saved: registers who's values will survive accross a function call.
 
 
 
+### Type Conversion
+- Values of different types may be represented differently a the machine level.
+- When the code to be compiled operates on values of different types, the compiler may have to insert code to convert from one representation to another.
+	- *Implicit type conversion* | type conversion done by the compiler without explicit user input  
+	- *Explicit type conversion* | user-directed type casting
+
+
+
+**Implicit Type Conversion Examples**
+
+Assignments: `var = exp`
+- `var` has a different type than `exp`
+- The compiler adds code to convert the value of `exp` to the type of `var` before the assignment.
+
+Arithmetic Expressions | `exp1 + exp2`
+- `exp1` has a different type than `exp2`
+- The type conversion is language specified:
+	- usually, the smaller type is converted to the larger, e.g., char to int
+
+Array Indexing | `A[exp]`
+- exp is not an int (e.g., a char)
+- the compiler adds code to convert `exp` to an int value
+
+Parameter Passing | `f(exp)`
+- `exp` is not the right type for c=parameter passing (e.g., a char)
+- The compiler adds code to convert the `exp` appropriately
+
+
+### Code Generation for Expressions
+
+**Expressions 1 | Scalar Variables**
+Source code: `id`
+Code structure: (no code needed)
+
+![[Pasted image 20230907125705.png]]
+
+**Expressions 2 | Integer Constants**
+Source Code: `intcon`
+Code Structure: `tmp = intcon.value`
+
+![[Pasted image 20230907125802.png]]
+
+
+**Example**
+
+![[Pasted image 20230907130203.png]]
+
+
+
+**Example 3 | Struct Fields**
+
+Source code: A.field_k
+Generated code needs to:
+- Compute the address of A.field_k
+- Access addr(A.field_k)
+
+![[Pasted image 20230907130931.png]]
+
+
+If something is an R-value, you need to generate code to de-reference an address, then you need to put that value somewhere.
+
+
+
+### Code Generation for Arithmetic Operations
+
+**Arithmetic Expressions 1 | Unary Ops**
+
+Source Code: -E
+Code Structure:
+`some_loc = ...value of E...`
+`tmp = -some_loc`
+
+![[Pasted image 20230907132203.png]]
+
+
+
+**Arithmetic Expressions 2 | Binary Ops**
+
+Source Code: `e1 + e2`
+Code structure:
+- `loc1 = ...value of e1...`
+- `loc2 = ...value of e2...`
+- `tmp = loc1 + loc2`
+
+![[Pasted image 20230907132628.png]]
+
+
+![[Pasted image 20230907132643.png]]
 
 
 
 
+**Exercise**
 
+![[Pasted image 20230907132833.png]]
+Consider the statement
+```
+avg = (max + min) / 2
+```
 
+![[Pasted image 20230907134422.png]]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![[Pasted image 20230907134437.png]]
 
 
 
