@@ -50,13 +50,6 @@ A cloud based environment that enables cybersecurity training through virtual la
 
 # Lecture 2 | Threat Modelling
 
-**Project Proposal**
-#assignment 
-4 Pages
-Must include 4-5 papers
-Describe the issues, tools, software and experiments you plan to conduct.
-
-Proposal Deadline: September 13th
 
 ### Treat Modeling
 Threat modeling aims at finding security problems.
