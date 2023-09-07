@@ -378,15 +378,25 @@ Recall, the code, data, and files, are shared in the address space.
 
 ## Steps to Parallelization
 
-#todo Fill out the rest from the slides.
- 
-### 3 | Distribute the Data
+### 1 | Find Parallelism
+- Concerned about what can *legally* execute in parallel
+- At this stage, expose as much parallelism as possible
+- Partitioning can be based on data structures or by function.
 
-DIstribute computatino and data
+### 2 | Control (Potentially Coarsen) Granularity
+- You must trade off advantages/disadvantages of fine granularity
+	- Advantages: Better load balancing, better scalability
+	- Disadvantages: process/thread overhead and communication
+- Combine small threads into larger ones to coarsen granularity
+	- Try to keep the load balanced.
+
+
+### 3 | Distribute Computation and Data
 - Assign which processor does which computation.
 - If memory is distributed, decide which processor stares which data (why is this?)
 - Goals: minimize communication and balance the computational workload.
 	- often conflicting
+
 
 ### 4 | Synchronize and/or Communicate 
 
@@ -397,11 +407,6 @@ Memory synchronization comes in two forms: mutual exclusion and Sequence control
 *Sequence control*: 'something better happen before something else'
 
 **On a distributed-memory machine**: you communicate using message passing, typically communication involved implicit synchronization.
-
-
-
-
-
 
 ```c
 process worker [i = 0 to p-1] {
@@ -416,6 +421,84 @@ else
 receive A[startrow:endrow][0:n-1], B[0:n-1][0:n-1] from 0
 
 ```
+
+
+**Adaptive Quadrature**
+Sequential (Recursive) Program
+
+Parallelism can be done by exploiting data structures (like the matrix multiplication) and via exploitation of functions (Like this numerical integral analysis)
+
+
+```c
+
+double f()
+{
+	...
+}
+
+double area(a, b)
+c := (a+b)/2
+
+coumpute area of each half and area of whole
+
+if(close)
+{
+	return area of whole
+}
+else
+{
+	return area(a,c) + area(c,b)
+}
+```
+
+Challenge with Adaptive quadrature
+- For efficiency, we must control the granularity
+	- Without this control, the granularity will be too fine
+	- Can strop thread creation after "enough" threads are created.
+		- This is hard in general because we do not want cores to idle either.
+	- Thread implementation can perform work stealing
+		-* Idle cores take a thread and execute that thread*. Care must be taken to avoid synchronization problems and/or efficiency problems.
+
+### 5 | Assign Processors to Tasks
+(Only if using task and data parallelism)
+- Must also show dependencies between tasks
+- Usually task parallelism is used if limits of data parallelism are reached.
+
+
+### 6 | Parallelism-specific optimizations
+- Examples:
+	- message aggregation
+	- overlapping communication with computation
+		- Most of these refer to message-passing programs (targeting distributed-memory multi-computers)
+
+
+### 7 | Acceleration
+- Find parts of the code that can run on GPU/FPGA/Cell/etc., and optimize those parts
+- This step is difficult and time consuming, but it may be quite worth it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

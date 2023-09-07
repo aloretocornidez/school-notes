@@ -20,12 +20,12 @@ Follow all the steps in threat modeling (except step 4: validate), identify 5 po
 
 **Threat Identification and Categorization (STRIDE) **
 
-1. Footage from the security camera may be harvested without user authorization.
-2. Malicious commands may be sent to any of the 'smart' devices that are contained within the home.
-3. Data that is transmitted via the internet may be harvested without user authorization.
-4. A malicious actor may gain access to the information contained within the mobile device used to control the smart hardware.
-5. Each of the pieces of smart hardware could have commands sent to them that causes them to perform self-destructive actions.
-6. Malicious actor may cause the house to ignore the homeowner's commands or remove the owner from trusted devices.
+Threat 1| Footage from the security camera may be harvested without user authorization.
+Threat 2 | Malicious commands may be sent to any of the 'smart' devices that are contained within the home.
+Threat 3 | Data that is transmitted via the internet may be harvested without user authorization.
+Threat 4 | A malicious actor may gain access to the information contained within the mobile device used to control the smart hardware.
+Threat 5 | Each of the pieces of smart hardware could have commands sent to them that causes them to perform self-destructive actions.
+Threat 6 | Malicious actor may cause the house to ignore the homeowner's commands or remove the owner from trusted devices.
 
 | Threat Description | Spoofing | Tampering | Repudiation | Information Disclosure | Denial of Service | Elevation of Privileges |
 | ------------------ | -------- | --------- | ----------- | ---------------------- | ----------------- | ----------------------- |
