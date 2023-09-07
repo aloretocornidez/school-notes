@@ -228,14 +228,14 @@ Manufacturing: Smart Factories
 
 IoT vs Security
 
-| Internet of Things | Information Technology
-|---|---|
-|Security of devices, sensors and systems|Security of information systems, networks, computers, and data within traditional computing environments.|
-|Challenged by their interconnected nature, limited processing power, memory, energy, and security features.| Allow the implementation of more complex security control and measures.|
-|May face attacks that exploit their specific vulnerabilities, such as weak default passwords, lack of security updates, and the potential for unauthorized physical access| Susceptible to a broad range of attacks, including malware, phishing, social engineering, and other methods that target software vulnerabilities.|
-|Communicate through various network protocols | Typically operate within more controlled and established network environments|
-|Ensuring the privacy of this data while in transit and at rest is a significant concern| Data privacy concerns, especially in industries like finance, healthcare, and e-commerce|
-|Lacks consistent security standards and regulations across all devices and industries.| Has established security frameworks, best practices, and regulatory requirements that help guide organizations in protecting their systems and data.|
+| Internet of Things                                                                                                                                                         | Information Technology                                                                                                                               |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Security of devices, sensors and systems                                                                                                                                   | Security of information systems, networks, computers, and data within traditional computing environments.                                            |
+| Challenged by their interconnected nature, limited processing power, memory, energy, and security features.                                                                | Allow the implementation of more complex security control and measures.                                                                              |
+| May face attacks that exploit their specific vulnerabilities, such as weak default passwords, lack of security updates, and the potential for unauthorized physical access | Susceptible to a broad range of attacks, including malware, phishing, social engineering, and other methods that target software vulnerabilities.    |
+| Communicate through various network protocols                                                                                                                              | Typically operate within more controlled and established network environments                                                                        |
+| Ensuring the privacy of this data while in transit and at rest is a significant concern                                                                                    | Data privacy concerns, especially in industries like finance, healthcare, and e-commerce                                                             |
+| Lacks consistent security standards and regulations across all devices and industries.                                                                                     | Has established security frameworks, best practices, and regulatory requirements that help guide organizations in protecting their systems and data. |
 
 
 
