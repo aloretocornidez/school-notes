@@ -1,3 +1,4 @@
+
 # CSC 553 | Principles of Compilation
 
 ### Class Layout

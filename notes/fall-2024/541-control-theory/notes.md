@@ -258,7 +258,6 @@ $$C \in \mathbb{R}, D \in \mathbb{R}$$
 
 
 # Lecture 1.2 | State Space Representation
-#date August 25th, 2023
 ## Learning Goals 
 - Activity Quiz
 - Challenge Problem
@@ -1097,6 +1096,248 @@ $$T(s) = \frac{5s+13}{s^{2}+4s+3}$$
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Lecture 1.7 | Representation Connections (Wrap-Up)
+**Topics:** Mason's Gain and DC Motor Modelling
+
+
+#learninggoals 
+- Finish Representation Connections:
+	- Mason's Gain Example
+	- State Space (S.S.) --> Transfer Function (T.F.)
+	- Transfer Function (T.F.) --> Differential Equation (D.E.)
+
+
+## Representation Connections
+![[Pasted image 20230908140236.png]]
+
+
+### Mason's Gain
+
+ ![[Pasted image 20230908140601.png]] 
+
+$$P_{i} = i^{th} \text{ path}$$
+
+$$l_{i}= i^{th}\text{ loop}$$
+$$\Delta = 1 - \sum\limits(\text{loops}) + \sum\limits(\text{Product of non touching pairs}) - \sum\limits(\text{Product of non touching triples}) + \sum\limits(\text{Product of non touching quads}) - \sum\limits(\text{Product of non touching 5's})$$
+
+$$\Delta_{i} = i^{th} \text{ Co-factor (Remaining terms in in } \Delta \text{ after removing } i^{th} \text{ path.}$$
+
+Transfer Function is then:
+$$T = \frac{\sum\limits P_{i}\Delta_{i}}{\Delta}$$
+
+
+![[Pasted image 20230908140809.png]]
+
+
+### State Space to Transfer Function
+
+![[Pasted image 20230908141858.png]]
+
+
+Recall: 
+$$G(s) = C(sI - A)^{-1}B+D$$
+
+$$A = \begin{bmatrix}
+-1 && 2  \\ 
+0 && -3
+\end{bmatrix}$$
+
+$$B = \begin{bmatrix}0 \\ 1 \end{bmatrix}$$
+
+$$C = \begin{bmatrix}4 && 5\end{bmatrix}$$
+$$D = 0$$
+
+Therefore:
+
+$$G(s) = 
+\begin{bmatrix}4&&5\end{bmatrix}
+\begin{bmatrix}s+1 && -2 \\ 0 && s+3\end{bmatrix}^{-1}
+\begin{bmatrix}0 \\ 1\end{bmatrix} + \begin{bmatrix}0\end{bmatrix}
+$$
+
+Continuing:
+$$G(s) = 
+\begin{bmatrix}4&&5\end{bmatrix}
+\frac{1}{\Delta_{T}}
+\begin{bmatrix}s+3 && -2 \\ 0 && s+1\end{bmatrix}^{-1}
+\begin{bmatrix}0 \\ 1\end{bmatrix}
+$$
+
+Now:
+
+$$G(s) - 
+\begin{bmatrix}4 && 5\end{bmatrix}
+\begin{bmatrix}2  \\ s+1\end{bmatrix} \frac{1}{\Delta_{T}}
+=
+
+\frac{s(4)+5(s+1)}{s^{2}+4s+3} 
+=
+\frac{8+5(s+1)}{s^{2}+ 4s+ 3}
+$$
+
+
+Finally: 
+
+$$G(s) = \frac{5s+13}{s^{2}+4s+3}$$
+
+
+### Transfer Function to Differential Equation
+
+$$G(s) = \frac{Y(s)}{U(s)} = \frac{5s+13}{s^{2}+4s+3}$$
+
+Cross Multiply:
+
+$$ Y(s)(s^{2}+4s+3) = U(s) (5s+13) $$
+
+Inverse Laplace transform:
+
+$$y''(t) + 4y'(t) + 3y(t) = 5u'(t)+ 13u(t)$$
+
+
+
+
+
+
+
+### Schematic (Electro -Mechanical System)
+
+Motor and Rotating Shaft
+
+![[Pasted image 20230908142905.png]]
+
+
+
+
+$$G(s) = \frac{\Theta(s)}{V(s)}$$
+
+
+$$-v(t) + R_{a}i_{a}(t) + L_{a} \frac{d i_{a}(t)}{dt} + v_{b}(t) = 0$$
+
+Where: 
+Applied Voltage: $-v(t)$
+Armature resistance: $R_{a}$
+Armature current: $i_{a}(t)$
+Armature Inductance: $L_{a}$
+Back EMF: $v_{b}(t)$
+
+What is back EMF?
+Back EMF: $v_{b}(t) = K_{b}\omega(t) = k_{m}\frac{d\theta(t)}{dt}$
+
+Back proportionality constant: $K_{b}$
+Motor Constant: $K_{m}$
+
+#todo 
+
+
+![[Pasted image 20230908144207.png]]
+
+
+
+**Mechanical Side Equation:**
+![[Pasted image 20230908143649.png]]
+
+Note: Torque is analogous to force.
+
+$$\tau_{m}= \tau_{i}+ \tau_{b}$$
+
+Motor torque, inertial torque, and rotational damping torque
+
+**Physical Relations**
+**Motor Torque**: $\tau_{m} =K_{m}i_{a}$
+Motor constant: $K_{m}$
+Armature current: $i_{a}$
+
+Note: Motor torque is proportional to armature current.
+
+
+**Inertial Torque:**
+![[Pasted image 20230908144404.png]]
+
+
+![[Pasted image 20230908144159.png]]
+
+**Damping Torque:**
+![[Pasted image 20230908144224.png]]
+
+
+**Equilibrium Equation (From mechanical side, see above): **
+
+![[Pasted image 20230908144248.png]]
+
+Now that we have the differential equation, let's Laplace transform the equation to simplify calculation:
+![[Pasted image 20230908144445.png]]
+
+Divide by $K_{m}$
+
+![[Pasted image 20230908144458.png]]
+
+Plug that into the electrical side of the LT equation
+
+![[Pasted image 20230908144513.png]]
+
+Which yields: 
+![[Pasted image 20230908144527.png]]
+
+Now we can do some algebra to render the equations:
+
+![[Pasted image 20230908144541.png]]
+
+![[Pasted image 20230908144608.png]]
+
+And render the final equation: 
+
+![[Pasted image 20230908144618.png]]
+
+
+
+
+## Time Constants (In DC Motor Dynamics)
+
+Mechanical Time Constant: $sJ + B$
+J is rotational inertia, B is the damping.
+
+Convert to time contant form $(\tau s + 1)$
+
+We can factor out the B
+
+![[Pasted image 20230908144928.png]]
+
+For the electrical system, the same kind of thought process applies
+
+![[Pasted image 20230908144958.png]]
+
+
+![[Pasted image 20230908145023.png]]
+
+
+Electrical is much faster than mechanical time constants:
+![[Pasted image 20230908145032.png]]
+
+
+Basically, we say, set the inductance to zero:
+![[Pasted image 20230908145049.png]]
+
+
+Which gives a second order system (instead of the higher order system:
+#todo fill out the rest of the notes from the lecture note slides.
 
 
 
