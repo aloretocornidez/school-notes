@@ -84,7 +84,7 @@ Now we just want the expression to be written in first order variations of $x(t)
 
 *Note the $\approxeq$ approximation instead of the $=$*
 
-**Returning to the example**
+**Returning to the example and applying the Taylor Series**
 
 $$x'(t) = 2x^{2}(t) + u(t)$$
 
@@ -112,3 +112,71 @@ $$\Rightarrow x(t) = x_{0}+ \Delta x, u(t) = u_{0}+ \Delta u$$
 $$x'(t) = (x_{0}+\Delta x)' = x_{0}' + (\Delta x)'$$
 
 ![[Pasted image 20230911143500.png]]
+
+After approximation, we get this system:
+
+![[Pasted image 20230911143629.png]]
+
+
+
+Now we evaluate the functions and render out partial differential equations:
+
+![[Pasted image 20230911143851.png]]
+
+
+
+
+
+![[Pasted image 20230911143940.png]]
+
+
+Now, the final linearize system is:
+
+$$z'(t) = 4z(t) + v(t)$$
+
+
+### Is the System Stable?
+
+First, let's Laplace transform the funrciton to get the system into the frequency domain:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
