@@ -474,73 +474,6 @@ Application: MSD System
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Lecture 1.3 | Generating Transfer Functions
 
 #todo Fill out the notes from the first 20 minutes of class.
@@ -1337,7 +1270,7 @@ Basically, we say, set the inductance to zero:
 
 
 Which gives a second order system (instead of the higher order system:
-#todo fill out the rest of the notes from the lecture note slides.
+#todo fill out the rest of the notes from the lecture note slides .
 
 
 
