@@ -532,6 +532,74 @@ avg = (max + min) / 2
 
 
 
+**Exercise**
+
+Source code: `u = * - y`
+
+Work out the 3-addr code at each node.
+
+`tmp0 = y mul -1`
+`tmp1 = x mul tmp0`
+`u = tmp1`
+
+### Reusing Temporaries
+
+Storage can be reduced considerably by reusing temporaries:
+
+- For each type T, keep a "free list" of temporaries of type T;
+- `newtemp(T)` uses a temp from the free list for type T whenever possible.
+
+Putting Temps in the free list:
+
+- free only compiler-generated temps, not user variables.
+- free a temp after the point of its last use (i.e. when its value is no longer needed.)
+
+
+### Code Generation for Logical Operators
+
+**Logical Expressions**
+
+A naive but simple approach is by assigning an actual truth value:
+
+![[Pasted image 20230912125758.png]]
+
+***Disadvantage:*** lots of unnecessary memory references.
+
+*Observation:* logical expressions are usually used to direct flow of control.
+
+![[Pasted image 20230912130021.png]]
+
+Is it possible to generate code to direct control flow without evaluating an explicit truth calculation?
+
+*Idea*: "Tell" the code generator where the generated code should jump:
+
+- *trueDst*: label to jump to if expression is True
+- *falseDst*: label to jump to if expression is False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

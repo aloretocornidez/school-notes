@@ -143,12 +143,135 @@ First, let's Laplace transform the funrciton to get the system into the frequenc
 
 
 
+# Lecture 2.2 | Vector Linearization with Example
+
+#learninggoals 
+
+- Work through vector Linearization Example
+- Begin System Identification from Step Response Data
 
 
 
 
 
 
+
+
+
+
+
+### Vector Linearization 
+
+Non linear system, $x(t) \in \mathbb{R}^{n}$
+
+
+$$x'(t) = f(x(t), u(t))$$
+
+
+$$x_{0}'(t) = f(x_{0}(t), u_{0}(t))$$
+
+
+**Second Order Example**
+
+Phase plane
+![[Pasted image 20230913140609.png]]
+
+The yellow and magenta lines are the eigen vectors of the phase plane.
+
+$$\begin{bmatrix}
+x_{1}'  \\ x_{2}'
+\end{bmatrix} = 
+
+\begin{bmatrix}
+f_{1}(x_{1} , x_{2}, u) \\ 
+f_{2}(x_{1} , x_{2}, u)
+\end{bmatrix}
+$$
+
+This is a non-linear system. $x(t) = x_{0}(t) + \Delta x(t)$
+
+$$x'(t) = x_{0}'(t) + \Delta x(t) =\begin{bmatrix}x_{10}'(t) \\ 
+x_{20}'(t) 
+\end{bmatrix}+\begin{bmatrix}
+\Delta x_{1}'(t) \\ 
+\Delta x_{2}'(t) 
+\end{bmatrix}$$
+
+We state that we have a **nominal equilibrium condition** solution of this
+
+![[Pasted image 20230913141332.png]]
+
+
+$$\approx 
+\begin{bmatrix}
+f_{1}(x_{10}, x_{20}u_{0}) \\ 
+f_{2}(x_{10}, x_{20}u_{0})
+\end{bmatrix}
+
+\begin{bmatrix}
+\frac{\partial f_{1}}{\partial x_{1}} && \frac{\partial f_{1}}{\partial x_{2}} \\ 
+\frac{\partial f_{2}}{\partial x_{1}} && \frac{\partial f_{2}}{\partial x_{2}}
+\end{bmatrix} 
+
+\begin{bmatrix}
+\Delta x_{1} \\ 
+\Delta x_{2}
+\end{bmatrix}
++
+\begin{bmatrix}
+\frac{\partial f_{1}}{\partial u} \\ 
+\frac{\partial f_{1}}{\partial u} 
+\end{bmatrix}
+
+\begin{bmatrix}
+\Delta u
+\end{bmatrix}
+$$
+
+When we throw out the higher order terms, we finally end up with the following:
+
+![[Pasted image 20230913142045.png]]
+
+
+
+
+
+
+Now, an example:
+
+$$x''(t) = g(x(t), x'(t), u(t))$$
+
+$$x''(t) = 4x + 6 x x' - (x')^{2} + u x' + 5u$$
+
+Let $z_{1}= x$, and $z_{2}= x'$. To rewrite the equation as two, 1st order coupled non-linear differential equations.
+
+$$z_{1}'' = \frac{dz_{1}}{dt}= \frac{dx}{dt} = x' = f_{1}(z_{1}, z_{2}, u)$$
+
+$$z_{2}= x'' = 4z_{1} + 6 z_{1}z_{2} - z_{2}^{2} + u z_{2} + 5u = f_{2}(z_{1}, z_{2}, u)$$
+
+Now, we have rewritten the given example in terms of $z_{1}$, and $z_{2}$. 
+
+$$z_{1}' = f_{1}(z_{1}, z_{2}, u)$$
+$$z_{2}' = f_{2}(z_{1}, z_{2}, u)$$
+
+
+%% $$\Delta z_{1}'(t) = \frac{\partial f_{1}}{\partial z_{1}} \biggr\rvert_{z_{1}= z_{0}, z_{2}= z_{20}, u= u_{0}} (z_{1} - z_{10}) 
++
+\frac{\partial f_{1}}{\partial z_{2}} \biggr\rvert_{z_{1}= z_{0}, z_{2}= z_{20}, u= u_{0}} (z_{1}= z_{10}) 
+
+$$ %%
+
+
+
+
+![[Pasted image 20230913143259.png]]
+
+
+
+
+**Equilibrium Condition**
+
+Many times, it is an operating point and we are looking for values of $z_{1}, z_{2}$, and $u$ when $z_{12}' = 0$, and $z_{20}'=0$ 
 
 
 
