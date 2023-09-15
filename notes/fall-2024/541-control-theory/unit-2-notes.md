@@ -388,8 +388,57 @@ $$\Longrightarrow \tau = \frac{T_{s}}{5}$$
 
 
 
+**Example**
+
+Objective: FInd $\alpha$ and $\tau$
+
+$$\omega(s) = G(s) V(s)$$
 
 
+
+
+
+![[Pasted image 20230915143639.png]]
+
+This is the `Pole-Zero Form` 
+
+
+Do Partial Fraction Expansion
+
+
+This renders the following:
+
+$$\omega(t) = B_{1}+ B_{2}e^\frac{-t}{\tau}$$
+
+$$\omega(t) = A\alpha - A\alpha e^{\frac{-t}{\tau}} = A\alpha (1 - e^{-t\tau})$$
+
+
+Now what?
+
+![[Pasted image 20230915144420.png]]
+
+
+We can find the final value using the `final value theorem`
+
+![[Pasted image 20230915144618.png]]
+
+
+Recall, this value is actually equal to $A_{1}$
+
+$$\alpha = \frac{A_{1}}{A} $$
+
+![[Pasted image 20230915144824.png]]
+
+$$\omega(t_{1}) = w_{1} = A\alpha\left(1- e ^{\frac{-t_{1}}{\tau}}\right)$$
+
+
+Now, we can solve for $\tau$ using the star equation.
+
+
+%% $$\frac{\omega_{1}}{{A\alpha}} = $$ %%
+
+
+![[Pasted image 20230915145043.png]]
 
 
 
