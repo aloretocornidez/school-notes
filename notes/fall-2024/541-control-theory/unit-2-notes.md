@@ -279,8 +279,110 @@ Many times, it is an operating point and we are looking for values of $z_{1}, z_
 
 
 
+# First Order Systems and Their Identification (2.12)
+
+#learninggoals 
+- List/Discuss Common First-Order Systems
+- Work through a 1st-order System Identification Example
+- 1st Order System ID w/ different data
+- 2nd order system ID (See Lab \#1)
 
 
+### First Order Systems Example
+
+![[Pasted image 20230915140810.png]]
+
+
+RC Circuit
+
+**KVL**
+
+$$-v_{i}(t) + RCv_{0}'(t) + v_{0}(t) = 0$$
+
+$$\Longrightarrow v_{0}'(t) =  -\frac{1}{RC}v_{0}(t) + \frac{1}{RC}v_{i}(t)$$
+
+
+Transfer Function:
+
+$$sV_{0}(s) = \frac{-1}{RC}V_{0}(s) + \frac{1}{RC}V_{i}(t)$$
+
+$$\left(s + \frac{1}{RC}\right)V_{0}(s) = \frac{1}{RC}V_{i}(s)$$
+
+
+$$\frac{V_{0}(s)}{V_{i}(s))  } = \frac{\frac{1}{RC}}{s + \frac{1}{RC}} = \frac{\frac{1}{RC}}{\frac{1}{RC}(RCs+1)} = \frac{1}{\tau s + 1}$$
+
+
+
+### Cruise Control
+
+![[Pasted image 20230915141655.png]]
+
+$$\Longrightarrow mv' + bv = u $$
+
+**Transfer Function**
+
+$$smV(s) = bV(s) = U(s)$$
+
+$$(sm+b) V(s) = U(s)$$
+
+$$\frac{V(s)}{U(s)} = \frac{1}{sm+b} = \frac{1}{b(\frac{m}{b}s+1)}= \frac{\frac{1}{b}}{\frac{m}{b}s + 1}= \frac{\alpha}{\tau s + 1 }$$
+
+
+
+These are examples of first order systems:
+- Thermal System 
+- Fluid in a Tank
+- DC Motor
+
+For example:
+The DC motor system is  a first order system. 
+
+![[Pasted image 20230915141542.png]]
+
+
+### First Order System Identification
+
+![[Pasted image 20230915142008.png]]
+
+Where: $G(s) = \frac{\alpha}{\tau s +1 }$
+
+![[Pasted image 20230915142338.png]]
+
+$$e^{-5} \approx 0.00674$$ 
+
+This is 0.1 because I'm an engineer, so:
+
+$$e^{-5} \approx 0.01$$
+
+Setting Time:
+$T_{s}= 5\tau$ 
+
+
+Now, assume a constant input: $U(s) = \frac{A}{s}$
+
+
+
+
+$$\Longrightarrow = Y(s) = G(s) U(s)$$
+
+$$Y(s) = \frac{\alpha}{\tau s + 1 }\frac{A}{s} = \frac{A\alpha}{s(\tau s + 1)}$$
+
+
+Using the Final Value Theorem:
+
+$$y_{fv} = \lim_{t\rightarrow \infty }y(t) = \lim_{s \rightarrow 0}s Y(s)$$
+
+$$y_{fv}= \lim_{s \rightarrow 0} \frac{A\alpha s}{s (\tau s + 1 )} = A\alpha = A_{1} $$
+
+$$\therefore \alpha A \Longrightarrow \alpha = \frac{A_{1}}{A}$$
+
+
+The DC Gain of $G(s)$ : $G0 = \alpha$
+
+
+1% Settling Time $T_{s} = 5 \tau$
+
+$$\Longrightarrow \tau = \frac{T_{s}}{5}$$
 
 
 
