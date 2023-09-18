@@ -454,3 +454,53 @@ Now, we can solve for $\tau$ using the star equation.
 
 
 
+
+
+
+
+
+# Lecture 2.4 | Second-Order System ID: Connecting Frequency Domain Representations with Time Domain Waveforms
+
+#learninggoals 
+- Motivate and Develop System Identification Techniques for Under-damped 2nd order systems.
+
+
+
+### 2nd-order  System Identification
+(Will Concentrate on Underdamped Systems)
+
+
+![[Pasted image 20230918140120.png]]
+
+
+Suppose  
+$$G_{a}(s) = \frac{\omega_{d}}{(s+\sigma)^{2} + \omega_{d}^{2}}$$
+
+
+
+
+
+
+
+Poles of $G_{a}(s)$
+
+
+Den: $(s + \sigma )^{2} + \omega_{d}^{2}= 0 \rightarrow (s+\sigma)^{2} = -\omega_{d}^{2}, (s+\sigma) = \pm \sqrt{-\omega_{d}} = \pm j\omega_{d}$
+
+$$s = -\sigma\pm\omega_{d}$$
+
+
+
+
+
+
+![[Pasted image 20230918140728.png]]
+
+
+
+
+
+Initial Condition Response: $y_{a}(t) = ?$
+
+or an impulse response: $U(t) = \delta(t) \Longrightarrow u(s) =$
+j
