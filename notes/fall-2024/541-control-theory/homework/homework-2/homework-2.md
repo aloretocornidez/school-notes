@@ -75,6 +75,10 @@ $$(\Delta \theta)' = -1 \Delta \theta(t) + 1 \Delta u(t)$$
 
 
 ## Question 2 
+Find the transfer function between $R(s)$ and $Y(s)$ in the given block diagram.
+
+![[Pasted image 20230916165354.png]]
+
 
 
 ## Question 3 
