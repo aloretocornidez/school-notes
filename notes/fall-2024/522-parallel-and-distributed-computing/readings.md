@@ -37,6 +37,19 @@ Third, this paper presents analysis for the dragonfly network at an unprecedente
 
 
 
+## Eraser | A Dynamic Race Detector for Multi-threaded Programs
+
+Definitions: 
+
+- Lock: A lock is a simple synchronization object used for mutual exclusion. It is either available or owned by a thread. Only the owner of a lock is allowed to release it. 
+- Data Race: a data race occurs when two concurrent threads access a shared variable and when at least one access is a write and the threads use no explicit mechanism to prevent access from being simultaneous.
+- Happens before: memory accesses are separated by synchronization events.
+- Happens-after: 
+
+
+Related Work:
+- `lock_lint` and the Extended Static Checker are compile time (static) race detection systems that work in the presence of dynamically allocated stared data. However, they require statistically reasoning about the program's semantics.
+
 
 
 
