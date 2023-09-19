@@ -562,6 +562,7 @@ _Idea_: "Tell" the code generator where the generated code should jump:
 Code Structure:
 
 **Loops**
+
 ```
 L_top : code to evaluate B
     if (!B) go to L_after
@@ -585,38 +586,111 @@ codeGen_stmt(S)
 ```
 
 **Loops 2**
-```
-goto L_eval 
 
-L_top : code for S_1 
+```
+goto L_eval
+
+L_top : code for S_1
 L_body: code to evaluate B
     if (B) goto L_top
 L_after: ...
 ```
 
-### Exercise 
+### Exercise
 
 Ternary expressions: `E === E_1 ? E_2 E_3`
 
+### Multi-Way Branches (Switch Statements)
+
+Goal: generate code that has a fixed set of alternatives based on the value of
+an expression.
+
+**Implementation Choices**
+
+**Linear Search**
+- best for a small number of case labels
+- cost increases with the number of case labels; later cases are more expensive
+
+**Binary Search**
+- Best for a moderate number of case labels.
+- Cost increases with no-of case labels.
+
+**Jump tables**
+- Best for a large number of case labels (>8).
+- May take a large amount of space if the labels are not clustered.
 
 
 
 
 
+### Jump Tables
+
+**What is a jump table?**
+A jump table is basically an array of addresses.
+
+If the set of case labels has "holes", then those holes didn't have an explicit case label and should jump to the default case.
+
+**Bounds Checking**
+
+- Before indexing into a jump table, we must check that the expression value is within the proper bounds (if not, jump to the default case).
+- The check:
+	- `lower_bound <= exp_value <= upper_bound`
+	- can be implemented using 1 unsigned comparison.
+
+
+Given a switch with max and min case labels $c_max$ and $c_min$, the jump table is is accessed as follows: 
+
+![[Pasted image 20230919124853.png]]
+
+**Cycle Costs**
+
+Now, let's talk about the cost of the amount of cycles for a case statement.
+
+![[Pasted image 20230919124933.png]]
+
+
+The point at the end of the day, is that is is expensive to go through a jump table. So switch statements can be expensive (if they use jump tables).
+
+**Space Costs**
+
+What about the space costs?
+
+A jump table with max and min case labels needs to be about $c_{max}- c_{min}$ entries.
+
+What if the density of the cases is not dense enough?
+
+```c
+switch (x) {
+	case 1: …
+	case 1000: …
+	case 1000000: …
+}
+```
+
+Define the density as:
+
+$$\frac{\text{No. of case labels}}{c_{max}-c_{min}}$$
+
+Compilers will not generate a jump table if density below some threshold (typically, 0.5)
+
+### Switch statements: Overall Algorithm
+
+If the number of case labels is small ~$(\le 8)$:
+
+- use linear or binary search.
+
+
+If the density >= the theshold, (~0.5):
+
+- then generate the jump table.
+
+Else:
+- divide the set of case labels into sub ranges, where each sub range has density >= threshold.
+- Generate code to use binary search to choose amongst the sub-ranges.
+- handle each sub range recursively.
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+Next Unit: [[program-analysis]]

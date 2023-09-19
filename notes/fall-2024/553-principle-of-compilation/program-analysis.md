@@ -1,0 +1,67 @@
+
+# Program Analysis
+
+
+
+### Analysis And Optimization | Organization
+
+![[Pasted image 20230919130622.png]]
+
+
+
+### Undesirability
+
+An algorithm is defined as a computation that goes to completion.
+
+Some problems cannot be solved using any algorithm (Some problems are undecidable | Turing)
+
+This does not rule out:
+- Algorithms that correctly solve some instances of that problem and always terminate
+- Computations that attempt to solve all instances but sometimes do not terminate.
+
+
+### Rice's Theorem
+
+[Rice's Theorem](https://en.wikipedia.org/wiki/Rice's%20theorem)
+
+Any non trivial property behavioral properties of programs are undecidable.
+
+(A property is trivial if either all programs have it or else no program has it)
+
+This means:
+- we can have program analyses that produce safe (but sometimes imprecise) analysis results and always terminate
+- if we tried to always produce precise analysis results, the analysis would sometimes not terminate
+
+Note: "safe" means that all possible executions are accounted for in the analysis results (however, imprecision arising from undecidablity means that the analysis can also account for executions that cannot actually occur at runtime)
+
+
+### Program Analysis and Precision
+
+In general, we can expect precise results for some, but not all, input programs
+
+The more work an analysis does, the larger the set of inputs for which it can be precise.
+
+![[Pasted image 20230919133118.png]]
+
+
+There is tension between programmers wanting quick compilation vs optimized programs.
+
+
+
+If the user is willing to pay time, the program can be optimized more in different ways.
+
+
+# Control Flow Analysis
+
+### Goals 
+
+To obtain higher level information about the possible control flow behavior of the program.
+
+- “which blocks are guaranteed to have been executed if control reaches some block B?”
+- “which blocks are guaranteed to be executed once control reaches some block B?”
+- “what is the loop structure of the code?”
+
+Criteria: 
+- must be "safe" i.e., must take into account all possible executions of the program.
+
+
