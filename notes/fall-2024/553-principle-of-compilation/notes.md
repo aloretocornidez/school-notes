@@ -340,6 +340,91 @@ e.g.
 
 #postpone
 
+
+## Hybrid IRs
+
+- Combine Features of graphical and linear IRs.
+
+
+### Control Flow Graphs
+
+A control flow graph for a function is a directed graph $G = (V,E)$ such that:
+- each $v \in V$ is a straight line code sequence ("basic block")
+- there is an edge $a \rightarrow b \in E$ iff control can go directly from a to b.
+
+
+
+![[Pasted image 20230921124130.png]]
+
+
+### Basic Blocks
+
+Definition: A basic block $B$ is a sequence of consecutive instructions such that:
+- control enters $B$ only at its beginning
+- control leaves $B$ only at its end (under normal execution)
+
+This implies that if a basic block is entered, then all instructions in $B$ are executed. 
+- For program analysis purposes, we can tread a basic block as a single entity.
+
+
+
+
+
+### Identifying Basic Blocks
+
+1. Determine the set of __leaders__, i.e., the first instruction of each basic block
+	- The entry point of a function is a leader
+	- any instruction that is the target of a branch is a leader
+	- any instruction following a conditional or unconditional branch is a leader.
+2. For each leader, its basic block consists of:
+	- the leader itself
+	- all subsequent instructions up to, but not including, the next leader.
+
+
+
+### Constructing Control Flow Graphs
+
+Algorithm:
+1. Identify Basic Blocks 
+2. For each block $B$:
+	- if $B$ ends in a branch instructions: add an edge to each possible control flow target
+	- else add en edge to each contextually basic block (i.e., the block that follows $B$ in terns if instruction order)
+
+Issues:
+- handling function calls
+	- You can think about function calls as making the function call an exit to a basic block. This means you have to take into consideration the worst case after the execution of the function (that is, we don't know what has been modified).
+	- The second option is to not consider a function call an exit to a basic block. This means that you have to keep track of what variables have been modified and how and so on.
+- entry and exit blocks
+	- We are compiling a function at a time, after the CFG is constructed we do program analysis and generate final code
+	- after generation of final code, you'll have an entry node and there are multiple returns. (you want one return/exit block)
+	- You can create a return/exit block so that you have one entry node and one exit node in the control flow graphs. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Code Generation | Lecture Slides 04
 
 **Overview**
@@ -694,3 +779,7 @@ Else:
 
 
 Next Unit: [[program-analysis]]
+
+
+
+

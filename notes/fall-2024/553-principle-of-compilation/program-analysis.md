@@ -65,3 +65,38 @@ Criteria:
 - must be "safe" i.e., must take into account all possible executions of the program.
 
 
+
+
+## Control Flow Analysis
+
+
+### Dominators
+
+Definition: A node $d$ in a flow graph $G$ dominates a node $n$ (written "$d$ dom $n$") iff every path from the entry node of $G$ to $n$ contains the node $d$.
+
+Facts:
+- every node dominates itself
+- the "dom" relation is a partial order
+- every node has a unique immediate dominator.
+- The dominator relationships in a glow graph form a tree.
+
+
+
+If x dominates y:
+
+
+Properties of Domination:
+1. Reflexive
+2. Transitive
+3. Antisymmetric
+
+
+
+### Immediate Dominator
+
+x is an immediate dominator of y iff:
+- x dom y and there is no z (z != x) such that x dom z and z dom y
+
+
+Since every node has 1 unique immediate dominator, this means that the Control flow diagram can actually be expressed as a Tree (and not only a graph).
+
