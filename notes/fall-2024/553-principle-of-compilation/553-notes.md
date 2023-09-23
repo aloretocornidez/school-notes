@@ -340,6 +340,91 @@ e.g.
 
 #postpone
 
+
+## Hybrid IRs
+
+- Combine Features of graphical and linear IRs.
+
+
+### Control Flow Graphs
+
+A control flow graph for a function is a directed graph $G = (V,E)$ such that:
+- each $v \in V$ is a straight line code sequence ("basic block")
+- there is an edge $a \rightarrow b \in E$ iff control can go directly from a to b.
+
+
+
+![[Pasted image 20230921124130.png]]
+
+
+### Basic Blocks
+
+Definition: A basic block $B$ is a sequence of consecutive instructions such that:
+- control enters $B$ only at its beginning
+- control leaves $B$ only at its end (under normal execution)
+
+This implies that if a basic block is entered, then all instructions in $B$ are executed. 
+- For program analysis purposes, we can tread a basic block as a single entity.
+
+
+
+
+
+### Identifying Basic Blocks
+
+1. Determine the set of __leaders__, i.e., the first instruction of each basic block
+	- The entry point of a function is a leader
+	- any instruction that is the target of a branch is a leader
+	- any instruction following a conditional or unconditional branch is a leader.
+2. For each leader, its basic block consists of:
+	- the leader itself
+	- all subsequent instructions up to, but not including, the next leader.
+
+
+
+### Constructing Control Flow Graphs
+
+Algorithm:
+1. Identify Basic Blocks 
+2. For each block $B$:
+	- if $B$ ends in a branch instructions: add an edge to each possible control flow target
+	- else add en edge to each contextually basic block (i.e., the block that follows $B$ in terns if instruction order)
+
+Issues:
+- handling function calls
+	- You can think about function calls as making the function call an exit to a basic block. This means you have to take into consideration the worst case after the execution of the function (that is, we don't know what has been modified).
+	- The second option is to not consider a function call an exit to a basic block. This means that you have to keep track of what variables have been modified and how and so on.
+- entry and exit blocks
+	- We are compiling a function at a time, after the CFG is constructed we do program analysis and generate final code
+	- after generation of final code, you'll have an entry node and there are multiple returns. (you want one return/exit block)
+	- You can create a return/exit block so that you have one entry node and one exit node in the control flow graphs. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Code Generation | Lecture Slides 04
 
 **Overview**
@@ -562,6 +647,7 @@ _Idea_: "Tell" the code generator where the generated code should jump:
 Code Structure:
 
 **Loops**
+
 ```
 L_top : code to evaluate B
     if (!B) go to L_after
@@ -585,37 +671,114 @@ codeGen_stmt(S)
 ```
 
 **Loops 2**
-```
-goto L_eval 
 
-L_top : code for S_1 
+```
+goto L_eval
+
+L_top : code for S_1
 L_body: code to evaluate B
     if (B) goto L_top
 L_after: ...
 ```
 
-### Exercise 
+### Exercise
 
 Ternary expressions: `E === E_1 ? E_2 E_3`
 
+### Multi-Way Branches (Switch Statements)
+
+Goal: generate code that has a fixed set of alternatives based on the value of
+an expression.
+
+**Implementation Choices**
+
+**Linear Search**
+- best for a small number of case labels
+- cost increases with the number of case labels; later cases are more expensive
+
+**Binary Search**
+- Best for a moderate number of case labels.
+- Cost increases with no-of case labels.
+
+**Jump tables**
+- Best for a large number of case labels (>8).
+- May take a large amount of space if the labels are not clustered.
 
 
 
 
 
+### Jump Tables
+
+**What is a jump table?**
+A jump table is basically an array of addresses.
+
+If the set of case labels has "holes", then those holes didn't have an explicit case label and should jump to the default case.
+
+**Bounds Checking**
+
+- Before indexing into a jump table, we must check that the expression value is within the proper bounds (if not, jump to the default case).
+- The check:
+	- `lower_bound <= exp_value <= upper_bound`
+	- can be implemented using 1 unsigned comparison.
+
+
+Given a switch with max and min case labels $c_max$ and $c_min$, the jump table is is accessed as follows: 
+
+![[Pasted image 20230919124853.png]]
+
+**Cycle Costs**
+
+Now, let's talk about the cost of the amount of cycles for a case statement.
+
+![[Pasted image 20230919124933.png]]
+
+
+The point at the end of the day, is that is is expensive to go through a jump table. So switch statements can be expensive (if they use jump tables).
+
+**Space Costs**
+
+What about the space costs?
+
+A jump table with max and min case labels needs to be about $c_{max}- c_{min}$ entries.
+
+What if the density of the cases is not dense enough?
+
+```c
+switch (x) {
+	case 1: …
+	case 1000: …
+	case 1000000: …
+}
+```
+
+Define the density as:
+
+$$\frac{\text{No. of case labels}}{c_{max}-c_{min}}$$
+
+Compilers will not generate a jump table if density below some threshold (typically, 0.5)
+
+### Switch statements: Overall Algorithm
+
+If the number of case labels is small ~$(\le 8)$:
+
+- use linear or binary search.
+
+
+If the density >= the theshold, (~0.5):
+
+- then generate the jump table.
+
+Else:
+- divide the set of case labels into sub ranges, where each sub range has density >= threshold.
+- Generate code to use binary search to choose amongst the sub-ranges.
+- handle each sub range recursively.
 
 
 
 
 
-
-
-
-
-
-
-
-
+Next Unit: [[program-analysis]]
 
 
 
