@@ -504,3 +504,45 @@ Initial Condition Response: $y_{a}(t) = ?$
 
 or an impulse response: $U(t) = \delta(t) \Longrightarrow u(s) =$
 j
+
+
+
+# Lecture 3.1 | Converting a Transfer Function into an Input Feed-forward State Space Representation
+
+
+#learninggoals 
+Exercise: Transfer function to StateSpace Representation
+Develop techniques for converting between system representations.
+Create an input feedforward state space representation.
+Example (Strictly Proper T>F.): Strictly Proper <==> deg(Num) < deg(Den)
+Discuss how to handle a proper T.F.: Proper T.F. <==> deg(Num) < deg(Den)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
