@@ -122,9 +122,12 @@ Availablility is directly addressed via the use of a VPN because a VPN allows au
 
 a. Briefly describe the main functions of a firewall. 
 
+A firewall is a security measure that is used to control incoming and outgoing network traffic. Communication is monitored to make sure that network security rules are being followed. The firewall is usually the first line of defense when using a trusted network that makes communication with a non-trusted network.
 
 b. Identify two firewall architectures and discuss the benefits and disadvantages of each design.
 
+Dual-Homed Host
+Application-Based/Screened Host
 
 
 ---
