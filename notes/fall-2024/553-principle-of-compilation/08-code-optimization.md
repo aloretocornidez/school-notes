@@ -35,8 +35,7 @@ code, so it is machine independent.
 #### Common Patterns in Peephole Optimization
 
 - Null Sequences | delete useless operations.
-- Combine operations | a jump to a jump -> jump to the ultimate targe the first
-  time.
+- Combine operations | a jump to a jump -> jump to the ultimate target the first time.
 - Algebraic simplification | $i = i * 1 = i$.
 
 ### Copy Propagation
@@ -69,11 +68,14 @@ x = y
 z = y + w
 ```
 
-- If either x or y is redefined, stop propagating since `x` and `y` are no longer guaranteed to have the same value.
-
+- If either x or y is redefined, stop propagating since `x` and `y` are no
+  longer guaranteed to have the same value.
 
 #### Example | Local Copy Propagation
-You can plug 10 into the first assignment of `z`, but not into the first assignment of `w`.
+
+You can plug 10 into the first assignment of `z`, but not into the first
+assignment of `w`.
+
 ```
 x = 10
 y = x
@@ -85,29 +87,62 @@ w = z * y
 ```
 
 #### Effects of Copy Propagation
-When a copy instruction `s === x = y` is propagated  to the uses of x, the number of uses of `s` is decreased.
-If the number of uses of `s` goes to 0, then it is dead code and it can be eliminated.
 
+When a copy instruction `s === x = y` is propagated to the uses of x, the number
+of uses of `s` is decreased. If the number of uses of `s` goes to 0, then it is
+dead code and it can be eliminated.
 
 ### Dead Code Elimination
 
-A three address instruction is dead if the value the instruction computes is guaranteed to not be used.
-Dead code can arise due ot other optimizations, e.g., constant propagation or copy propagation.
+A three address instruction is dead if the value the instruction computes is
+guaranteed to not be used. Dead code can arise due ot other optimizations, e.g.,
+constant propagation or copy propagation.
 
-When you get rid of an instruction that is dead, other instrucitons that were previously not dead can also become dead.
+When you get rid of an instruction that is dead, other instrucitons that were
+previously not dead can also become dead.
 
-#### Dead Code Elimination | Algorithm 1 
+#### Dead Code Elimination | Algorithm 1
 
-1. Mark all instructions as 'live'
-Repeat:
-  for each instruction `i === x = ...`:
-    if the value of x is defined by `i`
-        (i) is not visible outisde the current function 
-        and 
-        (ii) is nnot used by any instruction marked live
-    then
-        mark `I` dead.
-    until no more instrucitons are marked dead.
+1. Mark all instructions as 'live' Repeat: for each instruction `i === x = ...`:
+   if the value of x is defined by `i` (i) is not visible outisde the current
+   function and (ii) is nnot used by any instruction marked live then mark `I`
+   dead. until no more instrucitons are marked dead.
+
+#### Dead Code Elimination | Algorithm
+
+```
+repeat:
+1. perform liveness analysis
+2. for each basic block B:
+
+liveset = out[B]
+for each instruction in reverse order from B's end:
+
+let/= 'x=y \plus z'
+if dst(I) \in liveset:
+    liveset = (liveset - {x}) \union {y,z}
+
+else:
+    mark / as 'dead'
+
+until no more instructions can be marked 'dead'
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

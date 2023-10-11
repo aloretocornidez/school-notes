@@ -126,8 +126,23 @@ A firewall is a security measure that is used to control incoming and outgoing n
 
 b. Identify two firewall architectures and discuss the benefits and disadvantages of each design.
 
-Dual-Homed Host
-Application-Based/Screened Host
+**Dual-Homed Host**
+When using the Dual Themed host architecture, the firewall is the critical path to all communication between the private network and the public internet. This means that all communication is routed through that firewall.
+
+An advantage of this architecture is that it is great for ensuring secure access to both the public network from the private network and vice-versa. 
+
+A disadvantage to this architecture is that the firewall can act as a bottleneck because all of the traffic within a private network is routed through the firewall, thus being prone to performance bottlenecks.
+
+
+**Screened Host**
+
+
+The screened host 
+
+
+This is achieved by using a router that redirects all incoming traffic to a 'bastion host' that does all of the required security checks. After those checks are completed, the incoming traffic is redirected to the initially intended host. 
+
+Advantages of the screened-host network firewall is the capability of higher throughput, and thus, less of a bottleneck. 
 
 
 ---

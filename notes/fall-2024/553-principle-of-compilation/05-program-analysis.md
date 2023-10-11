@@ -102,47 +102,36 @@ x is an immediate dominator of y iff:
 Since every node has 1 unique immediate dominator, this means that the Control
 flow diagram can actually be expressed as a Tree (and not only a graph).
 
-
-
-
-
-
-
-
 ### Reaching Definitions | Dataflow Equations
 
-gen and kill sets, to propagate all of the code that is valid in a control flow diagram. 
+gen and kill sets, to propagate all of the code that is valid in a control flow
+diagram.
 
-
-$$out[B] = gen[B] \union (in[B] - kill[B])$$
-$$in[B] = \union { out[X]}$$ where X is a predecessor of B.
-
+$$out[B] = gen[B] \union (in[B] - kill[B])$$ $$in[B] = \union { out[X]}$$ where
+X is a predecessor of B.
 
 Points to note:
+
 - out[B] is computed from in[B]
 - in[B] is computed from predecessors ob B.
-- information is propagated along direction of control flow 
+- information is propagated along direction of control flow
 - "forward dataflow analysis"
 - in the presence of loops, the equations become circular.
 
-
-
-
-
-
-
 ### How can we generate `gen` and `kill` sets?
 
-Initially, the gen and kill sets are empty sets. 
+Initially, the gen and kill sets are empty sets.
 
-If out block contains an instruction, A, then we update the gen set, g.
-After this, we must update the kill set: all previous definitions of the A instruction are then killed.
-This means that the kill 
+If out block contains an instruction, A, then we update the gen set, g. After
+this, we must update the kill set: all previous definitions of the A instruction
+are then killed. This means that the kill
 
+## Analysis 2 | Liveness Analysis
 
+[Liveness Analysis](./liveness-analysis.md)
 
+## Analysis 3 | Available Expressions
 
-
-
+[Available Expressions](./available-expressions.md)
 
 
