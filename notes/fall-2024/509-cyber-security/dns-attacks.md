@@ -71,29 +71,29 @@ progressively go up domains:
 `fengshui.ece.arizona.edu -> ece.arizona.edu -> arizona.edu -> root & edu DNS server`
 
 ## Threat Model of DNS Flow
-The DNS is the 'engine' of the internet, so it is the most commonly attacked sector of the internet.
 
+The DNS is the 'engine' of the internet, so it is the most commonly attacked
+sector of the internet.
 
 What are the attack surfaces of a DNS lookup?
 
 The Zone file
 
-Dynamic Updates
-Masters
-Slaves
-Caching Forwarder
-Resolver
+Dynamic Updates Masters Slaves Caching Forwarder Resolver
 
+## DNS Attacks
 
+- DNS Spoofing Attack
 
-
-
-
-
-
-
-
-
+- DNS Rebinding Attack
+  - Uses the same-origin-policy (SOP) and time to live (TTL).
+  - SOP: The origin of a website is defined by the protocol, domain, and port.
+    For example, URLs A and B have the same origin, but URL C has a different
+    origin.
+    - A: http://www.yourname.con/index.html
+    - B: http://www.yourname.con/news.html
+    - C: http://www.yourname.con/index.html
+  - TTL defines the amount of time in seconds that a record can be cached before a web server will re-1uiery the DNS name server.
 
 
 
