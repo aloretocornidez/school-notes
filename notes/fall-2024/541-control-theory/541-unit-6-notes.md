@@ -1,19 +1,4 @@
-# Unit 6 Notes |
-
-ECE 541: Automatic Control
-
-## Exam 2
-
-Process:
-
-- Allowed
-  - 2 sheets of notes
-  - Table of laplace transforms
-  - Calculator
-  - Writing Instrument
-- Not Allowed
-  - No Textbook, No Class Notes, No Computer
-  - No Cellphone, No Neighbor
+# Unit 6 Notes | Root Locus
 
 ### Exam 2 Material
 
@@ -23,6 +8,9 @@ Process:
 - s-Plane poles
 - Steady State Error
 - Routh-Hurwitz Criterion
+
+
+
 
 # Controller Design
 
@@ -65,6 +53,43 @@ What if we want/need all of these pieces to fit together?
 
 What are the dominant poles in a system?
     - The dominant poles in a system are the leftmost poles in the s-plane.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Lecture 
+#lecture 
+#learninggoals 
+- Summary of Root Locus Rules
+- Root Locus Quiz
+- Continue with Root Locus Construction Rules: Rules 5 & 6
+- Root Locus Examples ( Table 9.3 Dorf, DTL Unit 6 Module)
+- Matlab tools 
+```mat
+sys=tf([1,3],[1,1,0])
+rlocus(sys)
+rlocfind(sys)
+rltool(sys), sisotool
+```
+
+
+
+
+
+
 
 
 
