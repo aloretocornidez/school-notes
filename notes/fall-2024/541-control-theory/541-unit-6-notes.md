@@ -88,6 +88,36 @@ rltool(sys), sisotool
 
 
 
+## Root Locus Construction Rules
+1. Starting (k = 0) and ending ($k -> \infty$)
+2. Real Axis segments on the root locus
+	- Negative feedback:
+		- odd number of poles and zeros to the right of the segment.
+3. Asymptotic Behavior
+	- Pole zero excess # P - # Z
+	$$\phi_{a} = \frac{180}{p-z}(2l+1)$$
+	$$\sigma_{a}= \frac{\sum\limits p_{i} \sum\limits z_{i}}{p-z}$$
+
+4. Breakaway Re-ENtry Points on the Real Axis
+	- $$|kG(s)H(s)| \Longrightarrow k = \frac{d(s)}{n(s)}$$
+5. Imaginary Axis Crossing
+	- $$\angle{G(s)H(s)} = -180\degree$$
+6. Angles of Arrival and Departure
+	- Arrival | Complex Zeros
+	- Departure | Complex Poles
+
+
+
+## Root Locus Quiz
+
+1. Given the system below. Is $s=-1+j2$ on the root locus?
+
+![[Pasted image 20231030141210.png]]
+
+
+
+![[Pasted image 20231030141400.png]]
+
 
 
 
