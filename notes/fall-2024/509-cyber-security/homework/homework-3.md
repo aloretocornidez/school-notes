@@ -1,7 +1,8 @@
 # Homework 3 | ECE 509
 
-Name: Alan Manuel Loreto Cornídez Date Due: November 14th, 2023 Instructor:
-Clarisa Grijalva, Salim Hariri
+Name: Alan Manuel Loreto Cornídez Date Due: November 14th, 2023
+
+Instructor: Clarisa Grijalva, Salim Hariri
 
 ## Question 1
 
@@ -93,25 +94,99 @@ To answer the questions:
 
 ### Attack 2
 
-Darkreading, a blog site, posted
-[this](https://www.darkreading.com/attacks-breaches/netscout-identified-nearly-7-9m-ddos-attacks-in-the-first-half-of-2023)
-article highlighing some of the DDoS attacks that are starting to gain
-populatory. Among the categories are the following:
+Microsoft posted
+[this article](https://msrc.microsoft.com/blog/2023/10/microsoft-response-to-distributed-denial-of-service-ddos-attacks-against-http/2/),
+referencing a vulnerability in the HTTP2 protocol. It was patched out of windows
+on October 10th, 2023.The vulnerability has been released in a
+[public database](https://www.cve.org/CVERecord?id=CVE-2023-44487).
 
-- Carpet-Bombing Attacks
-- DNS Water-Torture attacks
-
-Out of the attacks mentioned, mostly government and education are being
-targetted.
+1. How was the attack launched? While the specific attack that happened is not
+   mentioned in the Microsoft article, the attack vectors impact HTTP2 servers.
+   The attack works by
+   > packing a set number of HTTP requests using `HEADERS` followed by
+   > `RST_FRAMES` in a single connection. This allows the attacker to cause
+   > resource exhaustion on the server by increasing the CPU utilization to go
+   > up, thus causing a denial of service.
+2. How was it detected? Microsoft was only able to detect this security flaw
+   because it was reported to them by industry partners. Nothing is mentioned in
+   the disclosure statement regarding how the attack was detected.
+3. How was it mitigated? According to the article, the mitigation strategies
+   employed by Microsoft were by implementing mitigation for IIS (HTTP.sys),
+   .NET (Kestrel), and Windows. These updates were released on October 10th, the
+   same date of the release of the disclosure for this vulnerability.
 
 ## Question 3
 
 1. Explain the workings of the DNSSEC and include a diagram in your description.
+    DNSSEC is a set of security opitions that can be included in the implementation of the DNS protocol. It has, however, had problems recieving full adoption. Because of the following reasons: 
+    - There is a large need to design a DNS resolution protocol that is backwards compatible.
+    - Disagreements over who should own the top-level keys that are a part of the protocol. 
+    - Many groups have not overcome the percieved complexity of implementation of the DNSSEC protocol.
+
+    These points were retrieved from [here](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions#Overview).
+    
+
+Diagrams shall be retrieved from the Cloudflare [site](https://www.cloudflare.com/dns/dnssec/how-dnssec-works/) that explains the DNSSEC protocol. 
+
+
+DNSSEC is a special implementation of DNS which implements a trustless domain resolution system contrary to the trustless DNS systems that create a race condition for attackers and legitimate servers to reach the client faster.
+
+DNSSEC does this by implementing the use of Zone-Signing keys, the returned IP address from a requested alphanumeric address (RR) is signed with a zone-signing pair. This allows the returned RR to be verified if it is signed with the correct private key by the server. As shown in the following 3 figures.
+
+![[Pasted image 20231114134027.png]]
+(The RR is signed by the server, thus returning en encrypted IP address)
+
+
+
+![[Pasted image 20231114134051.png]]
+(Now, the DNS server returning our requested RR must sign the IP to make sure it is legitimate)
+
+![[Pasted image 20231114134355.png]]
+Verifying the signature from the DNS resolver using the ZSK
+
+However, the problem of verifying the ZSK is then introduced. How can the client verify that the ZSK signature by the DNS resolver has not been compromised? DNSSEC implements the use of Key-Signing-Keys. KSKs are used to verify the private keys held by each zone verifying server. 
+
+How are these keys implemented? Each zone is a chile of another zone, so the KSK are provided to the child zones via the parent. This ultimately leads to a necessary 'chain of trust' that must be implemented at the highest level (hence the point made above, regarding the disagreements over who should own TopLevelZone keys).
+![[Pasted image 20231114134636.png]]
+A diagram showcasing the KSK hierarchy as you move up the chain of trust.
+
+
+From the [reading]() we have the following figure:
+![[Pasted image 20231114134839.png]]
+This showcases the packet structure for a DNS packet. As we can see, the TXID is stored in plain text when utilizing the normal DNS protocol, however, it is instead signed when using the DNSSEC protocol to encrypted the information and thus be verified before accepting the returned packets.
+
 
 ## Question 4
 
 1. Do an in-depth investigation of two DoS mitigations seen in class. Include
    diagrams showing how they work.
+
+### Mitigation 1 | Client Puzzles
+This mitigation involves the implementation of a puzzle that the client must solve. In class, the puzzle that was shown is the following:
+![[Pasted image 20231114141144.png]]
+
+This is a mathematical problem that the client must complete in and then return the answer to the server before more requests will be answered. As such, this slows down an attacker by making sure that a clients must posses a. sufficient computing power, and b. the time between new requests for a DoS attack will be slowed down when waiting for new packets.
+
+The puzzle is usually a hard problem for a computer to mathematically solve, taking a longer amount of time to complete than other operations. (The example in class completes in approximately 0.3 seconds on a 1GHz machine). 
+
+By implementing a puzzle that the client must solve, the amount of requests per seconds can be significantly slowed down, especially if the attacker is not using Distributed DoS methods to conduct attacks. 
+
+Another way that this mitigation can be effective is by requiring a fair amount of computing power to complete, so low end VM attacks will not be as effective. Thus, increasing the barrier of entry to execute a DoS attack.
+
+
+### Mitigation 2 | CAPTCHAs
+
+![[Pasted image 20231114135129.png]]
+
+A captcha is a DoS mitigation strategy that involves the implementation of tasks that must be completed by a client before the server can respond to the client. 
+
+The tasks that must be completed have traditionally been designed to be easy for humans to completed, whilst being difficult for computers to complete in an automated fashion. 
+
+By implementing the CAPTCHA, similar techniques to the client puzzles are employed, however, CAPTCHAs are usually visual puzzles, which, up until recently with the development of machine learning algorithms, was extremely difficult for computers to complete. 
+
+With the recent developments in image object recognition, CAPTCHAs have are now being used to correct machine learning algorithms in addition to their original purpose of providing a defense to DoS attacks. (Though, they may not be as effective in the modern age).
+
+
 
 ## Question 5
 
