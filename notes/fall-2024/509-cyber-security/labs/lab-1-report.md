@@ -129,4 +129,133 @@ Source ports for the last and second packets (the responses from the server) wer
 
 
 
+## UDP Traffic Analysis
+
+
+- Source and destination IPs  
+  
+  ![[Pasted image 20231111191222.png]]
+  From the image, we can see two packets that are generated.  
+	- Packet 1: 
+		- Source: 10.85.24.130
+		- Destination: 10.85.0.2
+	- Packet 2: 
+		- Source: 10.85.0.2
+		- Destination: 10.85.24.130
+
+- Source and destination port numbers on both the client and server  
+	- Packet 1: 
+		- Source Port: 36718
+		- Destination Port: 53
+	- Packet 2: 
+		- Source Port: 53
+		- Destination Port: 36718
+-  The packet parameters  
+	- Packet 1:
+		- ![[Pasted image 20231111191928.png]]
+		- We can see that the only flag that was set was the 'recursive query' flag. Questions, and RRs were set to a positive flag as well.
+	- Packet 2: 
+		- ![[Pasted image 20231111192141.png]]
+		- In this packet, we can see that the 'answer' flag is positive. 
+		- In addition, recursion desired and recursion available flags are set positive as well. All other flags are set to a positive flag as well.
+		- Questions is 1, Answer RRs is 2, and the answer specifies the type CNAME, class IN, and cname is 'rweb.engr.arizona.edu'.
+		- The time to live for this response is 300 seconds, equivalent to 5 minutes.
+
+
+
+
+
+- Maximum and minimum values of these parameters
+	- Time to live is held in a 32 bit word, so 2^32 - 1 seconds
+	- Data length is 8 bits
+	- Address is also 8 bits.
+
+Step 4: Other DNS Lookups:
+
+When doing multiple DIG commands after each other, I was unable to get a response from the original four sites. However, after wating for a while, I was able to query the servers again and get a valid response. Hence, showing the implementation of attack mitigations by including wait times for responses.
+- Google: 
+	- Dig google.com output:
+	- ![[Pasted image 20231111193019.png]]
+	- Request:
+		- ![[Pasted image 20231111194004.png]]
+		- ![[Pasted image 20231111194014.png]]
+- Wikipedia (Done using wikipedia.com, to test incorrect name resolving): 
+	- ![[Pasted image 20231111193129.png]]
+	- This did not generate any udp packets
+	- Request:
+		- ![[Pasted image 20231111194057.png]]
+		- ![[Pasted image 20231111194105.png]]
+	- Response:
+		- ![[Pasted image 20231111194125.png]]
+		- ![[Pasted image 20231111194139.png]]
+	- Statistics:
+		- Query:
+			- Recursion desired flag raised
+		- Response:
+			- Flags Raised: Response, Recursion {available, desired}
+			- Name: wikipedia.com 
+			- Type: A (Host Address)
+			- CLass: IN
+			- Time to live: 300 seconds (5 Minutes)
+			- Address: 198.35.26.98
+	- Regardless of the fact that the name used for the domain as incorrect, the packet returns the address to the wikimedia.org domain.
+- Youtube: 
+	- ![[Pasted image 20231111193412.png]]
+	- Above is the dig command for youtube after a bit of rest time.
+	- Request
+		- ![[Pasted image 20231111193503.png]]
+		- ![[Pasted image 20231111193640.png]]
+	- Response
+		- ![[Pasted image 20231111193559.png]]
+		- ![[Pasted image 20231111193616.png]]
+	- Statistics:
+		- Flags were contained in a 32 section of the packets.
+		- UDP payload size: 512, stored in 8 bits of information.
+		- Reponse was
+			- Type A (Host Address)
+			- Class: In
+			- With 264 seconds to live
+			- Data length of 4
+			- Address 142.251.33.110
+			- With a UDP payload size of 4096.
+			- Flags Raised: Response, Recursion desired, Recursion available.
+- Github: 
+	- Request:
+		- ![[Pasted image 20231111193659.png]]
+		- ![[Pasted image 20231111193707.png]]
+	- Response:
+		- ![[Pasted image 20231111193742.png]]
+		- ![[Pasted image 20231111193754.png]]
+	- Statistics:
+		- Query:
+			- Flags Raised: Recursion desired
+			- Name: github.com
+			- Name length: 10
+			- Label Count: 2
+			- Type: A (Host Address)
+			- Class: IN
+			- Additional Records:
+				- Type OPT (41) 
+				- 512 payload size
+
+
+Recap: 
+- What information does a DNS request packet contain?  
+	- The packet conatins the name of the domain being requested, the type of the query: A for host address, etc.
+	- In addition, we can see the flags for the packet that let the DNS system know that this packet is not a response, but instead, a request.
+- What information does a DNS reply packet contain?  
+	- The packet contains three important things that we immediately care about:
+		- Name used to query a domain
+		- The address of the name that was queried
+		- The time to live for the response.
+	- In addition to that vital information, we also get the headers that contain information regarding responses, queries, and recursion requests among others.
+- Which resource is handling each DNS request for each domain name?  
+	- All of the packet requests were sent out to port 53, which upon further inspection, is the domain name system service present on a system.
+	- However, the source port of each of the requests is different, varying from port 49406 (wikipedia) to port  33673 (github).
+- How many steps are required to obtain an IP address for each request?
+	- From the viewpoint of the server, only one packet is sent as a request and then one packet is received. However, when looking at the total architecture of the internet, many packets can be sent over the network to resolve a domain name. Especially if the domain isn't common.
+
+
+
+
 

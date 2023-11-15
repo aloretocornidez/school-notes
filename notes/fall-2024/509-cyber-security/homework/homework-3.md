@@ -192,14 +192,33 @@ With the recent developments in image object recognition, CAPTCHAs have are now 
 
 1. Provide an example of a problem that can be solved using:
 
+Justify your answer, besides describing the problem explain why it can be solved with that type of learning.
+
+
 - Supervised learning
-- Unsupervised learning Justify your answer, besides describing the problem
-  explain why it can be solved with that type of learning.
+	- When looking at the advantages of supervised machine learning algorithms, we know that these MLAs are advantageous when wanting to classify the input and attach a label to it. With this in mind, we can see that the usage of supervised MLAs would be advantageous when wanting to detect speech patters in spam or phishing emails. The MLA could look at how the email is written and the language contained within the email in order to categorize the email as a possible threat. For example, to stop emails from attackers from reaching people within an organization.
+
+- Unsupervised learning 
+	- Unsupervised machine learning algorithms are algorithms that do not assign a label from a certain input, but instead, allow anomalies to be detected in data that a normal human being might not be able to tell is present in the data by looking at the data. With that being said, one of the situations where the use of an unsupervised MLA would be advantageous is in anomaly detection, specifically, I think it would be very advantageous to use the MLA to detect DDoS attacks. It is easy to spoof the source IP address (of course, there's multiple aspects to this) and make even a network of say, 1000 bots, appear as though the traffic is divided amogst millions of users. Using an unsupevised MLA would allow the detection of such anomalies if/when they occur.
+- 
+ 
+
 
 ## Question 6
 
 1. Describe man-in-the-middle attacks, including a diagram.
-2. Explain how a NIDS can be used to detect these attacks, including:
+
+A man in the middle attack is an attack where the victim is intercepted by the attacker, ideally, without the victim's knowledge of the interception. This allows the attacker to route traffic through their computer and commit multiple actions, such as packet logging or even packet modification. 
+
+Using the image below (retrieved from [wikipedia](https://en.wikipedia.org/wiki/Man-in-the-middle_attack#/media/File:Man_in_the_middle_attack.svg))
+![[Pasted image 20231114210926.png]]
+
+Alice may try to communicate with Bob, however, Mallory is the 'Man-in-The-Middle' attacker. Thus, if Alice tries to communicate with Bob, Mallory has the ability to both look at the messages as well as change the messages, possibly with malicious modifications.
+
+
+3. Explain how a NIDS can be used to detect these attacks, including:
+
+	- A network intrusion detection system (NIDS) can be used to prevent a man in the middle attack by, as the name states, detecting when a network has an intrusion. If the network host can detect when anomalous behavior is 
 
 - Placement of the NIDS
 - Possible features
