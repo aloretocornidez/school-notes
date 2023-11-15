@@ -218,7 +218,5 @@ Alice may try to communicate with Bob, however, Mallory is the 'Man-in-The-Middl
 
 3. Explain how a NIDS can be used to detect these attacks, including:
 
-	- A network intrusion detection system (NIDS) can be used to prevent a man in the middle attack by, as the name states, detecting when a network has an intrusion. If the network host can detect when anomalous behavior is 
-
-- Placement of the NIDS
-- Possible features
+	- A network intrusion detection system (NIDS) can be used to prevent a man in the middle attack by, as the name states, detecting when a network has an intrusion. If the network host can detect when anomalous behavior is present, then the network host can make sure that unauthorized communication is either mitigated or is stopped entirely.
+	- Some of the features that are possible with the IDS are the ability to stop the detected man in the middle from connecting to the access point, another feature could be the ability to keep track of the intruder and see what actions are being performed by the intruder to gather analytics for future use.
