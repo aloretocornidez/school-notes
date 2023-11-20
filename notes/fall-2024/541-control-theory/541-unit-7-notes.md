@@ -83,6 +83,20 @@ This controller is the 'best of both worlds'. This lets us trade off between the
 
 
 
+## Stabilizing Unstable Systems
+
+
+Can the system $G(s) = \frac{6(s-1)}{s(s+2)}$ be stabilized with $G_{c}(s) = k (k > 0)$> Why?
+
+![[Pasted image 20231115140438.png]]
+
+
+
+
+### System 3
+
+$$G(s) = \frac{5s}{(s-2)(s+2)}$$
+
 
 
 
