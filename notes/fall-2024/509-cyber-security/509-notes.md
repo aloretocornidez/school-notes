@@ -886,106 +886,80 @@ A client A wants to set up a TCP connection to a server B
 		- Model process variable excursions beyond their appropriate ranges using machine learning techniques.
 		- Another method requires plant
 	- Semantic Security Monitoring (SSM) uses analysis of control-bus traffic messages to construct a 3rd copy of the #todo 
-	- 
 
 
+# Web Security
 
+Different Parts of Web Security:
+- Http 
+- Rendering Content 
+- Isolation 
+- Communication 
+- Navigation 
+- Security User Interface 
+- Cookies 
+- Frames and frame busting
 
+## HTTP 
 
+**URLs**
+Global identifiers of network retrievable documents 
 
+`https://stanford.edu:81/class?name=cs155#homework`
 
+Protocol 
+Hostname 
+Port 
+Path 
+Query 
+Fragment
 
 
+- Special characters are encoded as hex:
+    - `%0A` = newline
+    - `%20` or `+` = space 
+    - `%2B` = + (this is a special exception)
 
 
+GET requests ask for data form a server. They specify the method (GET) and the file along with the HTTP version. 
+Responses contains the HTTP version, the status code, and the reason phrase.
 
 
 
 
+## Rendering and Events
+Basic browser execution model.
+- Each browser window: 
+    - loads content 
+    - renders it 
+        - processes HTML and scripts to display page 
+        - may involve images, subframes, etc. 
+    - responds to events 
 
+- Events can be: 
+    - User actions: onClick, OnMouseover
+    - Rendering: OnLoad, OnBeforeUnload 
+    - Timeing: setTimeout(), clearTimeout() 
 
+**Document Object MOdel (DOM)**
+- Object oridented interface used to read and write docs. 
+    - Web page in HTML is structured data 
+    - DOM provides representaiton of this hierarchy 
 
+- Examples
+    - Properties
+    - Methods 
 
+- Includes browser object models
 
+The webpage has data structures and commands that let you modify the content of the web page. Attackers want to modify your webpage in a malicious manner.
 
 
+### Image Tags
+Image tags can be used to send information to any site by requesting 1x1 pixel images that can be used to send information to any site.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### JavaScript onError
 
 
 
