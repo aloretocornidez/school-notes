@@ -79,4 +79,4 @@ $$G(s) = K\frac{\left(\frac{s}{z_{1}} + 1\right)\left(\frac{s}{z_{2}}+1\right)}{
 
 
 ### Phase Margin and Gain Margin
-
+[[541-unit-9-notes]]
