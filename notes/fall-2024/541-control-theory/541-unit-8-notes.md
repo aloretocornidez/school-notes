@@ -71,3 +71,12 @@ side of the s-plane.
 
 
 
+## Lecture 8.2 | Bode Plots
+
+Pole-Zero Form 
+
+$$G(s) = K\frac{\left(\frac{s}{z_{1}} + 1\right)\left(\frac{s}{z_{2}}+1\right)}{\left(\frac{s}{p_{1}}+1\right)\left(\frac{s}{p_{2}}+1\right)}$$
+
+
+### Phase Margin and Gain Margin
+
