@@ -1,4 +1,5 @@
 # Homework 4 | ECE 509
+Name: Alan Manuel Loreto Cornídez
 
 ## Questions
 
@@ -64,4 +65,1594 @@ Domain Name > Whois Records and Analytics:
 - ClearWebStats 
 
 Select five more resources, and create a report with all the information you gathered, in this report, you should include how this information can be used to exploit vulnerabilities in the company.
+
+
+# Intelligence Report on Amazon
+Each of the following resources was used:
+- DomainTools 
+- Whois
+- Website Informer
+- BuiltWith
+- SecurityHeaders.io
+- ClearWebStats 
+- DNSSEC Analyzer
+- Shodan.io
+- IPVoid
+- IP Tracker Online
+
+
+## DomainTools
+
+### Domain Profile
+| | |
+|---|---|
+|Registrar|MarkMonitor, Inc. MarkMonitor Inc.  <br>IANA ID: 292  <br>URL: http://www.markmonitor.com  <br>Whois Server: whois.markmonitor.com  <br>![](https://source.domaintools.com/email.pgif?md5=86f127e68052cf1961e02764e9684f46&face=arial&size=9&color=000000&bgcolor=FFFFFF&face=Lato-Regular&size=10&color=5a5a5a&bgcolor=FFFFFF&format[]=transparent&format[]=transparent)  <br>(p)![](https://source.domaintools.com/phone.pgif?hash=PHTFkFQcn1GpMFuFtYttOZn%2Bq%2FV%2FG7gF&face=Lato-Regular&size=10&color=5a5a5a&bgcolor=FFFFFF&format[]=transparent&face=Lato-Regular&size=10&color=5a5a5a&bgcolor=FFFFFF&format[]=transparent)|
+|Registrar Status|clientDeleteProhibited, clientTransferProhibited, clientUpdateProhibited, serverDeleteProhibited, serverTransferProhibited, serverUpdateProhibited|
+|Dates|10,626 days old  <br>Created on 1994-11-01  <br>Expires on 2024-10-30  <br>Updated on 2023-05-16|
+|Name Servers|NS1.AMZNDNS.CO.UK (has 4,736 domains)  <br>NS1.AMZNDNS.COM (has 4 domains)  <br>NS1.AMZNDNS.NET (has 1 domains)  <br>NS1.AMZNDNS.ORG (has 16 domains)  <br>NS2.AMZNDNS.CO.UK (has 4,736 domains)  <br>NS2.AMZNDNS.COM (has 4 domains)  <br>NS2.AMZNDNS.NET (has 1 domains)  <br>NS2.AMZNDNS.ORG (has 16 domains)|
+|IP Address|162.219.225.118 - 1 other site is hosted on this server|
+|IP Location|![United States](https://whois.domaintools.com/images/flags/us.gif) - California - San Francisco - Fastly Inc.|
+|ASN|![United States](https://whois.domaintools.com/images/flags/us.gif) AS54113 FASTLY, US (registered Oct 04, 2011)|
+|Domain Status|Registered And No Website|
+|IP History|648 changes on 648 unique IP addresses over 19 years|
+|Registrar History|2 registrars with 2 drops|
+|Hosting History|5 changes on 5 unique name servers over 19 years|
+
+### Whois output
+```
+Domain Name: amazon.com  
+Registry Domain ID: 281209_DOMAIN_COM-VRSN  
+Registrar WHOIS Server: whois.markmonitor.com  
+Registrar URL: http://www.markmonitor.com  
+Updated Date: 2023-05-16T18:56:31+0000  
+Creation Date: 1994-11-01T05:00:00+0000  
+Registrar Registration Expiration Date: 2024-10-30T07:00:00+0000  
+Registrar: MarkMonitor, Inc.  
+Registrar IANA ID: 292  
+Registrar Abuse Contact Email: [![](https://source.domaintools.com/email.pgif?md5=86f127e68052cf1961e02764e9684f46&face=arial&size=9&color=000000&bgcolor=FFFFFF&face=arial&size=9&color=0000FF&bgcolor=FFFFFF&format[]=transparent&format[]=transparent)](https://reversewhois.domaintools.com/?email=86f127e68052cf1961e02764e9684f46 "Search for this email address")  
+Registrar Abuse Contact Phone: +1.2086851750  
+Domain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)  
+Domain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)  
+Domain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)  
+Domain Status: serverUpdateProhibited (https://www.icann.org/epp#serverUpdateProhibited)  
+Domain Status: serverTransferProhibited (https://www.icann.org/epp#serverTransferProhibited)  
+Domain Status: serverDeleteProhibited (https://www.icann.org/epp#serverDeleteProhibited)  
+Registry Registrant ID:   
+Registrant Name: Hostmaster, Amazon Legal Dept.  
+Registrant Organization: Amazon Technologies, Inc.  
+Registrant Street: P.O. Box 8102  
+Registrant City: Reno  
+Registrant State/Province: NV  
+Registrant Postal Code: 89507  
+Registrant Country: US  
+Registrant Phone: +1.2062664064  
+Registrant Phone Ext:   
+Registrant Fax: +1.2062667010  
+Registrant Fax Ext:   
+Registrant Email: [![](https://source.domaintools.com/email.pgif?md5=7dd51df85a3dd500ddad453a2f01163f&face=arial&size=9&color=000000&bgcolor=FFFFFF&face=arial&size=9&color=0000FF&bgcolor=FFFFFF&format[]=transparent&format[]=transparent)](https://reversewhois.domaintools.com/?email=7dd51df85a3dd500ddad453a2f01163f "Search for this email address")  
+Registry Admin ID:   
+Admin Name: Hostmaster, Amazon Legal Dept.  
+Admin Organization: Amazon Technologies, Inc.  
+Admin Street: P.O. Box 8102  
+Admin City: Reno  
+Admin State/Province: NV  
+Admin Postal Code: 89507  
+Admin Country: US  
+Admin Phone: +1.2062664064  
+Admin Phone Ext:   
+Admin Fax: +1.2062667010  
+Admin Fax Ext:   
+Admin Email: [![](https://source.domaintools.com/email.pgif?md5=7dd51df85a3dd500ddad453a2f01163f&face=arial&size=9&color=000000&bgcolor=FFFFFF&face=arial&size=9&color=0000FF&bgcolor=FFFFFF&format[]=transparent&format[]=transparent)](https://reversewhois.domaintools.com/?email=7dd51df85a3dd500ddad453a2f01163f "Search for this email address")  
+Registry Tech ID:   
+Tech Name: Hostmaster, Amazon Legal Dept.  
+Tech Organization: Amazon Technologies, Inc.  
+Tech Street: P.O. Box 8102  
+Tech City: Reno  
+Tech State/Province: NV  
+Tech Postal Code: 89507  
+Tech Country: US  
+Tech Phone: +1.2062664064  
+Tech Phone Ext:   
+Tech Fax: +1.2062667010  
+Tech Fax Ext:   
+Tech Email: [![](https://source.domaintools.com/email.pgif?md5=7dd51df85a3dd500ddad453a2f01163f&face=arial&size=9&color=000000&bgcolor=FFFFFF&face=arial&size=9&color=0000FF&bgcolor=FFFFFF&format[]=transparent&format[]=transparent)](https://reversewhois.domaintools.com/?email=7dd51df85a3dd500ddad453a2f01163f "Search for this email address")  
+Name Server: ns1.amzndns.net  
+Name Server: ns1.amzndns.org  
+Name Server: ns1.amzndns.co.uk  
+Name Server: ns2.amzndns.com  
+Name Server: ns2.amzndns.org  
+Name Server: ns1.amzndns.com  
+Name Server: ns2.amzndns.net  
+Name Server: ns2.amzndns.co.uk  
+DNSSEC: unsigned  
+URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/  
+  
+For more information on WHOIS status codes, please visit:  
+  https://www.icann.org/resources/pages/epp-status-codes  
+  
+MarkMonitor Domain Management(TM)  
+Protecting companies and consumers in a digital world.  
+  
+Visit MarkMonitor at https://www.markmonitor.com  
+Contact us at +1.8007459229  
+In Europe, at +44.02032062220  
+----
+```
+
+
+
+
+
+## Easy Who Is
+
+### Whois output
+```
+amazon.com forward lookup: 205.251.242.103
+
+www.amazon.com forward lookup: 162.219.225.118
+
+  
+SOA:  
+origin: dns-external-master.amazon.com  
+contact: root.amazon.com  
+serial: 2010179932  
+refresh: 180  
+retry: 60  
+expire: 3024000  
+minimum: 60  
+  
+Email Servers:  
+amazon-smtp.amazon.com preference 5  
+  
+Nameservers:  
+ns2.amzndns.org  
+ns2.amzndns.com  
+ns1.amzndns.co.uk  
+ns1.amzndns.org  
+ns1.amzndns.net  
+ns2.amzndns.co.uk  
+ns1.amzndns.com  
+ns2.amzndns.net  
+  
+TXT Records (incl. any SPF or Sender-ID records):  
+sending_domain608861=d33a88e8540c33a1217138cf8a25879734bd35673bb7cfbd639f95c550b33ec4  
+cisco-ci-domain-verification=1b256bd11daa486ba2fa405d2d5de70f75feb6757dd8993ca8de685a7dfea1df  
+apple-domain-verification=dVkKZnu17XS0EN2X  
+pardot326621=b26a7b44d7c73d119ef9dfd1a24d93c77d583ac50ba4ecedd899a9134734403b  
+apple-domain-verification=4wbNaeWvAH0pU1yi  
+sending_domain608861=81b0d52095dae60d604e7cbea5e58e1d842f7d950d6673a43feae339b664ca31  
+sending_domain1003771=199bc63a54ace5d8d5c5d08286af86d7049b4afacb5ef7decd6b22cf9e8d5efb  
+spf2.0/pra include:spf1.amazon.com include:spf2.amazon.com include:amazonses.com -all  
+canva-site-verification=Hksh9WEUPWP13_SEU1mPMA  
+MS=4B600B22799EB2CAC0D8FF0A3A3CAECA5EE2BF3A  
+sending_domain229492=341509a116ea4311fcb2e489303bf09a139b10ce9b90e5029d2677055cb4dc89  
+v=spf1 include:spf1.amazon.com include:spf2.amazon.com include:amazonses.com -all  
+stripe-verification=a5c01aa4d732f4b93154d67983d77982ef1a2db73fecfd4bcd64e224d3ab4075  
+sending_domain1003771=f1303d8ee3b86e39db2703b11feb83e1e8b712a9ffc64c3d56505192e5b3bf4f  
+pendo-domain-verification=ecbe1a51-954d-4202-ab86-d15e04b96769  
+google-site-verification=D0RwRb_QApkpApKTFaFlRwbm_yrkey0uokKw0wQUIdk  
+stripe-verification=a27edc0da55836ea6bb7eac592bf2ca8e246eb652608d54493119df7df005afc  
+facebook-domain-verification=d9u57u52gylohx845ogo1axzpywpmq  
+sending_domain229492=7cde83fbc5246557c64d9d9ba79f0d11f7ba9eb6127f60451a9aa6f8dead4381  
+google-site-verification=14WGW2MdNMxchG8PlinF7LgqqE0OwwHqOq0HKhb7rDQ  
+sending_domain1014172=003846595520e80ec84e8cc47c07e3a71afb855fc743bb92cdec93f88c7a4029  
+wrike-verification=MzI3NzM2ODo2NDk5MjE4NjQ2MWJmOTEwMGMxM2MzNzJmNWJlY2U5ZDU4MmVlNzQ2NWU4MTY5OWJjMjlmYjQ4Mjc5M2JiMzky  
+atlassian-domain-verification=ZT4AapXgobCpXIWoNcd7gtMjZyOUdr4EDFMnFUWrqqqgdaQVbDvoGpRaIwj/tgPH
+```
+
+
+
+
+
+
+
+## Website Informer
+
+### Website Output
+Amazon.com. Spend less. Smile more.
+
+Free shipping on millions of items. Get the best of Shopping and Entertainment with Prime. Enjoy low prices and great deals on the largest selection of everyday essentials and other products, including fashion, home, beauty, electronics, Alexa Devices, sporting goods, toys, automotive, pets, baby, books, video games, musical instruments, office supplies, and more.
+
+**Keywords:** automotive parts, amazon prime, amazon.com, amazon music, Home, furniture, apparel, Shoes, health, hardware
+
+Dec 3, 2023
+
+Daily visitors: **58 078 190**
+
+Daily pageviews: **471 594 906**
+
+Alexa Rank: **25**
+
+|   |   |
+|---|---|
+|Created:|1994-11-01|
+|Expires:|2024-10-30|
+|Owner:|[Hostmaster, Amazon Legal Dept. (Amazon Technologies, Inc.)](https://website.informer.com/Hostmaster,+Amazon+Legal+Dept.+Amazon+Technologies,+Inc..html)|
+|Hosting company:|[Amazon.com, Inc.](https://website.informer.com/Amazon.com,+Inc..htm)|
+|Registrar:|MarkMonitor Inc.|
+|IPs:|[18.160.17.214](https://website.informer.com/18.160.17.214)|
+|Subdomains:|[aws.amazon.com](https://website.informer.com/aws.amazon.com), [sellercentral.amazon.com](https://website.informer.com/sellercentral.amazon.com), [smile.amazon.com](https://website.informer.com/smile.amazon.com), [advertising.amazon.com](https://website.informer.com/advertising.amazon.com), [gaming.amazon.com](https://website.informer.com/gaming.amazon.com), [kdp.amazon.com](https://website.informer.com/kdp.amazon.com), [phonetool.amazon.com](https://website.informer.com/phonetool.amazon.com), [affiliate-program.amazon.com](https://website.informer.com/affiliate-program.amazon.com), [sellercentral-europe.amazon.com](https://website.informer.com/sellercentral-europe.amazon.com), [w.amazon.com](https://website.informer.com/w.amazon.com)|
+|DNS:|ns1.amzndns.co.uk  <br>ns1.amzndns.com  <br>ns1.amzndns.net  <br>ns1.amzndns.org  <br>ns2.amzndns.co.uk  <br>ns2.amzndns.com  <br>ns2.amzndns.net  <br>ns2.amzndns.org|
+|Email:|[See owner's and associated emails](https://website.informer.com/amazon.com/emails)|
+
+### Stats and Details
+
+
+| [Alexa.com](http://www.alexa.com/siteinfo/amazon.com) |        |        |
+| ----------------------------------------------------- | ------ | ------ |
+| Traffic Rank:                                         | 25     |        |
+| Reach Day:                                            | 3.58   | +0.1%  |
+| Month Average Daily Reach:                            | 3.438  | +2.3%  |
+| Daily Pageviews:                                      | 0.907  | -2.81% |
+| Month Average Daily Pageviews:                        | 0.8748 | +3.9%  |
+| Daily Pageviews per user:                             | 8.44   | -2.99% |
+| Month Average Pageviews per user:                     | 8.25   | +1.6%  |
+
+
+- [**Traffic Rank**](https://website.informer.com/amazon.com#)
+- [**Search %**](https://website.informer.com/amazon.com#)
+
+![](https://traffic.alexa.com/graph?&w=400&h=220&o=f&c=1&y=t&b=ffffff&n=666666&u=amazon.com)
+
+|[Mywot.com - Reputation rating](http://www.mywot.com/en/scorecard/amazon.com)|   |
+|---|---|
+|Trustworthiness:|94|
+|Vendor reliability:|94|
+|Privacy:|94|
+|Child Safety:|94|
+
+|[Siteadvisor.com](http://www.siteadvisor.com/sites/amazon.com)|   |
+|---|---|
+|Good:|80|
+|Spams:|2|
+|Adware, spyware, or viruses:|2|
+|Browser exploit:|4|
+|Phishing or other scams:|1|
+|Bad shopping experience:|5|
+
+|[Compete.com](http://siteanalytics.compete.com/amazon.com)|   |   |
+|---|---|---|
+|Visits:|267 396 196|+1.52%|
+
+### Whois output
+```
+Domain Name: amazon.com
+Registry Domain ID: 281209_DOMAIN_COM-VRSN
+Registrar WHOIS Server: whois.markmonitor.com
+Registrar URL: http://www.markmonitor.com
+Updated Date: 2023-05-16T18:56:31+0000
+Creation Date: 1994-11-01T05:00:00+0000
+Registrar Registration Expiration Date: 2024-10-30T07:00:00+0000
+Registrar: MarkMonitor, Inc.
+Registrar IANA ID: 292
+Registrar Abuse Contact Email: abusecomplaints@markmonitor.com
+Registrar Abuse Contact Phone: +1.2086851750
+Domain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)
+Domain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)
+Domain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)
+Domain Status: serverUpdateProhibited (https://www.icann.org/epp#serverUpdateProhibited)
+Domain Status: serverTransferProhibited (https://www.icann.org/epp#serverTransferProhibited)
+Domain Status: serverDeleteProhibited (https://www.icann.org/epp#serverDeleteProhibited)
+Registry Registrant ID: 
+Registrant Name: Hostmaster, Amazon Legal Dept.
+Registrant Organization: Amazon Technologies, Inc.
+Registrant Street: P.O. Box 8102
+Registrant City: Reno
+Registrant State/Province: NV
+Registrant Postal Code: 89507
+Registrant Country: US
+Registrant Phone: +1.2062664064
+Registrant Phone Ext: 
+Registrant Fax: +1.2062667010
+Registrant Fax Ext: 
+Registrant Email: hostmaster@amazon.com
+Registry Admin ID: 
+Admin Name: Hostmaster, Amazon Legal Dept.
+Admin Organization: Amazon Technologies, Inc.
+Admin Street: P.O. Box 8102
+Admin City: Reno
+Admin State/Province: NV
+Admin Postal Code: 89507
+Admin Country: US
+Admin Phone: +1.2062664064
+Admin Phone Ext: 
+Admin Fax: +1.2062667010
+Admin Fax Ext: 
+Admin Email: hostmaster@amazon.com
+Registry Tech ID: 
+Tech Name: Hostmaster, Amazon Legal Dept.
+Tech Organization: Amazon Technologies, Inc.
+Tech Street: P.O. Box 8102
+Tech City: Reno
+Tech State/Province: NV
+Tech Postal Code: 89507
+Tech Country: US
+Tech Phone: +1.2062664064
+Tech Phone Ext: 
+Tech Fax: +1.2062667010
+Tech Fax Ext: 
+Tech Email: hostmaster@amazon.com
+Name Server: ns1.amzndns.org
+Name Server: ns1.amzndns.net
+Name Server: ns1.amzndns.co.uk
+Name Server: ns2.amzndns.com
+Name Server: ns1.amzndns.com
+Name Server: ns2.amzndns.org
+Name Server: ns2.amzndns.co.uk
+Name Server: ns2.amzndns.net
+DNSSEC: unsigned
+URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
+>>> Last update of WHOIS database: 2023-12-03T01:22:59+0000 <<<
+
+For more information on WHOIS status codes, please visit:
+  https://www.icann.org/resources/pages/epp-status-codes
+
+If you wish to contact this domain’s Registrant, Administrative, or Technical
+contact, and such email address is not visible above, you may do so via our web
+form, pursuant to ICANN’s Temporary Specification. To verify that you are not a
+robot, please enter your email address to receive a link to a page that
+facilitates email communication with the relevant contact(s).
+
+Web-based WHOIS:
+  https://domains.markmonitor.com/whois
+
+If you have a legitimate interest in viewing the non-public WHOIS details, send
+your request and the reasons for your request to whoisrequest@markmonitor.com
+and specify the domain name in the subject line. We will review that request and
+may ask for supporting documentation and explanation.
+
+By submitting a WHOIS query, you agree that you will use this data only for
+lawful purposes and that, under no circumstances will you use this data to:
+  (1) allow, enable, or otherwise support the transmission by email, telephone,
+or facsimile of mass, unsolicited, commercial advertising, or spam; or
+  (2) enable high volume, automated, or electronic processes that send queries,
+data, or email to MarkMonitor (or its systems) or the domain name contacts (or
+its systems).
+
+MarkMonitor reserves the right to modify these terms at any time.
+
+By submitting this query, you agree to abide by this policy.
+```
+
+
+
+
+
+
+### IP Whois output:
+
+```
+NetRange:       3.160.0.0 - 3.163.255.255
+CIDR:           3.160.0.0/14
+NetName:        AMAZON-CF
+NetHandle:      NET-3-160-0-0-1
+Parent:         AT-88-Z (NET-3-128-0-0-1)
+NetType:        Reallocated
+OriginAS:       
+Organization:   Amazon.com, Inc. (AMAZON-4)
+RegDate:        2022-12-09
+Updated:        2022-12-09
+Ref:            https://rdap.arin.net/registry/ip/3.160.0.0
+
+
+
+OrgName:        Amazon.com, Inc.
+OrgId:          AMAZON-4
+Address:        1918 8th Ave
+City:           SEATTLE
+StateProv:      WA
+PostalCode:     98101-1244
+Country:        US
+RegDate:        1995-01-23
+Updated:        2022-09-30
+Ref:            https://rdap.arin.net/registry/entity/AMAZON-4
+
+
+OrgNOCHandle: AANO1-ARIN
+OrgNOCName:   Amazon AWS Network Operations
+OrgNOCPhone:  +1-206-555-0000 
+OrgNOCEmail:  amzn-noc-contact@amazon.com
+OrgNOCRef:    https://rdap.arin.net/registry/entity/AANO1-ARIN
+
+OrgRoutingHandle: IPROU3-ARIN
+OrgRoutingName:   IP Routing
+OrgRoutingPhone:  +1-206-555-0000 
+OrgRoutingEmail:  aws-routing-poc@amazon.com
+OrgRoutingRef:    https://rdap.arin.net/registry/entity/IPROU3-ARIN
+
+OrgRoutingHandle: ARMP-ARIN
+OrgRoutingName:   AWS RPKI Management POC
+OrgRoutingPhone:  +1-206-555-0000 
+OrgRoutingEmail:  aws-rpki-routing-poc@amazon.com
+OrgRoutingRef:    https://rdap.arin.net/registry/entity/ARMP-ARIN
+
+OrgAbuseHandle: AEA8-ARIN
+OrgAbuseName:   Amazon EC2 Abuse
+OrgAbusePhone:  +1-206-555-0000 
+OrgAbuseEmail:  abuse@amazonaws.com
+OrgAbuseRef:    https://rdap.arin.net/registry/entity/AEA8-ARIN
+
+OrgTechHandle: ANO24-ARIN
+OrgTechName:   Amazon EC2 Network Operations
+OrgTechPhone:  +1-206-555-0000 
+OrgTechEmail:  amzn-noc-contact@amazon.com
+OrgTechRef:    https://rdap.arin.net/registry/entity/ANO24-ARIN
+```
+
+
+
+
+
+
+
+
+
+## BuiltWith
+
+This is the report from [Builtwith](https://builtwith.com)
+
+###### Misleading Technology Profile Warning
+
+AMAZON.COM is on our misleading profile site list. This means that various pages across amazon.com and its subdomains make it difficult for us to accurately tell you what this site is built with.
+
+###### Analytics and Tracking
+
+[View Global Trends](https://trends.builtwith.com/analytics)
+
+### ![Facebook Domain Insights](https://d1nywwyphm5jsu.cloudfront.net/thumb/78-jd-31-5d-34-06/n)[Facebook Domain Insights](https://trends.builtwith.com/analytics/Facebook-Domain-Insights)
+
+[Facebook Domain Insights Usage Statistics](https://trends.builtwith.com/analytics/Facebook-Domain-Insights) · [Download List of All Websites using Facebook Domain Insights](https://trends.builtwith.com/websitelist/Facebook-Domain-Insights)
+
+This website contains tracking information that allows admins to see Facebook Insights out of Facebook to this domain.
+
+[Social Management](https://trends.builtwith.com/analytics/social-management)
+
+###### Widgets
+
+[View Global Trends](https://trends.builtwith.com/widgets)
+
+### ![COVID-19](https://dbsikz63q4tyx.cloudfront.net/thumb/92-3c-34-2z-5d-7q/n)[COVID-19](https://trends.builtwith.com/widgets/COVID-19)
+
+[COVID-19 Usage Statistics](https://trends.builtwith.com/widgets/COVID-19) · [Download List of All Websites using COVID-19](https://trends.builtwith.com/websitelist/COVID-19)
+
+This website mentions COVID-19 / Novel Coronavirus.
+
+###### eCommerce
+
+[View Global Trends](https://trends.builtwith.com/shop)
+
+### ![Amazon Webstore](https://d1nywwyphm5jsu.cloudfront.net/thumb/e6-59-87-q5-e8-94/n)[Amazon Webstore](https://trends.builtwith.com/shop/Amazon-Webstore)
+
+[Amazon Webstore Usage Statistics](https://trends.builtwith.com/shop/Amazon-Webstore) · [Download List of All Websites using Amazon Webstore](https://trends.builtwith.com/websitelist/Amazon-Webstore)
+
+Design and publish an ecommerce website with Amazon Webstore.
+
+[Hosted Solution](https://trends.builtwith.com/shop/hosted-solution)
+
+###### JavaScript Libraries and Functions
+
+[View Global Trends](https://trends.builtwith.com/javascript)
+
+### ![HTML5 History API](https://d1nywwyphm5jsu.cloudfront.net/thumb/97-q1-j9-e5-41-j1/n)[HTML5 History API](https://trends.builtwith.com/javascript/HTML5-History-API)
+
+[HTML5 History API Usage Statistics](https://trends.builtwith.com/javascript/HTML5-History-API) · [Download List of All Websites using HTML5 History API](https://trends.builtwith.com/websitelist/HTML5-History-API)
+
+A standardized way to manipulate the browser history via script.
+
+### ![jQuery](https://dbsikz63q4tyx.cloudfront.net/thumb/c0-e6-2d-48-3z-ed/n)[jQuery](https://trends.builtwith.com/javascript/jQuery)
+
+[jQuery Usage Statistics](https://trends.builtwith.com/javascript/jQuery) · [Download List of All Websites using jQuery](https://trends.builtwith.com/websitelist/jQuery)
+
+JQuery is a fast, concise, JavaScript Library that simplifies how you traverse HTML documents, handle events, perform animations, and add Ajax interactions to your web pages. jQuery is designed to change the way that you write JavaScript.
+
+[JavaScript Library](https://trends.builtwith.com/javascript/javascript-library)
+
+###### Advertising
+
+[View Global Trends](https://trends.builtwith.com/ads)
+
+### ![Amazon Associates](https://dbuflkpcdpfh3.cloudfront.net/thumb/e6-59-87-q5-e8-94/n)[Amazon Associates](https://trends.builtwith.com/ads/Amazon-Associates)
+
+[Amazon Associates Usage Statistics](https://trends.builtwith.com/ads/Amazon-Associates) · [Download List of All Websites using Amazon Associates](https://trends.builtwith.com/websitelist/Amazon-Associates)
+
+Launched in 1996, Associates is Amazon.com's affiliate marketing program. By linking to Amazon products and services you can add content for the sites visitors and receive up to 10% in referral fees.
+
+[Affiliate Programs](https://trends.builtwith.com/ads/affiliate-programs)
+
+### ![Amazon Ad System](https://d3dpwkknyrpnnn.cloudfront.net/thumb/e6-59-87-q5-e8-94/n)[Amazon Ad System](https://trends.builtwith.com/ads/Amazon-Ad-System)
+
+[Amazon Ad System Usage Statistics](https://trends.builtwith.com/ads/Amazon-Ad-System) · [Download List of All Websites using Amazon Ad System](https://trends.builtwith.com/websitelist/Amazon-Ad-System)
+
+This site has identifiers that shows it is using Amazon Ad System.
+
+###### SSL Certificates
+
+[View Global Trends](https://trends.builtwith.com/ssl)
+
+### ![HSTS](https://deo39crpw7zzn.cloudfront.net/thumb/ee-d6-z4-q2-dz-21/n)[HSTS](https://trends.builtwith.com/ssl/HSTS)
+
+[HSTS Usage Statistics](https://trends.builtwith.com/ssl/HSTS) · [Download List of All Websites using HSTS](https://trends.builtwith.com/websitelist/HSTS)
+
+Forces browsers to only communicate with the site using HTTPS.
+
+##### ![HSTS IncludeSubdomains PreLoad](https://d3nsmo0b6ncuv0.cloudfront.net/img/icons/blank.png)[HSTS IncludeSubdomains PreLoad](https://trends.builtwith.com/ssl/HSTS-IncludeSubdomains-PreLoad)
+
+[HSTS IncludeSubdomains PreLoad Usage Statistics](https://trends.builtwith.com/ssl/HSTS-IncludeSubdomains-PreLoad) · [Download List of All Websites using HSTS IncludeSubdomains PreLoad](https://trends.builtwith.com/websitelist/HSTS-IncludeSubdomains-PreLoad)
+
+This website includes instructions for HSTS loading that would allow it to be submitted to the HSTS preload list.
+
+###### Document Encoding
+
+[View Global Trends](https://trends.builtwith.com/encoding)
+
+### ![UTF-8](https://d363qos3mhnap4.cloudfront.net/thumb/ee-d6-z4-q2-dz-21/n)[UTF-8](https://trends.builtwith.com/encoding/UTF-8)
+
+[UTF-8 Usage Statistics](https://trends.builtwith.com/encoding/UTF-8)
+
+UTF-8 (8-bit UCS/Unicode Transformation Format) is a variable-length character encoding for Unicode. It is the preferred encoding for web pages.
+
+###### Document Standards
+
+[View Global Trends](https://trends.builtwith.com/docinfo)
+
+### ![HTML5 DocType](https://d363qos3mhnap4.cloudfront.net/thumb/23-9j-c9-dq-62-d7/n)[HTML5 DocType](https://trends.builtwith.com/docinfo/HTML5-DocType)
+
+[HTML5 DocType Usage Statistics](https://trends.builtwith.com/docinfo/HTML5-DocType)
+
+The DOCTYPE is a required preamble for HTML5 websites.
+
+### ![Javascript](https://d3c1mi4ekssrlm.cloudfront.net/thumb/ee-d6-z4-q2-dz-21/n)[Javascript](https://trends.builtwith.com/docinfo/Javascript)
+
+[Javascript Usage Statistics](https://trends.builtwith.com/docinfo/Javascript)
+
+JavaScript is a scripting language most often used for client-side web development.
+
+### ![DNS Prefetch](https://d2uu9ep1796sii.cloudfront.net/thumb/qq-6d-86-62-q8-c8/n)[DNS Prefetch](https://trends.builtwith.com/docinfo/DNS-Prefetch)
+
+[DNS Prefetch Usage Statistics](https://trends.builtwith.com/docinfo/DNS-Prefetch)
+
+Page contains links to disable or enable DNS prefetching of links in the page.
+
+### ![Cascading Style Sheets](https://d1nywwyphm5jsu.cloudfront.net/thumb/ee-d6-z4-q2-dz-21/n)[Cascading Style Sheets](https://trends.builtwith.com/docinfo/Cascading-Style-Sheets)
+
+[Cascading Style Sheets Usage Statistics](https://trends.builtwith.com/docinfo/Cascading-Style-Sheets)
+
+Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in a markup language. Its most common application is to style web pages written in HTML
+
+### ![HTML 5 Specific Tags](https://d2p0do391m6o41.cloudfront.net/thumb/34-14-3c-q8-17-06/n)[HTML 5 Specific Tags](https://trends.builtwith.com/docinfo/HTML-5-Specific-Tags)
+
+[HTML 5 Specific Tags Usage Statistics](https://trends.builtwith.com/docinfo/HTML-5-Specific-Tags)
+
+This page contains tags that are specific to an HTML 5 implementation.
+
+### ![Meta Description](https://d3c1mi4ekssrlm.cloudfront.net/thumb/ee-d6-z4-q2-dz-21/n)[Meta Description](https://trends.builtwith.com/docinfo/Meta-Description)
+
+[Meta Description Usage Statistics](https://trends.builtwith.com/docinfo/Meta-Description)
+
+The description attribute provides a concise explanation of the page content.
+
+### ![Meta Keywords](https://d3dpwkknyrpnnn.cloudfront.net/thumb/ee-d6-z4-q2-dz-21/n)[Meta Keywords](https://trends.builtwith.com/docinfo/Meta-Keywords)
+
+[Meta Keywords Usage Statistics](https://trends.builtwith.com/docinfo/Meta-Keywords)
+
+Meta tag containing keywords related to the page.
+
+### ![Canonical Content Tag](https://d3nsmo0b6ncuv0.cloudfront.net/img/icons/blank.png)[Canonical Content Tag](https://trends.builtwith.com/docinfo/Canonical-Content-Tag)
+
+[Canonical Content Tag Usage Statistics](https://trends.builtwith.com/docinfo/Canonical-Content-Tag)
+
+Public specification of a preferred URL for a page allows search engines to understand the original location for content.
+
+### ![Twitter Cards](https://dbsikz63q4tyx.cloudfront.net/thumb/56-93-5j-cd-9j-d1/n)[Twitter Cards](https://trends.builtwith.com/docinfo/Twitter-Cards)
+
+[Twitter Cards Usage Statistics](https://trends.builtwith.com/docinfo/Twitter-Cards)
+
+Twitter cards make it possible for you to attach media experiences to Tweets that link to your content.
+
+### ![Open Graph Protocol](https://dbuflkpcdpfh3.cloudfront.net/thumb/q3-4d-e1-9d-q8-10/n)[Open Graph Protocol](https://trends.builtwith.com/docinfo/Open-Graph-Protocol)
+
+[Open Graph Protocol Usage Statistics](https://trends.builtwith.com/docinfo/Open-Graph-Protocol)
+
+The Open Graph protocol enables any web page to become a rich object in a social graph, a open protocol supported by Facebook
+
+### ![Pinterest Domain Verify](https://dbuflkpcdpfh3.cloudfront.net/thumb/c0-5c-0q-q0-ze-49/n)[Pinterest Domain Verify](https://trends.builtwith.com/docinfo/Pinterest-Domain-Verify)
+
+[Pinterest Domain Verify Usage Statistics](https://trends.builtwith.com/docinfo/Pinterest-Domain-Verify)
+
+A verified website linked to a Pinterest user profile.
+
+### ![WAI-ARIA](https://d1nywwyphm5jsu.cloudfront.net/thumb/23-9j-c9-dq-62-d7/n)[WAI-ARIA](https://trends.builtwith.com/docinfo/WAI-ARIA)
+
+[WAI-ARIA Usage Statistics](https://trends.builtwith.com/docinfo/WAI-ARIA)
+
+A way to make Web content and Web applications more accessible to people with disabilities. It especially helps with dynamic content and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
+
+### ![IFrame](https://d1nywwyphm5jsu.cloudfront.net/thumb/6c-2q-84-29-17-2d/n)[IFrame](https://trends.builtwith.com/docinfo/IFrame)
+
+[IFrame Usage Statistics](https://trends.builtwith.com/docinfo/IFrame)
+
+The page shows content with an iframe; an embedded frame that loads another webpage.
+
+### ![Content Security Policy](https://d1nywwyphm5jsu.cloudfront.net/thumb/ee-d6-z4-q2-dz-21/n)[Content Security Policy](https://trends.builtwith.com/docinfo/Content-Security-Policy)
+
+[Content Security Policy Usage Statistics](https://trends.builtwith.com/docinfo/Content-Security-Policy)
+
+Content Security Policy is a computer security concept, to prevent cross-site scripting XSS attacks.
+
+### ![Report URI CSP](https://dbuflkpcdpfh3.cloudfront.net/thumb/qq-6d-86-62-q8-c8/n)[Report URI CSP](https://trends.builtwith.com/docinfo/Report-URI-CSP)
+
+[Report URI CSP Usage Statistics](https://trends.builtwith.com/docinfo/Report-URI-CSP)
+
+Report-uri directive instructs the user agent to report attempts to violate the Content Security Policy.
+
+### ![X-UA-Compatible](https://d3c1mi4ekssrlm.cloudfront.net/thumb/2e-64-z4-12-95-75/n)[X-UA-Compatible](https://trends.builtwith.com/docinfo/X-UA-Compatible)
+
+[X-UA-Compatible Usage Statistics](https://trends.builtwith.com/docinfo/X-UA-Compatible)
+
+Allows a website to define how a page is rendered in Internet Explorer 8, allowing a website to decide to use IE7 style rendering over IE8 rendering.
+
+### ![X-XSS-Protection](https://dbuflkpcdpfh3.cloudfront.net/thumb/2e-64-z4-12-95-75/n)[X-XSS-Protection](https://trends.builtwith.com/docinfo/X-XSS-Protection)
+
+[X-XSS-Protection Usage Statistics](https://trends.builtwith.com/docinfo/X-XSS-Protection)
+
+X-XSS-Protection is a HTTP header set by Internet Explorer 8+. This header lets domains toggle on and off the "XSS Filter" of IE8, which prevents some categories of XSS attacks.
+
+### ![Content Type Options](https://d3nsmo0b6ncuv0.cloudfront.net/thumb/97-q1-j9-e5-41-j1/n)[Content Type Options](https://trends.builtwith.com/docinfo/Content-Type-Options)
+
+[Content Type Options Usage Statistics](https://trends.builtwith.com/docinfo/Content-Type-Options)
+
+Used to disable MIME-sniffing for a particular HTTP response.
+
+### ![Strict Transport Security](https://d3c1mi4ekssrlm.cloudfront.net/thumb/ee-d6-z4-q2-dz-21/n)[Strict Transport Security](https://trends.builtwith.com/docinfo/Strict-Transport-Security)
+
+[Strict Transport Security Usage Statistics](https://trends.builtwith.com/docinfo/Strict-Transport-Security)
+
+The HTTP Strict-Transport-Security (HSTS) header instructs the browser to only use https.
+
+### ![X-Frame-Options](https://d363qos3mhnap4.cloudfront.net/thumb/qq-6d-86-62-q8-c8/n)[X-Frame-Options](https://trends.builtwith.com/docinfo/X-Frame-Options)
+
+[X-Frame-Options Usage Statistics](https://trends.builtwith.com/docinfo/X-Frame-Options)
+
+The X-Frame-Options HTTP response header can be used to indicate whether or not a browser should be allowed to render a page in a frame or iframe. Sites can use this to avoid clickjacking attacks, by ensuring that their content is not embedded into other sites.
+
+###### Verified CDN
+
+[View Global Trends](https://trends.builtwith.com/cdns)
+
+### ![Amazon CloudFront](https://d2uu9ep1796sii.cloudfront.net/thumb/e6-59-87-q5-e8-94/n)[Amazon CloudFront](https://trends.builtwith.com/cdns/Amazon-CloudFront)
+
+[Amazon CloudFront Usage Statistics](https://trends.builtwith.com/cdns/Amazon-CloudFront) · [Download List of All Websites using Amazon CloudFront](https://trends.builtwith.com/websitelist/Amazon-CloudFront)
+
+Amazon CloudFront delivers your static and streaming content using a global network of edge locations.
+
+[Edge Delivery Network](https://trends.builtwith.com/cdns/edge-delivery-network)
+
+###### Web Master Registration
+
+[View Global Trends](https://trends.builtwith.com/web-master)
+
+### ![Google Webmaster](https://d3nsmo0b6ncuv0.cloudfront.net/thumb/5z-6j-53-j0-c4-77/n)[Google Webmaster](https://trends.builtwith.com/Web-Master/Google-Webmaster)
+
+[Google Webmaster Usage Statistics](https://trends.builtwith.com/Web-Master/Google-Webmaster) · [Download List of All Websites using Google Webmaster](https://trends.builtwith.com/websitelist/Google-Webmaster)
+
+Webmaster tools provide you with a free and easy way to make your site more Google-friendly.
+
+### ![MSN/Bing Webmaster](https://d1nywwyphm5jsu.cloudfront.net/thumb/q0-qj-d2-80-j2-c0/n)[MSN/Bing Webmaster](https://trends.builtwith.com/Web-Master/MSN-Bing-Webmaster)
+
+[MSN/Bing Webmaster Usage Statistics](https://trends.builtwith.com/Web-Master/MSN-Bing-Webmaster) · [Download List of All Websites using MSN/Bing Webmaster](https://trends.builtwith.com/websitelist/MSN-Bing-Webmaster)
+
+Site registered at MSN/Bing Webmaster.
+
+## SecurityHeaders.io
+
+### Security Report Summary
+
+
+|   |   |
+|---|---| 
+|Site:|[https://www.amazon.com/](https://www.amazon.com/)|
+|IP Address:|2600:9000:269b:7a00:7:49a5:5fd3:b641|
+|Report Time:|05 Dec 2023 19:37:21 UTC|
+|Headers:|- X-Content-Type-Options<br>- Content-Security-Policy<br>- Strict-Transport-Security<br>- X-Frame-Options<br>- Referrer-Policy<br>- Permissions-Policy|
+|Advanced:|\|   \|   \|<br>\|---\|---\|<br>\|Great grade! Perform a deeper security analysis of your website and APIs:\|[](https://prbly.us/3Ia3dsU)\||
+
+### Missing Headers
+
+|   |   |
+|---|---|
+|Referrer-Policy|[Referrer Policy](https://scotthelme.co.uk/a-new-security-header-referrer-policy/) is a new header that allows a site to control how much information the browser includes with navigations away from a document and should be set by all sites.|
+|Permissions-Policy|[Permissions Policy](https://scotthelme.co.uk/goodbye-feature-policy-and-hello-permissions-policy/) is a new header that allows a site to control which features and APIs can be used in the browser.|
+
+### Raw Headers
+
+|   |   |
+|---|---|
+|HTTP/2|200|
+|content-type|text/html;charset=UTF-8|
+|server|Server|
+|date|Tue, 05 Dec 2023 19:37:20 GMT|
+|x-amz-rid|RPS16SRV4A1YDXYKSA63|
+|set-cookie|session-id=133-2845432-2451261; Domain=.amazon.com; Expires=Wed, 04-Dec-2024 19:37:20 GMT; Path=/; **Secure**|
+|set-cookie|session-id-time=2082787201l; Domain=.amazon.com; Expires=Wed, 04-Dec-2024 19:37:20 GMT; Path=/; **Secure**|
+|set-cookie|i18n-prefs=USD; Domain=.amazon.com; Expires=Wed, 04-Dec-2024 19:37:20 GMT; Path=/|
+|set-cookie|skin=noskin; path=/; domain=.amazon.com|
+|cache-control|no-cache|
+|content-encoding|gzip|
+|content-security-policy-report-only|**default-src** _________________________________'self'_________________________________ blob: https: data: mediastream: _________________________________'unsafe-eval'_________________________________ _________________________________'unsafe-inline'_________________________________;**report-uri** https://metrics.media-amazon.com/|
+|expires|-1|
+|content-language|en-US|
+|accept-ch-lifetime|86400|
+|pragma|no-cache|
+|x-content-type-options|**nosniff**|
+|x-xss-protection|**1**;|
+|x-ua-compatible|IE=edge|
+|accept-ch|ect,rtt,downlink,device-memory,sec-ch-device-memory,viewport-width,sec-ch-viewport-width,dpr,sec-ch-dpr,sec-ch-ua-platform,sec-ch-ua-platform-version|
+|content-security-policy|**upgrade-insecure-requests**;**report-uri** https://metrics.media-amazon.com/|
+|strict-transport-security|**max-age**=47474747; **includeSubDomains**; **preload**|
+|vary|Content-Type,Accept-Encoding,User-Agent|
+|x-frame-options|**SAMEORIGIN**|
+|x-cache|Miss from cloudfront|
+|via|1.1 2f59ddea1f7069526e8aabd7b7e0b5a0.cloudfront.net (CloudFront)|
+|x-amz-cf-pop|MRS52-P6|
+|alt-svc|h3=":443"; ma=86400|
+|x-amz-cf-id|8DFDWZ8om2eTo8f86RIbm98ZsnLE-0E-jm0q6GQrYc_12BriG1M7NA==|
+
+### Upcoming Headers
+
+|   |   |
+|---|---|
+|Cross-Origin-Embedder-Policy|[Cross-Origin Embedder Policy](https://scotthelme.co.uk/coop-and-coep/) allows a site to prevent assets being loaded that do not grant permission to load them via CORS or CORP.|
+|Cross-Origin-Opener-Policy|[Cross-Origin Opener Policy](https://scotthelme.co.uk/coop-and-coep/) allows a site to opt-in to Cross-Origin Isolation in the browser.|
+|Cross-Origin-Resource-Policy|[Cross-Origin Resource Policy](https://scotthelme.co.uk/coop-and-coep/) allows a resource owner to specify who can load the resource.|
+
+### Additional Information
+
+|   |   |
+|---|---|
+|server|[Server](https://scotthelme.co.uk/hardening-your-http-response-headers/#server) value has been changed. Typically you will see values like "Microsoft-IIS/8.0" or "nginx 1.7.2".|
+|set-cookie|The 'httpOnly' flag is not set on this cookie. There is no [Cookie Prefix](https://scotthelme.co.uk/tough-cookies/) on this cookie. This is not a [SameSite Cookie](https://scotthelme.co.uk/tough-cookies/).|
+|set-cookie|The 'httpOnly' flag is not set on this cookie. There is no [Cookie Prefix](https://scotthelme.co.uk/tough-cookies/) on this cookie. This is not a [SameSite Cookie](https://scotthelme.co.uk/tough-cookies/).|
+|content-security-policy-report-only|[Content Security Policy Report Only](https://scotthelme.co.uk/content-security-policy-an-introduction/) is used to test a Content Security Policy before making it live. The browser will report on actions that would have been taken based on the policy. [Analyse](https://report-uri.com/home/analyse/https%3A%2F%2Fwww.amazon.com%2F) this policy in more detail. You can sign up for a free account on [Report URI](https://report-uri.com) to collect reports about problems on your site.|
+|x-content-type-options|[X-Content-Type-Options](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-content-type-options) stops a browser from trying to MIME-sniff the content type and forces it to stick with the declared content-type. The only valid value for this header is "X-Content-Type-Options: nosniff".|
+|x-xss-protection|[X-XSS-Protection](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-xss-protection) sets the configuration for the XSS Auditor built into older browsers. The recommended value was "X-XSS-Protection: 1; mode=block" but you should now look at [Content Security Policy](https://scotthelme.co.uk/content-security-policy-an-introduction/) instead.|
+|content-security-policy|[Content Security Policy](https://scotthelme.co.uk/content-security-policy-an-introduction/) is an effective measure to protect your site from XSS attacks. By whitelisting sources of approved content, you can prevent the browser from loading malicious assets. [Analyse](https://report-uri.com/home/analyse/https%3A%2F%2Fwww.amazon.com%2F) this policy in more detail. You can sign up for a free account on [Report URI](https://report-uri.com) to collect reports about problems on your site.|
+|strict-transport-security|[HTTP Strict Transport Security](https://scotthelme.co.uk/hsts-the-missing-link-in-tls/) is an excellent feature to support on your site and strengthens your implementation of TLS by getting the User Agent to enforce the use of HTTPS.|
+|x-frame-options|[X-Frame-Options](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-frame-options) tells the browser whether you want to allow your site to be framed or not. By preventing a browser from framing your site you can defend against attacks like clickjacking.|
+
+
+## ClearWebStats 
+### Web stats for Amazon - amazon.com
+
+    ![1](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-on.png "Excellent") ![2](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-on.png "Excellent") ![3](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-on.png "Excellent") ![4](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-on.png "Excellent") ![5](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-half.png "Excellent") 4.67 Rating by ClearWebStats
+
+**amazon.com** is 2 decades 9 years 4 weeks old. This website has a #7 rank in global traffic. It has a **[.com](https://www.clearwebstats.com/domain-by-extension/com/ "View Websites having this Domain Extension")** as an domain extension. This website has a **Google PageRank of 8** out of 10. This domain is estimated value of $ 1,261,866,600.00 and has a daily earning of $ 1,168,395.00. While no active threats were reported recently by users, **amazon.com is SAFE to browse**.
+
+Updated 7 months 1 week ago
+
+[Get Custom Widget](https://www.clearwebstats.com/widget/amazon.com)
+#### Traffic Report of Amazon
+
+|   |   |
+|---|---|
+|Daily Unique Visitors:|146,049,330|
+|Daily Pageviews:|1,168,394,640|
+#### Estimated Valuation
+
+|   |   |
+|---|---|
+|Income Per Day:|$ 1,168,395.00|
+|Estimated Worth:|$ 1,261,866,600.00|
+#### Search Engine Indexes
+
+|   |   |
+|---|---|
+|Google Indexed Pages:|Not Applicable|
+|Yahoo Indexed Pages:|Not Applicable|
+|Bing Indexed Pages:|584,000|
+#### Search Engine Backlinks
+
+|   |   |
+|---|---|
+|Google Backlinks:|Not Applicable|
+|Bing Backlinks:|Not Applicable|
+|Alexa BackLinks:|Not Applicable|
+#### Safety Information
+
+|   |   |
+|---|---|
+|Google Safe Browsing:|No Risk Issues|
+|Siteadvisor Rating:|No Risk Issues|
+|WOT Trustworthiness:|Not Applicable|
+|WOT Privacy:|Not Applicable|
+|WOT Child Safety:|Not Applicable|
+#### Website Ranks & Scores
+
+|   |   |
+|---|---|
+|Google Pagerank:|[![View amazon.com Pagerank](https://www.clearwebstats.com/templates/cws/assets/img/pagerank/pr_8.gif)](https://www.clearwebstats.com/google-page-rank/8/)|
+|Alexa Rank:|7|
+|Domain Authority:|[96](https://www.opensiteexplorer.org/links.html?site=amazon.com "See More Details on Open Site Explorer") ON 100 [![Click to see amazon.com data on Moz](https://www.clearwebstats.com/templates/cws/assets/img/mozscape.png)](https://www.seomoz.org "Powered by SEOmoz Linkscape")|
+
+**Google Pagerank**
+
+PR 8 out of 10
+
+##### PageSpeed Score
+
+0
+
+##### Siteadvisor Rating
+
+![View amazon.com site advisor rating](https://www.clearwebstats.com/templates/cws/assets/img/siteadvisor/green.png) No Risk Issues
+
+- [See How This Looks Like in the Past](https://web.archive.org/web/*/http://amazon.com)
+- [Check DNS and Mail Servers Health](http://www.intodns.com/amazon.com)
+#### Where is amazon.com server located?
+
+![](https://webstatdata.com/templates/cws/assets/img/close.gif)
+
+amazon.com is Hosted on  
+Virginia, Ashburn, United States, 20149
+
+[
+
+](https://maps.google.com/maps?ll=38.838753,-78.175925&z=7&t=m&hl=en-US&gl=US&mapclient=apiv3 "Open this area in Google Maps (opens a new window)")
+
+**Hosted IP Address:**
+
+205.251.242.103 [![View other site hosted with amazon.com](https://www.clearwebstats.com/templates/cws/assets/img/more.gif)](https://www.clearwebstats.com/hosted-ip/205.251.242.103/ "View Websites Hosted on this IP Address")
+
+**Hosted Country:**
+
+![amazon.com hosted country](https://www.clearwebstats.com/templates/cws/assets/img/flags/16/US.png "United States") US [![amazon.com hosted country](https://www.clearwebstats.com/templates/cws/assets/img/more.gif)](https://www.clearwebstats.com/hosted-country/US/ "View Websites Hosted in this Country")
+
+**Location Latitude:**
+
+39.0481
+
+**Location Longitude:**
+
+-77.4728
+#### Social Engagement
+
+|   |   |
+|---|---|
+|Facebook Shares:|Not Applicable|
+|Facebook Likes:|Not Applicable|
+|Facebook Comments:|Not Applicable|
+|Twitter Count (Tweets):|Not Applicable|
+|Linkedin Shares:|Not Applicable|
+|Delicious Shares:|Not Applicable|
+#### Page Resources Breakdown
+
+|Resource Name|Size|
+|---|---|
+|HTML (0 KB)|0|
+#### Homepage Links Analysis
+
+Internal LinksExternal Links012
+
+|Link Type|Total Links|No-Follow Links|
+|---|---|---|
+|Internal Links|2|0|
+|External Links|0|0|
+
+**[Page Title of Amazon](https://www.clearwebstats.com/#meta_title)**
+
+Amazon.com
+#### Website Inpage Analysis
+
+|   |   |   |   |
+|---|---|---|---|
+|H1 Headings:|Not Applicable|H2 Headings:|Not Applicable|
+|H3 Headings:|Not Applicable|H4 Headings:|2|
+|H5 Headings:|Not Applicable|H6 Headings:|Not Applicable|
+|Total IFRAMEs:|Not Applicable|Total Images:|2|
+|Google Adsense:|Not Applicable|Google Analytics:|Not Applicable|
+#### Websites Hosted on Same IP (i.e. 205.251.242.103)
+##### [x](https://3dmachprintingbldg1.com.clearwebstats.com)
+
+![amazon.com favicon](https://www.google.com/s2/favicons?domain_url=http://3dmachprintingbldg1.com)     ![1](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-on.png "Excellent") ![2](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-on.png "Excellent") ![3](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-on.png "Excellent") ![4](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-on.png "Excellent") ![5](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-half.png "Excellent") - 3dmachprintingbldg1.com
+
+ [![View amazon.com Pagerank](https://www.clearwebstats.com/templates/cws_v2/assets/img/pagerank/pr_0.gif)](https://www.clearwebstats.com/google-page-rank/0/)  ![amazon.com alexa rank](https://www.clearwebstats.com/templates/cws_v2/assets/img/alexa.png) Not Applicable   ![amazon.com website value](https://www.clearwebstats.com/templates/cws_v2/assets/img/worth.png) $ 8.95
+
+---
+##### [x](https://emailserviceamazon.com.clearwebstats.com)
+
+![amazon.com favicon](https://www.google.com/s2/favicons?domain_url=http://emailserviceamazon.com)     ![1](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-on.png "Excellent") ![2](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-on.png "Excellent") ![3](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-on.png "Excellent") ![4](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-on.png "Excellent") ![5](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-half.png "Excellent") - emailserviceamazon.com
+
+ [![View amazon.com Pagerank](https://www.clearwebstats.com/templates/cws_v2/assets/img/pagerank/pr_0.gif)](https://www.clearwebstats.com/google-page-rank/0/)  ![amazon.com alexa rank](https://www.clearwebstats.com/templates/cws_v2/assets/img/alexa.png) Not Applicable   ![amazon.com website value](https://www.clearwebstats.com/templates/cws_v2/assets/img/worth.png) $ 8.95
+
+---
+##### [Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more](https://weightslasher.com.clearwebstats.com)
+
+![amazon.com favicon](https://www.google.com/s2/favicons?domain_url=http://weightslasher.com)     ![1](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-on.png "Satisfactory") ![2](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-on.png "Satisfactory") ![3](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-off.png "Satisfactory") ![4](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-off.png "Satisfactory") ![5](https://www.clearwebstats.com/templates/cws/assets/img/rating/12/star-off.png "Satisfactory") - weightslasher.com
+
+Online shopping from the earth's biggest selection of books, magazines, music, DVDs, videos, electronics, computers, software, apparel & accessories, shoes, jewelry, tools & hardware, housewares, furniture, sporting goods, beauty & personal care, broadband & dsl, gourmet food & just about anything else.
+
+ [![View amazon.com Pagerank](https://www.clearwebstats.com/templates/cws_v2/assets/img/pagerank/pr_0.gif)](https://www.clearwebstats.com/google-page-rank/0/)  ![amazon.com alexa rank](https://www.clearwebstats.com/templates/cws_v2/assets/img/alexa.png) Not Applicable   ![amazon.com website value](https://www.clearwebstats.com/templates/cws_v2/assets/img/worth.png) $ 8.95
+#### HTTP Header Analysis
+
+**HTTP/2 200**  
+**content-type**: text/html  
+**server**: Server  
+**date**: Wed, 19 Apr 2023 10:03:48 GMT  
+**x-amz-rid**: SE09V8T89VNQVJCRMB16  
+**vary**: Content-Type,Accept-Encoding,User-Agent  
+**content-encoding**: gzip  
+**strict-transport-security**: max-age=47474747; includeSubDomains; preload  
+**x-cache**: Miss from cloudfront  
+**via**: 1.1 c3e66686bc7ab6e675ee9210e15097b6.cloudfront.net (CloudFront)  
+**x-amz-cf-pop**: JFK50-P4  
+**x-amz-cf-id**: J_qrPMG26tI121kAfboXKsuBB6gBpt2KaZRZs1WDExtwd__U639dJQ==  
+#### Domain Information for amazon.com
+
+|   |   |
+|---|---|
+|Domain Registrar:|MARKMONITOR INC. [![amazon.com registrar info](https://www.clearwebstats.com/templates/cws/assets/img/more.gif)](https://www.clearwebstats.com/registrar/markmonitor-inc./ "View Websites Registered from this Domain Registrar")|
+|Registration Date:|1994-11-01 2 decades 9 years 4 weeks ago|
+|Last Modified:|2019-05-07 4 years 6 months 4 weeks ago|
+
+#### Domain Nameserver Information
+
+|Host|   |IP Address|Country|
+|---|---|---|---|
+|ns1.p31.dynect.net|[![amazon.com name server information](https://www.clearwebstats.com/templates/cws/assets/img/more.gif)](https://www.clearwebstats.com/nameserver/ns1.p31.dynect.net/ "View Websites Hosted in this Nameserver")|208.78.70.31|![amazon.com server is located in United States](https://www.clearwebstats.com/templates/cws/assets/img/flags/16/US.png "amazon.com server is located in United States") United States|
+|ns2.p31.dynect.net|[![amazon.com name server information](https://www.clearwebstats.com/templates/cws/assets/img/more.gif)](https://www.clearwebstats.com/nameserver/ns2.p31.dynect.net/ "View Websites Hosted in this Nameserver")|204.13.250.31|![amazon.com server is located in United States](https://www.clearwebstats.com/templates/cws/assets/img/flags/16/US.png "amazon.com server is located in United States") United States|
+|ns3.p31.dynect.net|[![amazon.com name server information](https://www.clearwebstats.com/templates/cws/assets/img/more.gif)](https://www.clearwebstats.com/nameserver/ns3.p31.dynect.net/ "View Websites Hosted in this Nameserver")|208.78.71.31|![amazon.com server is located in United States](https://www.clearwebstats.com/templates/cws/assets/img/flags/16/US.png "amazon.com server is located in United States") United States|
+|ns4.p31.dynect.net|[![amazon.com name server information](https://www.clearwebstats.com/templates/cws/assets/img/more.gif)](https://www.clearwebstats.com/nameserver/ns4.p31.dynect.net/ "View Websites Hosted in this Nameserver")|204.13.251.31|![amazon.com server is located in United States](https://www.clearwebstats.com/templates/cws/assets/img/flags/16/US.png "amazon.com server is located in United States") United States|
+|pdns1.ultradns.net|[![amazon.com name server information](https://www.clearwebstats.com/templates/cws/assets/img/more.gif)](https://www.clearwebstats.com/nameserver/pdns1.ultradns.net/ "View Websites Hosted in this Nameserver")|204.74.108.1|![amazon.com server is located in United States](https://www.clearwebstats.com/templates/cws/assets/img/flags/16/US.png "amazon.com server is located in United States") United States|
+|pdns6.ultradns.co.uk|[![amazon.com name server information](https://www.clearwebstats.com/templates/cws/assets/img/more.gif)](https://www.clearwebstats.com/nameserver/pdns6.ultradns.co.uk/ "View Websites Hosted in this Nameserver")|204.74.115.1|![amazon.com server is located in United States](https://www.clearwebstats.com/templates/cws/assets/img/flags/16/US.png "amazon.com server is located in United States") United States|
+
+#### DNS Record Analysis
+
+|Host|Type|TTL|Extra|
+|---|---|---|---|
+|amazon.com|A|103|**IP:**205.251.242.103|
+|amazon.com|A|103|**IP:**52.94.236.248|
+|amazon.com|A|103|**IP:**54.239.28.85|
+|amazon.com|NS|1136|**Target:**ns2.p31.dynect.net|
+|amazon.com|NS|1136|**Target:**ns3.p31.dynect.net|
+|amazon.com|NS|1136|**Target:**ns4.p31.dynect.net|
+|amazon.com|NS|1136|**Target:**pdns1.ultradns.net|
+|amazon.com|NS|1136|**Target:**pdns6.ultradns.co.uk|
+|amazon.com|NS|1136|**Target:**ns1.p31.dynect.net|
+|amazon.com|SOA|900|**MNAME:**dns-external-master.amazon.com  <br>**RNAME:**root.amazon.com  <br>**Serial:**2010169748  <br>**Refresh:**180  <br>**Retry:**60  <br>**Expire:**3024000|
+|amazon.com|MX|91|**Priority:**5  <br>**Target:**amazon-smtp.amazon.com|
+|amazon.com|TXT|241|**TXT:**MS=4B600B22799EB2CAC0D8FF0A3A3CAECA5EE2B  <br>F3A|
+|amazon.com|TXT|241|**TXT:**apple-domain-verification=dVkKZnu17XS0EN  <br>2X|
+|amazon.com|TXT|241|**TXT:**facebook-domain-verification=d9u57u52gyl  <br>ohx845ogo1axzpywpmq|
+|amazon.com|TXT|241|**TXT:**google-site-verification=14WGW2MdNMxchG8  <br>PlinF7LgqqE0OwwHqOq0HKhb7rDQ|
+|amazon.com|TXT|241|**TXT:**pardot326621=b26a7b44d7c73d119ef9dfd1a24  <br>d93c77d583ac50ba4ecedd899a9134734403b|
+|amazon.com|TXT|241|**TXT:**spf2.0/pra include:spf1.amazon.com  <br>include:spf2.amazon.com  <br>include:amazonses.com -all|
+|amazon.com|TXT|241|**TXT:**v=spf1 include:spf1.amazon.com  <br>include:spf2.amazon.com  <br>include:amazonses.com -all|
+|amazon.com|TXT|241|**TXT:**wrike-verification=MzI3NzM2ODo2NDk5MjE4N  <br>jQ2MWJmOTEwMGMxM2MzNzJmNWJlY2U5ZDU4MmVlN  <br>zQ2NWU4MTY5OWJjMjlmYjQ4Mjc5M2JiMzky|
+|amazon.com|TXT|241|**TXT:**pendo-domain-verification=ecbe1a51-954d-  <br>4202-ab86-d15e04b96769|
+|amazon.com|TXT|241|**TXT:**apple-domain-verification=4wbNaeWvAH0pU1  <br>yi|
+|amazon.com|TXT|241|**TXT:**atlassian-domain-verification=U7xZWoEE2J  <br>fLln8i0wvgHwSqR7eeaFVl57idVywyPupp9SafYU  <br>fCqnahXzJyHA5N|
+|amazon.com|TXT|241|**TXT:**cisco-ci-domain-verification=1b256bd11da  <br>a486ba2fa405d2d5de70f75feb6757dd8993ca8d  <br>e685a7dfea1df|
+|amazon.com|TXT|241|**TXT:**sending_domain1014172=003846595520e80ec8  <br>4e8cc47c07e3a71afb855fc743bb92cdec93f88c  <br>7a4029|
+
+## DNSSEC Analyzer
+|   |   |
+|---|---|
+|.|\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|Found 2 DNSKEY records for .\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|DS=20326/SHA-256 verifies DNSKEY=20326/SEP\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|Found 1 RRSIGs over DNSKEY RRset\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|RRSIG=20326 and DNSKEY=20326/SEP verifies the DNSKEY RRset\||
+|com|\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|Found 1 DS records for com in the . zone\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|DS=30909/SHA-256 has algorithm RSASHA256\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|Found 1 RRSIGs over DS RRset\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|RRSIG=46780 and DNSKEY=46780 verifies the DS RRset\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|Found 4 DNSKEY records for com\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|DS=30909/SHA-256 verifies DNSKEY=30909/SEP\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|Found 2 RRSIGs over DNSKEY RRset\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|RRSIG=30909 and DNSKEY=30909/SEP verifies the DNSKEY RRset\||
+|amazon.com|\|![](https://dnssec-debugger.verisignlabs.com/red.png)\|No DS records found for amazon.com in the com zone\|<br>\|![](https://dnssec-debugger.verisignlabs.com/red.png)\|No DNSKEY records found\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|ns2.amzndns.org is authoritative for amazon.com\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|amazon.com A RR has value 54.239.28.85\|<br>\|![](https://dnssec-debugger.verisignlabs.com/red.png)\|No RRSIGs found\||
+|amazon.com|\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|ns1.amzndns.org is authoritative for amazon.com\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|amazon.com A RR has value 52.94.236.248\|<br>\|![](https://dnssec-debugger.verisignlabs.com/red.png)\|No RRSIGs found\||
+|amazon.com|\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|ns2.amzndns.com is authoritative for amazon.com\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|amazon.com A RR has value 52.94.236.248\|<br>\|![](https://dnssec-debugger.verisignlabs.com/red.png)\|No RRSIGs found\||
+|amazon.com|\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|ns1.amzndns.co.uk is authoritative for amazon.com\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|amazon.com A RR has value 52.94.236.248\|<br>\|![](https://dnssec-debugger.verisignlabs.com/red.png)\|No RRSIGs found\||
+|amazon.com|\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|ns1.amzndns.com is authoritative for amazon.com\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|amazon.com A RR has value 52.94.236.248\|<br>\|![](https://dnssec-debugger.verisignlabs.com/red.png)\|No RRSIGs found\||
+|amazon.com|\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|ns2.amzndns.co.uk is authoritative for amazon.com\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|amazon.com A RR has value 52.94.236.248\|<br>\|![](https://dnssec-debugger.verisignlabs.com/red.png)\|No RRSIGs found\||
+|amazon.com|\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|ns2.amzndns.net is authoritative for amazon.com\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|amazon.com A RR has value 52.94.236.248\|<br>\|![](https://dnssec-debugger.verisignlabs.com/red.png)\|No RRSIGs found\||
+|amazon.com|\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|ns1.amzndns.net is authoritative for amazon.com\|<br>\|![](https://dnssec-debugger.verisignlabs.com/green.png)\|amazon.com A RR has value 205.251.242.103\|<br>\|![](https://dnssec-debugger.verisignlabs.com/red.png)\|No RRSIGs found\||
+
+
+## Shodan.io
+https://www.shodan.io/host/52.94.57.64
+### General Information
+
+|   |   |
+|---|---|
+|Hostnames|quicksight.aws.**amazon.com**  <br>eu-west-2.quicksight.aws.**amazon.com**  <br>eu-west-2-onebox.quicksight.aws.**amazon.com**  <br>web-onebox-quicksight.eu-west-2.**amazonaws.com**  <br>web-quicksight.eu-west-2.**amazonaws.com**|
+|Domains|[amazon.com](https://www.shodan.io/domain/amazon.com) [amazonaws.com](https://www.shodan.io/domain/amazonaws.com)|
+|Cloud Provider|**[Amazon](https://www.shodan.io/search?query=cloud.provider%3A%22Amazon%22)**|
+|Cloud Region|**[eu-west-2](https://www.shodan.io/search?query=cloud.region%3A%22eu-west-2%22)**|
+|Cloud Service|**[AMAZON](https://www.shodan.io/search?query=cloud.service%3A%22AMAZON%22)**|
+|Country|**[United Kingdom](https://www.shodan.io/search?query=country%3A%22GB%22)**|
+|City|**[London](https://www.shodan.io/search?query=city%3A%22London%22)**|
+|Organization|**[Amazon Technologies Inc.](https://www.shodan.io/search?query=org%3A%22Amazon+Technologies+Inc.%22)**|
+|ISP|**[Amazon.com, Inc.](https://www.shodan.io/search?query=isp%3A%22Amazon.com%2C+Inc.%22)**|
+|ASN|**[AS16509](https://www.shodan.io/search?query=asn%3A%22AS16509%22)**|
+Analyzing DNSSEC problems for [amazon.com](https://dnssec-debugger.verisignlabs.com/amazon.com)
+
+### Port Scans
+
+Open Ports: 80, 443
+
+80
+```
+HTTP/1.1 302 
+Cache-Control: private
+Location: https://52.94.57.64/
+Content-Length: 0
+Date: Tue, 05 Dec 2023 12:44:53 GMT
+Server: Server
+```
+
+443
+```
+HTTP/1.1 200 
+Cache-Control: private
+x-amzn-requestid: 9e7d3660-f640-4713-9dab-acd2cf93abba
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Set-Cookie: awsc-authTimer=%7B%22start%22%3A%221701812898515%22%7D; Secure; HttpOnly
+Set-Cookie: JSESSIONID=2F8D04F06A5B0FE3FBCCC9847985C935; Path=/; Secure; HttpOnly
+Set-Cookie: aws-creds-code-verifier=""; Domain=.quicksight.aws.amazon.com; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: aws-creds=""; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/sn; Secure
+Set-Cookie: aws-creds-code-verifier=""; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/sn; Secure
+Set-Cookie: aws-consoleInfo=""; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/sn; Secure
+Set-Cookie: aws-creds=""; Domain=52.94.57.64; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/sn; Secure
+Set-Cookie: aws-creds-code-verifier=""; Domain=52.94.57.64; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/sn; Secure
+Set-Cookie: aws-consoleInfo=""; Domain=52.94.57.64; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/sn; Secure
+Set-Cookie: aws-creds=""; Domain=94.57.64; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/sn; Secure
+Set-Cookie: aws-creds-code-verifier=""; Domain=94.57.64; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/sn; Secure
+Set-Cookie: aws-consoleInfo=""; Domain=94.57.64; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/sn; Secure
+Set-Cookie: aws-ds-access-token=""; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/sn
+Set-Cookie: aws-ds-refresh-token=""; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/sn
+Set-Cookie: aws-ds-access-token=""; Domain=.amazon.com; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/sn
+Set-Cookie: aws-ds-refresh-token=""; Domain=.amazon.com; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/sn
+Content-Type: text/html;charset=UTF-8
+Content-Length: 1023
+Date: Tue, 05 Dec 2023 21:48:17 GMT
+Server: AWS Server
+
+  
+**SSL Certificate**
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            08:60:fa:90:59:07:fe:41:3d:3f:ad:44:de:63:f5:34
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, O=Amazon, CN=Amazon RSA 2048 M01
+        Validity
+            Not Before: Mar  8 00:00:00 2023 GMT
+            Not After : Feb 22 23:59:59 2024 GMT
+        Subject: CN=web-quicksight.eu-west-2.amazonaws.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:bb:c4:b7:55:eb:58:25:27:75:74:8a:58:ca:1e:
+                    39:6b:f8:ed:db:d3:fc:bb:44:ae:a5:1f:a9:12:16:
+                    5a:1b:25:11:5b:e9:c4:72:3b:c5:a9:18:4e:f1:1d:
+                    c0:1c:92:6c:db:ef:f2:74:6d:2e:64:50:a6:77:c0:
+                    47:a5:42:13:40:59:00:b3:0f:88:a7:71:24:95:a4:
+                    bf:64:2a:6b:0e:45:cf:8a:eb:ed:90:4d:74:44:bd:
+                    8f:9a:30:60:5a:e9:e4:cd:bb:cc:f3:c9:7e:3c:4b:
+                    ef:e8:9f:bc:cb:d9:54:e8:2f:86:5f:1d:4c:f1:12:
+                    4a:ee:71:68:2c:12:e0:6f:20:c9:d1:be:dd:ac:d7:
+                    32:20:35:d9:b7:db:ea:bf:90:bf:8b:18:cb:b9:13:
+                    37:ba:27:8e:98:f0:57:35:92:a8:6a:67:34:66:a7:
+                    e4:f8:3f:a4:ff:e8:24:5b:f5:c5:ee:3c:00:45:16:
+                    d0:9a:af:da:17:34:f9:9c:c4:19:05:31:2d:77:ae:
+                    b5:20:72:4d:a1:cd:48:02:93:68:60:35:98:ed:60:
+                    50:96:ea:07:f3:58:42:96:0b:be:49:f3:7a:96:5f:
+                    c7:0c:8b:70:aa:b8:d8:ca:ba:0e:ea:eb:98:5e:81:
+                    72:42:64:90:40:b8:e2:4b:96:f7:79:62:8d:05:cf:
+                    e1:f3
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                81:B8:0E:63:8A:89:12:18:E5:FA:3B:3B:50:95:9F:E6:E5:90:13:85
+            X509v3 Subject Key Identifier: 
+                C4:AC:50:3F:C1:91:BE:50:71:DB:EC:70:D7:CA:8A:80:95:0B:5A:A8
+            X509v3 Subject Alternative Name: 
+                DNS:web-quicksight.eu-west-2.amazonaws.com, DNS:quicksight.aws.amazon.com, DNS:eu-west-2.quicksight.aws.amazon.com, DNS:eu-west-2-onebox.quicksight.aws.amazon.com, DNS:web-onebox-quicksight.eu-west-2.amazonaws.com
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://crl.r2m01.amazontrust.com/r2m01.crl
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.r2m01.amazontrust.com
+                CA Issuers - URI:http://crt.r2m01.amazontrust.com/r2m01.cer
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            CT Precertificate SCTs: 
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:
+                                32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B
+                    Timestamp : Mar  8 19:47:37.937 2023 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:46:02:21:00:E3:93:DC:49:53:BD:6B:E9:51:4B:1F:
+                                CF:C6:72:FB:96:91:41:8F:05:69:95:8A:7B:91:74:02:
+                                27:7E:1B:3E:BD:02:21:00:C3:D5:BF:A7:75:6D:F9:14:
+                                28:1E:EE:E1:FD:CC:CC:8C:8F:62:A5:70:E2:CD:A3:F6:
+                                FA:7B:53:DB:B0:E3:0E:5E
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : 73:D9:9E:89:1B:4C:96:78:A0:20:7D:47:9D:E6:B2:C6:
+                                1C:D0:51:5E:71:19:2A:8C:6B:80:10:7A:C1:77:72:B5
+                    Timestamp : Mar  8 19:47:38.052 2023 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:46:02:21:00:A9:F7:B9:D1:2B:52:F1:81:33:35:0D:
+                                62:CC:04:E0:DA:10:C0:96:04:8E:F7:CC:17:2F:71:6D:
+                                02:9F:99:3E:7A:02:21:00:85:7A:B2:9E:F7:CA:CA:40:
+                                BB:D8:49:0D:AE:AD:69:6D:4F:7A:F4:E0:D4:9E:A7:58:
+                                41:6D:0B:AE:52:4A:86:FA
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : 48:B0:E3:6B:DA:A6:47:34:0F:E5:6A:02:FA:9D:30:EB:
+                                1C:52:01:CB:56:DD:2C:81:D9:BB:BF:AB:39:D8:84:73
+                    Timestamp : Mar  8 19:47:37.990 2023 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:45:02:20:24:7B:65:E3:75:29:3D:39:EF:BB:B2:2C:
+                                EE:72:17:CC:18:40:FA:10:EE:EE:BC:1E:75:22:B6:DD:
+                                CE:F8:A8:A0:02:21:00:B1:17:AD:34:9B:8C:73:C3:F9:
+                                C7:80:2A:4A:1D:95:40:B4:21:EA:F7:36:55:D9:D1:80:
+                                BB:90:BC:4A:E6:46:49
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        1d:ce:79:4d:89:a5:74:8f:a7:64:75:d0:87:22:4f:40:67:b3:
+        6d:5a:ca:0d:88:3c:c1:fc:01:15:17:a7:d1:b8:e3:0a:82:82:
+        9f:35:54:f5:94:1f:47:6e:9c:04:cc:6b:f3:02:7e:62:97:2f:
+        44:4c:dd:79:02:9e:1a:87:77:0c:b7:34:e3:2a:fb:ef:04:22:
+        84:23:7f:56:54:ad:62:7d:00:83:87:db:ea:f3:74:7d:c4:83:
+        63:2c:54:a7:8a:8f:9b:b5:77:19:2b:4d:a1:fc:14:44:26:1a:
+        64:b3:64:8d:fd:24:d8:5e:70:e2:3c:55:00:bd:74:ae:5d:18:
+        f6:16:94:40:0f:06:c3:98:f1:e2:f3:9b:55:9c:1f:41:d8:60:
+        cd:ea:c8:64:0f:38:ea:c6:29:9b:5d:5f:b2:3f:e5:22:9a:83:
+        92:99:8a:54:38:f2:77:32:7b:87:88:5e:08:b0:49:6d:ad:43:
+        c6:d0:7f:d5:bc:79:f3:46:46:c7:10:b4:d2:5d:95:2a:39:06:
+        35:52:30:2f:20:67:b3:9c:47:e6:d6:52:74:72:38:74:8f:a9:
+        82:57:90:37:f4:f5:9d:9e:a3:f4:f0:a8:7e:47:02:02:50:4c:
+        4b:df:39:cb:3c:20:14:b8:d3:4f:89:55:60:e0:b7:b8:87:2a:
+        2b:33:1b:b1
+        
+```
+
+
+
+## IP Void
+
+
+### whois output
+```
+Domain Name: AMAZON.COM
+   Registry Domain ID: 281209_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.markmonitor.com
+   Registrar URL: http://www.markmonitor.com
+   Updated Date: 2023-05-16T19:03:14Z
+   Creation Date: 1994-11-01T05:00:00Z
+   Registry Expiry Date: 2024-10-31T04:00:00Z
+   Registrar: MarkMonitor Inc.
+   Registrar IANA ID: 292
+   Registrar Abuse Contact Email: abusecomplaints@markmonitor.com
+   Registrar Abuse Contact Phone: +1.2086851750
+   Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+   Domain Status: serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited
+   Domain Status: serverTransferProhibited https://icann.org/epp#serverTransferProhibited
+   Domain Status: serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited
+   Name Server: NS1.AMZNDNS.CO.UK
+   Name Server: NS1.AMZNDNS.COM
+   Name Server: NS1.AMZNDNS.NET
+   Name Server: NS1.AMZNDNS.ORG
+   Name Server: NS2.AMZNDNS.CO.UK
+   Name Server: NS2.AMZNDNS.COM
+   Name Server: NS2.AMZNDNS.NET
+   Name Server: NS2.AMZNDNS.ORG
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2023-12-05T22:01:52Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+that apply to VeriSign (or its computer systems). The compilation,
+repackaging, dissemination or other use of this Data is expressly
+prohibited without the prior written consent of VeriSign. You agree not to
+use electronic processes that are automated and high-volume to access or
+query the Whois database except as reasonably necessary to register
+domain names or modify existing registrations. VeriSign reserves the right
+to restrict your access to the Whois database in its sole discretion to ensure
+operational stability.  VeriSign may restrict or terminate your access to the
+Whois database for failure to abide by these terms of use. VeriSign
+reserves the right to modify these terms at any time.
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+Domain Name: amazon.com
+Registry Domain ID: 281209_DOMAIN_COM-VRSN
+Registrar WHOIS Server: whois.markmonitor.com
+Registrar URL: http://www.markmonitor.com
+Updated Date: 2023-05-16T18:56:31+0000
+Creation Date: 1994-11-01T05:00:00+0000
+Registrar Registration Expiration Date: 2024-10-30T07:00:00+0000
+Registrar: MarkMonitor, Inc.
+Registrar IANA ID: 292
+Registrar Abuse Contact Email: abusecomplaints@markmonitor.com
+Registrar Abuse Contact Phone: +1.2086851750
+Domain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)
+Domain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)
+Domain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)
+Domain Status: serverUpdateProhibited (https://www.icann.org/epp#serverUpdateProhibited)
+Domain Status: serverTransferProhibited (https://www.icann.org/epp#serverTransferProhibited)
+Domain Status: serverDeleteProhibited (https://www.icann.org/epp#serverDeleteProhibited)
+Registry Registrant ID: 
+Registrant Name: Hostmaster, Amazon Legal Dept.
+Registrant Organization: Amazon Technologies, Inc.
+Registrant Street: P.O. Box 8102
+Registrant City: Reno
+Registrant State/Province: NV
+Registrant Postal Code: 89507
+Registrant Country: US
+Registrant Phone: +1.2062664064
+Registrant Phone Ext: 
+Registrant Fax: +1.2062667010
+Registrant Fax Ext: 
+Registrant Email: hostmaster@amazon.com
+Registry Admin ID: 
+Admin Name: Hostmaster, Amazon Legal Dept.
+Admin Organization: Amazon Technologies, Inc.
+Admin Street: P.O. Box 8102
+Admin City: Reno
+Admin State/Province: NV
+Admin Postal Code: 89507
+Admin Country: US
+Admin Phone: +1.2062664064
+Admin Phone Ext: 
+Admin Fax: +1.2062667010
+Admin Fax Ext: 
+Admin Email: hostmaster@amazon.com
+Registry Tech ID: 
+Tech Name: Hostmaster, Amazon Legal Dept.
+Tech Organization: Amazon Technologies, Inc.
+Tech Street: P.O. Box 8102
+Tech City: Reno
+Tech State/Province: NV
+Tech Postal Code: 89507
+Tech Country: US
+Tech Phone: +1.2062664064
+Tech Phone Ext: 
+Tech Fax: +1.2062667010
+Tech Fax Ext: 
+Tech Email: hostmaster@amazon.com
+Name Server: ns1.amzndns.org
+Name Server: ns1.amzndns.co.uk
+Name Server: ns2.amzndns.co.uk
+Name Server: ns2.amzndns.com
+Name Server: ns1.amzndns.com
+Name Server: ns2.amzndns.org
+Name Server: ns1.amzndns.net
+Name Server: ns2.amzndns.net
+DNSSEC: unsigned
+URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
+>>> Last update of WHOIS database: 2023-12-05T22:01:54+0000 <<<
+
+For more information on WHOIS status codes, please visit:
+  https://www.icann.org/resources/pages/epp-status-codes
+
+If you wish to contact this domain’s Registrant, Administrative, or Technical
+contact, and such email address is not visible above, you may do so via our web
+form, pursuant to ICANN’s Temporary Specification. To verify that you are not a
+robot, please enter your email address to receive a link to a page that
+facilitates email communication with the relevant contact(s).
+
+Web-based WHOIS:
+  https://domains.markmonitor.com/whois
+
+If you have a legitimate interest in viewing the non-public WHOIS details, send
+your request and the reasons for your request to whoisrequest@markmonitor.com
+and specify the domain name in the subject line. We will review that request and
+may ask for supporting documentation and explanation.
+
+The data in MarkMonitor’s WHOIS database is provided for information purposes,
+and to assist persons in obtaining information about or related to a domain
+name’s registration record. While MarkMonitor believes the data to be accurate,
+the data is provided "as is" with no guarantee or warranties regarding its
+accuracy.
+
+By submitting a WHOIS query, you agree that you will use this data only for
+lawful purposes and that, under no circumstances will you use this data to:
+  (1) allow, enable, or otherwise support the transmission by email, telephone,
+or facsimile of mass, unsolicited, commercial advertising, or spam; or
+  (2) enable high volume, automated, or electronic processes that send queries,
+data, or email to MarkMonitor (or its systems) or the domain name contacts (or
+its systems).
+
+MarkMonitor reserves the right to modify these terms at any time.
+
+By submitting this query, you agree to abide by this policy.
+
+MarkMonitor Domain Management(TM)
+Protecting companies and consumers in a digital world.
+
+Visit MarkMonitor at https://www.markmonitor.com
+Contact us at +1.8007459229
+In Europe, at +44.02032062220
+----
+```
+
+
+## IP Tracker Online 
+
+https://www.iptrackeronline.com/index.php?ip_address=52.94.57.64&k=
+
+Orig IP: 52.94.57.64 | Orig ISP: amazon.com | City: London | Country: United Kingdom of Great Britain and Northern Ireland | More info: https://www.iptrackeronline.com?ip_address=52.94.57.64
+
+![[Pasted image 20231205150114.png]]
+
+This site was not very useful.
+
+
+
+
+
+
+
+
+## Analysis of the Data Retrieval
+After reviewing all of the data retrieved from the resources on the internet. It is easy to see that a person does not need to have a technical understanding of running the command line tools necessary to retreive all of the data. In addition, the data analysis that an attacker would try to conduct in order to see how the website behaves is already done for free by a lot of the websites that provide this information. 
+
+From the practical perspective, it is likely the case that this information is available to help data scientists analyze website performance as well as helping network engineers do their job. However, the information that is provided can very easily be used to conduct attacks on the infrastructure of a company.
+
+Regardless, a lot of the information from many of these websites contained identical data points. After looking at the output from each, it is easy to tell that they all use a simple `whois` query. Some websites also do some data analysis on the `whois` query and show the data nicely in some graphs. 
+
+One of the sites with the most valuable information that was not repetitive (that is, using the simple `whois` program) was the `builtwith` website. This website was able to provide data on the kinds of frameworks and software tools that were being used by the servers at amazon. This information would be very valuable to an attacker  who is looking to exploit a vulnerability. This is because if you know how to exploit one of the tools that are being used by a site/company, then you have a major advantage in determining a company's vulnerabilities.
+
+In fact, I was able to do a query on my own using the `whois` utility. Which looks for the query through RFC 3912 database. Here is the (edited) output:
+
+```
+Domain Name: AMAZON.COM
+   Registry Domain ID: 281209_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.markmonitor.com
+   Registrar URL: http://www.markmonitor.com
+   Updated Date: 2023-05-16T19:03:14Z
+   Creation Date: 1994-11-01T05:00:00Z
+   Registry Expiry Date: 2024-10-31T04:00:00Z
+   Registrar: MarkMonitor Inc.
+   Registrar IANA ID: 292
+   Registrar Abuse Contact Email: abusecomplaints@markmonitor.com
+   Registrar Abuse Contact Phone: +1.2086851750
+   Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+   Domain Status: serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited
+   Domain Status: serverTransferProhibited https://icann.org/epp#serverTransferProhibited
+   Domain Status: serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited
+   Name Server: NS1.AMZNDNS.CO.UK
+   Name Server: NS1.AMZNDNS.COM
+   Name Server: NS1.AMZNDNS.NET
+   Name Server: NS1.AMZNDNS.ORG
+   Name Server: NS2.AMZNDNS.CO.UK
+   Name Server: NS2.AMZNDNS.COM
+   Name Server: NS2.AMZNDNS.NET
+   Name Server: NS2.AMZNDNS.ORG
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2023-12-05T22:01:52Z <<<
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+Domain Name: amazon.com
+Registry Domain ID: 281209_DOMAIN_COM-VRSN
+Registrar WHOIS Server: whois.markmonitor.com
+Registrar URL: http://www.markmonitor.com
+Updated Date: 2023-05-16T18:56:31+0000
+Creation Date: 1994-11% IANA WHOIS server
+% for more information on IANA, visit http://www.iana.org
+% This query returned 1 object
+
+refer:        whois.verisign-grs.com
+
+domain:       COM
+
+organisation: VeriSign Global Registry Services
+address:      12061 Bluemont Way
+address:      Reston VA 20190
+address:      United States of America (the)
+
+contact:      administrative
+name:         Registry Customer Service
+organisation: VeriSign Global Registry Services
+address:      12061 Bluemont Way
+address:      Reston VA 20190
+address:      United States of America (the)
+phone:        +1 703 925-6999
+fax-no:       +1 703 948 3978
+e-mail:       info@verisign-grs.com
+
+contact:      technical
+name:         Registry Customer Service
+organisation: VeriSign Global Registry Services
+address:      12061 Bluemont Way
+address:      Reston VA 20190
+address:      United States of America (the)
+phone:        +1 703 925-6999
+fax-no:       +1 703 948 3978
+e-mail:       info@verisign-grs.com
+
+nserver:      A.GTLD-SERVERS.NET 192.5.6.30 2001:503:a83e:0:0:0:2:30
+nserver:      B.GTLD-SERVERS.NET 192.33.14.30 2001:503:231d:0:0:0:2:30
+nserver:      C.GTLD-SERVERS.NET 192.26.92.30 2001:503:83eb:0:0:0:0:30
+nserver:      D.GTLD-SERVERS.NET 192.31.80.30 2001:500:856e:0:0:0:0:30
+nserver:      E.GTLD-SERVERS.NET 192.12.94.30 2001:502:1ca1:0:0:0:0:30
+nserver:      F.GTLD-SERVERS.NET 192.35.51.30 2001:503:d414:0:0:0:0:30
+nserver:      G.GTLD-SERVERS.NET 192.42.93.30 2001:503:eea3:0:0:0:0:30
+nserver:      H.GTLD-SERVERS.NET 192.54.112.30 2001:502:8cc:0:0:0:0:30
+nserver:      I.GTLD-SERVERS.NET 192.43.172.30 2001:503:39c1:0:0:0:0:30
+nserver:      J.GTLD-SERVERS.NET 192.48.79.30 2001:502:7094:0:0:0:0:30
+nserver:      K.GTLD-SERVERS.NET 192.52.178.30 2001:503:d2d:0:0:0:0:30
+nserver:      L.GTLD-SERVERS.NET 192.41.162.30 2001:500:d937:0:0:0:0:30
+nserver:      M.GTLD-SERVERS.NET 192.55.83.30 2001:501:b1f9:0:0:0:0:30
+ds-rdata:     30909 8 2 e2d3c916f6deeac73294e8268fb5885044a833fc5459588f4a9184cfc41a5766
+
+whois:        whois.verisign-grs.com
+
+status:       ACTIVE
+remarks:      Registration information: http://www.verisigninc.com
+
+created:      1985-01-01
+changed:      2023-09-12
+source:       IANA
+
+   Domain Name: AMAZON.COM
+   Registry Domain ID: 281209_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.markmonitor.com
+   Registrar URL: http://www.markmonitor.com
+   Updated Date: 2023-05-16T19:03:14Z
+   Creation Date: 1994-11-01T05:00:00Z
+   Registry Expiry Date: 2024-10-31T04:00:00Z
+   Registrar: MarkMonitor Inc.
+   Registrar IANA ID: 292
+   Registrar Abuse Contact Email: abusecomplaints@markmonitor.com
+   Registrar Abuse Contact Phone: +1.2086851750
+   Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+   Domain Status: serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited
+   Domain Status: serverTransferProhibited https://icann.org/epp#serverTransferProhibited
+   Domain Status: serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited
+   Name Server: NS1.AMZNDNS.CO.UK
+   Name Server: NS1.AMZNDNS.COM
+   Name Server: NS1.AMZNDNS.NET
+   Name Server: NS1.AMZNDNS.ORG
+   Name Server: NS2.AMZNDNS.CO.UK
+   Name Server: NS2.AMZNDNS.COM
+   Name Server: NS2.AMZNDNS.NET
+   Name Server: NS2.AMZNDNS.ORG
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: They''ve been asking me for screenshots throughttps://www.icann.org/wicf/
+>>> Last update of whois database: 2023-12-05T22:14:55Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+-01T05:00:00+0000
+Registrar Registration Expiration Date: 2024-10-30T07:00:00+0000
+Registrar: MarkMonitor, Inc.
+Registrar IANA ID: 292
+Registrar Abuse Contact Email: abusecomplaints@markmonitor.com
+Registrar Abuse Contact Phone: +1.2086851750
+Domain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)
+Domain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)
+Domain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)
+Domain Status: serverUpdateProhibited (https://www.icann.org/epp#serverUpdateProhibited)
+Domain Status: serverTransferProhibited (https://www.icann.org/epp#serverTransferProhibited)
+Domain Status: serverDeleteProhibited (https://www.icann.org/epp#serverDeleteProhibited)
+Registry Registrant ID: 
+Registrant Name: Hostmaster, Amazon Legal Dept.
+Registrant Organization: Amazon Technologies, Inc.
+Registrant Street: P.O. Box 8102
+Registrant City: Reno
+Registrant State/Province: NV
+Registrant Postal Code: 89507
+Registrant Country: US
+Registrant Phone: +1.2062664064
+Registrant Phone Ext: 
+Registrant Fax: +1.2062667010
+Registrant Fax Ext: 
+Registrant Email: hostmaster@amazon.com
+Registry Admin ID: 
+Admin Name: Hostmaster, Amazon Legal Dept.
+Admin Organization: Amazon Technologies, Inc.
+Admin Street: P.O. Box 8102
+Admin City: Reno
+Admin State/Province: NV
+Admin Postal Code: 89507
+Admin Country: US
+Admin Phone: +1.2062664064
+Admin Phone Ext: 
+Admin Fax: +1.2062667010
+Admin Fax Ext: 
+Admin Email: hostmaster@amazon.com
+Registry Tech ID: 
+Tech Name: Hostmaster, Amazon Legal Dept.
+Tech Organization: Amazon Technologies, Inc.
+Tech Street: P.O. Box 8102
+Tech City: Reno
+Tech State/Province: NV
+Tech Postal Code: 89507
+Tech Country: US
+Tech Phone: +1.2062664064
+Tech Phone Ext: 
+Tech Fax: +1.2062667010
+Tech Fax Ext: 
+Tech Email: hostmaster@amazon.com
+Name Server: ns1.amzndns.org
+Name Server: ns1.amzndns.co.uk
+Name Server: ns2.amzndns.co.uk
+Name Server: ns2.amzndns.com
+Name Server: ns1.amzndns.com
+Name Server: ns2.amzndns.org
+Name Server: ns1.amzndns.net
+Name Server: ns2.amzndns.net
+DNSSEC: unsigned
+URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
+>>> Last update of WHOIS database: 2023-12-05T22:01:54+0000 <<<
+
+
+MarkMonitor reserves the right to modify these terms at any time.
+
+By submitting this query, you agree to abide by this policy.
+
+MarkMonitor Domain Management(TM)
+Protecting companies and consumers in a digital world.
+
+Visit MarkMonitor at https://www.markmonitor.com
+Contact us at +1.8007459229
+In Europe, at +44.02032062220
+----
+```
+
+Along with all of the output from a simple `whois` query, there are also resources like the [arch wiki](https://wiki.archlinux.org/title/List_of_applications/Security#Network_security) That can provide you with information for network security tools to audit wired and wireless networks among other common network admin responsibilities.
+
+
+Regarding the information that was acquired in the intelligence report, the most useful pieces of information for someone who wanted to program an exploit was definitely given by the `builtwith` resource because knowledge of the tools used give the attacker a target attack vector by which to use an exploit. An attacker looking to attack the company via the network would be more interested in the `whois` lookup because of the DNS servers provided. In addition, the resources gave versions for their communication protocols being used as well as the open ports on the system. This, again, gives more information regarding the possible attack vectors for a company. Interestingly, when doing `whois` queries, there was information that was not open to the public, however, the organization providing the information was willing to give the information to anyone who made a request with an approval of their request. Of course, they ask for valid reasoning for the necessity of the data.
+
+
+
+
+
+
+
+
+
+
 
