@@ -1,0 +1,466 @@
+{
+ "builder": {
+  "_version": "<undefined>",
+  "_logger": "hdl_checker.builders.fallback",
+  "_work_folder": "/home/alan-manuel/Downloads/school-notes/.hdl_checker",
+  "_builtin_libraries": [],
+  "_added_libraries": [
+   {
+    "name": "default_library",
+    "case_sensitive": false,
+    "__class__": "Identifier"
+   }
+  ],
+  "__class__": "Fallback"
+ },
+ "config_file": [
+  {
+   "name": "/tmp/hdl_checker_project_pid12294.json",
+   "__class__": "Path"
+  },
+  1705077979.0806377,
+  "generated"
+ ],
+ "database": {
+  "sources": [
+   {
+    "path": {
+     "name": "/home/alan-manuel/Downloads/school-notes/notes/spring-2024/574-computer-aided-design/code-examples/parameterized-rounder.v",
+     "__class__": "Path"
+    },
+    "mtime": 1705078182.0403836,
+    "flags": {
+     "source_specific": [],
+     "single": [],
+     "dependencies": []
+    },
+    "dependencies": [],
+    "diags": []
+   }
+  ],
+  "inferred_libraries": [
+   {
+    "name": "/tmp/tmptxqk4tv7.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpg29u5seu.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp52lmpzfd.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp0yy8o6pk.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpg36ps8e4.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp_eywe0f0.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpet16e99o.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp1t8q1obd.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpfic_0f8r.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp5mollj9a.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp9xqh8z1j.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp2k89igci.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp6aat8s9q.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpqs43gmte.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpnuql29zd.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp8quuyg9x.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpln7vjz43.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpjdfhxfma.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpvzmfotr2.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp351g7hle.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp9yrkz5ra.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpt3b5viua.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpwy1ki664.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpo9knwv4z.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp9ih3kddb.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp_26cudl4.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp6la4ah7y.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp9oxkepx2.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpd27ycn22.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpmj2eb07m.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmplfup689c.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp5pi_wnqk.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpefsq72hc.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpbv3_l_fo.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpv7hukl7z.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpqjg300wo.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp_vswro9p.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp9uycss5k.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp3ihtxslj.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpagr9s4q5.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpqul168sw.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpuk4qo9pq.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpjtzecfy7.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp4goskaf7.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp9h5et5p6.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpguen9ak6.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp24ky6f81.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpzczrahks.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpd5zmrtqz.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpi66yy1oa.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp_3w62tg2.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmphp6dspd1.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpjxf57c1l.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp85rq2nm1.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp5mz560al.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmphr73x221.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpweqydmjx.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpkaxl4an0.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpgjdubsih.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp2gd9ot7g.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpod8t_tsp.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpwqbxv47t.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpi2en1t0_.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpxrmzator.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpp5iz6omn.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpt3hl_wcx.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmppl770omf.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpr9osnbej.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpzm4n1gam.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmptxbdxdig.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp_kgw67zn.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpwp_ew91h.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpvwix068x.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmptgdovz18.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpjn06b8su.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp7fpxa788.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpq49b2m2c.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpy0_i5xdo.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/home/alan-manuel/Downloads/school-notes/notes/spring-2024/574-computer-aided-design/code-examples/parameterized-rounder.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpez38hn92.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpra07lnfb.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp8nyi3x84.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpi8lmknhl.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpfrvd5ien.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmperb20yk9.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmptlv08g7e.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpj26m051_.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmptkfilh6v.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpjarhdr5d.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpj7oovw3c.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpzfej5g2m.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp7dnnlo0r.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmp2u4bqlan.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmpnzduuk0z.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "/tmp/tmplrrgbl2r.v",
+    "__class__": "Path"
+   }
+  ],
+  "design_units": [
+   {
+    "owner": {
+     "name": "/home/alan-manuel/Downloads/school-notes/notes/spring-2024/574-computer-aided-design/code-examples/parameterized-rounder.v",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "testRounder",
+     "case_sensitive": true,
+     "__class__": "VerilogIdentifier"
+    },
+    "locations": [
+     [
+      3,
+      7
+     ]
+    ],
+    "__class__": "VerilogDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "/home/alan-manuel/Downloads/school-notes/notes/spring-2024/574-computer-aided-design/code-examples/parameterized-rounder.v",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ROUNDER",
+     "case_sensitive": true,
+     "__class__": "VerilogIdentifier"
+    },
+    "locations": [
+     [
+      13,
+      7
+     ]
+    ],
+    "__class__": "VerilogDesignUnit"
+   }
+  ],
+  "__class__": "Database"
+ },
+ "__version__": "0.7.4"
+}
