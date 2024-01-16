@@ -64,37 +64,58 @@ The Challenges of Information Security
 
 ## The OSI Security Architecture
 
-## Security Attacks
+A standardized way of evaluating security products and policies.
 
-    - Passive Attacks
-    - Active Attacks
+Security attack: any action compromises the information owned by an
+organization.
+
+Security Mechanism: A process or device designed to detect, prevent, or recover
+from a security attack.
+
+Security Service: A processing or communication service that enhances the
+security of the data processing systems and the information transfers of an
+organization.
+
+Threat: Any circumstance or event with potential to adversely impact
+organizational operations, assets, individuals, other organizations, or the
+Nation through an information system via unauthorized access, destruction,
+disclosure, modification of information, and/or denial of service.
+
+Attack: Any kind of malicious activity that attempts to collect, disrupt, deny, degrade, or destroy information systems o fthe information itself.
+
+
+### Passive vs Active Attacks
+
+![](Pasted%20image%2020240116113457.png)
+
+
 
 ## Security Services
 
-    Authentication
-    Access Control
-    Data Confidentiality
-    Data Integrity
-    Nonrepudiation
-    Availability Service
+- Authentication
+- Access Control
+- Data Confidentiality
+- Data Integrity
+- Nonrepudiation
+- Availability Service
 
 ## Security Mechanisms
 
 ## Cryptography
 
-    Keyless Algorithms
-    Single-Key Algorithms
-    Two-Key Algorithms
+- Keyless Algorithms
+- Single-Key Algorithms
+- Two-Key Algorithms
 
 ## Network Security
 
-    Communications Security
-    Device Security
+- Communications Security
+- Device Security
 
 ## Trust and Trustworthiness
 
-    A Trust Model
-    The Trust Model and Information Security
-    Establishing Trust Relationships
+- A Trust Model
+- The Trust Model and Information Security
+- Establishing Trust Relationships
 
 ## Standards
