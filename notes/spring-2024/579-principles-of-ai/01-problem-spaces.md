@@ -11,7 +11,7 @@ The first thing we need to find out is which turns are compatible.
 
 ## Identify safe and unsafe turns.
 
-![[Pasted image 20240116081402.png]]
+![](./attachments/Pasted image 20240116081402.png)
 
 |     | AB  | AC  | BC  | CB  |
 | --- | --- | --- | --- | --- |
@@ -24,13 +24,13 @@ The first thing we need to find out is which turns are compatible.
 
 $G = <V, E>$
 
-![[Pasted image 20240116082130.png]]
+![](./attachments/Pasted image 20240116082130.png)
 
 > What does each edge signify?
 
 Each edge displays a pair of incompatible turns.
 
-![[Pasted image 20240116082216.png]]
+![](./attachments/Pasted image 20240116082216.png)
 
 ## Color the Graph
 
@@ -57,18 +57,18 @@ efficiently.
 
 Given the following graph labeled {1 ,2, 3, 4, 5}
 
-![[Pasted image 20240116083713.png]]
+![](./attachments/Pasted image 20240116083713.png))
 
 When completing the algorithm in the sequential order:
 
-![[Pasted image 20240116084047.png]]
+![](./attachments/Pasted image 20240116084047.png)
 
 Everything turns out fine.
 
 However, when we change the order that the notes are colored in, the minimum
 number of colors cannot be achieved with the greedy approach.
 
-![[Pasted image 20240116084252.png]]
+![](./attachments/Pasted image 20240116084252.png)
 
 Creating a formal system to analyze this process: State Spaces
 
@@ -82,17 +82,17 @@ accepts or rejects strings.
 
 $Q=<S_1, S_2, S_3, S_4>$
 
-![[Pasted image 20240116085111.png]]
+![](./attachments/Pasted image 20240116085111.png)
 
 Any string that has an even number of zeroes and even number of ones, then it is
 accepted. If the string contains an odd number of zeroes or odd number of ones,
 then the string is not accepted.
 
-![[Pasted image 20240116085934.png]]
+![](./attachments/Pasted image 20240116085934.png)
 
 ### Example | 8-Puzzle
 
-![[Pasted image 20240116090031.png]]
+![](./attachments/Pasted image 20240116090031.png)
 
 > Abstraction for moves
 
