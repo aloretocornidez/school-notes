@@ -100,6 +100,20 @@ Ensure that the information sent is fresh.
 
 Retraction of certification or authorization.
 
+## Model of Secure Communication
 
+Senders and recipients sent messages through an information channel. The channel
+is assumed to be insecure.
 
+Sender --> Message --> Security Related Transformation --> Secure Message -->
+Sent through the information channel --> Sent message gets transformed back to
+the original message --> received by the recipient.
 
+Network Access Security Model:
+
+There is a computing resource that has data, processes, or software present on
+the resource. You need to protect the resource from actors that are trying to
+access the resource.
+
+The opponent could be a human, or a software. Techniques to assist in this
+`Gatekeeper` function, can be things like gateways and firewalls.
