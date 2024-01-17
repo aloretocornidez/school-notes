@@ -81,41 +81,142 @@ organizational operations, assets, individuals, other organizations, or the
 Nation through an information system via unauthorized access, destruction,
 disclosure, modification of information, and/or denial of service.
 
-Attack: Any kind of malicious activity that attempts to collect, disrupt, deny, degrade, or destroy information systems o fthe information itself.
-
+Attack: Any kind of malicious activity that attempts to collect, disrupt, deny,
+degrade, or destroy information systems of the information itself.
 
 ### Passive vs Active Attacks
 
-![](Pasted%20image%2020240116113457.png)
+![Passive vs Active Attacks](./attachments/Pasted%20image%2020240116113457.png)
 
+Passive Attacks are in the nature of eavesdropping on, or monitoring of,
+transmissions.
 
+Two types of passive attacks are:
+
+- Release of message contents
+- Traffic analysis: looking at the message contents and/or communication nature.
+
+Passive attacks are more difficult to detect since they don't alter the data.
+
+Active attacks involve some modification of the data stream or creation of a
+false stream.
+
+Active attacks belong in one of four categories:
+
+- Masquerade: one entity pretends to be another entity.
+- Replay: passive capture of a data unit and its subsequent retransmission in
+  order to produce an unauthorized effect.
+- Modification of messages: modifying messages occurring within the targeted
+  communication channel.
+- Denial of service: prevent, or inhibit the normal use of management of
+  communication facilities.
+
+![Types of Active Attacks](./attachments/types-of-active-attacks.png)
 
 ## Security Services
 
-- Authentication
-- Access Control
-- Data Confidentiality
-- Data Integrity
-- Nonrepudiation
-- Availability Service
+A security service is a capability that supports one or more of the security
+requirements (confidentiality, integrity, availability, authenticity, and
+accountability).
+
+- Authentication: assuring that communication is authentic.
+- Access Control: ensuring that access is only provided to authorized
+  individuals.
+- Data Confidentiality: protection of data from passive attacks.
+- Data Integrity: messages that are received are set with no duplication,
+  insertion, modification, reordering, or replays.
+- Non-repudiation: prevents the sender or the receiver from denying a
+  transmitted message.
+- Availability Service: Property of a system or resource being available upon
+  demand form an authorized agent.
 
 ## Security Mechanisms
 
+- Cryptographic algorithms
+- Data integrity:
+- Digital signature
+- Authentication exchange
+- Traffic padding
+- Routing control
+- Notarization
+- Access control
+
 ## Cryptography
 
-- Keyless Algorithms
-- Single-Key Algorithms
-- Two-Key Algorithms
+![Cryptographic Algorithms](./attachments/cryptographic-algorithms.png)
+
+- Keyless Algorithms: do not use keys during transformations
+- Single-Key Algorithms: one secret key is used to encode and decode
+  information.
+  - Block ciphers: operate on a data as a sequence of blocks.
+  - Stream cipher: Operates on a data as a sequence of bits.
+- Two-Key Algorithms: (Asymmetric Encryption) At various stages, two different,
+  but related keys are used, referred to as public and private keys.
+  - One key is used to encode the message, and the other key is used to decode
+    the message. Depending on how the implementer wants the information to be
+    dispersed, the public key and private keys serve difference purposes.
 
 ## Network Security
 
-- Communications Security
-- Device Security
+![Elements of Network Security](./attachments/key-elements-of-network-security.png)
+
+- Communications Security: protection of communications through the network,
+  usually implemented in network protocols.
+- Device Security: protection of devices connected to a network. Implemented
+  using firewalls, intrusion detection systems, and intrusion prevention
+  systems.
 
 ## Trust and Trustworthiness
 
-- A Trust Model
-- The Trust Model and Information Security
-- Establishing Trust Relationships
+Trust: The willingness of a party to be vulnerable to the actions of another
+party based on the expectation that the other will perform a particular action
+important to the truster, irrespective of the ability to monitor or control that
+other party.
+
+Trustworthiness: A characteristic of an entity that reflects the degree to which
+that entity is deserving of trust.
+
+Propensity to trust: A tendency to be willing to trust others across a broad
+spectrum of situations and trust targets.
+
+Risk: A measure of the extent to which an entity is threatened by a potential
+circumstance or event.
+
+![The Trust Model](./attachments/trust-model.png)
+
+A truster uses three factors to establish the trustworthiness of an entity:
+
+- Ability/Competence: The potential ability of the evaluated entity.
+- Benevolence: Can you be sure that the evaluated party does not intend to do
+  harm?
+
+- Integrity: The truster's perception that the evaluated entity adheres to a set
+  of principles the truster finds acceptable.
+
+### The Trust Model and Information Security
+
+Trustworthiness of an individual:
+
+- Human resource security: Policies are in place that ensure that the transfer
+  of information is secure.
+- Security awareness training: Trainings occur to ensure that humans can
+  properly evaluate threats to the security of data.
+
+Trustworthiness of an organization:
+
+Establishing trust with organizations can be done through formally established
+means such as a contract or be more complex than a simple relationship with an
+individual.
+
+Trustworthiness of an Information System:
+
+- Security functionality: The cryptographic and network security technologies
+  utilized by the system.
+- Security Assurance: Ensuring that the system is performing correctly by
+  conducting security audits.
+
+### Establishing Trust Relationships
+
+
 
 ## Standards
