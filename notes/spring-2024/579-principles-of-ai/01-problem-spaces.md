@@ -168,6 +168,52 @@ while $R$ is not empty and $D$ does not satisfy the termination condition:
 The rule that you select to perform is dependent on how "smart" you want to be
 to receive the most payoff from your transformation.
 
+### Water Jug Problem
+
+> Given two jugs of water of capacities $<C_1, C_2>$ and no markings on them,
+> how can you get precisely $<x, y>$ amounts of water in them starting with
+> state $<i_1, i_2>$
+
+For us, the following instance:
+
+initial state: $<0,0>$
+
+goal state: $<2,y>$, where $y$ is any amount of water $0 \le y \le 3$
+
+> Let's use the AIPS method to approach this problem.
+
+Such that:
+
+$DB = \{ <x,y> | 0 \le x \le 4 \text{ and } 0 \le y \le 3 \}$
+
+initial state: $<0,0>$
+
+goal state: $<2,y>$, where $y$ is any amount of water $0 \le y \le 3$
+
+**How to go about the solution?**
+
+
+Control strategy 
+- irrevocable: you cannot take back moves, once you have conducted a transformation, you cannot go back.
+- tentative: you try a transformation, but if you end up at a dead end, then you can turn back.
+
+We could try randomly searching for a solution, but it's better to be systematic about our approach.
+
+Take an initial state and see what rules apply:
+
+(0,0) --> (4,0), (0,3)
+
+(4,0) --> (4, 3), (1, 3)
+(0,3) --> (4, 3), (3,0)
+
+Eventually, you would find the solution you seek by following the nodes of this state-tree.
+
+
+
+
+
+
+
 
 
 
