@@ -46,7 +46,7 @@ R1 = A1' A0 + A1 A0'
 // TODO: Add the code that is posted for this class, behavioral vs structural
 code.
 
-```vhdl
+```verilog
 module WhatIsThis(I1, I0, En, D3, D2, D1, D0);
 
     input I1, I0, En;
@@ -68,4 +68,10 @@ endmodule
 
 ### Parameterized Circuits
 [Parameterized ROUNDER](./code-examples/parameterized-rounder.v) 
+
+
+
+
+
+
 

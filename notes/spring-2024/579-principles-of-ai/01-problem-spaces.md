@@ -110,36 +110,63 @@ up, up, left, down, right.
 ### How To Do This Systematically
 
 1. Define the state space (DB)
-    - A $3\times3$ board
-    $$DB = \{ T_{i,j} | T_{i,j} \in \{ 1,2,,...,8,\text{blank} | i,j = 1,2,3,4,5,6,7,8\}$$
+   - A $3\times3$ board $$DB = \{ T_{i,j} | T_{i,j} \in \{
+     1,2,,...,8,\text{blank} | i,j = 1,2,3,4,5,6,7,8\}$$
 
 And not true that there is: $T_{i,j} = T_{m,n} \in \{1, 2, 3\}$
 
-
-> Is it possible that given a Goal and Initial state: Is it possible that there does not a exist a path to the goal state from the initial state? 
+> Is it possible that given a Goal and Initial state: Is it possible that there
+> does not a exist a path to the goal state from the initial state?
 
 Yes, it is possible.
 
-
 Operators: "Moves" that allow you to transform/transition between states.
 
+## AI Production System (AIPS) <-- Problem Solving Paradigm
 
+![AIPS Block Diagram](./attachments/Pasted image 20240118080838.png)
 
+DB: Data base/state space Rules: operators that allow you to change states CS:
+Control strategy
 
+Goal state will sometimes be referred to as goal state/states/termination
+condition.
 
+> So, what are the operators of a given system?
 
+Rules are typically given as an `if <condition> then <action>`, in terms of
+state machine representation, the action that is completed when a set of
+conditions is met changes the state of the system.
 
+Control Strategies are a method that select and apply the "best" possible rule
+so that a solution can be found in the most efficient way.
 
+The possible states of a given system can be arranged into a tree. You can take
+care to avoid cycles in the tree.
 
+> Does the tree give us a solution?
 
+Yes
 
+> Is the solution from the tree efficient?
 
+It is not the most efficient, but it is good enough, we cna change what we
+prioritize if we're smart about it.
 
+## Procedure Reduction
 
+Let's take $D$ to be a state from the database.
 
+$R$ is a rule from the set of all possible rules that apply/match to $D$.
 
+while $R$ is not empty and $D$ does not satisfy the termination condition:
 
+- Select a rule to apply to the database
+- Apply the rule to the database
+- Update the set of rules that are available
 
+The rule that you select to perform is dependent on how "smart" you want to be
+to receive the most payoff from your transformation.
 
 
 
