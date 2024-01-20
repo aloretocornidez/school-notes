@@ -19,7 +19,7 @@ Prerequisites:
 
 - ECE 275 | Programming
 - ECE 310 | Probability
-- ECE 478 | Networks (Reccomended)
+- ECE 478 | Networks (Recommended)
 
 Tophat is used. ($24.00 fee) Textbook is required (Readings should be completed
 before class)
