@@ -24,8 +24,6 @@ Prerequisites:
 Tophat is used. ($24.00 fee) Textbook is required (Readings should be completed
 before class)
 
-
-
 ## Notions of Security
 
 There are multiple ways to implement security.
@@ -33,7 +31,6 @@ There are multiple ways to implement security.
 - Adding a lock to a door
 - Add a watermark to a bank note
 - Hieroglyphics in ancient egypt.
-
 
 # ECE 571 | Lecture 2
 
@@ -154,7 +151,10 @@ access the resource.
 
 The opponent could be a human, or a software. Techniques to assist in this
 `Gatekeeper` function, can be things like gateways and firewalls.
-# ECE 571 | Lecture 3 | Modular Arithmetic and Crypto-systems
+
+# ECE 571 | Lecture 3
+
+## Modular Arithmetic and Crypto-systems
 
 Date: 2024-01-17
 
@@ -177,14 +177,11 @@ Division Algorithm:
   \text{floor}(\frac{a}{n})$ where q is the quotient and r is the residue
   (remainder).
 
-
-
 Modulus
 
 $a$ mod $n$: the remainder when $a$ is divided by $n$.
 
-
-Congruence 
+Congruence
 
 if $a$ mod $n$ = $b$ mod $n$: $a$ $\equiv$ $b$ mod $n$
 
@@ -200,24 +197,21 @@ Modular Addition and Multiplication
 
 ![[Pasted image 20240117133935.png]]
 
-
 <!-- TODO: Figure out the modulo of numbers raised to a power modulo something. -->
 
 Additive Identity (A.I.)
 
-[Additive Identity](https://en.wikipedia.org/wiki/Additive_identity) 
+[Additive Identity](https://en.wikipedia.org/wiki/Additive_identity)
 
 Additive and Multiplicative Inverse
 
-[Multiplicative Inverse](https://en.wikipedia.org/wiki/Multiplicative_inverse) 
+[Multiplicative Inverse](https://en.wikipedia.org/wiki/Multiplicative_inverse)
 
+### Additive and Multiplicative Inverse
 
-### Additive and Multiplicative Inverse 
-
-Multiplicative Identity 
+Multiplicative Identity
 
 $a \cdot 1 \equiv a \text{mod}(n)$
-
 
 Multiplicative Inverse
 
@@ -225,34 +219,28 @@ $a \cdot b = 1 \text{mod}(n)$
 
 When multiplying a and b, the modulo of the n is equal to 1.
 
-Relatively Prime 
+Relatively Prime
 
 $a$ is relatively prime with $n$ if $\text{GCD}(a,n) = 1$
 
+Multiplicative inverse exists iff #TODO
 
-Multiplicative inverse exists iff  #TODO
-
-
-
-
-# Lecture 4 
+# ECE 571 | Lecture 4
 
 01/19/2024
-
 
 ## Greatest Common Denominator
 
 GCD(a, b) = 1 if the numbers are relatively prime.
 
-
 ## Euclidean Algorithm
 
 [Euclidean Algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm)
-    
-This is an algorithm to find the GCD between two numbers quickly using module math.
+
+This is an algorithm to find the GCD between two numbers quickly using module
+math.
 
 The GCD(a,b) is GCD(a, b mod(a)) recursively.
-
 
 GCD(55,22) = GCD(b, a mod(b)) = GCD(22, 11) = GCD(11, 0) = 11
 
@@ -262,22 +250,17 @@ GCD(55,22) = GCD(b, a mod(b)) = GCD(22, 11) = GCD(11, 0) = 11
 
 ![[Pasted image 20240119134420.png]]
 
-
 e.g.
 
-$$a=42$$
-$$b=30$$
+$$a=42$$ $$b=30$$
 
 The formula for the iterations is:
 
-$$x_{i} = x_{i-2}-q_{i}\cdot x_{i-1}$$
-$$y_{i} = y_{i-2}-q_{i}\cdot y_{i-1}$$
+$$x_{i} = x_{i-2}-q_{i}\cdot x_{i-1}$$ $$y_{i} = y_{i-2}-q_{i}\cdot y_{i-1}$$
 
 Given these initial conditions, lets make the table:
 
-$$x_{-1}=1$$
-$$y_{-1}=0$$
-
+$$x_{-1}=1$$ $$y_{-1}=0$$
 
 | $i$ | $r_{i}$ | $q_{i}$ | $x_{1}$ | $y_{i}$ |
 | --- | ------- | ------- | ------- | ------- |
@@ -287,23 +270,62 @@ $$y_{-1}=0$$
 | 2   | 6       | 2       | -2      | 3       |
 | 3   | 0       | 2       | X       | X       |
 
-
-After we get to $i=3$ we have arrived at the solution. 
+After we get to $i=3$ we have arrived at the solution.
 
 $$\text{GCD}(42, 30) \text{ is } 6.$$
 
+The difference between the normal and extended euclidean algorithm is contained
+in the $y$ coefficient. This is the multiplicative inverse. So you only need to
+apply this the extended algorithm when the $\text{GCD}$ is 1.
 
-The difference between the normal and extended euclidean algorithm is contained in the $y$ coefficient. This is the multiplicative inverse. So you only need to apply this the extended algorithm when the $\text{GCD}$ is 1.
-
-Here is a table of larger numbers: 
+Here is a table of larger numbers:
 
 ![Extended Euclidian Algorithm](./attachments/Pasted image 20240119134455.png)
 
+In this case, the multiplicative inverse is 355. (The final $Y_{i}$ before the
+remainder is 1. )
 
-In this case, the multiplicative inverse is 355. (The final $Y_{i}$ before the remainder is 1. )
+# ECE 571 | Lecture 5
 
+01/22/2024
 
-### Prime Numbers
+## Prime Numbers
 
-![[Pasted image 20240119135147.png]]
+## Classical Cryptography
+
+![](./attachments/Pasted image 20240119135147.png)
+
+Send information securely over an insecure (public) channel.
+
+Symmetric and Asymmetric key cryptography.
+
+- Symmetric: When the same key is used for encryption and decryption.
+- Asymmetric: When one key is used for encryption and another key is used for
+  decryption.
+
+A crypto-system is a 5-tuple (P,C,K,E,D)
+
+1. P is the set of possible plain texts
+2. C is the set of possible ciphers
+3. K is the set of possible keys
+4. E is the encryption rule set
+5. D is the decryption rule set
+
+### Early Ciphers
+
+Substitution: letters of the plain text are replaced by other letters or by
+numbers or symbols. The goal is to make it difficult to determine how a message
+and key were transformed.
+
+- Mono-alphabetic Ciphers: - Shift ciphers - Substitution ciphers - Affine
+  cipher
+
+- Poly-alphabetic Cipher
+  - Vigenere Cipher
+  - Hill cipher
+
+- Shift Ciphers 
+
+Letters are encrypted by shifting the letters in the alphabet and
+substituting theme.
 
