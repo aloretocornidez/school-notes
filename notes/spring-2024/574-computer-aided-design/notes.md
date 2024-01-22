@@ -1,11 +1,9 @@
 # ECE 574 Lecture 1
 
-
-
 ## Agenda
+
 - Go over the syllabus.
 - Listen to Tosi's jokes about himself.
-
 
 # ECE 574 | Lecture 1
 
@@ -72,17 +70,9 @@ module WhatIsThis(I1, I0, En, D3, D2, D1, D0);
 endmodule
 ```
 
-
-
-
 ### Parameterized Circuits
-[Parameterized ROUNDER](./code-examples/parameterized-rounder.v) 
 
-
-
-
-
-
+[Parameterized ROUNDER](./code-examples/parameterized-rounder.v)
 
 # Data Path Components
 
@@ -167,6 +157,71 @@ Inputs: `CStart`, `CEnd`, `ErrorRst` Output: `Error`
 
 ![Sequential Logic Design Process Solution](./attachments/Pasted image
 20240119094042.png)
+
+# 5 | RTL and Verilog Review
+
+Date: 01/22/2024
+
+## High Level State Machines | HLSM
+
+HLSMs model the states and transitions between states.
+
+### HLSM Conventions
+
+- Single bit: `0`
+- Integers: 0000
+- Multi-bit: "0000"
+- == for equal
+- = for assignment
+-
+
+## RTL Design Method
+
+Step 1: Capture the High Level FSM
+
+- Describe the system's behavior as a high level state machine. The state
+  machine is "high Level" because the transition conditions and the state
+  actions are more than just boolean operations on bit inputs and outputs.
+
+Step 2: Create a datapath
+
+- Create a datapath to carry out the data operations on the high-level state
+  machine.
+
+Step 3: Connect the datapath to the controller
+
+- Create a datapath to carry the controller block. Connect external Boolean
+  inputs and outputs to the controller block.
+
+Step 4: Derive the controller's FSM
+
+- Convert the high level state machine to a finite-state machine (FSM) for the
+  controller, by replacing the data operations with setting and reading of
+  control signals to and from the datapath.
+
+### RTL Design Exercise
+
+Using the RTL design process, design a soda dispenser with the following
+characteristics
+
+- c: bit input, 1 when coin deposited
+- a: 8-bit input having value of deposited coin
+- s: 8-bit input having cost of a soda
+- d: bit output, processor sets to 1 when total value of deposited coins equals
+  or exceeds cost of a soda
+
+Step 1: Design the HLSM
+
+Step 2: Create the datapath
+
+
+![VLSI Creation](./attachments/Pasted image 20240122093414.png)
+
+
+**Let's talk about possible errors when working with the timing of the HLSM**
+
+
+![HLSM Timing](./attachments/Pasted image 20240122094509.png)
 
 
 
