@@ -1,29 +1,5 @@
 # ECE 571 | Lecture 1
 
-## Agenda
-
-- Syllabus
-- Module 1: Introduction to Info and Network Security
-
-## Syllabus
-
-Course on Fundamentals of Information and Network Security - Applied
-Cryptography
-
-Homeworks (Written) are geared towards theory and understanding of concepts Labs
-(Practical) more practical and hands on.
-
-5 Written assignments and 5 lab assignments.
-
-Prerequisites:
-
-- ECE 275 | Programming
-- ECE 310 | Probability
-- ECE 478 | Networks (Reccomended)
-
-Tophat is used. ($24.00 fee) Textbook is required (Readings should be completed
-before class)
-
 ## Notions of Security
 
 There are multiple ways to implement security.
@@ -317,15 +293,55 @@ Substitution: letters of the plain text are replaced by other letters or by
 numbers or symbols. The goal is to make it difficult to determine how a message
 and key were transformed.
 
-- Mono-alphabetic Ciphers: - Shift ciphers - Substitution ciphers - Affine
-  cipher
+- Mono-alphabetic Ciphers:
+
+  - Shift ciphers: shift the letters that are used in the alphabet.
+  - Substitution ciphers: change the letter with another letter in the key.
+  - Affine cipher: scales and then shifts the value to encrypt the message.
+    [Affine Cipher](https://en.wikipedia.org/wiki/Affine_cipher)
 
 - Poly-alphabetic Cipher
-  - Vigenere Cipher
+
+  - Vigenere Cipher: basically multiple substitution alphabets are used instead
+    of one substitution alphabet.
   - Hill cipher
 
-- Shift Ciphers 
+them.
 
-Letters are encrypted by shifting the letters in the alphabet and
-substituting theme.
+## **Affine Cipher**
+
+Encryption:
+
+Decryption:
+
+How do you select a and b for use in the affine cipher?
+
+$a$ and $b$ must be relatively prime.
+
+$GCD(a,26 = 1)$
+
+if $a = 2$, $b = 0$, $y = 2x mod26$
+
+$y=x\text{mod}26$, $x \in Z_{26}$, $y \in Z_{26}$
+
+Encryption must be one-to-one mapping.
+
+### What is the cardinality of the Key Space for the Affine Cipher?
+
+if n is prime:
+
+- $\phi (n) = n - 1$
+- $n = p \times q$
+- $\phi(n) = (p-1) \times (q-1)$
+- $n = 26 = 2 \times 13$
+- $\phi(26) = 1 \times 12 = 12$
+- $n = 10 = 2 \times 5$
+- $\phi(10) = 1 \times 4 = 4$
+- $1, 2, 7, 9$ co-prime with $4$
+
+In general:
+
+[Fundamental Theorem of Arithmetic](https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic)
+
+Gives us the [Euler Totient Function ](https://en.wikipedia.org/wiki/Euler%27s_totient_function) 
 
