@@ -1,11 +1,11 @@
-# ECE 579 | AI: A Brief Primer (in the context of ECE 479/579)
+# Lecture 1
 
-Date: 2024-01-11
+Date: 01-11- 2024
 
 ## What is AI?
 
 Artificial Intelligence is when an answer that the computer computes is
-indistinguishable from that which gives an answer and possesses conciousness.
+indistinguishable from that which gives an answer and possesses consciousness.
 
 ## The Turing Test
 
@@ -16,17 +16,17 @@ indistinguishable from human answers?
 
 Humans, who possess intelligence:
 
-    - Perceive things and events.
-    - Have mental states.
-    - Learn.
-    - Use language.
-    - Make and use models.
+- Perceive things and events.
+- Have mental states.
+- Learn.
+- Use language.
+- Make and use models.
 
 AI systems typically posses intelligence in isolated forms:
 
-    - Neural nets
-    - Planners
-    - etc.
+- Neural nets
+- Planners
+- etc.
 
 ## What can we do with AI?
 
@@ -56,7 +56,7 @@ can help us solve these problems in a relatively short time.
 
 ## Non-Trivial Example Problems
 
-![[Pasted image 20240111085538.png]]
+![](./attachments/Pasted image 20240111085538.png)
 
 We would like to reconfigure the 8-puzzle toy so that the tiles are ordered as
 shown on the right.
@@ -74,12 +74,11 @@ Using **State Space** based approaches would allow us to approach a situation.
 The artificial agents that we build perceive the environment and take action
 that correspond to the environment.
 
-![[Pasted image 20240111090123.png]]
+![](./attachments/Pasted image 20240111090123.png)
 
+# Lecture 2
 
-
-
-# Problem Spaces
+## Problem Spaces
 
 Given an intersection:
 
@@ -152,6 +151,8 @@ number of colors cannot be achieved with the greedy approach.
 ![](./attachments/Pasted image 20240116084252.png)
 
 Creating a formal system to analyze this process: State Spaces
+
+# Lecture 3
 
 ## State Spaces
 
@@ -273,29 +274,93 @@ goal state: $<2,y>$, where $y$ is any amount of water $0 \le y \le 3$
 
 **How to go about the solution?**
 
+Control strategy
 
-Control strategy 
-- irrevocable: you cannot take back moves, once you have conducted a transformation, you cannot go back.
-- tentative: you try a transformation, but if you end up at a dead end, then you can turn back.
+- irrevocable: you cannot take back moves, once you have conducted a
+  transformation, you cannot go back.
+- tentative: you try a transformation, but if you end up at a dead end, then you
+  can turn back.
 
-We could try randomly searching for a solution, but it's better to be systematic about our approach.
+We could try randomly searching for a solution, but it's better to be systematic
+about our approach.
 
 Take an initial state and see what rules apply:
 
 (0,0) --> (4,0), (0,3)
 
-(4,0) --> (4, 3), (1, 3)
-(0,3) --> (4, 3), (3,0)
+(4,0) --> (4, 3), (1, 3) (0,3) --> (4, 3), (3,0)
 
-Eventually, you would find the solution you seek by following the nodes of this state-tree.
+Eventually, you would find the solution you seek by following the nodes of this
+state-tree.
 
+# Lecture 4
 
+01/23/2024
 
+## Review Up to Now and Exercise
 
+- AIPS: Production System Abstraction
+- DB: Database / State space
+- Operators: (Rules)
+- Control Strategy
 
+For a problem at hand, specify an initial/goal states (or conditions)
 
+### Traveling Salesman Problem
 
+![](./attachments/Pasted image 20240123082331.png)
 
+Given a set of cities and standing at city x, visit each city only once, return
+to x, and minimize the distance traveled.
 
+### Response
 
+Assuming you can see the all of the weights that are on the graph.
 
+Let's populate the database.
+
+$DB$ is a list of cities visited so far. (with the condition that no city
+appears twice other than the starting city)
+
+Initially, the DB is an empty set.
+
+Initial state <-- $DB = \{ A \}$
+
+$S_{i} = <A>$
+
+To get the goal state any permutation starting at $A$.
+
+$S_{G} = <A,...,A> the list that contains all cities and A twice, the others
+once, and the $\sum$ of the distance is minimal.
+
+What are the operators that are available to us at the moment?
+
+1. If \<possible\>, go to city $A$ next.
+2. If \<possible\>, go to city $B$ next.
+3. If \<possible\>, go to city $C$ next.
+4. If \<possible\>, go to city $D$ next.
+
+$S_{i} = <A>$ $S_{1} = <A, B>$ $S_{2} = <A, B, C>$ $S_{3} = <A, B, C, D>$ $S_{4}
+= <A, B, C, D, A>$
+
+One approach that we can take is the greedy algorithm approach.
+
+In this case, (from the given graph) we can see that this would result in the
+following path:
+
+- A --> B --> D --> C --> A
+  - Node Costs: 4, 5, 6, 4 = 19
+
+## Defined Characteristics of Control Strategies
+
+Definition of a control strategy: A process of how oyu apply the operators of
+the state space in order to find a solution.
+
+1. It should cause "motion": If the rules/operators should complete meaningful
+   work done
+2. The control strategy should systematic.
+3. It should be efficient.
+
+- Efficiency can be determined from the kind of solution we have. Is it optimal?
+
+In order to find better solutions, we employ heuristic techniques.
