@@ -341,7 +341,20 @@ if n is prime:
 
 In general:
 
+## Totient Function
+
 [Fundamental Theorem of Arithmetic](https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic)
 
-Gives us the [Euler Totient Function ](https://en.wikipedia.org/wiki/Euler%27s_totient_function) 
+Gives us the
+[Euler Totient Function](https://en.wikipedia.org/wiki/Euler%27s_totient_function)
 
+The totient function is a function that gives the number of prime numbers that
+are contained in the set up to the input number.
+
+There are three situations that you'll run into when $\Phi(k)$ is used.
+
+- $k$ is prime: $\Phi(k) = k-1$
+- $k$ can be expressed as $n^{m}$: $\Phi(n^{m}) = n^{m} - n^{m-1}$
+- $k$ is composite: $\Phi(knm) =\Phi(k)\Phi(n)\Phi(m)$
+  - In this case, you get the prime factorization of all of the input, then you
+    take use the second situation to calculate this phi.
