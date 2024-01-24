@@ -1,4 +1,4 @@
-# ECE 574 Lecture 1
+# ECE 574 Lecture 0
 
 ## Agenda
 
@@ -214,15 +214,36 @@ Step 1: Design the HLSM
 
 Step 2: Create the datapath
 
-
 ![VLSI Creation](./attachments/Pasted image 20240122093414.png)
-
 
 **Let's talk about possible errors when working with the timing of the HLSM**
 
-
 ![HLSM Timing](./attachments/Pasted image 20240122094509.png)
 
+# Chapter 6 | RTL: C to HLSM
+
+01/24/2024
+
+How can we convert `C` behavior to HDL behavior?
+
+### Sum of Absolute Differences
+
+Let's look at the sum of absolute differences algorithm.
+
+A brief description of the algorithm:
+
+- Inputs: A, B, 256 8-bit elements, go(bit), Outputs: sad (32-bits)
+- Wout for `go`
+- Initialize `sum` and `index` to zero
+- Check if done: `(i >= 256)`
+- Add diff to `sum` increment `index` If done, write to `output`, `sad-reg`
+
+- Input: A, B[256] (8-bits), go (bit);
+- Output: sad (32-bit)
+- Local reg: sum, sad_ieg (32-bits), i(9-bits)
+
+
+In this case, we start with behavioral analysis in `c` and then we convert that behavioral code to HDL code.
 
 
 
