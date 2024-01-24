@@ -358,3 +358,55 @@ There are three situations that you'll run into when $\Phi(k)$ is used.
 - $k$ is composite: $\Phi(knm) =\Phi(k)\Phi(n)\Phi(m)$
   - In this case, you get the prime factorization of all of the input, then you
     take use the second situation to calculate this phi.
+
+# ECE 571 Lecture 6
+
+## Early Ciphers and Cryptanalysis
+
+### Substitution Ciphers
+
+In the substitution cipher, the key can be any permutation of the 26 alphabetic
+character.
+
+There are $26!$ possible keys, this may take some time to brute force, however,
+there are other methods of cracking ciphers that make this easier to crack than
+first suspected.
+
+In this case, one of those methods is the use of Frequency Analysis.
+
+> [Frequency Analysis](https://en.wikipedia.org/wiki/Frequency_analysis): The
+> study of the frequency of letters or groups of letters in a cipher.
+
+The use of frequency analysis let's us exploit the regularities of the language
+and counting letter frequencies.
+
+### Vigenere Cipher
+
+The Vigenere cipher is the best well known Poly-alphabetic cipher. The key is an
+m-length vector. Use different mono-alphabetic substitutions as one proceeds
+through the plaintext message.
+
+Example: "deceptive"; plaintext: "we are discovered save yourself"
+
+```
+key:        deceptivedeceptivedeceptiv
+plaintext:  wearedicoveredsaveyourself
+```
+
+### Hill Cipher
+
+This encryption algorithm takes $m$ successive plaintext letters and substitutes
+for them $m$ cipher-text letters.
+
+To encrypt a message, each block of n letters (considered as an n-component
+vector) is multiplied by an invertible n × n matrix, against modulus 26. To
+decrypt the message, each block is multiplied by the inverse of the matrix used
+for encryption.
+
+
+
+![](./attachments/Pasted image 20240124135011.png)
+
+
+
+
