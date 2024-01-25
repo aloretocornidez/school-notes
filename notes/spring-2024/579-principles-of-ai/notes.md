@@ -156,6 +156,10 @@ Creating a formal system to analyze this process: State Spaces
 
 ## State Spaces
 
+[State Space search](https://en.wikipedia.org/wiki/State_space_search) is a
+process used in computer science in which successive (or states) are considered,
+with the intention of finding a goal state with the desired property.
+
 Capturing the condition/situation of a system at a point in time. State paces
 are a representation method.
 
@@ -364,3 +368,90 @@ the state space in order to find a solution.
 - Efficiency can be determined from the kind of solution we have. Is it optimal?
 
 In order to find better solutions, we employ heuristic techniques.
+
+# Lecture 5
+
+## Efficiency of Heuristic
+
+A principle in how your strategy works.
+
+### Greedy Heuristics
+
+An algorithm that guarantees optimality and is more effective than exhaustive
+search.
+
+### Branch and Bound
+
+[Branch and Bound](https://en.wikipedia.org/wiki/Branch_and_bound) is an
+algorithm/method for solving optimization problems. It works by eliminating
+sub-problems that cannot be better than the optimal solution.
+
+- Start at `A`
+- Expand it to all possible nodes
+- Compute the distance of all the partial solutions
+- Once a solution is found, there is no need to expand any partial paths whose
+  distance is greater than or equal to the current solution.
+
+## Examples of state-space search algorithms
+
+### Uninformed search
+
+According to Poole and Mackworth, the following are _uninformed_ state-space
+search methods, meaning that they do not have any prior information about the
+goal's location.
+
+- Depth-first search|Traditional depth-first search
+- Breadth-first search
+- Iterative deepening depth-first search|Iterative deepening
+- Dijkstra's algorithm
+
+### Informed search
+
+These methods take the goal's location in the form of a heuristic function.
+Poole and Mackworth cite the following examples as informed search algorithms:
+
+- Informed/Heuristic depth-first search
+- Best-first search|Greedy best-first search
+- A\* search
+
+## Classification of Control Strategies
+
+- Irrevocable
+- Tentative
+  - Backtracking
+  - Graph search
+
+Example: Select an applicable rule and continue until a state is reached that
+does not look promising.
+
+You need some criteria for backtracking:
+
+- No more rules that apply
+- You explored an arbitrary number of moves and are not progressing well
+- You do not want to repeat states
+- Other criteria
+
+### Graph Search
+
+Graph Search: A control strategy that employs a particular heuristic. It is a
+technique for solving problems that will employ particular heuristics.
+
+When exploring with graph search, you begin to generate trees. When you
+backtrack you only go back up to points that you have not done yet. This reduces
+redundant searches.
+
+If we're smart about the parts we expand, we can expand only parts that are
+essential for solving the problem. How can we do this?
+
+Example:
+
+- Irrevocable
+
+Consider the 8-puzzle and the following function:
+
+$f(s)$ = the negative of the number of tiles that are misplaced with respect to
+the goal state (the black tile is excluded from this calculation.)
+
+
+
+
