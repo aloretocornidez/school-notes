@@ -403,9 +403,92 @@ vector) is multiplied by an invertible n × n matrix, against modulus 26. To
 decrypt the message, each block is multiplied by the inverse of the matrix used
 for encryption.
 
-
-
 ![](./attachments/Pasted image 20240124135011.png)
+
+A matrix is a valid key matrix iff the determinant of the key matrix has a
+multiplicative inverse.
+
+The inverse key matrix i
+
+Calculating the Inverse Key Matrix for the Hill Cipher.
+
+Given a $K$ matrix:
+
+$$\begin{pmatrix} 5 && 8 \\ 17 && 3 \end{pmatrix}$$
+
+The inverse matrix can be calculated as follows:
+
+$$\text{det}K = 5\times3 - 17\times 8 = 9 \text{mod}(26) = 9 $$
+
+$$\text{GCD}(9, 26) = 1)$$
+
+$$9^{-1} \text{mod}26 = 3$$
+
+$$
+K^{-1} = 3 \begin{pmatrix} 3 && -8 \\ -17 && 5 \end{pmatrix} =
+\begin{pmatrix} 9 && 2 \\ 1 && 15 \end{pmatrix} \text{mod}26
+$$
+
+# Lecture 7
+
+01/26/2024
+
+## Block Ciphers vs Stream Ciphers
+
+- Block Ciphers have to wait for in input stream to fill a block before the
+  encryption can be completed.
+
+- Stream Ciphers can encrypt single characters of the plaintext with a different
+  key.
+
+### Stream Ciphers
+
+- The [Vernam Cipher](https://en.wikipedia.org/wiki/Gilbert_Vernam)
+
+The key must be as long as the message, lest you re-use the key
+
+
+
+### Permutation Ciphers
+
+- [Permutation](https://en.wikipedia.org/wiki/Transposition_cipher) (also called transposition) ciphers focus on 'diffusion' instead of 'confusion' in the message. 
+- Diffusion: widely spreading the information from the message or the key across the cipher-text
+
+
+![Permutation Cipher Definition](./attachments/Pasted image 20240126133313.png)
+
+
+- The rail fence cipher is a cool example of a permutation cipher as well.
+
+![Rail Fence Cipher](./attachments/Pasted image 20240126133818.png)
+
+
+- Columnar Transpositions are another example.
+
+
+
+
+
+## Cryptanalysis 
+
+
+> What is the goal of cryptanalysis?
+
+The goal of cryptanalysis is to decipher messages. This involves discovering the algorithm that was used to encrypt the plaintext as well as discovering the key that was used.
+
+
+
+### Kerckhoffs' Principle
+
+> The cipher should remain secure even if the adversary knows the specification of the cipher.
+
+- In commercial products, it is unrealistic to assume 
+
+
+
+
+![](./attachments/Pasted image 20240126135319.png)
+
 
 
 
