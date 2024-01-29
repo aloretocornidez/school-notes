@@ -359,7 +359,7 @@ There are three situations that you'll run into when $\Phi(k)$ is used.
   - In this case, you get the prime factorization of all of the input, then you
     take use the second situation to calculate this phi.
 
-# ECE 571 Lecture 6
+# ECE 571 | Lecture 6
 
 ## Early Ciphers and Cryptanalysis
 
@@ -429,7 +429,7 @@ K^{-1} = 3 \begin{pmatrix} 3 && -8 \\ -17 && 5 \end{pmatrix} =
 \begin{pmatrix} 9 && 2 \\ 1 && 15 \end{pmatrix} \text{mod}26
 $$
 
-# Lecture 7
+# ECE 571 | Lecture 7
 
 01/26/2024
 
@@ -447,47 +447,140 @@ $$
 
 The key must be as long as the message, lest you re-use the key
 
-
-
 ### Permutation Ciphers
 
-- [Permutation](https://en.wikipedia.org/wiki/Transposition_cipher) (also called transposition) ciphers focus on 'diffusion' instead of 'confusion' in the message. 
-- Diffusion: widely spreading the information from the message or the key across the cipher-text
-
+- [Permutation](https://en.wikipedia.org/wiki/Transposition_cipher) (also called
+  transposition) ciphers focus on 'diffusion' instead of 'confusion' in the
+  message.
+- Diffusion: widely spreading the information from the message or the key across
+  the cipher-text
 
 ![Permutation Cipher Definition](./attachments/Pasted image 20240126133313.png)
-
 
 - The rail fence cipher is a cool example of a permutation cipher as well.
 
 ![Rail Fence Cipher](./attachments/Pasted image 20240126133818.png)
 
-
 - Columnar Transpositions are another example.
 
-
-
-
-
-## Cryptanalysis 
-
+## Cryptanalysis
 
 > What is the goal of cryptanalysis?
 
-The goal of cryptanalysis is to decipher messages. This involves discovering the algorithm that was used to encrypt the plaintext as well as discovering the key that was used.
-
-
+The goal of cryptanalysis is to decipher messages. This involves discovering the
+algorithm that was used to encrypt the plaintext as well as discovering the key
+that was used.
 
 ### Kerckhoffs' Principle
 
-> The cipher should remain secure even if the adversary knows the specification of the cipher.
+> The cipher should remain secure even if the adversary knows the specification
+> of the cipher.
 
-- In commercial products, it is unrealistic to assume 
-
-
-
+- In commercial products, it is unrealistic to assume
 
 ![](./attachments/Pasted image 20240126135319.png)
+
+# ECE 571 | Lecture 7
+
+## Attack Models
+
+- Cipher-text-only attack: Eve only observes the cipher-text
+- Known-plaintext attack: Eve only knows some plaintext x and its corresponding
+  cipher-text y
+- Chosen-plaintext attack: Eve has temporary access to an encryption box.
+  - It can feed any chosen plaintext x and obtain the cipher-text y
+- Chosen-cipher-text attack: Eve has temporary access to a decryption box.
+  - It can feed any chosen cipher-text y and obtain the plain-text x.
+
+Attack models are important when wanting to prove if certain encryption schemes
+are secure. An encryption scheme is only as secure as its least powerful attack
+that it is susceptible to.
+
+Example: Perform each type of attack on a shift cipher. Comment on the
+complexity of performing each attack.
+
+Plaintext x: shift cipher-text y: vkliw
+
+### Affine Cipher
+
+[Affine Cipher | Wikipedia](https://en.wikipedia.org/wiki/Affine_cipher)
+
+### Hill Cipher | Cryptanalysis
+
+[Hill Cipher | Wikipedia](https://en.wikipedia.org/wiki/Hill_cipher)
+
+The hill cipher is difficult to break with a cipher-text-only attack.
+Example:
+
+cipher-text: PQCFKU
+
+plain-text: friday
+
+_CPA_
+
+$$y_{1} = (15 16)^{T}$$ $$y_{2} = (15 16)^{T}$$
+
+$$x_{2} = (5 17)^{T}$$ $$x_{2} = (8 3)^{T}$$
+
+$$Y = K X$$
+
+$$Y = X^{-1} = k X X^{-1}$$
+
+$$x =\begin{pmatrix}5 && 8 \\ 17 && 3 \end{pmatrix}$$ $$Y =\begin{pmatrix}16 &&
+2 \\ 16 && 5 \end{pmatrix}$$
+
+
+
+### Cryptanalysis of the Vignere Cipher 
+
+Known-plaintext attack, Chosen-plaintext attack, Chosen-cipher-text attack
+
+If you know the plaintext, the vignere cipher is akin to a shift cipher. 
+
+
+
+Cipher-text-only attack 
+
+
+
+### Frequency Distribution Analysis of Different Ciphers 
+
+
+![](./attachments/Pasted image 20240129135027.png)
+
+
+
+### Cryptanalysis of the Vignere Cipher 
+
+Observation: consists of multiple monoalphabetic ciphers 
+
+Method:
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
