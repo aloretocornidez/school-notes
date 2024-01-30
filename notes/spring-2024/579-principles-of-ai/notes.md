@@ -452,6 +452,15 @@ Consider the 8-puzzle and the following function:
 $f(s)$ = the negative of the number of tiles that are misplaced with respect to
 the goal state (the black tile is excluded from this calculation.)
 
+# Lecture 6
+
+Different Kinds of criteria for deciding when to backtrack:
+
+- Dead end: I have no more rules that apply.
+- Do not repeat the state on the path you are on.
+- You explored "n" number of rule applications and feel you are not progressing.
+
+
 
 
 
