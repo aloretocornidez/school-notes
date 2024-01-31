@@ -1,4 +1,4 @@
-# ECE 571 | Lecture 1
+# Infor Security and Cryptography
 
 ## Notions of Security
 
@@ -8,7 +8,7 @@ There are multiple ways to implement security.
 - Add a watermark to a bank note
 - Hieroglyphics in ancient egypt.
 
-# ECE 571 | Lecture 2
+# Modular Arithmetic
 
 ## Security Objectives, Modular Arithmetic
 
@@ -128,9 +128,7 @@ access the resource.
 The opponent could be a human, or a software. Techniques to assist in this
 `Gatekeeper` function, can be things like gateways and firewalls.
 
-# ECE 571 | Lecture 3
-
-## Modular Arithmetic and Crypto-systems
+# Modular Arithmetic and Crypto-systems
 
 Date: 2024-01-17
 
@@ -201,8 +199,6 @@ $a$ is relatively prime with $n$ if $\text{GCD}(a,n) = 1$
 
 Multiplicative inverse exists iff #TODO
 
-# ECE 571 | Lecture 4
-
 01/19/2024
 
 ## Greatest Common Denominator
@@ -261,7 +257,7 @@ Here is a table of larger numbers:
 In this case, the multiplicative inverse is 355. (The final $Y_{i}$ before the
 remainder is 1. )
 
-# ECE 571 | Lecture 5
+# Modern Crypto Systems
 
 01/22/2024
 
@@ -359,8 +355,6 @@ There are three situations that you'll run into when $\Phi(k)$ is used.
   - In this case, you get the prime factorization of all of the input, then you
     take use the second situation to calculate this phi.
 
-# ECE 571 | Lecture 6
-
 ## Early Ciphers and Cryptanalysis
 
 ### Substitution Ciphers
@@ -429,8 +423,6 @@ K^{-1} = 3 \begin{pmatrix} 3 && -8 \\ -17 && 5 \end{pmatrix} =
 \begin{pmatrix} 9 && 2 \\ 1 && 15 \end{pmatrix} \text{mod}26
 $$
 
-# ECE 571 | Lecture 7
-
 01/26/2024
 
 ## Block Ciphers vs Stream Ciphers
@@ -480,8 +472,6 @@ that was used.
 
 ![](./attachments/Pasted image 20240126135319.png)
 
-# ECE 571 | Lecture 7
-
 ## Attack Models
 
 - Cipher-text-only attack: Eve only observes the cipher-text
@@ -509,8 +499,7 @@ Plaintext x: shift cipher-text y: vkliw
 
 [Hill Cipher | Wikipedia](https://en.wikipedia.org/wiki/Hill_cipher)
 
-The hill cipher is difficult to break with a cipher-text-only attack.
-Example:
+The hill cipher is difficult to break with a cipher-text-only attack. Example:
 
 cipher-text: PQCFKU
 
@@ -529,60 +518,73 @@ $$Y = X^{-1} = k X X^{-1}$$
 $$x =\begin{pmatrix}5 && 8 \\ 17 && 3 \end{pmatrix}$$ $$Y =\begin{pmatrix}16 &&
 2 \\ 16 && 5 \end{pmatrix}$$
 
-
-
-### Cryptanalysis of the Vignere Cipher 
+### Cryptanalysis of the Vignere Cipher
 
 Known-plaintext attack, Chosen-plaintext attack, Chosen-cipher-text attack
 
-If you know the plaintext, the vignere cipher is akin to a shift cipher. 
+If you know the plaintext, the vignere cipher is akin to a shift cipher.
 
+Cipher-text-only attack
 
-
-Cipher-text-only attack 
-
-
-
-### Frequency Distribution Analysis of Different Ciphers 
-
+### Frequency Distribution Analysis of Different Ciphers
 
 ![](./attachments/Pasted image 20240129135027.png)
 
+### Cryptanalysis of the Vignere Cipher
 
-
-### Cryptanalysis of the Vignere Cipher 
-
-Observation: consists of multiple monoalphabetic ciphers 
+Observation: consists of multiple mono-alphabetic ciphers
 
 Method:
 
-- 
+1. Determine the key length
 
+- The [Index of Coincidence](https://en.wikipedia.org/wiki/Index_of_coincidence)
+  is the probability that two random events of $\vec{X}$ are identical.
 
+In cryptography, coincidence counting is the technique of putting two texts
+side-by-side and counting the number of times that identical letters appear in
+the same position in both texts. This count, either as a ratio of the total or
+normalized by dividing by the expected count for a random source model, is known
+as the index of coincidence, or IC for short.
 
+- [Kasiski Examination](https://en.wikipedia.org/wiki/Kasiski_examination)
 
+In poly-alphabetic substitution ciphers where the substitution alphabets are
+chosen by the use of a keyword, the Kasiski examination allows a cryptanalyst to
+deduce the length of the keyword. Once the length of the keyword is discovered,
+the cryptanalyst lines up the cipher-text in n columns, where n is the length of
+the keyword. Then each column can be treated as the cipher-text of a
+mono-alphabetic substitution cipher. As such, each column can be attacked with
+frequency analysis.
 
+The Kasiski examination involves looking for strings of characters that are
+repeated in the cipher-text. The strings should be three characters long or more
+for the examination to be successful. Then, the distances between consecutive
+occurrences of the strings are likely to be multiples of the length of the
+keyword. Thus finding more repeated strings narrows down the possible lengths of
+the keyword, since we can take the greatest common divisor of all the distances.
 
+### Cryptanalysis of Columnar Transposition
 
+Bruteforce attacks exist. Diagram analysis is also a viable option.
 
+# Security Notions
 
+- Unconditionally (perfect) secure: A crypto-system is said to be
+  unconditionally secure if it cannot be broken even if Eve has an unbounded
+  amount of computational resources at her disposal.
 
+- Provably secure: Prove security by means of reduction to a well known
+  mathematical problem that is thought to be difficult to solve, e.g., factoring
+  large numbers, discrete logarithm problem
 
+- Computationally secure: if cost of breaking the cipher exceeds the value of
+  the encrypted information, or time required to break the cipher exceeds the
+  useful lifetime of the information, practical security
 
+## Perfect Secrecy
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- The adversary should not be able to compute $K$
+- The adversary should not be able to compute $x$
+- The adversary should not learn any information about $x$
+- The adversary should not learn any _additional_ information about $x$
