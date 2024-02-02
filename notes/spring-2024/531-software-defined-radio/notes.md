@@ -198,6 +198,61 @@ In general, $x_{BB}(t) = X_{I}(t) + j X_{Q}(t)$
 
 This is the rectangular form of the complex number above.
 
-Let's say we have a frequency response that is in the frequency range of 1GHx. This may be tough to sample with an ADC, we want to be able to sample this at twice the highest frequency of interest, so typically, we may take this down to an intermediate frequency that is easier to sample with an ADC. If we take the signal down to baseband, we can take advantage of the fact that we are sampling at the bandwidth that is directly proportional to our sampling rate. We can only achieve this baseband if we can get rid of the negative frequency. 
+Let's say we have a frequency response that is in the frequency range of 1GHx. This may be tough to sample with an ADC, we want to be able to sahumberto8877mple this at twice the highest frequency of interest, so typically, we may take this down to an intermediate frequency that is easier to sample with an ADC. If we take the signal down to baseband, we can take advantage of the fact that we are sampling at the bandwidth that is directly proportional to our sampling rate. We can only achieve this baseband if we can get rid of the negative frequency. 
 
 Using Quadrature sampling, we can sample our signal such that we can sample a signal at a lower rate that at twice the bandwidth of interest. 
+
+
+### Benefits of Quadrature Sampling
+
+- Eliminates the negative frequencies or "ghost" of a signal from a real band-pass signal. 
+- Allows for base-band (centered around zero) processing
+	- Significantly reduces the sampling rates required.
+
+![[Pasted image 20240201145443.png]]
+
+
+Quadrature (For DSP and SDR) refers to two signals that are $90 \degree$ out of phase.
+
+These signals become orthogonal.
+
+![[Pasted image 20240201150719.png]]
+
+
+### Phasor Representation
+
+Recall: $sin(\theta + 90 \degree) = cos(\theta)$.
+
+Phasors are a complex number representation used to represent a sinusoidal function.
+
+Phasors use a polar representation in the complex domain compared to the rectangular coordinate representation of the coordinate.
+
+![[Pasted image 20240201150626.png]]
+
+
+
+$$I = cos(\theta)$$
+$$Q = sin(\theta)$$
+$$S(t) = I(t) + jQ(t)$$
+
+Recall Euler's Identity"
+
+$$e^{j\theta} = cos(\theta) + j sin(\theta)$$
+
+
+![[Pasted image 20240201151014.png]]
+
+
+Consider these alternate forms of Euler
+
+$$cos(\theta) = \frac{e^{j\theta} + e^{-j\theta}}{2}$$
+
+$$sin(\theta) = \frac{e^{j\theta} - e^{-j\theta}}{2}$$
+
+Putting in terms of frequency, note the negative parts of the frequency.
+
+$$cos(2\pi f_{0}t) = \frac{e^{j2\pi f_{0}t} + e^{-j2\pi f_{0}t}}{2}$$
+
+$$sin(2\pi f_{0}t) = \frac{e^{j2\pi f_{0}t} - e^{-j2\pi f_{0}t}}{2}$$
+
+
