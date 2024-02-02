@@ -1,11 +1,9 @@
-# ECE 574 Lecture 0
+# ECE 574
 
 ## Agenda
 
 - Go over the syllabus.
 - Listen to Tosi's jokes about himself.
-
-# ECE 574 | Lecture 1
 
 [Presentation](https://piazza.com/class_profile/get_resource/lr5bhk2semh5k9/lr5s5l9a9165gr)
 
@@ -74,7 +72,7 @@ endmodule
 
 [Parameterized ROUNDER](./code-examples/parameterized-rounder.v)
 
-# Data Path Components
+## Data Path Components
 
 Data components that data passes through that determine what happens to your
 data.
@@ -158,7 +156,7 @@ Inputs: `CStart`, `CEnd`, `ErrorRst` Output: `Error`
 ![Sequential Logic Design Process Solution](./attachments/Pasted image
 20240119094042.png)
 
-# 5 | RTL and Verilog Review
+# RTL and Verilog Review
 
 Date: 01/22/2024
 
@@ -220,7 +218,7 @@ Step 2: Create the datapath
 
 ![HLSM Timing](./attachments/Pasted image 20240122094509.png)
 
-# Chapter 6 | RTL: C to HLSM
+# RTL: C to HLSM
 
 01/24/2024
 
@@ -242,8 +240,28 @@ A brief description of the algorithm:
 - Output: sad (32-bit)
 - Local reg: sum, sad_ieg (32-bits), i(9-bits)
 
+In this case, we start with behavioral analysis in `c` and then we convert that
+behavioral code to HDL code.
 
-In this case, we start with behavioral analysis in `c` and then we convert that behavioral code to HDL code.
+
+### Tradeoffs for HLSMs
+#date 02/02/2024
+
+
+Tradeoff: a balance achieved between two desirable but incompatible features; a
+compromise. "a trade-off between objectivity and relevance"
+
+Pareto-optimal Solutions: Multi-objective optimization problems (MMOP) require
+solutions that optimizes the different things that you care about without
+hindering the others. 
+
+
+
+To count the latency of an HLSM you can use the number of transitions between states. 
+
+Register size is determined from the number of states that are used. 
+
+
 
 
 
