@@ -1,4 +1,4 @@
-# Infor Security and Cryptography
+# Information Security and Cryptography
 
 ## Notions of Security
 
@@ -588,3 +588,23 @@ Bruteforce attacks exist. Diagram analysis is also a viable option.
 - The adversary should not be able to compute $x$
 - The adversary should not learn any information about $x$
 - The adversary should not learn any _additional_ information about $x$
+
+An encryption scheme is perfectly secret if and only if there is no mutual
+relationship between the plain-text and the cipher-text.
+
+Perfectly Secret Probability:
+
+$$P(X = x | Y = y) = P(X = x)$$
+
+$$
+P_{r}(X = x | Y = y) = \frac{P_{r}(X=x, Y=y)}{P_{r}(Y = y)} = \frac{P_{r}(Y=y
+| X=x) P_{r}(X=x)}{P_{r}(Y=y)}
+$$
+
+<!-- $$\sum\limits_{k}P_{r}(K = k , \text{s.t.: } E_{k(x)}= y)$$ -->
+
+
+
+Multiplicative Ciphers 
+
+Idempotent: The same operation can be applied multiple times without changing the result beyond the initial application
