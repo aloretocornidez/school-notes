@@ -203,7 +203,7 @@ Multiplicative inverse exists iff #TODO
 
 ## Greatest Common Denominator
 
-GCD(a, b) = 1 if the numbers are relatively prime.
+$\text{GCD}(a, b) = 1$ if the numbers are relatively prime.
 
 ## Euclidean Algorithm
 
@@ -412,7 +412,7 @@ $$\begin{pmatrix} 5 && 8 \\ 17 && 3 \end{pmatrix}$$
 
 The inverse matrix can be calculated as follows:
 
-$$\text{det}K = 5\times3 - 17\times 8 = 9 \text{mod}(26) = 9 $$
+$$\text{det}(K) = 5\times3 - 17\times 8 = 9 \text{mod}(26) = 9 $$
 
 $$\text{GCD}(9, 26) = 1)$$
 
@@ -420,7 +420,7 @@ $$9^{-1} \text{mod}26 = 3$$
 
 $$
 K^{-1} = 3 \begin{pmatrix} 3 && -8 \\ -17 && 5 \end{pmatrix} =
-\begin{pmatrix} 9 && 2 \\ 1 && 15 \end{pmatrix} \text{mod}26
+\begin{pmatrix} 9 && 2 \\ 1 && 15 \end{pmatrix}\text{mod}26
 $$
 
 01/26/2024
@@ -518,7 +518,7 @@ $$Y = X^{-1} = k X X^{-1}$$
 $$x =\begin{pmatrix}5 && 8 \\ 17 && 3 \end{pmatrix}$$ $$Y =\begin{pmatrix}16 &&
 2 \\ 16 && 5 \end{pmatrix}$$
 
-### Cryptanalysis of the Vignere Cipher
+### Cryptanalysis of the Vignére Cipher
 
 Known-plaintext attack, Chosen-plaintext attack, Chosen-cipher-text attack
 
@@ -603,8 +603,16 @@ $$
 
 <!-- $$\sum\limits_{k}P_{r}(K = k , \text{s.t.: } E_{k(x)}= y)$$ -->
 
+Multiplicative Ciphers
+
+#definition
+Idempotent: The same operation can be applied multiple times without changing
+the result beyond the initial application
 
 
-Multiplicative Ciphers 
 
-Idempotent: The same operation can be applied multiple times without changing the result beyond the initial application
+
+
+
+
+
