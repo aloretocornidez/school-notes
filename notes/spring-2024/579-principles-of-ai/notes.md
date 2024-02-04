@@ -56,7 +56,7 @@ can help us solve these problems in a relatively short time.
 
 ## Non-Trivial Example Problems
 
-![](./attachments/Pasted image 20240111085538.png)
+![](./../assets/imgs/Pasted image 20240111085538.png)
 
 We would like to reconfigure the 8-puzzle toy so that the tiles are ordered as
 shown on the right.
@@ -74,7 +74,7 @@ Using **State Space** based approaches would allow us to approach a situation.
 The artificial agents that we build perceive the environment and take action
 that correspond to the environment.
 
-![](./attachments/Pasted image 20240111090123.png)
+![](./../assets/imgs/Pasted image 20240111090123.png)
 
 # Lecture 2
 
@@ -82,7 +82,7 @@ that correspond to the environment.
 
 Given an intersection:
 
-![Intersection](./attachments/Screenshot_20240116_081124.png)
+![Intersection](./../assets/imgs/Screenshot_20240116_081124.png)
 
 Design a control pattern for traffic lights so that the intersection as safe as
 possible.
@@ -91,7 +91,7 @@ The first thing we need to find out is which turns are compatible.
 
 ## Identify safe and unsafe turns.
 
-![](./attachments/Pasted image 20240116081402.png)
+![](./../assets/imgs/Pasted image 20240116081402.png)
 
 |     | AB  | AC  | BC  | CB  |
 | --- | --- | --- | --- | --- |
@@ -104,13 +104,13 @@ The first thing we need to find out is which turns are compatible.
 
 $G = <V, E>$
 
-![](./attachments/Pasted image 20240116082130.png)
+![](./../assets/imgs/Pasted image 20240116082130.png)
 
 > What does each edge signify?
 
 Each edge displays a pair of incompatible turns.
 
-![](./attachments/Pasted image 20240116082216.png)
+![](./../assets/imgs/Pasted image 20240116082216.png)
 
 ## Color the Graph
 
@@ -137,18 +137,18 @@ efficiently.
 
 Given the following graph labeled {1 ,2, 3, 4, 5}
 
-![](./attachments/Pasted image 20240116083713.png))
+![](./../assets/imgs/Pasted image 20240116083713.png))
 
 When completing the algorithm in the sequential order:
 
-![](./attachments/Pasted image 20240116084047.png)
+![](./../assets/imgs/Pasted image 20240116084047.png)
 
 Everything turns out fine.
 
 However, when we change the order that the notes are colored in, the minimum
 number of colors cannot be achieved with the greedy approach.
 
-![](./attachments/Pasted image 20240116084252.png)
+![](./../assets/imgs/Pasted image 20240116084252.png)
 
 Creating a formal system to analyze this process: State Spaces
 
@@ -168,17 +168,17 @@ accepts or rejects strings.
 
 $Q=<S_1, S_2, S_3, S_4>$
 
-![](./attachments/Pasted image 20240116085111.png)
+![](./../assets/imgs/Pasted image 20240116085111.png)
 
 Any string that has an even number of zeroes and even number of ones, then it is
 accepted. If the string contains an odd number of zeroes or odd number of ones,
 then the string is not accepted.
 
-![](./attachments/Pasted image 20240116085934.png)
+![](./../assets/imgs/Pasted image 20240116085934.png)
 
 ### Example | 8-Puzzle
 
-![](./attachments/Pasted image 20240116090031.png)
+![](./../assets/imgs/Pasted image 20240116090031.png)
 
 > Abstraction for moves
 
@@ -210,7 +210,7 @@ Operators: "Moves" that allow you to transform/transition between states.
 
 ## AI Production System (AIPS) <-- Problem Solving Paradigm
 
-![AIPS Block Diagram](./attachments/Pasted image 20240118080838.png)
+![AIPS Block Diagram](./../assets/imgs/Pasted image 20240118080838.png)
 
 DB: Data base/state space Rules: operators that allow you to change states CS:
 Control strategy
@@ -312,7 +312,7 @@ For a problem at hand, specify an initial/goal states (or conditions)
 
 ### Traveling Salesman Problem
 
-![](./attachments/Pasted image 20240123082331.png)
+![](./../assets/imgs/Pasted image 20240123082331.png)
 
 Given a set of cities and standing at city x, visit each city only once, return
 to x, and minimize the distance traveled.

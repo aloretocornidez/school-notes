@@ -138,7 +138,7 @@ In this case, there are four states in the finite state machine (FSM).
 | 1   | 1   | 1   | 0   | 0   | 1   |
 | 1   | 1   | 0   | 0   | 0   | 1   |
 
-![](./attachments/Pasted image 20240119092637.png)
+![](./../assets/imgs/Pasted image 20240119092637.png)
 
 ### Sequential Logic Design Process
 
@@ -153,7 +153,7 @@ the `CStart` and `CEnd` inputs.
 
 Inputs: `CStart`, `CEnd`, `ErrorRst` Output: `Error`
 
-![Sequential Logic Design Process Solution](./attachments/Pasted image
+![Sequential Logic Design Process Solution](./../assets/imgs/Pasted image
 20240119094042.png)
 
 # RTL and Verilog Review
@@ -212,11 +212,11 @@ Step 1: Design the HLSM
 
 Step 2: Create the datapath
 
-![VLSI Creation](./attachments/Pasted image 20240122093414.png)
+![VLSI Creation](./../assets/imgs/Pasted image 20240122093414.png)
 
 **Let's talk about possible errors when working with the timing of the HLSM**
 
-![HLSM Timing](./attachments/Pasted image 20240122094509.png)
+![HLSM Timing](./../assets/imgs/Pasted image 20240122094509.png)
 
 # RTL: C to HLSM
 

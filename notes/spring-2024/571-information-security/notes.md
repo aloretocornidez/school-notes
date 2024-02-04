@@ -252,7 +252,7 @@ apply this the extended algorithm when the $\text{GCD}$ is 1.
 
 Here is a table of larger numbers:
 
-![Extended Euclidian Algorithm](./attachments/Pasted image 20240119134455.png)
+![Extended Euclidian Algorithm](./../assets/imgs/Pasted image 20240119134455.png)
 
 In this case, the multiplicative inverse is 355. (The final $Y_{i}$ before the
 remainder is 1. )
@@ -265,7 +265,7 @@ remainder is 1. )
 
 ## Classical Cryptography
 
-![](./attachments/Pasted image 20240119135147.png)
+![](./../assets/imgs/Pasted image 20240119135147.png)
 
 Send information securely over an insecure (public) channel.
 
@@ -397,7 +397,7 @@ vector) is multiplied by an invertible n × n matrix, against modulus 26. To
 decrypt the message, each block is multiplied by the inverse of the matrix used
 for encryption.
 
-![](./attachments/Pasted image 20240124135011.png)
+![](./../assets/imgs/Pasted image 20240124135011.png)
 
 A matrix is a valid key matrix iff the determinant of the key matrix has a
 multiplicative inverse.
@@ -447,11 +447,11 @@ The key must be as long as the message, lest you re-use the key
 - Diffusion: widely spreading the information from the message or the key across
   the cipher-text
 
-![Permutation Cipher Definition](./attachments/Pasted image 20240126133313.png)
+![Permutation Cipher Definition](./../assets/imgs/Pasted image 20240126133313.png)
 
 - The rail fence cipher is a cool example of a permutation cipher as well.
 
-![Rail Fence Cipher](./attachments/Pasted image 20240126133818.png)
+![Rail Fence Cipher](./../assets/imgs/Pasted image 20240126133818.png)
 
 - Columnar Transpositions are another example.
 
@@ -470,7 +470,7 @@ that was used.
 
 - In commercial products, it is unrealistic to assume
 
-![](./attachments/Pasted image 20240126135319.png)
+![](./../assets/imgs/Pasted image 20240126135319.png)
 
 ## Attack Models
 
@@ -528,7 +528,7 @@ Cipher-text-only attack
 
 ### Frequency Distribution Analysis of Different Ciphers
 
-![](./attachments/Pasted image 20240129135027.png)
+![](./../assets/imgs/Pasted image 20240129135027.png)
 
 ### Cryptanalysis of the Vignere Cipher
 
