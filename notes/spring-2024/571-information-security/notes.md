@@ -603,9 +603,44 @@ P_{r}(X = x | Y = y) = \frac{P_{r}(X=x, Y=y)}{P_{r}(Y = y)} = \frac{P_{r}(Y=y
 | X=x) P_{r}(X=x)}{P_{r}(Y=y)}
 $$
 
-<!-- $$\sum\limits_{k}P_{r}(K = k , \text{s.t.: } E_{k(x)}= y)$$ -->
+#definition
 
-Multiplicative Ciphers
+Idempotent: The same operation can be applied multiple times without changing
+the result beyond the initial application
 
-#definition Idempotent: The same operation can be applied multiple times without
-changing the result beyond the initial application
+If two crypto-systems are idempotent and they commute, then the product
+crypto-system is also idempotent.
+
+## Substitution vs Permutation Networks
+
+Substitution: aims to confuse the information
+
+Permutation: aims to diffuse the information in the plaintext
+
+Confusion: Seeks to make the statistics and the value from the encryption key as
+complex as possible.
+
+Diffusion: The statistical structure of the plaintext is dissipated into
+long-range statistics of the cipher-text.
+
+K = 0011 1010 1001 0100 1101 0110 0011 1111\
+x = 0010 0110 1011 0111
+
+xor = 0001 1100 0010 0011
+
+Substitution: 1 12 2 3 Substitution: 4 3 13 1
+
+Permutation: 13 9 4 1
+
+1101 1001 0100 0001
+
+# The Data Encryption Standard (DES)
+
+- Designed by IBM
+- 56-bit key, mapping a 64-bit input block o a 64-bit output block.
+- Not secure anymore, keys must grow about 1 bit every two years. (Moore's Law)
+- Triple DES, 123(112)-bit key.
+
+
+
+
