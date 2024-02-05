@@ -252,7 +252,8 @@ apply this the extended algorithm when the $\text{GCD}$ is 1.
 
 Here is a table of larger numbers:
 
-![Extended Euclidian Algorithm](./../assets/imgs/Pasted image 20240119134455.png)
+![Extended Euclidian Algorithm](./../assets/imgs/Pasted image
+20240119134455.png)
 
 In this case, the multiplicative inverse is 355. (The final $Y_{i}$ before the
 remainder is 1. )
@@ -447,7 +448,8 @@ The key must be as long as the message, lest you re-use the key
 - Diffusion: widely spreading the information from the message or the key across
   the cipher-text
 
-![Permutation Cipher Definition](./../assets/imgs/Pasted image 20240126133313.png)
+![Permutation Cipher Definition](./../assets/imgs/Pasted image
+20240126133313.png)
 
 - The rail fence cipher is a cool example of a permutation cipher as well.
 
@@ -605,14 +607,5 @@ $$
 
 Multiplicative Ciphers
 
-#definition
-Idempotent: The same operation can be applied multiple times without changing
-the result beyond the initial application
-
-
-
-
-
-
-
-
+#definition Idempotent: The same operation can be applied multiple times without
+changing the result beyond the initial application
