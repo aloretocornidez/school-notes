@@ -243,26 +243,109 @@ A brief description of the algorithm:
 In this case, we start with behavioral analysis in `c` and then we convert that
 behavioral code to HDL code.
 
-
 ### Tradeoffs for HLSMs
-#date 02/02/2024
 
+#date 02/02/2024
 
 Tradeoff: a balance achieved between two desirable but incompatible features; a
 compromise. "a trade-off between objectivity and relevance"
 
 Pareto-optimal Solutions: Multi-objective optimization problems (MMOP) require
 solutions that optimizes the different things that you care about without
-hindering the others. 
+hindering the others.
 
+To count the latency of an HLSM you can use the number of transitions between
+states.
 
+Register size is determined from the number of states that are used.
 
-To count the latency of an HLSM you can use the number of transitions between states. 
+# Optimization Techniques
 
-Register size is determined from the number of states that are used. 
+#date 02/05/2024
 
+> "Optimal is a strong word" \- Tosiron Adegbija
 
+When considering performance, area, energy consumption, a solution my be the
+best for energy consumption, but if we increase performance, then the energy
+consumption suffers.
 
+## Exhaustive Search
 
+Exhaustive Search | You try all possible solutions and then pick the best one.
 
+The problem with exhaustive search, is that there are often times many possible
+solutions, meaning that the exhaustive search takes too much time.
 
+## Heuristics | Approximate Solutions
+
+[Heuristics Wikipedia](https://en.wikipedia.org/wiki/Heuristic)
+
+Heuristics: Rather than finding the "best" solution you try to find solutions
+that tradeoff the _quality of solutions_ for the _amount of time_ that it takes
+to arrive at those solutions.
+
+- Trial and error
+- Rule of thumb
+- Educated guess
+
+## Scheduling Problems
+
+Scheduling: Trying to determine what tasks run where. There are many workloads
+that need to be completed on a computer, but you only have a certain number of
+cores. Scheduling tries to figure out how to allocate the hardware resources to
+best utilize the hardware while achieving adequate performance.
+
+Often times, we have conflicting goals. (Performance, Timing, Energy
+Consumption)
+
+We could choose to minimize circuit area under latency constraints.
+
+## Graph Overview
+
+$V = \{V_{1}, V_{2}, V_{3},V_{4},V_{5},V_{6},\}$
+
+$E = \{V_{1},V_{2}\}, \{V_{1},V_{3}\}, \{V_{1},V_{4}\}$
+
+![.graph-review.png](../assets/imgs/graph-review.png)
+
+Degree of a vertex: number of edges incident to it. e.g. $\text{deg}(V_{1}) = 3$
+
+Cardinality: number of vertices: $|G| = 6$
+
+Adjacent Vertices: all vertices connected by an edge.
+
+### Graph Search
+
+[Breadth First Search | Wikipedia](https://en.wikipedia.org/wiki/Breadth-first_search):
+Searching all of the adjacent nodes first before moving on the the next node.
+Append each visited node to a queue, after you finish visiting all neighbors,
+you get the next node in the queue.
+
+Depth First Search: Searching all depths of a node before
+
+![graph-search.png](../assets/imgs/graph-search.png)
+
+Visited Notes: A, B, E, G, F, C, H, D
+
+Dijkstra's Algorithm: Used to find the shortest path from one node to another.
+
+[Dijkstra's Algorithm | Wikipedia](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
+
+Tip: Use a table
+
+Procedure:
+
+Finding the shortest path from A to G
+
+|     | a   | b   | c   | d   | e        | f        | g        |
+| --- | --- | --- | --- | --- | -------- | -------- | -------- |
+| a   | 0a  | 3a  | 5a  | 6a  | $\infty$ | $\infty$ | $\infty$ |
+| b   |     | 3a  | 5a  |     | $\infty$ | $\infty$ | $\infty$ |
+| c   |     |     | 5a  | 5b  | 11c      | 8c       | 12c      |
+| d   |     |     |     | 5b  | 11c      | 8c       | 12c      |
+| f   |     |     |     |     |          | 8c       | 8f       |
+| g   |     |     |     |     |          |          | 8f       |
+
+![dijkstras-algorgorithm.png](../assets/imgs/dijkstras-algorgorithm.png)
+
+Bellman-Ford Algorithm:
