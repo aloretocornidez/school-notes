@@ -261,3 +261,11 @@ Putting in terms of frequency, note the negative parts of the frequency.
 $$cos(2\pi f_{0}t) = \frac{e^{j2\pi f_{0}t} + e^{-j2\pi f_{0}t}}{2}$$
 
 $$sin(2\pi f_{0}t) = \frac{e^{j2\pi f_{0}t} - e^{-j2\pi f_{0}t}}{2}$$
+
+
+
+
+
+
+
+

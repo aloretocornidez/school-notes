@@ -598,10 +598,7 @@ Perfectly Secret Probability:
 
 $$P(X = x | Y = y) = P(X = x)$$
 
-$$
-P_{r}(X = x | Y = y) = \frac{P_{r}(X=x, Y=y)}{P_{r}(Y = y)} = \frac{P_{r}(Y=y
-| X=x) P_{r}(X=x)}{P_{r}(Y=y)}
-$$
+$$ P_{r}(X = x | Y = y) = \frac{P_{r}(X=x, Y=y)}{P_{r}(Y = y)} = \frac{P_{r}(Y=y | X=x) P_{r}(X=x)}{P_{r}(Y=y)} $$
 
 #definition
 
@@ -623,7 +620,7 @@ complex as possible.
 Diffusion: The statistical structure of the plaintext is dissipated into
 long-range statistics of the cipher-text.
 
-K = 0011 1010 1001 0100 1101 0110 0011 1111\
+K = 0011 1010 1001 0100 1101 0110 0011 1111
 x = 0010 0110 1011 0111
 
 xor = 0001 1100 0010 0011

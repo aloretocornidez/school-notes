@@ -464,3 +464,12 @@ Different Kinds of criteria for deciding when to backtrack:
 
 
 
+
+
+
+
+# Heuristics 
+
+How do we come up with a heuristic function? 
+
+- Look look at the problem characteristics.
