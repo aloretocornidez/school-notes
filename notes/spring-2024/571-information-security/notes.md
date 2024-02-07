@@ -598,7 +598,10 @@ Perfectly Secret Probability:
 
 $$P(X = x | Y = y) = P(X = x)$$
 
-$$ P_{r}(X = x | Y = y) = \frac{P_{r}(X=x, Y=y)}{P_{r}(Y = y)} = \frac{P_{r}(Y=y | X=x) P_{r}(X=x)}{P_{r}(Y=y)} $$
+$$
+P_{r}(X = x | Y = y) = \frac{P_{r}(X=x, Y=y)}{P_{r}(Y = y)} = \frac{P_{r}(Y=y
+| X=x) P_{r}(X=x)}{P_{r}(Y=y)}
+$$
 
 #definition
 
@@ -620,8 +623,7 @@ complex as possible.
 Diffusion: The statistical structure of the plaintext is dissipated into
 long-range statistics of the cipher-text.
 
-K = 0011 1010 1001 0100 1101 0110 0011 1111
-x = 0010 0110 1011 0111
+K = 0011 1010 1001 0100 1101 0110 0011 1111 x = 0010 0110 1011 0111
 
 xor = 0001 1100 0010 0011
 
@@ -638,10 +640,51 @@ Permutation: 13 9 4 1
 - Not secure anymore, keys must grow about 1 bit every two years. (Moore's Law)
 - Triple DES, 123(112)-bit key.
 
+## Feistel Cipher
+
+Advantages
+
+- The same circuit can be used for both encryption and decryption, requiring
+  only a reversal of the key signature used.
+- The round function does not need to be injective/invertible.
+
+Design Properties of the Feistel Cipher
+
+- Block Size
+- Key Size: A larger key means greater security by decreases en/decryption
+  speeds.
+- Number of rounds: More rounds should increase the security, but there are
+  diminishing returns.
+- Sub-key generation algorithm
+- The Round Function
+- Fast software encryption/decryption
+- Ease of analysis
+
+### Procedure
+
+1. XOR the half block of plaintext with the subkey (that has already been
+   generated)
+2. Place the output of the XOR into 'S-Boxes' that have a different number of
+   inputs vs outputs, this maps the input into another output.
+3. The result is them plugged into a permutation function. The permutation table
+   may be know, however, combined with the secrecy of the key used provides
+   extra security in the encryption.
+
+> The Avalanche Effect: A change in one bit of the plaintext should produce a
+> change in many bits of hte ciphertext.
+
+
+The F-Function must be: 
+
+- 
 
 
 
 
+### Cryptanalysis of DES
 
+#cryptanalysis
+
+Weak Keys: keys are the inverse of themselves.
 
 
