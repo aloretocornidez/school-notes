@@ -138,7 +138,7 @@ In this case, there are four states in the finite state machine (FSM).
 | 1   | 1   | 1   | 0   | 0   | 1   |
 | 1   | 1   | 0   | 0   | 0   | 1   |
 
-![](./../assets/imgs/Pasted image 20240119092637.png)
+![Image](./../assets/imgs/Pasted image 20240119092637.png)
 
 ### Sequential Logic Design Process
 
@@ -153,8 +153,7 @@ the `CStart` and `CEnd` inputs.
 
 Inputs: `CStart`, `CEnd`, `ErrorRst` Output: `Error`
 
-![Sequential Logic Design Process Solution](./../assets/imgs/Pasted image
-20240119094042.png)
+<!-- ![Sequential Logic Design Process Solution](../assets/imgs/Pasted image 20240119094042.png) -->
 
 # RTL and Verilog Review
 
@@ -300,7 +299,7 @@ Consumption)
 
 We could choose to minimize circuit area under latency constraints.
 
-## Graph Overview
+# Graph Overview
 
 $V = \{V_{1}, V_{2}, V_{3},V_{4},V_{5},V_{6},\}$
 
@@ -327,7 +326,9 @@ Depth First Search: Searching all depths of a node before
 
 Visited Notes: A, B, E, G, F, C, H, D
 
-Dijkstra's Algorithm: Used to find the shortest path from one node to another.
+## Dijkstra's Algorithm
+
+Dijkstra's Algorithm : Used to find the shortest path from one node to another.
 
 [Dijkstra's Algorithm | Wikipedia](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 
@@ -348,4 +349,33 @@ Finding the shortest path from A to G
 
 ![dijkstras-algorgorithm.png](../assets/imgs/dijkstras-algorgorithm.png)
 
-Bellman-Ford Algorithm:
+### Runtime Complexity of Dijkstra's Algorithm
+
+The runtime complexity of Dijkstra's shortest path algorithm depends on how the
+priority queue is implemented. Using a simple list implementation that requires
+the list to the searched each time to find the vertex with the smallest vertex
+(this has a complexity of $O(V)$), the runtime complexity for Dijkstra's
+shortest path algorithm is $O(V^{2})$. Using other data structures to implement
+the priority queue (e.g. heaps), the runtime complexity can be improved to
+$O((V+E)log V)$ and even $O(VlgV + E)$
+
+## Bellman-Ford Search Algorithm
+
+[Bellman-Ford | Wikipedia](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm)
+
+The Bellman-Ford search algorithm supports graphs with negative edge weights
+(this is where Dijkstra's Algorithm can fail)
+
+The BellmanFord shortest path algorithm is an extension to Dijkstra's shortest
+path algorithm to support graphs with negative edge weights. While the graph can
+have negative edge weights, if the graph contains a negative edge weight cycle,
+it is not possible to find the shortest path. A negative edge weight cycle is a
+cycle in which the sum of all edge weights is negative. In such a case, each
+time the cycle is traversed, the total distance will decrease. The BellmanFord
+shortest path algorithm will detect if a negative edge weight cycle exists.
+
+### Runtime Complexity of the Bellman-Ford Algorithm
+
+The runtime complexity of the Bellman-Ford algorithm is $O(VE)$.
+
+## Topological Sort
