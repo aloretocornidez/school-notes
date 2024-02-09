@@ -673,18 +673,35 @@ Design Properties of the Feistel Cipher
 > The Avalanche Effect: A change in one bit of the plaintext should produce a
 > change in many bits of hte ciphertext.
 
+The F-Function must be:
 
-The F-Function must be: 
-
-- 
-
-
-
+-
 
 ### Cryptanalysis of DES
 
 #cryptanalysis
 
 Weak Keys: keys are the inverse of themselves.
+
+## Advanced Encryption System | AES
+
+The AES encryption scheme consists of 4 steps in each round:
+
+1. Byte substitution (substitution)
+2. Byte shifting (permutation)
+3. A Mix column (shuffles the bits)
+4. Adding the round key.
+
+You get x-bit encryption strength depending on how many rounds you complete:
+
+- 128 Bits | 10 Rounds
+- 192 Bits | 12 Rounds
+- 256 Bits | 14 Rounds
+
+A 128-bit round key is used for each round.
+
+
+
+
 
 

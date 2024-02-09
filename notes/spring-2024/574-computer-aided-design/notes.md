@@ -378,4 +378,25 @@ shortest path algorithm will detect if a negative edge weight cycle exists.
 
 The runtime complexity of the Bellman-Ford algorithm is $O(VE)$.
 
-## Topological Sort
+## Directed Acyclic Graphs
+
+What is a directed acyclic graph: G(V,E): directed graph containing no vertex
+with a path back to itself.
+
+### Topological Sort
+
+Given a DAG, $G(V,E)$, $v= (1, 2, 3, .., n)$. Enumerate vertices as $\{i_{1},
+i{2}, ..., i_{n}\}$ so that for any edge, (j,k), in E, j appears before k.
+
+> Topological Sort #definition: In computer science, a topological sort or
+> topological ordering of a directed graph is a linear ordering of its vertices
+> such that for every directed edge (u,v) from vertex u to vertex v, u comes
+> before v in the ordering. \- > [Wikipedia](https://en.wikipedia.org/wiki/Topological_sorting)
+
+- This sort helps you find the critical path of a circuit if the edges are
+  weighted.
+
+
+
+
+
