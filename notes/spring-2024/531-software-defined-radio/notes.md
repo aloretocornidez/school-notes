@@ -223,7 +223,7 @@ signal at a lower rate that at twice the bandwidth of interest.
 
 ![[Pasted image 20240201145443.png]]
 
-Quadrature (For DSP and SDR) refers to two signals that are $90 \degree$ out of
+Quadrature (For DSP and SDR) refers to two signals that are $90^{\circ}$ out of
 phase.
 
 These signals become orthogonal.
@@ -232,7 +232,7 @@ These signals become orthogonal.
 
 ### Phasor Representation
 
-Recall: $sin(\theta + 90 \degree) = cos(\theta)$.
+Recall: $sin(\theta + 90^{\circ}) = cos(\theta)$.
 
 Phasors are a complex number representation used to represent a sinusoidal
 function.
