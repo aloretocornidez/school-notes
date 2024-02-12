@@ -700,8 +700,39 @@ You get x-bit encryption strength depending on how many rounds you complete:
 
 A 128-bit round key is used for each round.
 
+### Four Stages:
+
+One Permutation and Three Substitutions
+
+- Substitute Bytes: uses an S=box to perform a byte-by-byte substitution of the
+  block
+- ShiftRows: a simple permutation
+- MixColumns: a substitution that makes use of arithmetic over GF()
+- AddRoundKey
+- Each stage is easily reversible
+
+### Rijndael Cryptanalysis
+
+- Resistant to linear and differential cryptanalysis
+- Academic break on weaker version of the cipher, 9 rounds.
+
+# Modes of Operation
+
+How to encrypt a message > 64 bits?
+
+- Electronic Code Book (ECB)
+  - Simple
+  - Error does not propagate
+  - Identical plaintext causes identical cipher-text blocks. (con)
+  - Cipher blocks can be easily rearranged or modified.
+- Cipher Block Chaining (CBC)
+  - Identical plaintext -> different cipher-text.
+  - Initialization vector (IV) (Why?): Let the next block depend on the previous
+    cipher-text. This makes error propagate throughout the cipher.
+  - Identical plaintext -> non-identical cipher-text AES in ECB mode produces
+      similar images whereas AES in CBC mode will not.
+- Output Feedback Mode (OFB)
 
 
-
-
-
+- Cipher Feedback Mode (CFB)
+- Counter Mode (CTR)
