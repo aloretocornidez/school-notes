@@ -391,11 +391,65 @@ i{2}, ..., i_{n}\}$ so that for any edge, (j,k), in E, j appears before k.
 > Topological Sort #definition: In computer science, a topological sort or
 > topological ordering of a directed graph is a linear ordering of its vertices
 > such that for every directed edge (u,v) from vertex u to vertex v, u comes
-> before v in the ordering. \- > [Wikipedia](https://en.wikipedia.org/wiki/Topological_sorting)
+> before v in the ordering. \- >
+> [Wikipedia](https://en.wikipedia.org/wiki/Topological_sorting)
 
 - This sort helps you find the critical path of a circuit if the edges are
   weighted.
 
+# Scheduling
+
+In scheduling we specify the order in which operations are performed.
+
+> Why is scheduling important?
+
+Scheduling determines the concurrency of the implementation and it affects the
+resources that we need to complete the implementation.
+
+## Control/Data Flow Graph (CDFG)
+
+A control data flow graph is a graph that represents the flow of data through
+computations.
+
+## Sequencing Graphs
+
+The sequencing graph itself only specifies the dependencies among tasks.
+
+We don't care about the input/output of the operations.
+
+Scheduling requires we associate a start time for for each task/operation.
+
+In a scheduling graph, we take into account the start time of an implementation.
+
+![Sequencing Graph Description](./../assets/imgs/sequencing-graph.png)
+
+## Scheduling Algorithms
+
+### As Soon As Possible (ASAP) Scheduling
+
+Unconstrained minimum-latency scheduling problem
+
+- We have infinite resoures, all we want is the minimum computation time.
+
+### As Late As Possible (ALAP) Scheduling
+
+This is the opposite of ASAP scheduling.
+
+It is a latency constrained algorithm, meaning we have a maximum of time we want
+to run in.
+
+We try to schedule nodes a late as we can within the time that we're given.
+
+You must be given a time constraint in this algorithm.
+
+### Mobility (Slack)
+
+Mobility/Slack is an importatnt quantity used by some scheduling algorithm.
+
+Mobility: The difference in time between ASAP and ALAP scheduling.
+
+The measure of mobility lets us know how much we can move a system's components
+around.
 
 
 
