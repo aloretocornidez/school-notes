@@ -460,16 +460,85 @@ Different Kinds of criteria for deciding when to backtrack:
 - Do not repeat the state on the path you are on.
 - You explored "n" number of rule applications and feel you are not progressing.
 
+# Graphs
+
+## Depth First Search (DFS)
+
+Pseudo Code for a DFS
+
+```
+Form a one-element queue consisting of a zero-length path that contains only the root node.
+
+Until the first path in the queue terminates at the goal node or the queue is empty:
+    Remove the first path from the queue; create new paths by extending the first path
+    to all the neighbors of the terminal node.
+
+    Reject all new paths with loops.
+
+    Add the new paths, if any, to the *front* of the queue.
+
+If the goal node is found, announce success; otherwise, announce failure.
+```
+
+## Breadth-first Search (BFS)
+
+```
+Form a one-element queue consisting of a zero-length path that contains only the root node.
+
+Until the first path in the queue terminates at the goal node or the queue is empty:
+    Remove the first path from the queue; create new paths by extending the first path
+    to all the neighbors of the terminal node.
+
+    Reject all new paths with loops.
+
+    Add the new paths, if any, to the *back* of the queue.
+
+If the goal node is found, announce success; otherwise, announce failure.
+```
+
+## Hill Climbing Search
 
 
 
 
+Pseudo-code for a Hill Climb Search
+
+```
+Form a one-element queue consisting of a zero-length path that contains only the root node.
+
+Until the first path in the queue terminates at the goal node or the queue is empty:
+    Remove the first path from the queue; create new paths by extending the first path
+    to all the neighbors of the terminal node.
+
+    Reject all new paths with loops.
+
+    Sort the new paths, if any, by the estimated distances between their terminal nodes and the goal
+
+    Add the new paths, if any, to the *back* of the queue.
+
+If the goal node is found, announce success; otherwise, announce failure.
+```
+
+## Branch-and-Bound Search
+
+This algorithm searches the nodes with the least cost first. The queue is sorted after every iteration.
+
+
+```
+Form a one-element queue consisting of a zero-length path that contains only the root node.
+
+Until the first path in the queue terminates at the goal node or the queue is empty:
+    Remove the first path from the queue; create new paths by extending the first path
+    to all the neighbors of the terminal node.
+
+    Reject all new paths with loops.
+
+    Add the remaining new paths, if any, to the queue.
+
+    Sort the entire queue by path length with the least cost path in front.
+
+If the goal node is found, announce success; otherwise, announce failure.
+```
 
 
 
-
-# Heuristics 
-
-How do we come up with a heuristic function? 
-
-- Look look at the problem characteristics.

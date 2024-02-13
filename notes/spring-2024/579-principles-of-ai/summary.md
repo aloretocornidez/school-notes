@@ -28,7 +28,6 @@ A Problem space has an initial state and a goal state. Rules can be applied in
 order to change the state of a system. The rules that are applied in a given
 state are determined by the control strategy that is being applied.
 
-
 ## State Space Searches
 
 [State Space Search](https://en.wikipedia.org/wiki/State_space_search]
@@ -38,3 +37,27 @@ state are determined by the control strategy that is being applied.
 Control strategy in an artificial intelligence scenario is a technique or
 strategy that tells us about which rule has to be applied next while searching
 for the solution of a problem within problem space.
+
+## A Star Search
+
+[A\* Search | Wikipedia](https://en.wikipedia.org/wiki/A*_search_algorithm)
+
+- This is a path-finding algorithm that can find the best solution (in many
+  cases) in a weighted graph.
+
+- However, it uses a lot of memory (space complexity) as it has an $O(b^{d})$
+  worst case space complexity.
+
+- A\* can be seen as an extension of Dijkstra's Algorithm that achieves better
+  performance by employing the use of heuristics in its search pattern.
+
+## Heuristic Functions
+
+## Graph Search
+
+- Breadth First Search
+- Depth First Search
+  - Hill Climbing
+
+
+
