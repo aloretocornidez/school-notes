@@ -425,31 +425,75 @@ In a scheduling graph, we take into account the start time of an implementation.
 
 ## Scheduling Algorithms
 
+- As Late As Possible (ALAP)
+- As Soon As Possible (ASAP)
+- Hu's Algorithm
+- LIST_L Scheduling
+- LIST_L Scheduling
+- Force Directed Scheduling (FDS)
+
 ### As Soon As Possible (ASAP) Scheduling
 
-Unconstrained minimum-latency scheduling problem
+- Unconstrained minimum-latency scheduling problem
 
 - We have infinite resoures, all we want is the minimum computation time.
 
 ### As Late As Possible (ALAP) Scheduling
 
-This is the opposite of ASAP scheduling.
+- This is the opposite of ASAP scheduling.
 
-It is a latency constrained algorithm, meaning we have a maximum of time we want
-to run in.
+- It is a latency constrained algorithm, meaning we have a maximum of time we
+  want to run in.
 
-We try to schedule nodes a late as we can within the time that we're given.
+- We try to schedule nodes a late as we can within the time that we're given.
 
 You must be given a time constraint in this algorithm.
 
 ### Mobility (Slack)
 
-Mobility/Slack is an importatnt quantity used by some scheduling algorithm.
+- Mobility/Slack is an important quantity used by some scheduling algorithm.
 
-Mobility: The difference in time between ASAP and ALAP scheduling.
+- Mobility: The difference in time between ASAP and ALAP scheduling.
 
-The measure of mobility lets us know how much we can move a system's components
-around.
+- The measure of mobility lets us know how much we can move a system's
+  components around.
+
+### Resource Constrained Scheduling
+
+- Resource usage determines circuit area
+- Consider area/latency tradeoff
+
+### Hu's Algorithm
+
+- Hu's Algorithm is a resource constrained scheduling algorithm
+- Assumes one resource handles all possible operations
+- Assumes all operations have 1 unit delay.
+
+![Example of how to execute the algorithm on a simple graph. Note, the level of predecessors of each time.](../assets/imgs/hus-algorithm-example.png)
+
+### Additional Scheduling Considerations
+
+- Most scheduling problems have additional considerations
+
+  - What happens when we have more than one type of task/operation?
+  - What happens when a task/operations takes more than 1 unit time delay?
+
+- Increased problem space, difficult to solve efficiency
+  - Many heuristics have been developed to address these problems
+    - minimum latency, resource constrained scheduling
+    - minimum resource, latency-constrained scheduling
+
+### LIST_L Scheduling
+
+- LIST_L is an extension of Hu's algorithm to handle multiple operation types
+  and multiple cycle execution delays. It also considers minimum-latency,
+  resource constrained scheduling problems.
+
+- Selection of which operations to include is based on a priority list indicating some sort of urgency measure.
+
+
+
+
 
 
 
