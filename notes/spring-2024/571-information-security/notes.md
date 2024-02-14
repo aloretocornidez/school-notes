@@ -730,9 +730,24 @@ How to encrypt a message > 64 bits?
   - Initialization vector (IV) (Why?): Let the next block depend on the previous
     cipher-text. This makes error propagate throughout the cipher.
   - Identical plaintext -> non-identical cipher-text AES in ECB mode produces
-      similar images whereas AES in CBC mode will not.
+    similar images whereas AES in CBC mode will not.
 - Output Feedback Mode (OFB)
 
+  - Counter Mode (CTR): Like OFB but the IV increments for each block.
+    - Pro: one-time pad can be pre-computed
+    - Can start encrypting/decrypting at any point
+    - Encryption can be done in parallel
+    - Without dependence between blocks.
 
 - Cipher Feedback Mode (CFB)
-- Counter Mode (CTR)
+
+## Summary:
+
+- ECB: Key management, useless for file encryption
+- CBC: File encryption, useful for message authentication codes (MAC)
+- OFB: stream cipher, pseudorandom number generator
+- CFB: stream cipher, more secure
+- CTR: support random access, parallel computation
+
+
+
