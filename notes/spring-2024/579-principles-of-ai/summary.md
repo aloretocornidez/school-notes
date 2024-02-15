@@ -57,7 +57,7 @@ for the solution of a problem within problem space.
 
 - Breadth First Search
 - Depth First Search
+
   - Hill Climbing
 
-
-
+- A-Star Algorithm

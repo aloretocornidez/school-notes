@@ -498,9 +498,6 @@ If the goal node is found, announce success; otherwise, announce failure.
 
 ## Hill Climbing Search
 
-
-
-
 Pseudo-code for a Hill Climb Search
 
 ```
@@ -521,8 +518,8 @@ If the goal node is found, announce success; otherwise, announce failure.
 
 ## Branch-and-Bound Search
 
-This algorithm searches the nodes with the least cost first. The queue is sorted after every iteration.
-
+This algorithm searches the nodes with the least cost first. The queue is sorted
+after every iteration.
 
 ```
 Form a one-element queue consisting of a zero-length path that contains only the root node.
@@ -540,5 +537,61 @@ Until the first path in the queue terminates at the goal node or the queue is em
 If the goal node is found, announce success; otherwise, announce failure.
 ```
 
+### A-Star Search algorithm
 
+[A-Star Search | wikipedia](https://en.wikipedia.org/wiki/A*_search_algorithm)
 
+- $g(n)$ is the amount of effort that you have expended.
+- $h(n)$ is
+- $f(n) = g(n) + h(n)$
+
+1. Start at a start node
+2. Generate the children of that node
+3. Pick the node with the lowest value
+4. Eliminate all redundant paths to the node
+
+[Decision Graphs](https://en.wikipedia.org/wiki/Decision_tree)
+
+#### Example | A-Star
+
+Recall the 8-puzzle again.
+
+![8-puzzle-image.png](../assets/imgs/8-puzzle-image.png)
+
+- $g(n)$: level of search tree (\# number of moves made so far.)
+- $h(n)$: number of tiles in $n$ that are displaced with respect ot $g$. (do not
+  count the blank).
+
+We would like to have $h(n)$ to be an underestimate of the actual value. $h(n)
+\le h^{\*}(n)$
+
+$f(s) = g(s) + h(s)$
+
+$f(s) = 0 + 4$
+
+![goal-state.png](../assets/imgs/goal-state.png)
+
+There are currently three places to move:
+
+This results in 4 total tiles displaced from the goal state.
+
+- Up: 4 tiles displaced from goal state.
+- Left: 6 tiles displaced from goal state.
+- Right: 6 tiles displaced from goal state.
+
+We choose to continue our search using the 'Up' node.
+
+The next level of the tree does not have 4 nodes now, it has 3. This is because
+we do not want ot repeat nodes.
+
+Now, $g(n) = 2$ because we are at the second level of the search tree.
+
+![more-tree-search.png](../assets/imgs/more-tree-search.png)
+
+### Facts
+
+2. if $h(n) \le h\*$ and it meets the monotone restriction (MR) then $f(n)$ are
+   non-decreasing along any path from $S$ to $G$.
+
+monotone restriction: the guess for the next node to travel to does not exceed
+the cost of the nodes up to this point.
