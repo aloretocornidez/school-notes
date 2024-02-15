@@ -592,6 +592,8 @@ Now, $g(n) = 2$ because we are at the second level of the search tree.
 
 2. if $h(n) \le h\*$ and it meets the monotone restriction (MR) then $f(n)$ are
    non-decreasing along any path from $S$ to $G$.
+3. if A\* with $h(n) \le h\*(n)$ and MR expands a node, it has already found an
+   optimal path to this node.
 
 monotone restriction: the guess for the next node to travel to does not exceed
 the cost of the nodes up to this point.
