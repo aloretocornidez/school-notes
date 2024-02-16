@@ -489,12 +489,19 @@ You must be given a time constraint in this algorithm.
   and multiple cycle execution delays. It also considers minimum-latency,
   resource constrained scheduling problems.
 
-- Selection of which operations to include is based on a priority list indicating some sort of urgency measure.
+- Selection of which operations to include is based on a priority list
+  indicating some sort of urgency measure.
 
+### LIST_R Scheduling
 
+- Considers minimum-resource, latency-constrained scheduling problem.
 
+1. Determine the ALAP schedule. (If there is no ALAP schedule, then this
+   algorithm cannot be used for the current graph/application.)
 
+2. After the ALAP schedule is found, we then compute the slack. This lets us
+   schedule things as fast as necessary instead of as fast as possible. If the
+   slack of a node is zero, then we either need to add resources or schedule the
+   node at that time.
 
-
-
-
+3. 
