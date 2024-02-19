@@ -749,5 +749,68 @@ How to encrypt a message > 64 bits?
 - CFB: stream cipher, more secure
 - CTR: support random access, parallel computation
 
+# Random Numbers
+
+Randomness is important in the field of cryptography. They are used in many
+applications within the key distribution, key authentication, generation of
+session keys.
+
+Two Criteria are used to validate that a sequence of numbers is random:
+
+1. Uniform Distribution: the frequency of ones and zeroes should be
+   approximately even.
+2. Independence: no one sequence of numbers can be inferred from the others.
+
+Three tests used to verify randomness of a sequence of numbers.
+- Frequency Test
+- The Long Test
+- Compression Test
+
+## Algorithms to Generate Random Numbers
+
+- True Random Number Generator (TRNG): source -> conversion to binary -> random
+  bit-stream
+
+- Pseudorandom number generator (PRNG): (output feedback, seed) -> deterministic
+  algorithm -> random bit-stream
+
+- Pseudorandom Function (PRF): (output feedback, seed, context specific values)
+  -> deterministic algorithm -> random bit-stream
+
+
+
+### Linear Feedback Shift Register | LFSR 
+
+
+
+### Linear Congruential Generator
+
+$${\displaystyle X_{n+1}=\left(aX_{n}+c\right){\bmod {m}}}$$
+
+
+$${\displaystyle m,\,0<m}$$
+
+$${\displaystyle a,\,0<a<m}$$
+
+$${\displaystyle c,\,0\leq c<m}$$
+
+$${\displaystyle X_{0},\,0\leq X_{0}<m}$$
+
+![[Pasted image 20240219135342.png]]
+
+The output of such the algorithm is as follows with the examples:
+
+![[Pasted image 20240219134858.png]]
+
+### Blum Blum Shub (BBS) Generator
+
+- Cryptographically Secure (Has the strongest proof of randomness)
+- 
+
+
+
+
+
+
 
 
