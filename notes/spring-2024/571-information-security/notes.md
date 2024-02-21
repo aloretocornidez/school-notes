@@ -762,6 +762,7 @@ Two Criteria are used to validate that a sequence of numbers is random:
 2. Independence: no one sequence of numbers can be inferred from the others.
 
 Three tests used to verify randomness of a sequence of numbers.
+
 - Frequency Test
 - The Long Test
 - Compression Test
@@ -777,16 +778,11 @@ Three tests used to verify randomness of a sequence of numbers.
 - Pseudorandom Function (PRF): (output feedback, seed, context specific values)
   -> deterministic algorithm -> random bit-stream
 
-
-
-### Linear Feedback Shift Register | LFSR 
-
-
+### Linear Feedback Shift Register | LFSR
 
 ### Linear Congruential Generator
 
 $${\displaystyle X_{n+1}=\left(aX_{n}+c\right){\bmod {m}}}$$
-
 
 $${\displaystyle m,\,0<m}$$
 
@@ -805,12 +801,26 @@ The output of such the algorithm is as follows with the examples:
 ### Blum Blum Shub (BBS) Generator
 
 - Cryptographically Secure (Has the strongest proof of randomness)
-- 
+-
 
+## Hash Functions
 
+## Cryptographic Hash Functions
 
+Hash functions are one-way functions that map an arbitrary length input to a
+fixed length output.
 
+History
 
+- MD2 -> MD4 -> MD5 -> SHA -> SHA-1 --> SHA-2 -> SHA-3
 
+### What are the applications of hash functions?
 
+- Integrity checking
+- Source authentications
+- Commitment protocols
+- Confidentiality protection
 
+### Attacks on Hash Functions
+
+-
