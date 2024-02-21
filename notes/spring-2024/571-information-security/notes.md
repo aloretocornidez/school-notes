@@ -6,7 +6,7 @@ There are multiple ways to implement security.
 
 - Adding a lock to a door
 - Add a watermark to a bank note
-- Hieroglyphics in ancient egypt.
+- Hieroglyphics in ancient Egypt.
 
 # Modular Arithmetic
 

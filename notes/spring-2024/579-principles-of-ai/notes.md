@@ -597,3 +597,9 @@ Now, $g(n) = 2$ because we are at the second level of the search tree.
 
 monotone restriction: the guess for the next node to travel to does not exceed
 the cost of the nodes up to this point.
+
+
+
+
+
+
