@@ -823,4 +823,40 @@ History
 
 ### Attacks on Hash Functions
 
--
+## Message Authentication 
+
+
+A MAC is strong if it is strongly unforgable.
+
+
+
+# Hashing
+
+## Commitment Protocol with Hash
+
+Goal: A and B wish to play "ordd or even" over the network
+
+Naive Commitment Protocol
+- A picks a numer X and sends it to B
+- B picks a number Y and sends it to A
+- A wins if X+Y is odd
+- B wins if X+Y is even
+
+Problem: How can you prevent either party from cheating?
+
+![[Pasted image 20240301131532.png]]
+
+# Public Key Cryptography
+
+Needs two keys to function 
+
+Also called Asymmetric Key Cryptography.
+
+![[Pasted image 20240301132744.png]]
+
+In symmetric ddddddddddd
+
+
+
+
+
