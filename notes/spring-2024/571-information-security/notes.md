@@ -854,7 +854,9 @@ Also called Asymmetric Key Cryptography.
 
 ![[Pasted image 20240301132744.png]]
 
-In symmetric ddddddddddd
+
+
+
 
 
 
