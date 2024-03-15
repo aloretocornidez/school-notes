@@ -823,12 +823,9 @@ History
 
 ### Attacks on Hash Functions
 
-## Message Authentication 
-
+## Message Authentication
 
 A MAC is strong if it is strongly unforgable.
-
-
 
 # Hashing
 
@@ -837,6 +834,7 @@ A MAC is strong if it is strongly unforgable.
 Goal: A and B wish to play "ordd or even" over the network
 
 Naive Commitment Protocol
+
 - A picks a numer X and sends it to B
 - B picks a number Y and sends it to A
 - A wins if X+Y is odd
@@ -848,17 +846,60 @@ Problem: How can you prevent either party from cheating?
 
 # Public Key Cryptography
 
-Needs two keys to function 
+Needs two keys to function
 
 Also called Asymmetric Key Cryptography.
 
 ![[Pasted image 20240301132744.png]]
 
+# Digital Signature Schemes
 
+## RSA Digital Signature Scheme
 
+- Signing is equivalent to RSA decryption
+- Verification is equivalent to RSA decryption.
 
+> Is the original RSA signature scheme secure?
 
+There is attack that involves picking
 
+### Security of Signatures
 
+- Attack Goals
 
+  - Total Break: Recovery of the private key.
+
+  - Existential forgery: the adversary is able to find at least one valid
+    $(m,\sigma)$ pair.
+
+    $$<m_{1}, \sigma_1>$$ $$<m_2, \sigma_2>$$
+
+    $$<m', \sigma'>$$
+
+    $$\sigma' = \sigma_1 \times \sigma_2 = (m_1 \times m_2)^{d} \mod n$$
+
+    $$m' = m_1 \times m_2$$
+
+  - Selective Forgery: The adversary is given a message m and is able to find a
+    signature $\sigma$ such that ${ver}_K (m, \sigma)$ is true.
+
+    Goal: select an $m_1 \rightarrow \sigma_1$
+
+    Choose $m_1$, gets form $\sigma$ for $m$.
+
+    Choose $\frac{m}{m_1} = m_2$ gets $\sigma_2$ for $m_2$
+
+    This attack involves the adversary to pick a message up front.
+
+- Attacker knowledge
+  - Key-only attack public key is known.
+
+### Hash And Then Sign
+
+Hashing and then signing is a good way to mitigate attacks.
+
+$<m_1, \sigma = [H(m)]^d \mod n>$
+
+Preimage resistance prevents the attacker from recovering the message used to
+generate the hash.
 
