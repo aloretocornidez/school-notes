@@ -88,5 +88,6 @@ The method involves two steps:
   prime implicants of the function, as well as other prime implicants that are
   necessary to cover the function.
 
-
-
+"Don't Cares" in the Quine-McCluskey algorithm function similar to the way you
+use them in as fill ins for variables that help develop prime implicants/matched
+pairs.
