@@ -120,6 +120,8 @@ The process for the iterated consensus contains four steps:
 4. Remove all terms contained in any other term. Repeat steps 2 - 4 until there
    is no change.
 
+<!-- prettier-ignore-start -->
+
 Example:
 
 $$F = wx + x'y + xyz + wy + yz$$
@@ -141,14 +143,23 @@ $$F = a'b'c + a'bc' + ab'c' + ab'c + abc'$$
 Term 1: $a'b'c$, Term 2: $a'bc'$ Term 3: $ab'c'$ Term 4: $ab'c$ Term 5:$abc'$
 
 1, 2: 0
+
 1, 3: 0
+
 1, 4,: $b'c$
+
 1, 5: 0
+
 2, 3: 0
+
 2, 4: 0
+
 2, 5: $bc'$
+
 3, 4: $ab'$
+
 3, 5: $ac'$
+
 4, 5: 0
 
 New equation:
@@ -161,30 +172,126 @@ $$F(a, b, c, d) = \sum m (0, 1, 3, 7, 8, 9, 11, 15) $$
 
 $$F = a'b'c'd' + a'b'c'd + a'b'cd + a'bcd + ab'c'd' + ab'c'd + ab'cd + abcd$$
 
+Term 1: $a'b'c'd'$
 
-Term 1: $a'b'c'd'$ 
-Term 2: $a'b'c'd $ 
-Term 3: $a'b'cd $ 
-Term 4: $a'bcd $ 
-Term 5: $ab'c'd' $ 
-Term 6: $ab'c'd $ 
-Term 7: $ab'cd $ 
+Term 2: $a'b'c'd $
+
+Term 3: $a'b'cd $
+
+Term 4: $a'bcd $
+
+Term 5: $ab'c'd' $
+
+Term 6: $ab'c'd $
+
+Term 7: $ab'cd $
+
 Term 8: $abcd$
 
 1, 2: $a'b'c'$
-1, 3: 0
-1, 4: 0
-1, 5: $b'c'd'$
-1, 6: 0
-1, 7: 0
-1, 8: 0
-2, 3: $a'b'd$
-2, 4: 0
-2, 5: 0
-2, 6: 0
-2, 7: 0
-2, 8: 0
-3, 4: $a'cd$
-3, 5: 0
-3, 6: 
 
+1, 3: 0
+
+1, 4: 0
+
+1, 5: $b'c'd'$
+
+1, 6: 0
+
+1, 7: 0
+
+1, 8: 0
+
+2, 3: $a'b'd$
+
+2, 4: 0
+
+2, 5: 0
+
+2, 6: 0
+
+2, 7: 0
+
+2, 8: 0
+
+3, 4: $a'cd$
+
+3, 5: 0
+
+3, 6:
+
+<!-- prettier-ignore-end -->
+
+## Row/Column Dominance
+
+- Row dominance: If a row, $r_i$ in a constraint matrix has all the $1$s, in
+  another row, $r_j$, we say that $r_i$ dominates $r_j$. We remove all
+  dominating rows.
+
+|       | P1  | P2  | P3  |
+| ----- | --- | --- | --- |
+| $m_1$ | 1   | 1   | 0   |
+| $m_2$ | 1   | 1   | 1   |
+
+In this case, row 2 is removed.
+
+- Column dominance: If a column, $P_i$ has all $1$s in another column $P_j$, and
+  the cost of $P_i \le P_j$, $P_i$ dominates $P_j$ and we remove the dominated
+  column.
+
+|       | P1  | P2  | P3  |
+| ----- | --- | --- | --- |
+| $m_1$ | 1   | 1   | 0   |
+| $m_2$ | 0   | 1   | 1   |
+
+In this case, P2 is removed.
+
+### Example
+
+|     | P1  | P2  | P3  | P4  | P5  | P6  |
+| --- | --- | --- | --- | --- | --- | --- |
+| m1  | 1   | 1   |     |     |     |     |
+| m2  | 1   | 1   |     |     |     |     |
+| m3  |     | 1   | 1   |     |     |     |
+| m4  |     | 1   | 1   | 1   |     |     |
+| m5  |     |     |     | 1   | 1   |     |
+| m6  |     |     |     | 1   | 1   | 1   |
+
+1. Remove rows with EPI
+2. Remove dominating rows
+3. Remove dominated columns.
+
+Row Dominance: In this case, remove rows for m1, m4, and m6 since they are
+dominated by m2, m3, and m5 respectively.
+
+Column Dominance: remove P1, P3, and P5.
+
+Cover = P2 + P4
+
+### Example With Letters
+
+|     | a'd' | b'd' | a'c | b'c | ab' |
+| --- | ---- | ---- | --- | --- | --- |
+| m0  | 1    | 1    |     |     |     |
+| m2  | 1    | 1    | 1   | 1   |     |
+| m3  |      |      | 1   | 1   |     |
+| m4  | 1    |      |     |     |     |
+| m6  | 1    |      | 1   |     |     |
+| m7  |      |      | 1   |     |     |
+| m8  |      | 1    |     |     | 1   |
+| m9  |      |      |     |     | 1   |
+| m10 |      | 1    |     | 1   | 1   |
+| m11 |      |      |     | 1   | 1   |
+
+Our essential prime implicants are on row m4, m7, and m8.
+
+So EPI: a'd', a'c, ab'.
+
+Null example, however, assuming that we continue with the process.
+
+We remove rows m2 becuase of m0 and m3.
+
+After removing the row domainated rows: m0, m3, m6, m8, and m11 are the rows
+that are left.
+
+Column Dominance (in this case) will not apply.
