@@ -91,3 +91,100 @@ The method involves two steps:
 "Don't Cares" in the Quine-McCluskey algorithm function similar to the way you
 use them in as fill ins for variables that help develop prime implicants/matched
 pairs.
+
+### Iterated Consensus / Complete Sum
+
+- A complete sum is a formula comprised of all prime implicants of a function.
+- A sum of product formula is a complete sum iff:
+  1. No term includes any other term
+  2. The consensus of any two terms of the function either does not exist or is
+     contained in some other term of the formula.
+
+Finding the consensus:
+
+- 3 Variables: Each variable is repeated twice in true or complemented form.
+- 1 variables is complemented
+- Keep the terms with the complemented variable.
+
+In this case, $x$ is complemented, so:
+
+$$xy + x'z + yz = xy + x'z$$
+
+The process for the iterated consensus contains four steps:
+
+1. Start with the 'sum of product' form.
+2. Add consensus term of all pairs of terms. The consensus term must not be
+   contained in any other term.
+3. Compare new terms with other terms to see if any new consensus terms can be
+   generated.
+4. Remove all terms contained in any other term. Repeat steps 2 - 4 until there
+   is no change.
+
+Example:
+
+$$F = wx + x'y + xyz + wy + yz$$
+
+$$1, 2: wy$$
+
+$$1, 3: $$
+
+$$2, 3: yz$$
+
+$$F = wx + x'y + wy + yz$$
+
+Another Example:
+
+$$F(a, b, c) = \sum m(2, 4) + \sum d (1, 5, 6)$$
+
+$$F = a'b'c + a'bc' + ab'c' + ab'c + abc'$$
+
+Term 1: $a'b'c$, Term 2: $a'bc'$ Term 3: $ab'c'$ Term 4: $ab'c$ Term 5:$abc'$
+
+1, 2: 0
+1, 3: 0
+1, 4,: $b'c$
+1, 5: 0
+2, 3: 0
+2, 4: 0
+2, 5: $bc'$
+3, 4: $ab'$
+3, 5: $ac'$
+4, 5: 0
+
+New equation:
+
+$$F = b'c + bc' + ab' + ac'$$
+
+Another Example:
+
+$$F(a, b, c, d) = \sum m (0, 1, 3, 7, 8, 9, 11, 15) $$
+
+$$F = a'b'c'd' + a'b'c'd + a'b'cd + a'bcd + ab'c'd' + ab'c'd + ab'cd + abcd$$
+
+
+Term 1: $a'b'c'd'$ 
+Term 2: $a'b'c'd $ 
+Term 3: $a'b'cd $ 
+Term 4: $a'bcd $ 
+Term 5: $ab'c'd' $ 
+Term 6: $ab'c'd $ 
+Term 7: $ab'cd $ 
+Term 8: $abcd$
+
+1, 2: $a'b'c'$
+1, 3: 0
+1, 4: 0
+1, 5: $b'c'd'$
+1, 6: 0
+1, 7: 0
+1, 8: 0
+2, 3: $a'b'd$
+2, 4: 0
+2, 5: 0
+2, 6: 0
+2, 7: 0
+2, 8: 0
+3, 4: $a'cd$
+3, 5: 0
+3, 6: 
+
