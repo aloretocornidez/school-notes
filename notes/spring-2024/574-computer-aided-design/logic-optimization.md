@@ -295,3 +295,88 @@ After removing the row domainated rows: m0, m3, m6, m8, and m11 are the rows
 that are left.
 
 Column Dominance (in this case) will not apply.
+
+# Recursive Consensus
+
+Finding the essential prime implicants can be done in multiple ways, the two
+methods we learned:
+
+- constraint matrix
+- prime implicant chart
+
+Recursive consensus uses the Shannon Expansion Theorem
+
+$$
+f(x_1, x_2, ..., x_n) = (x_1' f(0, x_2, ..., x_n)) + (x_1, f(1, x_2, ...,
+x_n)) = (x_1' + f(1, x_2, ..., x_n))(x_1 + f(0, x_2, ..., x_n))
+$$
+
+So the steps are:
+
+- Recursively expand terms to get F1, F2
+- Multiply out F1 and F2
+- Eliminate all terms contained in any other term.
+
+### Example
+
+Let's do an example:
+
+$$F(a, b, c) = a'b' + a'bc' + ac$$
+
+We can take the complement of a variable and recursively expand them.
+
+a:
+
+a' -> c
+
+a -> b' + bc'
+
+b' -> c'
+
+b -> 1
+
+Our equation then is represented by: $(b' + c') (b+1)$
+
+Then we can get the other one: $(a' + c) (a+b'+c') = a'b' + a'c' + ac + b'c$
+
+Then the last step is to remove all terms containing another term.
+
+Generally, working with the most commonly used variable in the original equation
+makes the tree expand less.
+
+### Example
+
+Let's do another example.
+
+$$F = \sum m(0, 1, 3, 7, 8, 9, 11, 15)$$
+
+Can be expanded to:
+
+$$F = a'b'c'd' + a'b'c'd + a'b'cd + a'bcd + ab'c'd' + ab'c'd + ab'cd + abcd$$
+
+Let's start recursively expanding $a$:
+
+- a' -> b'c'd' + b'c'd + b'cd + bcd
+
+  - b' -> cd
+  - b -> c'd' + c'd + cd
+    - c' -> d
+    - c -> 1
+
+- a -> b'c'd' + b'c'd + b'cd + bcd
+
+  - b' -> cd
+  - b -> c'd' + c'd + cd
+    - c' -> d
+    - c -> 1
+
+Then we can 'and' branches.
+
+$$(b + c' + d)(b'+cd)+a' = a'+b'c'+b'd + bcd + cd$$
+
+We can 'and' it with the other branch and get the final set of prime implicants.
+
+$$(a'+b'c'+b'd + bcd + cd)(a + b'c' + b'd + bcd + cd) = b'c' + b'd + cd$$
+
+
+
