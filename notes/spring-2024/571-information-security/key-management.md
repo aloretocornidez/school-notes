@@ -32,7 +32,11 @@ the KDC), and when you want to establish communication with another user, you
 can then generate a secret key with the other user through the already trusted
 key source.
 
+In this case, with N users, you need N long term keys, which is much less than
+$O(N^{2})$
 
-In this case, with N users, you need N long term keys, which is much less than $O(N^{2})$
+
+
+
 
 

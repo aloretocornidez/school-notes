@@ -504,13 +504,4 @@ You must be given a time constraint in this algorithm.
    slack of a node is zero, then we either need to add resources or schedule the
    node at that time.
 
-
 ### Force-Directed Scheduling (FDS)
-
-
-
-
-
-
-
-
