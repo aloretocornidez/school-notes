@@ -102,5 +102,17 @@ This file contains user IDs and group IDs which are used by many system programs
 A dictionary attack is possible because many passwords come from a small
 dictionary.
 
+# Security Bootstrap
+
+To derive a secret key, you hash a password to get a DES key.
+
+To derive a public key you can:
+
+- use a password as the seed for a rng to create a public/private key pair
+- use a password to encrypt a private hey (for human users)
+
+
+
+
 
 
