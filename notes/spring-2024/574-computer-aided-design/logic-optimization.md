@@ -378,5 +378,26 @@ We can 'and' it with the other branch and get the final set of prime implicants.
 
 $$(a'+b'c'+b'd + bcd + cd)(a + b'c' + b'd + bcd + cd) = b'c' + b'd + cd$$
 
+# New Topic
+
+Some problems are hard and it may not be feasible to find the best solution,
+this is where we can tradeoff solution optimality for speed to arrive to the
+
+- Local Sea solution. This method is called heuristics instead of algorithms.
+
+We implement heuristics using many methods, such as: Local Search
+
+- Local Search: find a solution in the by approaching the minimum, however, this
+  method is susceptible to getting trapped in the local minimum.
+
+## Espresso Algorithm
+
+Espresso utilizes the local search to approach a possible solution for
+scheduling your resources in a module.
+
+
+- Expand Operator
+  - Randomly takes a term, and eliminates on of the literals.
+
 
 
