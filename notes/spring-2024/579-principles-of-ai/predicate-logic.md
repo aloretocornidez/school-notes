@@ -85,7 +85,7 @@ Axioms:
 
 Theorem: Dog(FIDO)
 
-## Sound Rules of Reasoning
+# Sound Rules of Reasoning
 
 1. `Modus Ponens` [Modus Ponens](https://en.wikipedia.org/wiki/Modus_ponens)
 
@@ -100,3 +100,15 @@ Then $B$ MUST FOLLOW.
 2b. BARK(FIDO) $\Rightarrow$ DOG(FIDO)
 
 The DOG(FIDO) MUST BE TRUE.
+
+# Resolution
+
+Two Clauses
+
+$A \vee B$
+
+$\neg B \vee C$
+
+$\rightarrow A \vee C$
+
+
