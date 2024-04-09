@@ -1,3 +1,9 @@
+---
+id: and-or-graphs
+aliases: []
+tags: []
+---
+
 # And/Or Graphs
 
 $$h(n_0) = 3$$ $$h(n_1) = 2$$ $$h(n_2) = 4$$ $$h(n_3) = 4$$ $$h(n_4) = 1$$
@@ -65,44 +71,8 @@ k(n_0, N) = 2 + k(n_5, N) + k(n_4, N) = 2 + 2 + k(n_4, N) = 4 + k(n_4, N) =
 4 + 1 + k(n_5, N) = 5 + 2 = 7
 $$
 
-
 ![](./attachments/Pasted image 20240319085536.png)
-
 
 ![](./attachments/Pasted image 20240319090404.png)
 
-
 ![](./attachments/Pasted image 20240319090909.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

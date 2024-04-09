@@ -1,3 +1,9 @@
+---
+id: summary
+aliases: []
+tags: []
+---
+
 # ECE 479 | Summary of Topics
 
 This document contains the main ideas that have been discussed in class along
@@ -61,3 +67,15 @@ for the solution of a problem within problem space.
   - Hill Climbing
 
 - A-Star Algorithm
+
+## Predicate Logic
+
+A means of formalizing behaviors and providing the basis for planning, verifying
+search problems, and 
+
+- Correcting a design error in simulation is cheaper than correcting an already manufactured solution.
+
+- Predicate Logic has many applications in robotics.
+
+
+
