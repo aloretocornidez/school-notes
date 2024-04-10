@@ -1,3 +1,9 @@
+---
+id: formal-verification
+aliases: []
+tags: []
+---
+
 # Formal Verification
 
 Verification of a system is extremely important aspect of hardware design

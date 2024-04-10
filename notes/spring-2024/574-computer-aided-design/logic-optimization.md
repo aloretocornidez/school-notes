@@ -1,3 +1,9 @@
+---
+id: logic-optimization
+aliases: []
+tags: []
+---
+
 # Logic Optimization
 
 There are often two important design criteria in design:
