@@ -109,6 +109,76 @@ $A \vee B$
 
 $\neg B \vee C$
 
-$\rightarrow A \vee C$
+$\rightarrow A \vee C$ (resolvent)
+
+# Modus Ponens
+
+1. $E_{1}$
+2. $E_{1} \Rightarrow E_{2}$
+
+Then $E_{2}$ follows.
+
+Converting the bod theorem from axiom form andput it into predicate logic form:
+
+1. Barks(FIDO)
+2. $\forall x [Barks(x) \Rightarrow Dog(x)]$
+
+Theorem: Dog(FIDO)
+
+1. Bard(FIDO)
+2. Convert $\Rightarrow$ to $\vee$
+3. $(\forall x)$ ($\neg$ Barks(x)) $\vee$ Dog(x)
+
+![Resolution from Fido to Predicate Logic](./attachments/barks-fido.png)
+
+Equivalence Theorem:
+
+$A \Rightarrow B = (\neg A \vee B)$
+
+"A implies B is equivalent to not A or B"
+
+## Proving Properties by refutation using resolution
+
+1. Given a list of Axioms + Theorem
+2. Convert them to clause form
+3. Negate the theorem
+4. Attach negated theorem to the list of Axioms in clause form.
+5. Resolve until NIL or empty clause
+
+Notes: the theorem has to be in a disjuctive form.
+
+Analogy:
+
+$A \vee B$, $A \vee \neg B$, $Q \vee C \vee \neg Y$, $\neg X \vee Y$
+
+$A$, $Q \vee C \vee \neg X$
+
+After resolving the statements above, we can make another list of theorems that
+can then continue to be resolved until a NIL clause is formed.
+
+## Example
+
+Given the theorem:
+
+1. Barks(FIDO)
+2. $\forall x$ (Barks(x) $\Rightarrow$ Doc(x))
+3. Prove Th: Dog(FIDO)
+
+Solving:
+
+Leave (1) as is:
+
+1. Barks(FIDO)
+
+Negate (2)
+
+2. $\forall x$ (Barks(x) $\Rightarrow$ Doc(x))
+
+$\neg$ Bark(FIDO) $\vee$ Dog(FIDO)
+
+3. $\neg$ Dog(FIDO)
 
 
+
+
+<!-- TODO -->
