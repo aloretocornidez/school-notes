@@ -19,7 +19,7 @@ Tradeoffs improve one area of interest at the cost of another's performance.
 
 ## Pareto Points
 
-Often, we would like to optimize a system, however. it is likely that we will
+Often, we would like to optimize a system, however, it is likely that we will
 have to make tradeoff. Ideally, we would like the optimizations that we make to
 be as close to the optimal pareto measurement.
 
