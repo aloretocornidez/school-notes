@@ -1,3 +1,10 @@
+---
+id: notes
+aliases:
+  - ECE 574
+tags: []
+---
+
 # ECE 574
 
 ## Agenda
@@ -77,8 +84,8 @@ endmodule
 Data components that data passes through that determine what happens to your
 data.
 
-Examples of some basic datapath components: Verilog code demo. #TODO: Code shall
-be posted by Dr. Adegbija.
+Examples of some basic datapath components: Verilog code demo. Code shall be
+posted by Dr. Adegbija.
 
 - 2x4 decoder
 - 4-bit register

@@ -1,6 +1,7 @@
 ---
 id: logic-optimization
-aliases: []
+aliases:
+  - Logic Optimization
 tags: []
 ---
 
@@ -404,6 +405,10 @@ scheduling your resources in a module.
 
 - Expand Operator
   - Randomly takes a term, and eliminates on of the literals.
+
+
+
+
 
 
 
