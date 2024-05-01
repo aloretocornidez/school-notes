@@ -71,11 +71,9 @@ for the solution of a problem within problem space.
 ## Predicate Logic
 
 A means of formalizing behaviors and providing the basis for planning, verifying
-search problems, and 
+search problems, and
 
-- Correcting a design error in simulation is cheaper than correcting an already manufactured solution.
+- Correcting a design error in simulation is cheaper than correcting an already
+  manufactured solution.
 
 - Predicate Logic has many applications in robotics.
-
-
-

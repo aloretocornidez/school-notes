@@ -42,14 +42,8 @@ are divided into `realms`. Each realm has its own KDC.
 
 The KDCs of other realms are treated as resources (principals) of a local realm.
 
-
-
-
 ## Kerberos v4 vs v5
 
 v4 does not allow authentication forwarding
 
 v5 allows the negotiation of sub-session keys.
-
-
-
