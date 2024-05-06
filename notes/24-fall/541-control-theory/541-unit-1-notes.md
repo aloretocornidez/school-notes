@@ -193,7 +193,9 @@ x_{1}'(t) \\ x_{2}'(t)
 %End A
 
 \begin{bmatrix}
-x_{1}(t) \\ x_{2}(t)
+x_{1}(t) \\ 
+x_{2}(t) 
+
 \end{bmatrix} 
 +
 
